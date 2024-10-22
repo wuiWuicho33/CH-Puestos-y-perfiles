@@ -3254,35 +3254,43 @@ label {
 # TABS
 ============================================== */
 .tabs-container {
-  width: 80%;
+  width: 100%;
   margin: auto;
   margin-top: 20px;
 }
 
-/* Tabs button */
+.tabs {
+  display: flex;
+  border: 1px solid #c4cddb;
+  border-bottom: none;
+}
+
+/* # Tabs button
+------------------------------------ */
 .tab-button {
   padding: 10px 20px;
   border: none;
-  background: #fff;
+  background: #e9eee8;
   cursor: pointer;
   text-align: center;
   transition: background 0.3s;
   outline: none;
+  border-right: 1px solid #c4cddb;
 }
 
 .tab-button.active {
-  background: #f1f1f1;
-  border-bottom: 2px solid #007bff;
+  background: #ffffff;
 }
 
 .tab-button:hover, .tab-button:focus {
-  background: #ddd;
-  border-bottom: 2px solid #007bff;
+  background: #c4cddb;
 }
 
-/* Tab-content */
+/* # Tab-content
+------------------------------------ */
 .tab-content {
-  border: 1px solid #ccc;
+  background-color: #ffffff;
+  border: 1px solid #c4cddb;
   padding: 20px;
 }
 
