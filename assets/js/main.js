@@ -94,44 +94,25 @@ function updateLabels() {
 /* # Tabs
 ---------------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
-  function handleTabClick(buttons, panes, activeClass) {
-      buttons.forEach(button => {
-				button.addEventListener('click', () => {
-					// Remove 'active' class from all buttons and panes
-					buttons.forEach(btn => {
-						btn.classList.remove(activeClass);
-						if (btn.hasAttribute('aria-selected')) {
-							btn.setAttribute('aria-selected', 'false');
-						}
-					});
-					panes.forEach(pane => pane.classList.remove(activeClass));
+    const tabContainers = document.querySelectorAll('.tabs-container');
 
-					// Add 'active' class to the clicked button and corresponding pane
-					button.classList.add(activeClass);
-					if (button.hasAttribute('aria-selected')) {
-						button.setAttribute('aria-selected', 'true');
-					}
-					const targetId = button.dataset.target;
-					document.getElementById(targetId).classList.add(activeClass);
-				});
-      });
-  }
+    tabContainers.forEach(container => {
+        const tabButtons = container.querySelectorAll('.tab-button');
+        const tabPanes = container.querySelectorAll('.tab-pane');
 
-  // Handle main tabs
-  const tabContainers = document.querySelectorAll('.tabs-container');
-  tabContainers.forEach(container => {
-		const tabButtons = container.querySelectorAll('.tab-button');
-		const tabPanes = container.querySelectorAll('.tab-pane');
-		handleTabClick(tabButtons, tabPanes, 'active');
-  });
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove 'active' class from all buttons and panes within this container
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabPanes.forEach(pane => pane.classList.remove('active'));
 
-  // Handle inner tabs
-  const innerTabContainers = document.querySelectorAll('.inner-tabs-container');
-  innerTabContainers.forEach(container => {
-		const innerTabButtons = Array.from(container.querySelectorAll('.inner-tab-button'));
-		const innerTabPanes = Array.from(container.querySelectorAll('.inner-tab-pane'));
-		handleTabClick(innerTabButtons, innerTabPanes, 'active');
-  });
+                // Add 'active' class to the clicked button and corresponding pane
+                button.classList.add('active');
+                const targetId = button.dataset.target;
+                document.getElementById(targetId).classList.add('active');
+            });
+        });
+    });
 });
 
 /* # Pagination

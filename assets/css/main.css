@@ -2612,95 +2612,6 @@ section.footer {
   }
 }
 */
-/* # TABS
----------------------------------------------- */
-/*--------------- Main tabs ---------------*/
-/* Tabs button */
-.tab-button {
-  padding: 10px 20px;
-  border: none;
-  background: #ffffff;
-  cursor: pointer;
-  text-align: center;
-  transition: background 0.3s;
-  outline: none;
-}
-.tab-button.active {
-  background: #ffffff;
-  border-bottom: 2px solid #E84A3C;
-}
-.tab-button:hover {
-  background: #e9eee8;
-  border-bottom: 2px solid #E84A3C;
-}
-
-/* Tab-content */
-.tab-content {
-  background-color: #ffffff;
-  padding: 20px 0 20px 0;
-  /*.form-control {width: 100%;}*/
-}
-
-.tab-pane {
-  display: none;
-}
-.tab-pane.active {
-  display: block;
-}
-
-/*--------------- Inner tabs ---------------*/
-/* Tabs button inner*/
-.inner-tab-button {
-  padding: 10px 20px;
-  border: none;
-  background: #e9eee8;
-  cursor: pointer;
-  text-align: center;
-  transition: background 0.3s;
-  outline: none;
-  border-radius: 1rem;
-}
-.inner-tab-button.active {
-  background: #1F2937;
-  color: #ffffff;
-}
-.inner-tab-button:hover, .inner-tab-button:focus {
-  background: #1F2937;
-  color: #ffffff;
-}
-
-/* Contenido de pestañas inner */
-.inner-tab-pane {
-  display: none;
-  padding: 20px 0 0 0;
-}
-.inner-tab-pane.active {
-  display: block;
-}
-
-/*--------------- Tabs-content ---------------*/
-/*Content*/
-.edit-content {
-  height: 350px;
-  overflow-y: auto;
-  /*Content Scrollbar*/
-}
-.edit-content::-webkit-scrollbar {
-  width: 10px;
-  background-color: #e9eee8;
-}
-.edit-content::-webkit-scrollbar-thumb {
-  background: #c4cddb;
-}
-.edit-content h1 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-.edit-content .subtitle {
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
 /* # IMG-CONTAINER
 ----------------------------------------------- */
 .img-container {
@@ -3126,10 +3037,8 @@ label {
 }
 
 /* ==============================================
-# COMPONENTES
+# BUTTONS
 ============================================== */
-/* # BUTTONS
----------------------------------------------- */
 .btn {
   line-height: 1.5;
   display: inline-block;
@@ -3340,6 +3249,49 @@ label {
   .switch-wrapper .switch-group p, .switch-wrapper .switch-group span {
     font-size: 1rem;
   }
+}
+/* ==============================================
+# TABS
+============================================== */
+.tabs-container {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* Tabs button */
+.tab-button {
+  padding: 10px 20px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s;
+  outline: none;
+}
+
+.tab-button.active {
+  background: #f1f1f1;
+  border-bottom: 2px solid #007bff;
+}
+
+.tab-button:hover, .tab-button:focus {
+  background: #ddd;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Tab-content */
+.tab-content {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

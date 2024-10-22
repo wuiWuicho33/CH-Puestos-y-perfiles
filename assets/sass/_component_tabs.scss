@@ -1,0 +1,41 @@
+/* ==============================================
+# TABS
+============================================== */
+
+.tabs-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Tabs button */
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s;
+    outline: none;
+}
+.tab-button.active {
+    background: #f1f1f1;
+    border-bottom: 2px solid #007bff;
+}
+.tab-button:hover, .tab-button:focus {
+    background: #ddd;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Tab-content */
+.tab-content {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.tab-pane {
+    display: none;
+}
+.tab-pane.active {
+    display: block;
+}
+
