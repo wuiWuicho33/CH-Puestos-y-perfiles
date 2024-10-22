@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+	<title>Buscador</title>
+  <!-- Swiper carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />  
+	<link href="../assets/css/main.css" rel="stylesheet">
+</head>
+<style>
+/*Variables scss  */
+/*Fonts*/
+$primary-font:"Roboto", sans-serif;
+$secondary-font:"Kanit", sans-serif;
+/*Colors*/
+$primary-color: #ffffff;
+$secondary-color: #F1F4F7;
+$tertiary-color: #c4c4c4;
+$fourth-color: #525C69;
+$fifth-color: #414C5B;
+$sixty-color: #2E3846;
+$primary-text-color:#24303E;
+/*No cambian*/
+$highlight-color:#007bff;
+$strong-highlight-color:#015b94;
+$white-color:#ffffff;
+$success-color:#4CAF50;
+$warning-color:#ffc107;
+$danger-color:#dc3545;
+
+/*--------------- # Search ---------------*/
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  .search,
+  .search-button {box-sizing: border-box; }
+}
+/*Search input*/
+.search {
+  flex: 1;
+  outline: none;
+  height: 38px; /* Misma altura que el botón */    
+  &.form-control{border-radius: 0.25rem 0 0 0.25rem;}
+}
+/*Search button*/
+.search-button {
+  background-color: $highlight-color;
+  border: 1px solid $highlight-color;
+  color: $primary-color;
+  padding: 10px;
+  border-radius: 0 0.25rem 0.25rem 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px; /* Misma altura que el input */
+  width: 40px;
+  &:hover {
+    background-color: $strong-highlight-color;
+    border: 1px solid $strong-highlight-color;
+  }
+} 
+
+@media (min-width: 768px) {   
+  /* Search-container */
+  .search-container {width: auto;}
+}
+</style>
+<body> 
+
+  <!-- ======
+  * SECTION *
+  ======= -->
+  <section class="bg-light">
+    <div class="container-fluid">   
+      <!-- filters-section
+      ================ -->              
+      <div class="flex items-center flex-row">
+        <!-- ===== Search-container ===== --> 
+        <div class="search-container">
+          <input type="text" class="search form-control" placeholder="Buscar...">
+          <button type="submit" class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>                     
+      </div>              
+
+    </div>
+  </section>
+
+<!--///////
+SCRIPTS
+////////-->
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/91705bc097.js" crossorigin="anonymous"></script>
+<!-- Jquery last version -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>	
+
+</body>
+</html>

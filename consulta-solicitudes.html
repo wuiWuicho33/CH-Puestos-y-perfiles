@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<title>PP - Consuta de solicitudes</title>
+	<link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body> 
+
+  <!-- =========
+  * SIDEBAR *
+  ========== -->
+  <section class="sidebar">
+    <!-- Header
+    ================= -->    
+    <header>
+      <img class="logo" src="assets/img/logo.png">
+    </header>
+    <!-- side-menu
+    ================= -->          		 
+    <ul class="side-menu">
+      <li class='sub-menu active'>
+        <a href='#'>
+          <i class="fa-solid fa-user-tie"></i> Puesto<div class='fa fa-solid fa-chevron-right right'></div>
+        </a>
+        <ul>
+          <li><a href='#'>Consulta</a></li>
+          <li><a href='#'>Consulta de soluciones</a></li>
+          <li><a href='#'>Alta</a></li>
+          <li><a href='#'>Solicitud</a></li>
+          <li><a href='#'>Autorización</a></li>
+        </ul>
+      </li>      
+      <li><a href='#'><i class="fa-solid fa-key"></i> Permisos y roles</a></li>
+      <li><a href='#'><i class="fa-solid fa-users"></i> Usuarios</a></li>
+    </ul>
+  </section>
+
+	<!-- =========
+  * MAIN *
+  ========== -->
+  <main class="main">
+    <!-- Navbar
+    ============================ -->        
+    <nav class="navbar">
+      <button class="menu-toggle">
+        &#9776;
+      </button>
+			<!-- ===== Navbar-links ===== -->
+      <div class="navbar-links">
+				<!-- Link -->
+        <a href="index.html">
+          <i class="fa-solid fa-house mr-1"></i> <span class="d-none d-md-block">Home</span>
+        </a>
+				<!-- Link -->
+        <a href="#">
+          <i class="fa-solid fa-bell"></i>
+        </a>
+				<!-- Dropdown-user -->  
+				<div class="dropdown-user">
+					<!-- Btn -->
+					<button class="dropbtn">
+						<img src="http://via.placeholder.com/100x100"> <span class="d-none d-md-block">Nombre de usuario</span>
+					</button>
+					<!-- Dropdown-user-links -->
+					<div class="dropdown-user-links">
+					<a href="#">Mi perfil <i class="fa-regular fa-credit-card"></i></a>
+					<a href="#">Ajustes <i class="fa-solid fa-gear"></i></a>
+					<a href="#">Cerrar sesión <i class="fa-solid fa-right-from-bracket"></i></a>
+					</div>
+				</div>		
+      </div>
+    </nav>
+    <!-- Sain content
+    ============================ -->     
+    <div class="content">
+      <!-- Title
+      ======= --> 
+      <section class="flex justify-between">
+        <h1>Consulta de solicitudes</h1>
+        <div>
+          <button class="btn btn-default-inverse self-end">Nuevo puesto <i class="fa-solid fa-plus"></i></button>
+        </div>
+      </section> 
+
+      <!-- Filters-section
+      ============================-->
+      <section class="grid grid-cols-12 py-5">
+        <!-- Item
+        ------------- -->              
+        <div class="col-span-12 md:col-span-10">
+          <!-- ===== Form ===== --> 
+          <form class="filter flex flex-col lg:flex-row gap-2">      
+            <!-- -----
+            Form-group
+            ------ -->                                                  
+            <div>
+              <label for="select-position">Puesto</label>      
+              <select class="form-control w-100" id="select-position">
+                <option selected>Seleccionar</option>
+                <option>Puesto 1</option>
+                <option>Puesto 2</option>
+                <option>Puesto 3</option>
+                <option>Puesto 4</option>
+                <option>Puesto 5</option>              
+              </select>                        
+            </div>          
+            <!-- -----
+            Form-group
+            ------ -->                                                
+            <div>
+              <label for="select-area">Área</label>      
+              <select class="form-control w-100" id="select-area">
+                <option selected>Seleccionar</option>
+                <option>Área 1</option>
+                <option>Área 2</option>
+                <option>Área 3</option>
+                <option>Área 4</option>
+                <option>Área 5</option>              
+              </select>                        
+            </div>
+            <!-- -----
+            Fecha de inicio
+            ------ -->                          
+            <div>
+              <label for="start-date">Fecha de inicio</label>
+              <input class="form-control" type="date" id="start-date" name="start-date">
+            </div>         
+            <!-- -----
+            Fecha final
+            ------ -->                          
+            <div>
+              <label for="end-date">Fecha final</label>
+              <input class="form-control" type="date" id="end-date" name="end-date">
+            </div>  
+            <!-- -----
+            Form-group
+            ------ -->                                    
+            <div>
+              <label for="select-status">Estatus</label>      
+              <select class="form-control w-100" id="select-status">
+                <option selected>Seleccionar</option>
+                <option>Activo</option>
+                <option>Inactivo</option>       
+              </select>                        
+            </div>                      
+          </form>
+          
+        </div>
+        <!-- Item
+        ------------- -->              
+        <div class="col-span-12 md:col-span-2 flex flex-row-reverse">
+          <div class="self-end">
+            <button class="btn btn-default-inverse">Consultar</button>
+            <button class="btn btn-default"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>      
+
+      </section>
+
+      <!-- Table section
+      ================= -->          
+      <section class="table-responsive">
+        <table>
+          <!-- ===== Table head ===== -->
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Puesto</th>
+              <th>Área</th>
+              <th>Objetivo</th>
+              <th>Estado</th>
+              <th>Acción</th>
+            </tr>
+          </thead>
+          <!-- ===== Table body ===== -->
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Lider de proyecto</td>
+              <td>Sistemas</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nam repellat inventore odio aspernatur expedita deleniti ab! Praesentium, autem odio. Corrupti, esse quos accusantium assumenda quia cum praesentium ipsam autem!</td>
+              <td>
+                <!-- Switch-wrapper -->
+                <div class="switch-wrapper">                                                      
+                  <div class="switch-group">
+                    <span class="switch-label">Inactivo</span>
+                    <label class="switch">
+                      <input type="checkbox" class="switch-input state-switch-note">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="flex gap-2">
+                  <button class="btn btn-default-inverse">Rechazar</button>
+                  <button class="btn btn-default">Aceptar</button>                
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Lider de proyecto</td>
+              <td>Sistemas</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nam repellat inventore odio aspernatur expedita deleniti ab! Praesentium, autem odio. Corrupti, esse quos accusantium assumenda quia cum praesentium ipsam autem!</td>
+              <td>
+                <!-- Switch-wrapper -->
+                <div class="switch-wrapper">                                                      
+                  <div class="switch-group">
+                    <span class="switch-label">Inactivo</span>
+                    <label class="switch">
+                      <input type="checkbox" class="switch-input state-switch-note">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="flex gap-2">
+                  <button class="btn btn-default-inverse">Rechazar</button>
+                  <button class="btn btn-default">Aceptar</button>                
+                </div>                
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Lider de proyecto</td>
+              <td>Sistemas</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nam repellat inventore odio aspernatur expedita deleniti ab! Praesentium, autem odio. Corrupti, esse quos accusantium assumenda quia cum praesentium ipsam autem!</td>
+              <td>
+                <!-- Switch-wrapper -->
+                <div class="switch-wrapper">                                                      
+                  <div class="switch-group">
+                    <span class="switch-label">Inactivo</span>
+                    <label class="switch">
+                      <input type="checkbox" class="switch-input state-switch-note">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="flex gap-2">
+                  <button class="btn btn-default-inverse">Rechazar</button>
+                  <button class="btn btn-default">Aceptar</button>                
+                </div>                
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Lider de proyecto</td>
+              <td>Sistemas</td>
+              <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati nam repellat inventore odio aspernatur expedita deleniti ab! Praesentium, autem odio. Corrupti, esse quos accusantium assumenda quia cum praesentium ipsam autem!</td>
+              <td>
+                <!-- Switch-wrapper -->
+                <div class="switch-wrapper">                                                      
+                  <div class="switch-group">
+                    <span class="switch-label">Inactivo</span>
+                    <label class="switch">
+                      <input type="checkbox" class="switch-input state-switch-note">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="flex gap-2">
+                  <button class="btn btn-default-inverse">Rechazar</button>
+                  <button class="btn btn-default">Aceptar</button>                
+                </div>                
+              </td>
+            </tr>
+          </tbody>
+        </table>        
+      </section>
+            
+      <!-- ===== Footer ===== -->
+      <footer>
+        <p>Grupo Fórmula Todos los derechos reservados</p>
+      </footer>	      
+    </div>
+  </main>  
+
+<!--///////
+SCRIPTS
+////////-->
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/91705bc097.js" crossorigin="anonymous"></script>
+<!-- Jquery last version -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>	
+
+</body>
+</html>

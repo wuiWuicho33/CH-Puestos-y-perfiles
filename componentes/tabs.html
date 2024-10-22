@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+	<title>Tabs</title>
+  <!-- Swiper carousel -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />  
+	<link href="../assets/css/main.css" rel="stylesheet">
+</head>
+<body> 
+
+  <!-- ======
+  * SECTION *
+  ======= -->
+  <section class="bg-light">
+    <div class="container-fluid">        
+      <!-- ---------------
+      Tabs-container
+      ---------------- -->
+      <div class="tabs-container" id="tabs-container-2">
+        <!-- Tabs
+        ------------------------- -->                          
+        <div class="tabs">
+          <button class="tab-button active" data-target="content-03" aria-controls="content-03" role="tab">
+            <i class="fa-solid fa-brain"></i>  Nota IA
+          </button>
+          <button class="tab-button" data-target="content-04" aria-controls="content-04" role="tab">
+            <i class="fa-solid fa-magnifying-glass-chart"></i> Configurar SEO
+          </button>
+        </div>
+        <!-- Tab-content
+        ------------------------- -->                                      
+        <div class="tab-content">
+          <!-- ------- Tab-pane active ------- -->
+          <div class="tab-pane active" id="content-03" role="tabpanel">
+            <!-- Col -->
+            <div class="flex justify-between items-center mb-4">
+              <p class="mb-0">Nota generada con IA.</p>
+              <div class="">
+                <button class="btn btn-default-inverse"><i class="fa-solid fa-arrows-rotate"></i> Generar nota</button>
+                <button class="btn btn-default"><i class="fa-solid fa-floppy-disk"></i> Guardar</button>
+              </div>
+            </div>
+            <!-- Col -->
+            <div class="edit-content">
+              <h1>Nullam pulvinar erat erat, nec lobortis tellus bibendum</h1>
+              <p class="subtitle">Curabitur sit amet tincidunt arcu. Nullam pulvinar erat erat, nec lobortis tellus bibendum non. Nullam vitae fermentum lectus. Nulla pharetra vestibulum viverra. Cras malesuada sodales massa in finibus.</p>
+              <img src="../assets/img/texto-enriquecido.png">
+            </div>
+          </div>
+          <!-- ------- Tab-pane ------- -->
+          <div class="tab-pane" id="content-04" role="tabpanel"> 
+            <!-- ---------------
+            Inner-tabs-container
+            ---------------- -->                         
+            <div class="inner-tabs-container" id="inner-tabs-container-2">
+              <!-- Inner-tabs-buttons
+              ------------------------- -->                    
+              <div class="inner-tabs-buttons">
+                <button class="inner-tab-button active" data-target="inner-content-04" aria-controls="inner-content-04" aria-selected="true" role="tab" tabindex="0">
+                  General
+                </button>
+                <button class="inner-tab-button" data-target="inner-content-05" aria-controls="inner-content-05" aria-selected="false" role="tab" tabindex="0">
+                  <i class="fa-brands fa-facebook-f"></i> Facebook
+                </button>
+                <button class="inner-tab-button" data-target="inner-content-06" aria-controls="inner-content-06" aria-selected="false" role="tab" tabindex="0">
+                  <i class="fa-brands fa-x-twitter"></i> Twitter
+                </button>    
+              </div>
+              <!-- Inner-tab-content
+              ------------------------- -->                                      
+              <div class="inner-tab-content">
+                <!-- ------- Inner-tab-pane ------- -->
+                <div class="inner-tab-pane active" id="inner-content-04" role="tabpanel">
+                  <!-- Form -->
+                  <form>
+                    <div class="form-group">
+                      <label for="metaTitle02">Meta título:</label>
+                      <input class="form-control" type="text" id="metaTitle02" name="metaTitle02"  required placeholder="Aquí va el meta título">
+                    </div>
+                    <div class="form-group">
+                      <label for="metaDescription02">Meta description:</label>
+                      <input class="form-control" type="text" id="metaDescription02" name="metaDescription02"  required placeholder="Aquí va la meta descripción">
+                    </div>
+                    <div class="form-group">
+                      <label for="canonical-url-02">URL canónica:</label>
+                      <input class="form-control" type="text" id="canonical-url-02" name="canonical-url-02"  required placeholder="Aqui va la url canónica">
+                    </div>                    
+                    <div class="flex flex-col items-center md:flex-row md:justify-between mb-4">                    
+                      <!-- Switch-wrapper -->                     
+                      <div class="switch-wrapper">
+                        <div class="switch-group">
+                          <p>Indexar:</p>
+                          <span class="switch-label">No</span>
+                          <label class="switch">
+                            <input type="checkbox" class="switch-input">
+                            <span class="slider"></span>
+                          </label>
+                        </div> 
+                        <div class="switch-group">
+                          <p>Seguir:</p>
+                          <span class="switch-label">No</span>
+                          <label class="switch">
+                            <input type="checkbox" class="switch-input">
+                            <span class="slider"></span>
+                          </label>
+                        </div> 
+                      </div>
+                      <button class="btn btn-disable">Guardar cambios</button>
+                    </div>                       
+                  </form>
+                </div>
+                <!-- ------- Inner-tab-pane ------- -->
+                <div class="inner-tab-pane" id="inner-content-05" role="tabpanel">
+                  <!-- Form -->
+                  <form>
+                    <div class="form-group">
+                      <label for="metaTitle02">Meta título:</label>
+                      <input class="form-control" type="text" id="metaTitle02" name="metaTitle02"  required placeholder="Aquí va el meta título">
+                    </div>
+                    <div class="form-group">
+                      <label for="metaDescription02">Meta description:</label>
+                      <input class="form-control" type="text" id="metaDescription02" name="metaDescription02"  required placeholder="Aquí va la meta descripción">
+                    </div>
+                    <div class="flex justify-end">                    
+                      <button class="btn btn-disable">Guardar cambios</button>
+                    </div>                       
+                  </form>   
+                </div>
+                <!-- ------- Inner-tab-pane ------- -->
+                <div class="inner-tab-pane" id="inner-content-06" role="tabpanel"> 
+                  <!-- Form -->                     
+                  <form>
+                    <div class="form-group">
+                      <label for="metaTitle02">Meta título:</label>
+                      <input class="form-control" type="text" id="metaTitle02" name="metaTitle02"  required placeholder="Aquí va el meta título">
+                    </div>
+                    <div class="form-group">
+                      <label for="metaDescription02">Meta description:</label>
+                      <input class="form-control" type="text" id="metaDescription02" name="metaDescription02"  required placeholder="Aquí va la meta descripción">
+                    </div>
+                    <div class="flex justify-end">                    
+                      <button class="btn btn-disable">Guardar cambios</button>
+                    </div>                       
+                  </form>                        
+                </div>    
+              </div><!--End inner-tab-content -->
+            </div><!-- End inner tab container -->
+          </div><!-- End tab-pane -->
+        </div><!-- End tab content -->
+      </div><!-- End tabs-container -->      
+    </div>
+  </section>  
+
+<!--///////
+SCRIPTS
+////////-->
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/91705bc097.js" crossorigin="anonymous"></script>
+<!-- Jquery last version -->
+<script src="../assets/js/jquery.min.js"></script>
+<!-- Main JS -->
+<script src="../assets/js/main.js"></script>	
+
+</body>
+</html>
