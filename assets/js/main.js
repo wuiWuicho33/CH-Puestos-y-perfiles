@@ -115,43 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-/* # Pagination
+/* # Form
 ---------------------------------------------- */
-// Define el total de páginas (esto se puede actualizar dinámicamente)
-const totalPages = 100;
-
-// Actualiza el total de páginas en el componente
-document.getElementById('totalPages').textContent = `de ${totalPages}`;
-
-const pageInput = document.getElementById('pageNumber');
-const prevButton = document.getElementById('prevPage');
-const nextButton = document.getElementById('nextPage');
-
-let currentPage = 1;
-
-function updatePage(newPage) {
-	if (newPage < 1 || newPage > totalPages) return;
-
-	currentPage = newPage;
-	pageInput.value = currentPage;
-	// Aquí puedes agregar lógica para actualizar el contenido según la página actual
-}
-
-prevButton.addEventListener('click', () => {
-  updatePage(currentPage - 1);
-});
-
-nextButton.addEventListener('click', () => {
-  updatePage(currentPage + 1);
-});
-
-pageInput.addEventListener('change', () => {
-	const newPage = parseInt(pageInput.value, 10);
-	updatePage(newPage);
-});
-
-
-/*Form*/
 const formulario = document.getElementById('miFormulario');
 formulario.addEventListener('submit', function(event) {
 	if (!formulario.checkValidity()) {
