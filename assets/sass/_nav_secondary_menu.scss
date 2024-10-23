@@ -1,0 +1,34 @@
+ul.secondary_menu{
+  display: flex;
+  margin: 1rem 0;
+}
+
+ul.secondary_menu li{
+  padding: 5px 10px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color ease-in 0.5s;
+}
+
+ul.secondary_menu li:hover{
+  border-bottom: 2px solid $highlight-color;
+}
+
+ul.secondary_menu li.active{
+  border-bottom: 2px solid $highlight-color;
+}
+ul.secondary_menu li.active a{
+  color:$highlight-color;
+  font-weight: bold;
+}
+
+ul.secondary_menu li a{
+  color:$primary-text-color;
+  //transition: color 0.5s ease, font-weight 0.5s ease;
+  white-space: nowrap;
+}
+
+ul.secondary_menu li:hover a{
+  color:$highlight-color;
+  font-weight: bold;
+}

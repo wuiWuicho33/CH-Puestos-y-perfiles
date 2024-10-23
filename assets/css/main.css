@@ -3227,4 +3227,39 @@ legend {
   display: block;
 }
 
+ul.secondary_menu {
+  display: flex;
+  margin: 1rem 0;
+}
+
+ul.secondary_menu li {
+  padding: 5px 10px;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color ease-in 0.5s;
+}
+
+ul.secondary_menu li:hover {
+  border-bottom: 2px solid #E84A3C;
+}
+
+ul.secondary_menu li.active {
+  border-bottom: 2px solid #E84A3C;
+}
+
+ul.secondary_menu li.active a {
+  color: #E84A3C;
+  font-weight: bold;
+}
+
+ul.secondary_menu li a {
+  color: #1F2937;
+  white-space: nowrap;
+}
+
+ul.secondary_menu li:hover a {
+  color: #E84A3C;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=main.css.map */
