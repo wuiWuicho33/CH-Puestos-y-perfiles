@@ -5,7 +5,6 @@
 @import '01_sidebar_layout';
 @import '01_sidebar_menu';
 @import '01_layout';
-//@import 'navbar'; /*Navbar stándar para sitios web normales*/
 @import 'componentes';
 @import 'component_table';
 @import 'component_form';
@@ -13,4 +12,5 @@
 @import 'component_alerts';
 @import 'component_switch';
 @import 'component_tabs';
-@import '_nav_secondary_menu';
+@import 'nav_secondary_menu';
+//@import 'nav_standar_navbar'; /*Navbar stándar para sitios web normales*/
