@@ -149,3 +149,13 @@ pageInput.addEventListener('change', () => {
 	const newPage = parseInt(pageInput.value, 10);
 	updatePage(newPage);
 });
+
+
+/*Form*/
+const formulario = document.getElementById('miFormulario');
+formulario.addEventListener('submit', function(event) {
+	if (!formulario.checkValidity()) {
+		alert('Por favor, selecciona una opción.');
+		event.preventDefault(); // Evita que el formulario se envíe
+	}
+});

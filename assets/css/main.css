@@ -2893,6 +2893,10 @@ label {
   margin-bottom: 0.25rem;
 }
 
+label span {
+  color: #E84A3C;
+}
+
 /* # Select & input styles
 ----------------------------------------------- */
 .form-control {
@@ -2936,8 +2940,8 @@ input[type=radio] {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-  accent-color: #007bff;
-  border: 2px solid red;
+  accent-color: #E84A3C;
+  border: 2px solid #c4cddb;
   border-radius: 4px;
 }
 
@@ -2946,7 +2950,7 @@ input[type=radio] {
 }
 
 fieldset {
-  border: 1px solid #ced4da;
+  border: 1px solid #c4cddb;
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 1rem;
