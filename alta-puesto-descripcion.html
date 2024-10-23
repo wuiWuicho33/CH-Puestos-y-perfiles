@@ -157,8 +157,56 @@
               --> 
           </div>
           <div class="tab-pane" id="cat" role="tabpanel">
-            <h3>Gato</h3>
-            <p>Contenido de la primera pestaña de perfil.</p>
+            <h3>Ficha de organización</h3>
+              <!-- Form -->
+              <form class="mb-3">
+                <!-- Text area -->
+                <div class="form-group">
+                  <label for="select-boss">Selecciona el jefe inmediato:</label>
+                  <select class="form-control" id="select-boss">
+                    <option selected>Selecciona</option>
+                    <option>Jefe 1</option>
+                    <option>Jefe 2</option>
+                    <option>Jefe 3</option>
+                    <option>Jefe 4</option>
+                    <option>Jefe 5</option>              
+                  </select> 
+                </div>
+
+                <!-- Checkboxes -->
+                <!-- 
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="check1">
+                  <label class="form-check-label" for="check1">Opción 1</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check2">
+                    <label class="form-check-label" for="check2">Opción 2</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check3">
+                    <label class="form-check-label" for="check3">Opción 3</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="check4">
+                    <label class="form-check-label" for="check4">Opción 4</label>
+                </div>                                
+                -->
+
+            <fieldset class="form-fieldset">
+                <legend>Selecciona una opción:</legend>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="option1" name="options" value="option1">
+                    <label class="form-check-label" for="option1">Opción 1</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="option2" name="options" value="option2">
+                    <label class="form-check-label" for="option2">Opción 2</label>
+                </div>
+            </fieldset>               
+
+
+              </form>  
           </div>
         </div>
       </div>     
