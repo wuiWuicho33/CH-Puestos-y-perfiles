@@ -230,7 +230,7 @@ form, input, textarea, select, .form-control, .custom-select {
 }
 
 .text-warning {
-  color: #F3C057;
+  color: #e7b246;
 }
 
 /*i{color:$highlight-color;}*/
@@ -3099,6 +3099,58 @@ legend {
 
 #edit-slug-link.hidden, #slug-form.hidden {
   display: none;
+}
+
+.alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transición suave */
+}
+
+.alert-success {
+  background-color: #4CAF50;
+  color: #ffffff;
+}
+
+.alert-warning {
+  background-color: #e7b246;
+  color: #ffffff;
+}
+
+.alert-danger {
+  background-color: #E85446;
+  color: #ffffff;
+}
+
+.alert.hide {
+  opacity: 0;
+  transform: translateY(-10px); /* Desplazamiento hacia arriba al cerrar */
+  pointer-events: none; /* Desactivar eventos al cerrar */
+}
+
+.alert p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.btn-close {
+  box-sizing: content-box;
+  background-color: inherit;
+  color: #ffffff;
+  padding: 0.5rem;
+  border: 0;
+  opacity: 0.5;
+  font-size: 1rem;
+  line-height: 1rem;
+  cursor: pointer;
+}
+
+.btn-close:hover {
+  opacity: 1;
 }
 
 /* ==============================================
