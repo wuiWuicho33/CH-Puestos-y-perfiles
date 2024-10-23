@@ -3278,7 +3278,6 @@ ul.secondary_menu {
   overflow-x: auto;
   white-space: nowrap;
 }
-
 ul.secondary_menu li {
   padding: 5px 10px;
   border-bottom: 2px solid transparent;
@@ -3286,27 +3285,22 @@ ul.secondary_menu li {
   transition: border-color ease-in 0.5s;
   flex: 0 0 auto;
 }
-
 ul.secondary_menu li:hover {
   border-bottom: 2px solid #E84A3C;
 }
-
+ul.secondary_menu li:hover a {
+  color: #E84A3C;
+  font-weight: bold;
+}
 ul.secondary_menu li.active {
   border-bottom: 2px solid #E84A3C;
 }
-
 ul.secondary_menu li.active a {
   color: #E84A3C;
   font-weight: bold;
 }
-
 ul.secondary_menu li a {
   color: #1F2937;
-}
-
-ul.secondary_menu li:hover a {
-  color: #E84A3C;
-  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */
