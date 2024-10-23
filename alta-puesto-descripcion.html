@@ -46,7 +46,7 @@
     ============================ -->        
     <nav class="navbar">
       <button class="menu-toggle">
-        &#9776;
+        <i class="fa-solid fa-bars"></i>
       </button>
 			<!-- ===== Navbar-links ===== -->
       <div class="navbar-links">
@@ -82,205 +82,195 @@
         <h1>Alta de puesto</h1>
       </section> 
 
-      <!-- ===== Nav ===== -->
-       <ul class="secondary_menu">
-        <li class="active">
-          <a href="#" aria-current="page">Puesto</a>
-        </li>
-        <li>
-          <a href="#">Funciones</a>
-        </li>
-        <li>
-          <a href="#">Relaciones internas</a>
-        </li>
-        <li>
-          <a href="#">Relaciones externas</a>
-        </li>
-        <li>
-          <a href="#">Requerimientos</a>
-        </li>
-        <li>
-          <a href="#">Experiencia</a>
-        </li>
-        <li>
-          <a href="#">Recursos</a>
-        </li>
-        <li>
-          <a href="#">Nivel de competencias</a>
-        </li>
-       </ul>
 
-      <!-- ===== Tab ===== -->
-      <div class="tabs-container" id="tabs-container-1">
-        <div class="tabs">
-          <button class="tab-button active" data-target="dog" aria-controls="dog" role="tab">Ficha de identificación</button>
-          <button class="tab-button" data-target="cat" aria-controls="cat" role="tab">Ficha de organización</button>
-        </div>
-        <div class="tab-content">
-          <div class="tab-pane active" id="dog" role="tabpanel">
-            <h3>Ficha de identificación</h3>
-              <!-- Form -->
-              <form id="miFormulario">
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-3">
+      <!-- Lorem -->
+      <section class="box">
+        <!-- ===== Nav ===== -->
+        <ul class="secondary_menu">
+          <li class="active">
+            <a href="#" aria-current="page">Puesto</a>
+          </li>
+          <li>
+            <a href="#">Funciones</a>
+          </li>
+          <li>
+            <a href="#">Relaciones internas</a>
+          </li>
+          <li>
+            <a href="#">Relaciones externas</a>
+          </li>
+          <li>
+            <a href="#">Requerimientos</a>
+          </li>
+          <li>
+            <a href="#">Experiencia</a>
+          </li>
+          <li>
+            <a href="#">Recursos</a>
+          </li>
+          <li>
+            <a href="#">Nivel de competencias</a>
+          </li>
+        </ul>
 
-                  <div class="grid-item">
-                    <label for="select-position">Puesto <span>*</span></label>
-                    <select id="select-position" name="select-position" class="form-control" required>
-                      <option value="" disabled selected>-- Selecciona el puesto --</option>
-                      <option value="Puesto 1">Puesto 1</option>
-                      <option value="Puesto 2">Puesto 2</option>
-                      <option value="Puesto 3">Puesto 3</option>
-                      <option value="Puesto 4">Puesto 4</option>
-                      <option value="Puesto 5">Puesto 5</option>              
-                    </select> 
+        <!-- ===== Title ===== -->
+        <h2>Descripción de puesto</h2>
+
+        <!-- ===== Tab ===== -->
+        <div class="tabs-container pb-3" id="tabs-container-1">
+          <div class="tabs">
+            <button class="tab-button active" data-target="dog" aria-controls="dog" role="tab">Ficha de identificación</button>
+            <button class="tab-button" data-target="cat" aria-controls="cat" role="tab">Ficha de organización</button>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active" id="dog" role="tabpanel">
+              <h3>Ficha de identificación</h3>
+                <!-- Form -->
+                <form id="miFormulario">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-3">
+
+                    <div class="grid-item">
+                      <label for="select-position">Puesto <span>*</span></label>
+                      <select id="select-position" name="select-position" class="form-control" required>
+                        <option value="" disabled selected>-- Selecciona el puesto --</option>
+                        <option value="Puesto 1">Puesto 1</option>
+                        <option value="Puesto 2">Puesto 2</option>
+                        <option value="Puesto 3">Puesto 3</option>
+                        <option value="Puesto 4">Puesto 4</option>
+                        <option value="Puesto 5">Puesto 5</option>              
+                      </select> 
+                    </div>
+
+                    <div class="grid-item">
+                      <label for="select-code">Código de puesto <span>*</span></label>
+                      <select id="select-code" class="form-control" required>
+                        <option value="" disabled selected>-- Selecciona el código de puesto --</option>
+                        <option value="Código 1">Código 1</option>
+                        <option value="Código 1">Código 2</option>
+                        <option value="Código 1">Código 3</option>
+                        <option value="Código 1">Código 4</option>
+                        <option value="Código 1">Código 5</option>              
+                      </select> 
+                    </div>
+                    <div class="grid-item">
+                      <label for="select-area">Área <span>*</span></label>
+                      <select id="select-area" class="form-control" required>
+                        <option value="" disabled selected>-- Selecciona el área --</option>
+                        <option value="Área 1">Área 1</option>
+                        <option value="Área 1">Área 2</option>
+                        <option value="Área 1">Área 3</option>
+                        <option value="Área 1">Área 4</option>
+                        <option value="Área 1">Área 5</option>              
+                      </select> 
+                    </div>  
                   </div>
 
-                  <div class="grid-item">
-                    <label for="select-code">Código de puesto <span>*</span></label>
-                    <select id="select-code" class="form-control" required>
-                      <option value="" disabled selected>-- Selecciona el código de puesto --</option>
-                      <option value="Código 1">Código 1</option>
-                      <option value="Código 1">Código 2</option>
-                      <option value="Código 1">Código 3</option>
-                      <option value="Código 1">Código 4</option>
-                      <option value="Código 1">Código 5</option>              
+                  <!-- Text area -->
+                  <div class="form-group">
+                    <label for="objective">Objetivo del puesto <span>*</span></label>
+                    <textarea class="form-control" id="objective" name="objective" rows="4" cols="50" placeholder="Escribe el objectivo aquí..." required></textarea>                
+                  </div>
+
+                  <!-- Alert -->
+                  <div class="alert alert-success" role="alert" aria-live="assertive">
+                    <p><strong>Éxito:</strong> Se guardador los datos.</p>
+                    <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+
+                  <!-- Alert -->
+                  <div class="alert alert-warning" role="alert" aria-live="assertive">
+                    <p><strong>Advertencia:</strong> No se guardaron los datos.</p>
+                    <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>                            
+                                
+                  <!-- Buttons -->
+                  <div class="flex flex-row-reverse gap-2">
+                    <button type="submit" class="btn btn-default">Guardar</button>
+                    <button type="reset" class="btn btn-default-inverse">Resetear</button>                
+                  </div>
+
+                </form>                  
+            </div>
+
+            <div class="tab-pane" id="cat" role="tabpanel">
+              <h3>Ficha de organización</h3>
+                <!-- Form -->
+                <form>
+                  <!-- Text area -->
+                  <div class="form-group">
+                    <label for="select-boss">Selecciona el jefe inmediato<span>*</span></label>
+                    <select id="select-boss" class="form-control" required>
+                      <option value="" disabled selected>-- Selecciona --</option>
+                      <option value="Jefe 1">Jefe 1</option>
+                      <option value="Jefe 1">Jefe 2</option>
+                      <option value="Jefe 1">Jefe 3</option>
+                      <option value="Jefe 1">Jefe 4</option>
+                      <option value="Jefe 1">Jefe 5</option>              
                     </select> 
                   </div>
-                  <div class="grid-item">
-                    <label for="select-area">Área <span>*</span></label>
-                    <select id="select-area" class="form-control" required>
-                      <option value="" disabled selected>-- Selecciona el área --</option>
-                      <option value="Área 1">Área 1</option>
-                      <option value="Área 1">Área 2</option>
-                      <option value="Área 1">Área 3</option>
-                      <option value="Área 1">Área 4</option>
-                      <option value="Área 1">Área 5</option>              
-                    </select> 
-                  </div>  
-                </div>
+                  <!-- Radio Button -->
+                  <fieldset class="form-group">
+                    <legend>Puestos que le reportan: </legend>
+                    <label class="radio-label">
+                      <input type="radio" name="opcion" value="opcion1" checked>
+                      Directos: Supervisa a empleados que realizan actividades rutinarias
+                    </label>
+                    <label class="radio-label">
+                      <input type="radio" name="opcion" value="opcion2">
+                      Indirectos: N/A
+                    </label>
+                  </fieldset>                      
+                  <!-- Radio Button -->
+                  <fieldset class="form-group">
+                    <legend>Grado de supervisión: </legend>
+                    <label class="radio-label">
+                      <input type="radio" name="opcion" value="opcion3" checked>
+                      Directos: Supervisa a empleados que realizan actividades semi-complejas
+                    </label>
+                    <label class="radio-label">
+                      <input type="radio" name="opcion" value="opcion4">
+                      Indirectos: N/A
+                    </label>
+                  </fieldset>
 
-                <!-- Text area -->
-                 <div class="form-group">
-                  <label for="objective">Objetivo del puesto <span>*</span></label>
-                  <textarea class="form-control" id="objective" name="objective" rows="4" cols="50" placeholder="Escribe el objectivo aquí..." required></textarea>                
-                 </div>
+                  <!-- Alert -->
+                  <div class="alert alert-success" role="alert" aria-live="assertive">
+                    <p><strong>Éxito:</strong> Se guardador los datos.</p>
+                    <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
 
-                <!-- Alert -->
-                <div class="alert alert-success" role="alert" aria-live="assertive">
-                  <p><strong>Éxito:</strong> Se guardador los datos.</p>
-                  <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
+                  <!-- Alert -->
+                  <div class="alert alert-warning" role="alert" aria-live="assertive">
+                    <p><strong>Advertencia:</strong> No se guardaron los datos.</p>
+                    <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>                    
+                  
+                  <!-- Buttons -->
+                  <div class="flex flex-row-reverse gap-2">
+                    <button type="submit" class="btn btn-default">Guardar</button>
+                    <button type="reset" class="btn btn-default-inverse">Resetear</button>                
+                  </div>
 
-                <!-- Alert -->
-                <div class="alert alert-warning" role="alert" aria-live="assertive">
-                  <p><strong>Advertencia:</strong> No se guardaron los datos.</p>
-                  <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>                            
-                              
-                <!-- Buttons -->
-                <div class="flex flex-row-reverse gap-2">
-                  <button type="submit" class="btn btn-default">Guardar</button>
-                  <button type="reset" class="btn btn-default-inverse">Resetear</button>                
-                </div>
+                </form>  
+      
+            </div>
 
-              </form>  
-              
-              <!-- Inputs para retomar -->
-              <!-- 
-              <form class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-                <div class="form-group">
-                  <label for="Puesto">Puesto:</label>
-                  <input class="form-control" type="text" id="Puesto" name="Puesto"  required placeholder="Escribe el Puesto">
-                </div>
-                <div class="form-group">
-                  <label for="Código del puesto">Código del puesto:</label>
-                  <input class="form-control" type="text" id="Código del puesto" name="Código del puesto"  required placeholder="Escribe el código del puesto">
-                </div>
-                <div class="form-group">
-                  <label for="area">Área:</label>
-                  <input class="form-control" type="text" id="area" name="area" required placeholder="Escribe el area">
-                </div>                                                        
-              </form>                 
-              --> 
           </div>
+        </div>          
 
-          <div class="tab-pane" id="cat" role="tabpanel">
-            <h3>Ficha de organización</h3>
-              <!-- Form -->
-              <form>
-                <!-- Text area -->
-                <div class="form-group">
-                  <label for="select-boss">Selecciona el jefe inmediato<span>*</span></label>
-                  <select id="select-boss" class="form-control" required>
-                    <option value="" disabled selected>-- Selecciona --</option>
-                    <option value="Jefe 1">Jefe 1</option>
-                    <option value="Jefe 1">Jefe 2</option>
-                    <option value="Jefe 1">Jefe 3</option>
-                    <option value="Jefe 1">Jefe 4</option>
-                    <option value="Jefe 1">Jefe 5</option>              
-                  </select> 
-                </div>
-                <!-- Radio Button -->
-                <fieldset class="form-group">
-                  <legend>Puestos que le reportan: </legend>
-                  <label class="radio-label">
-                    <input type="radio" name="opcion" value="opcion1" checked>
-                    Directos: Supervisa a empleados que realizan actividades rutinarias
-                  </label>
-                  <label class="radio-label">
-                    <input type="radio" name="opcion" value="opcion2">
-                    Indirectos: N/A
-                  </label>
-                </fieldset>                      
-                <!-- Radio Button -->
-                <fieldset class="form-group">
-                  <legend>Grado de supervisión: </legend>
-                  <label class="radio-label">
-                    <input type="radio" name="opcion" value="opcion3" checked>
-                    Directos: Supervisa a empleados que realizan actividades semi-complejas
-                  </label>
-                  <label class="radio-label">
-                    <input type="radio" name="opcion" value="opcion4">
-                    Indirectos: N/A
-                  </label>
-                </fieldset>
+        <!-- ===== Legals ===== -->
+        <div>
+          <p>Las autoridades y la toma de decisiones de acuerdo a este perfil y descripción de puesto están en función a las políticas, procesos y lineamientos, vigentes definidos por Grupo Formula.</p>
+        </div>        
 
-                <!-- Alert -->
-                <div class="alert alert-success" role="alert" aria-live="assertive">
-                  <p><strong>Éxito:</strong> Se guardador los datos.</p>
-                  <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-
-                <!-- Alert -->
-                <div class="alert alert-warning" role="alert" aria-live="assertive">
-                  <p><strong>Advertencia:</strong> No se guardaron los datos.</p>
-                  <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>                    
-                
-                <!-- Buttons -->
-                <div class="flex flex-row-reverse gap-2">
-                  <button type="submit" class="btn btn-default">Guardar</button>
-                  <button type="reset" class="btn btn-default-inverse">Resetear</button>                
-                </div>
-
-              </form>  
-     
-          </div>
-
-        </div>
-      </div>     
-
-      <!-- ===== Legals ===== -->
-      <section class="py-3">
-        <p>Las autoridades y la toma de decisiones de acuerdo a este perfil y descripción de puesto están en función a las políticas, procesos y lineamientos, vigentes definidos por Grupo Formula.</p>
       </section>
 
       <!-- ===== Footer ===== -->
