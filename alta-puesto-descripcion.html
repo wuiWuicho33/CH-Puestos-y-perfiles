@@ -138,7 +138,7 @@
                 <button class="btn btn-default">Guardar</button>
                 <button class="btn btn-default-inverse">Cancelar</button>                
               </div>
-              <!-- Form -->
+              <!-- Inputs para retomar -->
               <!-- 
               <form class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                 <div class="form-group">
@@ -156,6 +156,7 @@
               </form>                 
               --> 
           </div>
+
           <div class="tab-pane" id="cat" role="tabpanel">
             <h3>Ficha de organización</h3>
               <!-- Form -->
@@ -172,40 +173,30 @@
                     <option>Jefe 5</option>              
                   </select> 
                 </div>
-
-                <!-- Checkboxes -->
-                <!-- 
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="check1">
-                  <label class="form-check-label" for="check1">Opción 1</label>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="check2">
-                    <label class="form-check-label" for="check2">Opción 2</label>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="check3">
-                    <label class="form-check-label" for="check3">Opción 3</label>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="check4">
-                    <label class="form-check-label" for="check4">Opción 4</label>
-                </div>                                
-                -->
-
-            <fieldset class="form-fieldset">
-                <legend>Selecciona una opción:</legend>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="option1" name="options" value="option1">
-                    <label class="form-check-label" for="option1">Opción 1</label>
-                </div>
-                <div class="form-check">
-                    <input type="radio" class="form-check-input" id="option2" name="options" value="option2">
-                    <label class="form-check-label" for="option2">Opción 2</label>
-                </div>
-            </fieldset>               
-
-
+                <!-- Radio Button -->
+                <fieldset class="form-group">
+                  <legend>Puestos que le reportan: </legend>
+                  <label class="radio-label">
+                    <input type="radio" name="opcion" value="opcion1" checked>
+                    Directos: Supervisa a empleados que realizan actividades rutinarias
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="opcion" value="opcion2">
+                    Indirectos: N/A
+                  </label>
+                </fieldset>                      
+                <!-- Radio Button -->
+                <fieldset class="form-group">
+                  <legend>Grado de supervisión: </legend>
+                  <label class="radio-label">
+                    <input type="radio" name="opcion" value="opcion3" checked>
+                    Directos: Supervisa a empleados que realizan actividades semi-complejas
+                  </label>
+                  <label class="radio-label">
+                    <input type="radio" name="opcion" value="opcion4">
+                    Indirectos: N/A
+                  </label>
+                </fieldset>                      
               </form>  
           </div>
         </div>
