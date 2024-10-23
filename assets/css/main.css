@@ -2898,7 +2898,6 @@ label {
 .form-control {
   display: inline-block;
   width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
@@ -2914,7 +2913,7 @@ label {
   outline: 0;
 }
 .form-control::placeholder {
-  color: #03559E;
+  color: #1F2937;
   opacity: 1;
 }
 .form-control:disabled {

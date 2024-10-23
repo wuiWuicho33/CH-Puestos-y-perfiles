@@ -76,8 +76,8 @@
     <!-- Sain content
     ============================ -->     
     <div class="content">
-      <!-- Title
-      ======= --> 
+
+      <!-- ===== Title ===== -->
       <section>
         <h1>Alta de puesto</h1>
       </section> 
@@ -90,15 +90,83 @@
         </div>
         <div class="tab-content">
           <div class="tab-pane active" id="dog" role="tabpanel">
-            <h3>Perro</h3>
-            <p>Contenido de la primera pestaña de inicio.</p>
+            <h3>Ficha de identificación</h3>
+              <!-- Form -->
+              <form class="mb-3">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-3">
+                  <div class="grid-item">
+                    <label for="select-position">Puesto:</label>
+                    <select class="form-control" id="select-position">
+                      <option selected>Selecciona el puesto</option>
+                      <option>Puesto 1</option>
+                      <option>Puesto 2</option>
+                      <option>Puesto 3</option>
+                      <option>Puesto 4</option>
+                      <option>Puesto 5</option>              
+                    </select> 
+                  </div>
+                  <div class="grid-item">
+                    <label for="select-code">Código de puesto:</label>
+                    <select class="form-control" id="select-code">
+                      <option selected>Selecciona el código de puesto</option>
+                      <option>Código 1</option>
+                      <option>Código 2</option>
+                      <option>Código 3</option>
+                      <option>Código 4</option>
+                      <option>Código 5</option>              
+                    </select> 
+                  </div>
+                  <div class="grid-item">
+                    <label for="select-area">Área:</label>
+                    <select class="form-control" id="select-area">
+                      <option selected>Selecciona el área</option>
+                      <option>Área 1</option>
+                      <option>Área 2</option>
+                      <option>Área 3</option>
+                      <option>Área 4</option>
+                      <option>Área 5</option>              
+                    </select> 
+                  </div>  
+                </div>
+
+                <!-- Text area -->
+                <label for="objective">Objetivo del puesto:</label>
+                <textarea class="form-control" id="objective" name="objective" rows="4" cols="50" placeholder="Escribe el objectivo aquí..."></textarea>                
+              </form>  
+              
+              <div class="flex flex-row-reverse gap-2">
+                <button class="btn btn-default">Guardar</button>
+                <button class="btn btn-default-inverse">Cancelar</button>                
+              </div>
+              <!-- Form -->
+              <!-- 
+              <form class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                <div class="form-group">
+                  <label for="Puesto">Puesto:</label>
+                  <input class="form-control" type="text" id="Puesto" name="Puesto"  required placeholder="Escribe el Puesto">
+                </div>
+                <div class="form-group">
+                  <label for="Código del puesto">Código del puesto:</label>
+                  <input class="form-control" type="text" id="Código del puesto" name="Código del puesto"  required placeholder="Escribe el código del puesto">
+                </div>
+                <div class="form-group">
+                  <label for="area">Área:</label>
+                  <input class="form-control" type="text" id="area" name="area" required placeholder="Escribe el area">
+                </div>                                                        
+              </form>                 
+              --> 
           </div>
           <div class="tab-pane" id="cat" role="tabpanel">
             <h3>Gato</h3>
             <p>Contenido de la primera pestaña de perfil.</p>
           </div>
         </div>
-      </div>          
+      </div>     
+
+      <!-- ===== Legals ===== -->
+      <section class="py-3">
+        <p>Las autoridades y la toma de decisiones de acuerdo a este perfil y descripción de puesto están en función a las políticas, procesos y lineamientos, vigentes definidos por Grupo Formula.</p>
+      </section>
 
       <!-- ===== Footer ===== -->
       <footer>
