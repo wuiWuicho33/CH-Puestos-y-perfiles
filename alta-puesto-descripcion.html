@@ -13,14 +13,17 @@
   * SIDEBAR *
   ========== -->
   <section class="sidebar">
+
     <!-- Header
-    ================= -->    
+    ========================================== -->    
     <header>
       <img class="logo" src="assets/img/logo.png">
     </header>
-    <!-- side-menu
-    ================= -->          		 
+
+    <!-- Side-menu
+    ========================================== -->              		 
     <ul class="side-menu">
+      <!-- ====== Sub-menu ====== -->
       <li class='sub-menu active'>
         <a href='#'>
           <i class="fa-solid fa-user-tie"></i> Puesto<div class='fa fa-solid fa-chevron-right right'></div>
@@ -33,6 +36,7 @@
           <li><a href='#'>Autorización</a></li>
         </ul>
       </li>      
+      <!-- ====== Links ====== -->
       <li><a href='#'><i class="fa-solid fa-key"></i> Permisos y roles</a></li>
       <li><a href='#'><i class="fa-solid fa-users"></i> Usuarios</a></li>
     </ul>
@@ -42,29 +46,29 @@
   * MAIN *
   ========== -->
   <main class="main">
+
     <!-- Navbar
-    ============================ -->        
+    ========================================== -->        
     <nav class="navbar">
+      <!-- ====== Togle ====== -->
       <button class="menu-toggle">
         <i class="fa-solid fa-bars"></i>
       </button>
-			<!-- ===== Navbar-links ===== -->
+			<!-- ====== Links ====== -->
       <div class="navbar-links">
-				<!-- Link -->
         <a href="#">
           <i class="fa-solid fa-house mr-1"></i> <span class="d-none d-md-block">Home</span>
         </a>
-				<!-- Link -->
         <a href="#">
           <i class="fa-solid fa-bell"></i>
         </a>
-				<!-- Dropdown-user -->  
+        <!-- ====== Dropdown-user ====== -->
 				<div class="dropdown-user">
-					<!-- Btn -->
+					<!-- == Btn == -->
 					<button class="dropbtn">
 						<img src="http://via.placeholder.com/100x100"> <span class="d-none d-md-block">Nombre de usuario</span>
 					</button>
-					<!-- Dropdown-user-links -->
+          <!-- == Links == -->
 					<div class="dropdown-user-links">
 					<a href="#">Mi perfil <i class="fa-regular fa-credit-card"></i></a>
 					<a href="#">Ajustes <i class="fa-solid fa-gear"></i></a>
@@ -73,19 +77,17 @@
 				</div>		
       </div>
     </nav>
-    <!-- Sain content
-    ============================ -->     
-    <div class="content">
 
-      <!-- ===== Title ===== -->
-      <section>
+    <!-- Content
+    ========================================== -->     
+    <section class="content">
+      <!-- ====== Title ====== -->
+      <div>
         <h1>Alta de puesto</h1>
-      </section> 
-
-
-      <!-- Lorem -->
-      <section class="box">
-        <!-- ===== Nav ===== -->
+      </div> 
+      <!-- ====== Default-Box ====== -->
+      <div class="default-box">
+        <!-- == Secondary-menu == -->
         <ul class="secondary_menu">
           <li class="active">
             <a href="#" aria-current="page">Puesto</a>
@@ -112,24 +114,25 @@
             <a href="#">Nivel de competencias</a>
           </li>
         </ul>
-
-        <!-- ===== Title ===== -->
+        <!-- == Guide text == -->
         <h2>Descripción de puesto</h2>
         <p>Llena los siguientes campos para describir el puesto que se dará de alta.</p>
-
-        <!-- ===== Tab ===== -->
+        <!-- == Tabs component == -->
         <div class="tabs-container pb-3" id="tabs-container-1">
+          <!-- Buttons -->
           <div class="tabs">
             <button class="tab-button active" data-target="dog" aria-controls="dog" role="tab">Ficha de identificación</button>
             <button class="tab-button" data-target="cat" aria-controls="cat" role="tab">Ficha de organización</button>
           </div>
+          <!-- Content -->
           <div class="tab-content">
+            <!-- Tab-pane-01-->
             <div class="tab-pane active" id="dog" role="tabpanel">
               <h3>Ficha de identificación</h3>
                 <!-- Form -->
                 <form id="miFormulario">
                   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-3">
-
+                    <!-- Grid item-->
                     <div class="grid-item">
                       <label for="select-position">Puesto <span>*</span></label>
                       <select id="select-position" name="select-position" class="form-control" required>
@@ -141,7 +144,7 @@
                         <option value="Puesto 5">Puesto 5</option>              
                       </select> 
                     </div>
-
+                    <!-- Grid item-->
                     <div class="grid-item">
                       <label for="select-code">Código de puesto <span>*</span></label>
                       <select id="select-code" class="form-control" required>
@@ -153,6 +156,7 @@
                         <option value="Código 1">Código 5</option>              
                       </select> 
                     </div>
+                    <!-- Grid item-->
                     <div class="grid-item">
                       <label for="select-area">Área <span>*</span></label>
                       <select id="select-area" class="form-control" required>
@@ -165,13 +169,11 @@
                       </select> 
                     </div>  
                   </div>
-
                   <!-- Text area -->
                   <div class="form-group">
                     <label for="objective">Objetivo del puesto <span>*</span></label>
                     <textarea class="form-control" id="objective" name="objective" rows="4" cols="50" placeholder="Escribe el objectivo aquí..." required></textarea>                
                   </div>
-
                   <!-- Alert -->
                   <div class="alert alert-success" role="alert" aria-live="assertive">
                     <p><strong>Éxito:</strong> Se guardador los datos.</p>
@@ -179,24 +181,21 @@
                       <i class="fas fa-times"></i>
                     </button>
                   </div>
-
                   <!-- Alert -->
                   <div class="alert alert-warning" role="alert" aria-live="assertive">
                     <p><strong>Advertencia:</strong> No se guardaron los datos.</p>
                     <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
                       <i class="fas fa-times"></i>
                     </button>
-                  </div>                            
-                                
+                  </div>                                                    
                   <!-- Buttons -->
                   <div class="flex flex-row-reverse gap-2">
                     <button type="submit" class="btn btn-default">Guardar</button>
                     <button type="reset" class="btn btn-default-inverse">Resetear</button>                
                   </div>
-
                 </form>                  
             </div>
-
+            <!-- Tab-pane-02 -->
             <div class="tab-pane" id="cat" role="tabpanel">
               <h3>Ficha de organización</h3>
                 <!-- Form -->
@@ -237,7 +236,6 @@
                       Indirectos: N/A
                     </label>
                   </fieldset>
-
                   <!-- Alert -->
                   <div class="alert alert-success" role="alert" aria-live="assertive">
                     <p><strong>Éxito:</strong> Se guardador los datos.</p>
@@ -245,40 +243,33 @@
                       <i class="fas fa-times"></i>
                     </button>
                   </div>
-
                   <!-- Alert -->
                   <div class="alert alert-warning" role="alert" aria-live="assertive">
                     <p><strong>Advertencia:</strong> No se guardaron los datos.</p>
                     <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
                       <i class="fas fa-times"></i>
                     </button>
-                  </div>                    
-                  
+                  </div>                                      
                   <!-- Buttons -->
                   <div class="flex flex-row-reverse gap-2">
                     <button type="submit" class="btn btn-default">Guardar</button>
                     <button type="reset" class="btn btn-default-inverse">Resetear</button>                
                   </div>
-
-                </form>  
-      
+                </form>        
             </div>
-
           </div>
         </div>          
-
-        <!-- ===== Legals ===== -->
+        <!-- == Legals  == -->
         <div>
           <p>Las autoridades y la toma de decisiones de acuerdo a este perfil y descripción de puesto están en función a las políticas, procesos y lineamientos, vigentes definidos por Grupo Formula.</p>
         </div>        
-
-      </section>
-
-      <!-- ===== Footer ===== -->
+      </div>
+      <!-- ====== Footer ====== -->
       <footer>
         <p>Grupo Fórmula Todos los derechos reservados</p>
       </footer>	      
-    </div>
+    </section>
+
   </main>  
 
 <!--///////

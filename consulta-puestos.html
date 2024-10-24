@@ -13,14 +13,17 @@
   * SIDEBAR *
   ========== -->
   <section class="sidebar">
+
     <!-- Header
-    ================= -->    
+    ========================================== -->    
     <header>
       <img class="logo" src="assets/img/logo.png">
     </header>
-    <!-- side-menu
-    ================= -->          		 
+
+    <!-- Side-menu
+    ========================================== -->              		 
     <ul class="side-menu">
+      <!-- ====== Sub-menu ====== -->
       <li class='sub-menu active'>
         <a href='#'>
           <i class="fa-solid fa-user-tie"></i> Puesto<div class='fa fa-solid fa-chevron-right right'></div>
@@ -33,6 +36,7 @@
           <li><a href='#'>Autorización</a></li>
         </ul>
       </li>      
+      <!-- ====== Links ====== -->
       <li><a href='#'><i class="fa-solid fa-key"></i> Permisos y roles</a></li>
       <li><a href='#'><i class="fa-solid fa-users"></i> Usuarios</a></li>
     </ul>
@@ -42,29 +46,29 @@
   * MAIN *
   ========== -->
   <main class="main">
+
     <!-- Navbar
-    ============================ -->        
+    ========================================== -->        
     <nav class="navbar">
+      <!-- ====== Togle ====== -->
       <button class="menu-toggle">
         <i class="fa-solid fa-bars"></i>
       </button>
-			<!-- ===== Navbar-links ===== -->
+			<!-- ====== Links ====== -->
       <div class="navbar-links">
-				<!-- Link -->
         <a href="#">
           <i class="fa-solid fa-house mr-1"></i> <span class="d-none d-md-block">Home</span>
         </a>
-				<!-- Link -->
         <a href="#">
           <i class="fa-solid fa-bell"></i>
         </a>
-				<!-- Dropdown-user -->  
+        <!-- ====== Dropdown-user ====== -->
 				<div class="dropdown-user">
-					<!-- Btn -->
+					<!-- == Btn == -->
 					<button class="dropbtn">
 						<img src="http://via.placeholder.com/100x100"> <span class="d-none d-md-block">Nombre de usuario</span>
 					</button>
-					<!-- Dropdown-user-links -->
+          <!-- == Links == -->
 					<div class="dropdown-user-links">
 					<a href="#">Mi perfil <i class="fa-regular fa-credit-card"></i></a>
 					<a href="#">Ajustes <i class="fa-solid fa-gear"></i></a>
@@ -73,29 +77,23 @@
 				</div>		
       </div>
     </nav>
-    <!-- Sain content
-    ============================ -->     
-    <div class="content">
-      <!-- Title
-      ======= --> 
-      <section class="flex justify-between">
+
+    <!-- Content
+    ========================================== -->     
+    <section class="content">
+      <!-- ====== Title ====== -->
+      <div class="flex justify-between">
         <h1>Consulta de puestos</h1>
         <div>
           <button class="btn btn-default-inverse self-end">Nuevo puesto <i class="fa-solid fa-plus"></i></button>
         </div>
-      </section> 
-
-      <!-- Filters-section
-      ============================-->
-      <section class="grid grid-cols-12 py-5">
-        <!-- Item
-        ------------- -->              
+      </div> 
+      <!-- ====== Filters-section ====== -->
+      <div class="grid grid-cols-12 py-5">
+        <!-- == Form == -->
         <div class="col-span-12 md:col-span-10">
-          <!-- ===== Form ===== --> 
           <form class="filter flex flex-col lg:flex-row gap-2">      
-            <!-- -----
-            Form-group
-            ------ -->                                                  
+            <!-- Form-group -->                                                  
             <div>
               <label for="select-position">Puesto</label>      
               <select class="form-control w-100" id="select-position">
@@ -107,9 +105,7 @@
                 <option>Puesto 5</option>              
               </select>                        
             </div>          
-            <!-- -----
-            Form-group
-            ------ -->                                                
+            <!-- Form-group -->                                       
             <div>
               <label for="select-area">Área</label>      
               <select class="form-control w-100" id="select-area">
@@ -121,23 +117,17 @@
                 <option>Área 5</option>              
               </select>                        
             </div>
-            <!-- -----
-            Fecha de inicio
-            ------ -->                          
+            <!-- Fecha de inicio -->                       
             <div>
               <label for="start-date">Fecha de inicio</label>
               <input class="form-control" type="date" id="start-date" name="start-date">
             </div>         
-            <!-- -----
-            Fecha final
-            ------ -->                          
+            <!-- Fecha final -->                
             <div>
               <label for="end-date">Fecha final</label>
               <input class="form-control" type="date" id="end-date" name="end-date">
             </div>  
-            <!-- -----
-            Form-group
-            ------ -->                                    
+            <!-- Estatús -->                               
             <div>
               <label for="select-status">Estatus</label>      
               <select class="form-control w-100" id="select-status">
@@ -146,25 +136,20 @@
                 <option>Inactivo</option>       
               </select>                        
             </div>                      
-          </form>
-          
+          </form>          
         </div>
-        <!-- Item
-        ------------- -->              
+        <!-- == Buttons == -->      
         <div class="col-span-12 md:col-span-2 flex flex-row-reverse">
           <div class="self-end">
             <button class="btn btn-default-inverse">Consultar</button>
             <button class="btn btn-default"><i class="fa-solid fa-xmark"></i></button>
           </div>
         </div>      
-
-      </section>
-
-      <!-- Table section
-      ================= -->          
-      <section class="table-responsive">
+      </div>
+      <!-- ====== Table ====== -->     
+      <div class="table-responsive">
         <table>
-          <!-- ===== Table head ===== -->
+          <!-- == table head == -->
           <thead>
             <tr>
               <th>Id</th>
@@ -174,7 +159,7 @@
               <th>Estado</th>
             </tr>
           </thead>
-          <!-- ===== Table body ===== -->
+          <!-- == Table body == -->
           <tbody>
             <tr>
               <td>1</td>
@@ -250,13 +235,13 @@
             </tr>
           </tbody>
         </table>        
-      </section>
-            
-      <!-- ===== Footer ===== -->
+      </div>            
+      <!-- ====== Footer ====== -->
       <footer>
         <p>Grupo Fórmula Todos los derechos reservados</p>
       </footer>	      
-    </div>
+    </section>
+
   </main>  
 
 <!--///////
