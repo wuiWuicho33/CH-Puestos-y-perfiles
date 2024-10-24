@@ -1,0 +1,119 @@
+/* ==============================================
+# COMPONENTES
+============================================== */
+
+/* # PANEL
+---------------------------------------------- */
+.panel {
+  background-color:$primary-color;
+  background-clip: border-box;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  -moz-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  -ms-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  -o-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+  margin-bottom: 3rem;
+}
+.panel:last-child {margin:0;}
+/*--------------- Panel-header ---------------*/
+.panel-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .5rem 1rem;
+  background-color:$tertiary-color;
+  border-radius:1rem 1rem 0 0;
+}
+
+/*--------------- Panel-body ---------------*/
+.panel-body {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns:1fr;
+} 
+
+/*--------------- Panel-footer ---------------*/
+.panel-footer {
+  padding:0.5rem 1rem;
+  border-radius:0 0 1rem 1rem ;
+  background-color:$tertiary-color;
+  border: 1px solid $tertiary-color;
+  p, a {
+    font-size: .750rem;
+    color:$fifth-color;
+  } 
+  p {margin:0;} 
+} 
+
+
+
+/*
+.panel:hover .panel-header{
+  background-color: $fifth-color;
+  p,ul,label,.switch-label {color:$primary-color;}    
+  select{
+    background-color: $fourth-color;
+    border: 1px solid $tertiary-color;
+    color:$primary-color;
+    &:hover{
+      border: 1px solid $highlight-color;
+    }
+  }
+}
+*/
+/*
+.panel-header-options{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap:0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+*/
+
+/* ==============================================
+# MEDIAQUERIES
+============================================== */
+/* # Mobile
+-------------------------------------------------------------------- */
+@media (min-width: 425px) {    
+}
+
+/*=> 640px Igual o mayor a 640px se aplicarán los siguientes estilos */
+@media (min-width: 640px) {
+  /* panel-header-options */
+  /*.panel-header-options{flex-direction: row;}*/
+}    
+
+/* # Tablet
+-------------------------------------------------------------------- */
+/*=> 768px Igual o mayor a 768px se aplicarán los siguientes estilos */
+@media (min-width: 768px) { }
+
+/*=> 1024px Igual o mayor a 1024px se aplicarán los siguientes estilos */
+@media (min-width: 1024px) {
+  .panel-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /*
+  .panel-header-options{
+    width: auto;
+    margin-bottom:0;
+    gap:1rem;
+  }      
+  */
+  .panel-body{grid-template-columns:2fr 1fr;}   
+}
+/* # Desktop
+-------------------------------------------------------------------- */
+/*=> 1280px Igual o mayor a 1280px se aplicarán los siguientes estilos */
+@media (min-width: 1280px) {
+
+}
+/*=> 1536px Igual o mayor a 1536px se aplicarán los siguientes estilos */
+@media (min-width: 1536px) {}
