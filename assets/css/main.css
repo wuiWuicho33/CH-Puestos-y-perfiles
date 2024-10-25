@@ -226,7 +226,7 @@ form, input, textarea, select, .form-control, .custom-select {
 }
 
 .text-danger {
-  color: #E85446;
+  color: #f11f0b;
 }
 
 .text-warning {
@@ -2908,6 +2908,23 @@ legend {
   color: #ffffff;
 }
 
+/*--------------- Btn-danger-inverse ---------------*/
+.btn-danger-inverse {
+  background-color: #ffffff;
+  color: #f11f0b;
+  border-color: #f11f0b;
+}
+.btn-danger-inverse i {
+  color: #f11f0b;
+}
+.btn-danger-inverse:hover {
+  background-color: #f11f0b;
+  color: #ffffff;
+}
+.btn-danger-inverse:hover i {
+  color: #ffffff;
+}
+
 /*--------------- Btn-properties ---------------*/
 .btn-block {
   display: block;
@@ -2942,7 +2959,7 @@ legend {
   color: #ffffff;
 }
 .alert.alert-danger {
-  background-color: #E85446;
+  background-color: #f11f0b;
   color: #ffffff;
 }
 .alert.hide {

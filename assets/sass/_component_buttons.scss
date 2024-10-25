@@ -61,7 +61,8 @@
     //Estilos de i en inverse
     i {color: $highlight-color;}      
   }
-}    
+}  
+
 /*--------------- Btn-disable ---------------*/
 .btn-disable {
   background-color: $secondary-color;
@@ -86,6 +87,23 @@
     i {color: $primary-color;}
   }
 }
+
+/*--------------- Btn-danger-inverse ---------------*/
+.btn-danger-inverse {
+  background-color: $primary-color;
+  color: $danger-color;
+  border-color: $danger-color;
+  //Estilos de i
+  i {color: $danger-color;}
+  //Hover
+  &:hover {
+    background-color: $danger-color;
+    color:$primary-color;
+    //Estilos de i en inverse
+    i {color: $primary-color;}
+  }
+}
+
 /*--------------- Btn-properties ---------------*/
 .btn-block {
   display: block;
