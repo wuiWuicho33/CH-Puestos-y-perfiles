@@ -3259,6 +3259,9 @@ legend {
   display: flex;
   justify-content: space-between;
 }
+.modal-footer .btn-group {
+  margin-left: auto;
+}
 
 /* ==============
 # MEDIAQUERIES
