@@ -44,7 +44,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid $tertiary-color;
 }
 /* ------------------ Menu-toggle --------------- */
 .menu-toggle {
@@ -67,15 +67,17 @@
     line-height: 1.5rem;
     display:flex;
     align-items: center;
+    border-bottom: 2px solid transparent;
 
     &:hover {
       background-color: $secondary-color;
+      border-bottom: 2px solid $highlight-color;
       color:$primary-text-color;
 
       i{color:$highlight-color;}
     }
     
-    i{color:$highlight-color;}    
+    i{color:$primary-text-color;}    
   }  
 }
 
@@ -127,8 +129,11 @@
       text-decoration: none;
       display: block;
       text-align:right;
+      border-bottom: none;
     
-      &:hover {background-color:$secondary-color;}  
+      &:hover {
+        background-color:$secondary-color;
+      }  
 
       i{
         color:$highlight-color;

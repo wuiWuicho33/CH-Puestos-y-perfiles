@@ -191,7 +191,7 @@ body::-webkit-scrollbar-thumb {
   background: #c4cddb;
 } /*Bar color*/
 body {
-  background: #e9eee8;
+  background: #edf5f3;
   color: #1F2937;
 }
 
@@ -243,7 +243,7 @@ form, input, textarea, select, .form-control, .custom-select {
 }
 
 .bg-light {
-  background-color: #e9eee8;
+  background-color: #edf5f3;
 }
 .bg-light p {
   color: #1F2937;
@@ -2223,7 +2223,7 @@ Tabletas horizontales */
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #c4cddb;
 }
 
 /* ------------------ Menu-toggle --------------- */
@@ -2248,16 +2248,18 @@ Tabletas horizontales */
   line-height: 1.5rem;
   display: flex;
   align-items: center;
+  border-bottom: 2px solid transparent;
 }
 .navbar-links a:hover {
-  background-color: #e9eee8;
+  background-color: #edf5f3;
+  border-bottom: 2px solid #E84A3C;
   color: #1F2937;
 }
 .navbar-links a:hover i {
   color: #E84A3C;
 }
 .navbar-links a i {
-  color: #E84A3C;
+  color: #1F2937;
 }
 
 /* ------------------ Dropdown-user --------------- */
@@ -2269,7 +2271,7 @@ Tabletas horizontales */
   /*Dropdown-links*/
 }
 .dropdown-user:hover .dropbtn {
-  background-color: #e9eee8;
+  background-color: #edf5f3;
   color: #1F2937;
 }
 .dropdown-user .dropbtn {
@@ -2306,9 +2308,10 @@ Tabletas horizontales */
   text-decoration: none;
   display: block;
   text-align: right;
+  border-bottom: none;
 }
 .dropdown-user .dropdown-user-links a:hover {
-  background-color: #e9eee8;
+  background-color: #edf5f3;
 }
 .dropdown-user .dropdown-user-links a i {
   color: #E84A3C;
@@ -2317,7 +2320,7 @@ Tabletas horizontales */
 
 /* ------------------ Content ------------------ */
 .content {
-  background-color: #e9eee8;
+  background-color: #edf5f3;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -2447,7 +2450,7 @@ section.footer {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #e9eee8;
+  background-color: #edf5f3;
 }
 
 .login-box {
@@ -2679,7 +2682,7 @@ tbody tr {
   background-color: #ffffff;
 }
 tbody tr:nth-child(even) {
-  background-color: #e9eee8;
+  background-color: #edf5f3;
 }
 tbody tr:hover {
   background-color: #c4cddb;
@@ -2846,9 +2849,9 @@ legend {
 
 /*--------------- Btn-light ---------------*/
 .btn-light {
-  background-color: #e9eee8;
+  background-color: #edf5f3;
   color: #1F2937;
-  border: 1px solid #e9eee8;
+  border: 1px solid #edf5f3;
 }
 .btn-light i {
   color: #1F2937;
@@ -2880,7 +2883,7 @@ legend {
 
 /*--------------- Btn-disable ---------------*/
 .btn-disable {
-  background-color: #e9eee8;
+  background-color: #edf5f3;
   color: #03559E;
   cursor: not-allowed;
 }
@@ -2944,7 +2947,7 @@ legend {
   border-bottom-right-radius: 4px;
 }
 .button-group button:not(:last-child) {
-  border-right: 1px solid #e9eee8;
+  border-right: 1px solid #edf5f3;
 }
 
 #edit-slug-link.hidden, #slug-form.hidden {
@@ -3083,7 +3086,7 @@ legend {
   display: flex;
   border: 1px solid #c4cddb;
   border-bottom: none;
-  background-color: #e9eee8;
+  background-color: #edf5f3;
 }
 
 /* # Tabs button
@@ -3091,7 +3094,7 @@ legend {
 .tab-button {
   padding: 10px 20px;
   border: none;
-  background: #e9eee8;
+  background: #edf5f3;
   cursor: pointer;
   text-align: center;
   transition: background 0.3s;
@@ -3133,7 +3136,7 @@ legend {
 }
 .panel .panel-header {
   padding: 1rem;
-  background-color: #e9eee8;
+  background-color: #edf5f3;
   color: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.5rem 0.5rem 0 0;
@@ -3142,7 +3145,7 @@ legend {
   padding: 1rem;
 }
 .panel footer.panel-footer {
-  background-color: #e9eee8;
+  background-color: #edf5f3;
   padding: 1rem;
   border-radius: 0 0 0.5rem 0.5rem;
   text-align: left;
