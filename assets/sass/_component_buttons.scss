@@ -120,3 +120,31 @@
     color:$strong-highlight-color;
   }
 }
+
+/* # Elements for this proyect
+------------------------------------ */
+.add-button{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: $primary-color;
+  border-top: 1px solid $tertiary-color;
+  border-bottom: 1px solid $tertiary-color;
+
+  p{
+    margin: 0;
+    font-weight: bold;
+  }
+  &:hover{
+    color:$highlight-color;
+    
+    p{
+      color:$highlight-color;
+    }
+  }
+}

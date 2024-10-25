@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<title>Puesto - Alta de puesto</title>
+	<link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body> 
+
+  <!-- =========
+  * SIDEBAR *
+  ========== -->
+  <section class="sidebar">
+
+    <!-- Header
+    ========================================== -->    
+    <header>
+      <img class="logo" src="assets/img/logo.png">
+    </header>
+
+    <!-- Side-menu
+    ========================================== -->              		 
+    <ul class="side-menu">
+      <!-- ====== Sub-menu ====== -->
+      <li class='sub-menu active'>
+        <a href='#'>
+          <i class="fa-solid fa-user-tie"></i> Puesto<div class='fa fa-solid fa-chevron-right right'></div>
+        </a>
+        <ul>
+          <li><a href='puesto-consulta-puestos.html'>Consulta</a></li>
+          <li><a href='puesto-consulta-solicitudes.html'>Consulta de soluciones</a></li>
+          <li><a href='puesto-alta-puesto.html'>Alta</a></li>
+          <li><a href='#'>Solicitud</a></li>
+          <li><a href='#'>Autorización</a></li>
+        </ul>
+      </li>      
+      <!-- ====== Links ====== -->
+      <li><a href='#'><i class="fa-solid fa-key"></i> Permisos y roles</a></li>
+      <li><a href='#'><i class="fa-solid fa-users"></i> Usuarios</a></li>
+    </ul>
+  </section>
+
+	<!-- =========
+  * MAIN *
+  ========== -->
+  <main class="main">
+
+    <!-- Navbar
+    ========================================== -->        
+    <nav class="navbar">
+      <!-- ====== Togle ====== -->
+      <button class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+			<!-- ====== Links ====== -->
+      <div class="navbar-links">
+        <a href="#">
+          <i class="fa-solid fa-house mr-1"></i> <span class="d-none d-md-block">Home</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-bell"></i>
+        </a>
+        <!-- ====== Dropdown-user ====== -->
+				<div class="dropdown-user">
+					<!-- == Btn == -->
+					<button class="dropbtn">
+						<img src="http://via.placeholder.com/100x100"> <span class="d-none d-md-block">Nombre de usuario</span>
+					</button>
+          <!-- == Links == -->
+					<div class="dropdown-user-links">
+					<a href="#">Mi perfil <i class="fa-regular fa-credit-card"></i></a>
+					<a href="#">Ajustes <i class="fa-solid fa-gear"></i></a>
+					<a href="#">Cerrar sesión <i class="fa-solid fa-right-from-bracket"></i></a>
+					</div>
+				</div>		
+      </div>
+    </nav>
+
+    <!-- Content
+    ========================================== -->     
+    <section class="content">
+      <!-- ====== Title ====== -->
+      <div>
+        <h1>Alta de puesto</h1>
+      </div> 
+      <!-- ====== Default-Box ====== -->
+      <div class="default-box">
+        <!-- == Secondary-menu == -->
+        <ul class="secondary_menu">
+          <li>
+            <a href="#" aria-current="page">Puesto</a>
+          </li>
+          <li class="active">
+            <a href="#">Funciones</a>
+          </li>
+          <li>
+            <a href="#">Relaciones internas</a>
+          </li>
+          <li>
+            <a href="#">Relaciones externas</a>
+          </li>
+          <li>
+            <a href="#">Requerimientos</a>
+          </li>
+          <li>
+            <a href="#">Experiencia</a>
+          </li>
+          <li>
+            <a href="#">Recursos</a>
+          </li>
+          <li>
+            <a href="#">Nivel de competencias</a>
+          </li>
+        </ul>
+        <!-- == Guide text == -->
+        <h2>Funciones y responsabilidades</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut alias, error soluta omnis optio cumque est ullam nesciunt accusamus odio.</p>
+
+        <!-- == Agregar nuevo == -->
+         <button class="add-button openModal">
+          <p>Agregar función</p>
+          <i class="fa-solid fa-plus"></i>
+         </button>                                                
+
+      </div>
+        
+      <!-- ====== Modal ====== -->
+      <div id="modal" class="modal">
+         <!-- == Modal content == -->
+        <div class="modal-content">
+          <!-- == Header == -->
+          <header class="modal-header">
+            <h2>Función 1</h2>
+            <span class="close" onclick="closeModal()">&times;</span>
+          </header>
+          <!-- == Body == -->
+          <div class="modal-body">
+            <form>
+              <!-- Item -->
+              <div class="form-group">
+                <label for="function">Función <span>*</span></label>
+                <textarea class="form-control" id="function" name="function" rows="4" cols="50" placeholder="Redacta una función, debe ser clara y concisa." required></textarea>                
+              </div>
+              <!-- Item -->
+              <div class="form-group">
+                <label for="contribution">Contribución <span>*</span></label>
+                <input class="form-control" type="text" id="contribution" name="contribution"  required placeholder="Agrega una contribución">
+              </div>  
+              <!-- Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+                <div class="grid-item">
+                  <label for="Frequency">Frecuencia <span>*</span></label>
+                  <select id="Frequency" class="form-control" required>
+                    <option value="" disabled selected>-- Selecciona --</option>
+                    <option value="Diario">Diario</option>
+                    <option value="Semanal">Semanal</option>
+                    <option value="Quincenal">Quincenal</option>  
+                    <option value="Mensual">Mensual</option>            
+                    <option value="Bimestral">Bimestral</option>
+                    <option value="Anual">Anual</option>
+                  </select> 
+                </div>
+                <div class="grid-item">
+                  <label for="Impact">Impacto de fallos <span>*</span></label>
+                  <select id="Impact" class="form-control" required>
+                    <option value="" disabled selected>-- Selecciona --</option>
+                    <option value="Grave">Grave</option>
+                    <option value="Muy graves">Muy graves</option>
+                    <option value="Considerables">Considerables</option>
+                  </select> 
+                </div>
+                <div class="grid-item">
+                  <label for="complexity">Complejidad <span>*</span></label>
+                  <select id="complexity" class="form-control" required>
+                    <option value="" disabled selected>-- Selecciona --</option>
+                    <option value="Baja">Baja</option>
+                    <option value="Media">Media</option>            
+                    <option value="Alta">Alta</option>                    
+                  </select> 
+                </div>                
+                <div class="form-group">
+                  <label for="prioritization">Porcentaje de priorización</label>
+                  <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
+                </div>                                                        
+              </div>  
+            </form>              
+          </div>
+          <!-- == Footer == -->
+          <footer class="modal-footer">                       
+            <div>
+              <button type="reset" class="btn btn-default-inverse" onclick="closeModal()">Cancelar</button>
+              <button type="submit" class="btn btn-default">Agregar</button>          
+            </div>            
+          </footer>
+        </div>
+      </div>
+
+      <!-- ====== Footer ====== -->
+      <footer>
+        <p>Grupo Fórmula Todos los derechos reservados</p>
+      </footer>	      
+    </section>
+
+  </main>  
+
+<!--///////
+SCRIPTS
+////////-->
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/91705bc097.js" crossorigin="anonymous"></script>
+<!-- Jquery last version -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>	
+
+</body>
+</html>
