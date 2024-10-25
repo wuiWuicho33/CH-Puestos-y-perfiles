@@ -1,28 +1,31 @@
   /* # PANEL
   ---------------------------------------------- */
   .panel {
-    background-color:lightgray;
+    background-color:$primary-color;
     background-clip: border-box;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+    border:1px solid $tertiary-color;
+
+    .panel-header {
+      padding:1rem;
+      background-color:$secondary-color;
+      color:white;
+      border-bottom: 1px solid rgba(0, 0, 0, .125);
+      border-radius:0.5rem 0.5rem 0 0;
+    }    
+
+    .panel-body {padding:1rem;}     
+
+    footer.panel-footer {
+      background-color:$secondary-color;
+      padding:1rem;
+      border-radius:0 0 0.5rem 0.5rem ;      
+      text-align: left;
+    }     
   }
 
-  /*--------------- Panel-header ---------------*/
-  .panel-header {
-    padding:1rem;
-    background-color:black;
-    color:white;
-    border-bottom: 1px solid rgba(0, 0, 0, .125);
-    border-radius:1rem 1rem 0 0;
-  }
-  /*.panel-header:first-child{border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;}*/
-
-  /*--------------- Panel-body ---------------*/
-  .panel-body {padding:1rem;} 
-
-  /*--------------- Panel-footer ---------------*/
-  .panel-footer {
-    padding:1rem;
-    border-radius:0 0 1rem 1rem ;
-    background-color:gray;
-  } 
-
+/* # Elements for this proyect
+------------------------------------ */
+.panel-header {
+  h3{margin-bottom: 0;}
+}

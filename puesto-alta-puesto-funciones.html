@@ -118,35 +118,72 @@
         <h2>Funciones y responsabilidades</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut alias, error soluta omnis optio cumque est ullam nesciunt accusamus odio.</p>
         <!-- == Panel == -->
-
-
-
-
-
-
-
-
-
-  <div class="panel">
-    <header class="panel-header">
-      Header
-    </header>
-    <div class="panel-body">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>  
-    <footer class="panel-footer">
-      Footer
-    </footer>
-  </div>        
-
-
-
-
+        <div class="panel">
+          <!-- Header -->
+          <header class="panel-header">
+            <h3>Funcion 1</h3>
+          </header>
+          <!-- Panel-body -->
+          <div class="panel-body">
+            <form>
+              <!-- Text area -->
+              <div class="form-group">
+                <label for="function">Función <span>*</span></label>
+                <textarea class="form-control" id="function" name="function" rows="4" cols="50" placeholder="Redacta una función, debe ser clara y concisa." required></textarea>                
+              </div>
+              <!-- Input -->
+              <div class="form-group">
+                <label for="contribution">Contribución <span>*</span></label>
+                <input class="form-control" type="text" id="contribution" name="contribution"  required placeholder="Agrega una contribución">
+              </div>  
+              <!-- Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+                <div class="grid-item">
+                  <label for="Frequency">Frecuencia <span>*</span></label>
+                  <select id="Frequency" class="form-control" required>
+                    <option value="" disabled selected>-- Selecciona --</option>
+                    <option value="Frecuencia 1">Frecuencia 1</option>
+                    <option value="Frecuencia 1">Frecuencia 2</option>
+                    <option value="Frecuencia 1">Frecuencia 3</option>
+                    <option value="Frecuencia 1">Frecuencia 4</option>
+                    <option value="Frecuencia 1">Frecuencia 5</option>              
+                  </select> 
+                </div>
+                <div class="grid-item">
+                  <label for="Impact">Impacto de fallos <span>*</span></label>
+                  <select id="Impact" class="form-control" required>
+                    <option value="" disabled selected>-- Selecciona --</option>
+                    <option value="Impacto 1">Impacto 1</option>
+                    <option value="Impacto 1">Impacto 2</option>
+                    <option value="Impacto 1">Impacto 3</option>
+                    <option value="Impacto 1">Impacto 4</option>
+                    <option value="Impacto 1">Impacto 5</option>              
+                  </select> 
+                </div>
+                <div class="grid-item">
+                  <label for="complexity">Complejidad <span>*</span></label>
+                  <select id="complexity" class="form-control" required>
+                    <option value="" disabled selected>-- Selecciona --</option>
+                    <option value="Complejidad 1">Complejidad 1</option>
+                    <option value="Complejidad 1">Complejidad 2</option>
+                    <option value="Complejidad 1">Complejidad 3</option>
+                    <option value="Complejidad 1">Complejidad 4</option>
+                    <option value="Complejidad 1">Complejidad 5</option>              
+                  </select> 
+                </div>                
+                <div class="form-group">
+                  <label for="prioritization">Porcentaje de priorización</label>
+                  <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
+                </div>                                                        
+              </div>  
+            </form>
+          </div>  
+          <!-- Footer -->
+          <footer class="panel-footer flex flex-row-reverse gap-2">            
+              <button type="submit" class="btn btn-default">Guardar</button>
+              <button type="reset" class="btn btn-default-inverse">Cancelar</button>                            
+          </footer>
+        </div>        
       </div>
       <!-- ====== Footer ====== -->
       <footer>

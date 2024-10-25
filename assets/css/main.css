@@ -2771,6 +2771,10 @@ label span {
   opacity: 1;
 }
 
+textarea.form-control {
+  height: auto;
+}
+
 /* # Check and radio buttons
 ----------------------------------------------- */
 .checkbox-label,
@@ -3122,31 +3126,32 @@ legend {
 /* # PANEL
 ---------------------------------------------- */
 .panel {
-  background-color: lightgray;
+  background-color: #ffffff;
   background-clip: border-box;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #c4cddb;
 }
-
-/*--------------- Panel-header ---------------*/
-.panel-header {
+.panel .panel-header {
   padding: 1rem;
-  background-color: black;
+  background-color: #e9eee8;
   color: white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
-
-/*.panel-header:first-child{border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;}*/
-/*--------------- Panel-body ---------------*/
-.panel-body {
+.panel .panel-body {
   padding: 1rem;
 }
-
-/*--------------- Panel-footer ---------------*/
-.panel-footer {
+.panel footer.panel-footer {
+  background-color: #e9eee8;
   padding: 1rem;
-  border-radius: 0 0 1rem 1rem;
-  background-color: gray;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-align: left;
+}
+
+/* # Elements for this proyect
+------------------------------------ */
+.panel-header h3 {
+  margin-bottom: 0;
 }
 
 ul.secondary_menu {
