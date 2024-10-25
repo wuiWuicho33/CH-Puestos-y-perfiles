@@ -120,9 +120,11 @@
         <!-- == Panel == -->
         <div class="panel">
           <!-- Panel-Header -->
-          <header class="panel-header flex justify-between items-center">
+          <header class="panel-header">
             <h3>Funcion 1</h3>
-            <i class="fa-solid fa-pen"></i>
+            <button class="openModal">
+              <i class="fa-solid fa-pen"></i>
+            </button>            
           </header>
           <!-- Panel-body -->
           <div class="panel-body">
@@ -156,26 +158,25 @@
           </div>  
         </div>
       </div>
-
-
-
-
-
-        <!-- == Panel == -->
-        <div class="panel">
-          <!-- Panel-Header -->
-          <header class="panel-header">
-            <h3>Funcion 1</h3>
+        
+      <!-- ====== Modal ====== -->
+      <div id="modal" class="modal">
+         <!-- == Modal content == -->
+        <div class="modal-content">
+          <!-- == Header == -->
+          <header class="modal-header">
+            <h2>Función 1</h2>
+            <span class="close" onclick="closeModal()">&times;</span>
           </header>
-          <!-- Panel-body -->
-          <div class="panel-body">
+          <!-- == Body == -->
+          <div class="modal-body">
             <form>
-              <!-- Text area -->
+              <!-- Item -->
               <div class="form-group">
                 <label for="function">Función <span>*</span></label>
                 <textarea class="form-control" id="function" name="function" rows="4" cols="50" placeholder="Redacta una función, debe ser clara y concisa." required></textarea>                
               </div>
-              <!-- Input -->
+              <!-- Item -->
               <div class="form-group">
                 <label for="contribution">Contribución <span>*</span></label>
                 <input class="form-control" type="text" id="contribution" name="contribution"  required placeholder="Agrega una contribución">
@@ -217,19 +218,18 @@
                   <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
                 </div>                                                        
               </div>  
-            </form>
-          </div>  
-          <!-- Footer -->
-          <footer class="panel-footer flex flex-row-reverse gap-2">            
-              <button type="submit" class="btn btn-default">Guardar</button>
-              <button type="reset" class="btn btn-default-inverse">Cancelar</button>                            
+            </form>              
+          </div>
+          <!-- == Footer == -->
+          <footer class="modal-footer">
+            <button type="reset" class="btn btn-default-inverse">Eliminar</button>                            
+            <div>
+              <button type="reset" class="btn btn-default-inverse" onclick="closeModal()">Cancelar</button>
+              <button type="submit" class="btn btn-default">Guardar</button>          
+            </div>            
           </footer>
-        </div> 
-
-
-
-
-
+        </div>
+      </div>
 
       <!-- ====== Footer ====== -->
       <footer>
