@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6,
 .home h1, .home h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.5rem 0;
   padding: 0;
 }
 
@@ -3133,6 +3133,7 @@ legend {
   background-clip: border-box;
   border-radius: 0.5rem;
   border: 1px solid #c4cddb;
+  margin-bottom: 0.5rem;
 }
 .panel .panel-header {
   padding: 1rem;
@@ -3155,6 +3156,9 @@ legend {
 ------------------------------------ */
 .panel-header h3 {
   margin-bottom: 0;
+}
+.panel-header i {
+  color: #1F2937;
 }
 
 ul.secondary_menu {

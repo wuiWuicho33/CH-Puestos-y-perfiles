@@ -119,7 +119,51 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut alias, error soluta omnis optio cumque est ullam nesciunt accusamus odio.</p>
         <!-- == Panel == -->
         <div class="panel">
-          <!-- Header -->
+          <!-- Panel-Header -->
+          <header class="panel-header flex justify-between items-center">
+            <h3>Funcion 1</h3>
+            <i class="fa-solid fa-pen"></i>
+          </header>
+          <!-- Panel-body -->
+          <div class="panel-body">
+            <form>
+              <!-- Text -->
+              <h4>Función</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab doloribus veritatis sed natus hic, sit fugiat deleniti est laboriosam aliquam rem quam. Ut et culpa odio totam obcaecati unde? Atque.</p>
+              <!-- Text -->
+              <h4>Contribución</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+              <!-- Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+                <div class="grid-item">
+                  <h4>Frecuencia</h4>
+                  <p>Diario</p>
+                </div>
+                <div class="grid-item">
+                  <h4>Impacto de fallos</h4>
+                  <p>Grave</p>
+                </div>
+                <div class="grid-item">
+                  <h4>Complejidad</h4>
+                  <p>Baja</p>
+                </div>
+                <div class="grid-item">
+                  <h4>Porcentaje de priorización</h4>
+                  <p>15%</p>
+                </div>
+              </div>  
+            </form>
+          </div>  
+        </div>
+      </div>
+
+
+
+
+
+        <!-- == Panel == -->
+        <div class="panel">
+          <!-- Panel-Header -->
           <header class="panel-header">
             <h3>Funcion 1</h3>
           </header>
@@ -142,33 +186,30 @@
                   <label for="Frequency">Frecuencia <span>*</span></label>
                   <select id="Frequency" class="form-control" required>
                     <option value="" disabled selected>-- Selecciona --</option>
-                    <option value="Frecuencia 1">Frecuencia 1</option>
-                    <option value="Frecuencia 1">Frecuencia 2</option>
-                    <option value="Frecuencia 1">Frecuencia 3</option>
-                    <option value="Frecuencia 1">Frecuencia 4</option>
-                    <option value="Frecuencia 1">Frecuencia 5</option>              
+                    <option value="Diario">Diario</option>
+                    <option value="Semanal">Semanal</option>
+                    <option value="Quincenal">Quincenal</option>  
+                    <option value="Mensual">Mensual</option>            
+                    <option value="Bimestral">Bimestral</option>
+                    <option value="Anual">Anual</option>
                   </select> 
                 </div>
                 <div class="grid-item">
                   <label for="Impact">Impacto de fallos <span>*</span></label>
                   <select id="Impact" class="form-control" required>
                     <option value="" disabled selected>-- Selecciona --</option>
-                    <option value="Impacto 1">Impacto 1</option>
-                    <option value="Impacto 1">Impacto 2</option>
-                    <option value="Impacto 1">Impacto 3</option>
-                    <option value="Impacto 1">Impacto 4</option>
-                    <option value="Impacto 1">Impacto 5</option>              
+                    <option value="Grave">Grave</option>
+                    <option value="Muy graves">Muy graves</option>
+                    <option value="Considerables">Considerables</option>
                   </select> 
                 </div>
                 <div class="grid-item">
                   <label for="complexity">Complejidad <span>*</span></label>
                   <select id="complexity" class="form-control" required>
                     <option value="" disabled selected>-- Selecciona --</option>
-                    <option value="Complejidad 1">Complejidad 1</option>
-                    <option value="Complejidad 1">Complejidad 2</option>
-                    <option value="Complejidad 1">Complejidad 3</option>
-                    <option value="Complejidad 1">Complejidad 4</option>
-                    <option value="Complejidad 1">Complejidad 5</option>              
+                    <option value="Baja">Baja</option>
+                    <option value="Media">Media</option>            
+                    <option value="Alta">Alta</option>                    
                   </select> 
                 </div>                
                 <div class="form-group">
@@ -183,8 +224,13 @@
               <button type="submit" class="btn btn-default">Guardar</button>
               <button type="reset" class="btn btn-default-inverse">Cancelar</button>                            
           </footer>
-        </div>        
-      </div>
+        </div> 
+
+
+
+
+
+
       <!-- ====== Footer ====== -->
       <footer>
         <p>Grupo Fórmula Todos los derechos reservados</p>
