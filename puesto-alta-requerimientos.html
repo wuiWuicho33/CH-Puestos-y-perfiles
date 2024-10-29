@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<title>Puesto - Alta de puesto - Descripción</title>
+	<link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body> 
+
+  <!-- =========
+  * SIDEBAR *
+  ========== -->
+  <section class="sidebar">
+
+    <!-- Header
+    ========================================== -->    
+    <header>
+      <img class="logo" src="assets/img/logo.png">
+    </header>
+
+    <!-- Side-menu
+    ========================================== -->              		 
+    <ul class="side-menu">
+      <!-- ====== Sub-menu ====== -->
+      <li class='sub-menu active'>
+        <a href='#'>
+          <i class="fa-solid fa-user-tie"></i> Puesto<div class='fa fa-solid fa-chevron-right right'></div>
+        </a>
+        <ul>
+          <li><a href='puesto-consulta-puestos.html'>Consulta</a></li>
+          <li><a href='puesto-consulta-solicitudes.html'>Consulta de soluciones</a></li>
+          <li><a href='puesto-alta-puesto-descripcion.html'>Alta</a></li>
+          <li><a href='#'>Solicitud</a></li>
+          <li><a href='#'>Autorización</a></li>
+        </ul>
+      </li>      
+      <!-- ====== Links ====== -->
+      <li><a href='#'><i class="fa-solid fa-key"></i> Permisos y roles</a></li>
+      <li><a href='#'><i class="fa-solid fa-users"></i> Usuarios</a></li>
+    </ul>
+  </section>
+
+	<!-- =========
+  * MAIN *
+  ========== -->
+  <main class="main">
+
+    <!-- Navbar
+    ========================================== -->        
+    <nav class="navbar">
+      <!-- ====== Togle ====== -->
+      <button class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+			<!-- ====== Links ====== -->
+      <div class="navbar-links">
+        <a href="#">
+          <i class="fa-solid fa-house mr-1"></i> <span class="d-none d-md-block">Home</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-bell"></i>
+        </a>
+        <!-- ====== Dropdown-user ====== -->
+				<div class="dropdown-user">
+					<!-- == Btn == -->
+					<button class="dropbtn">
+						<img src="http://via.placeholder.com/100x100"> <span class="d-none d-md-block">Nombre de usuario</span>
+					</button>
+          <!-- == Links == -->
+					<div class="dropdown-user-links">
+					<a href="#">Mi perfil <i class="fa-regular fa-credit-card"></i></a>
+					<a href="#">Ajustes <i class="fa-solid fa-gear"></i></a>
+					<a href="#">Cerrar sesión <i class="fa-solid fa-right-from-bracket"></i></a>
+					</div>
+				</div>		
+      </div>
+    </nav>
+
+    <!-- Content
+    ========================================== -->     
+    <section class="content">
+      <!-- ====== Title ====== -->
+      <div>
+        <h1>Alta de puesto</h1>
+      </div> 
+      <!-- ====== Default-Box ====== -->
+      <div class="default-box">
+        <!-- == Secondary-menu == -->
+        <ul class="secondary_menu">
+          <li>
+            <a href="puesto-alta-puesto-descripcion.html" aria-current="page">Puesto</a>
+          </li>
+          <li>
+            <a href="puesto-alta-funciones.html">Funciones</a>
+          </li>
+          <li>
+            <a href="puesto-alta-relaciones-internas.html">Relaciones internas</a>
+          </li>
+          <li>
+            <a href="puesto-alta-relaciones-externas.html">Relaciones externas</a>
+          </li>
+          <li  class="active">
+            <a href="#">Requerimientos</a>
+          </li>
+          <li>
+            <a href="#">Experiencia</a>
+          </li>
+          <li>
+            <a href="#">Recursos</a>
+          </li>
+          <li>
+            <a href="#">Nivel de competencias</a>
+          </li>
+        </ul>
+        <!-- == Guide text == -->
+        <h2>Requerimientos de puesto</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste qui nulla deleniti facilis, sint aperiam harum cupiditate minus ab quo.</p>
+        <!-- == Tabs component == -->
+        <div class="tabs-container pb-3" id="tabs-container-1">
+          <!-- Buttons -->
+          <div class="tabs">
+            <button class="tab-button active" data-target="tab-01" aria-controls="tab-01" role="tab">Educación</button>
+            <button class="tab-button" data-target="tab-02" aria-controls="tab-02" role="tab">Idiomas</button>
+            <button class="tab-button" data-target="tab-03" aria-controls="tab-03" role="tab">Programas</button>
+          </div>
+          <!-- Content -->
+          <div class="tab-content">
+            <!-- Tab-pane-01 -->
+            <div class="tab-pane active" id="tab-01" role="tabpanel">
+              <h3>Educación</h3>
+                <!-- Form -->
+                <form>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-3">
+                    <!-- Form-group -->
+                    <div class="form-group">
+                      <label for="profile">Perfil <span>*</span></label>
+                      <input class="form-control" type="text" id="profile" name="profile"  required placeholder="Ejem: Maestría en derecho">
+                    </div>  
+                    <!-- Form-group -->
+                    <div class="form-group">
+                      <label for="level">Nivel <span>*</span></label>
+                      <select id="level" class="form-control" required>
+                        <option value="" disabled selected>-- Selecciona --</option>
+                        <option value="Área 1">Licenciatura</option>
+                        <option value="Área 1">Maestría</option>
+                        <option value="Área 1">Doctorado</option>
+                      </select> 
+                    </div>  
+                  </div>
+                  <!-- Form-group -->
+                  <div class="form-group">
+                    <label for="request">Requerimiento <span>*</span></label>
+                    <textarea class="form-control" id="request" name="request" rows="4" cols="50" placeholder="Ejem: Se requiere maestría en derecho corporativo, relaciones comerciales o su equivalente." required></textarea>                
+                  </div>
+                  <!-- Form-group -->
+                  <div class="form-group">
+                    <label for="request">Conocimientos técnicos <span>*</span></label>
+                    <textarea class="form-control" id="request" name="request" rows="4" cols="50" placeholder="Ejem: Comprensión comprobada en leyes mercantil y civil, requisitos de marcas registradas y derechos de autor." required></textarea>                
+                  </div>                  
+                  <!-- Alert -->
+                  <div class="alert alert-success" role="alert" aria-live="assertive">
+                    <p><strong>Éxito:</strong> Se guardaron los datos.</p>
+                    <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <!-- Alert -->
+                  <div class="alert alert-warning" role="alert" aria-live="assertive">
+                    <p><strong>Advertencia:</strong> No se guardaron los datos.</p>
+                    <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>                                                    
+                  <!-- Buttons -->
+                  <div class="flex flex-row-reverse gap-2">
+                    <button type="submit" class="btn btn-default">Guardar</button>
+                    <button type="reset" class="btn btn-default-inverse">Resetear</button>                
+                  </div>
+                </form>                  
+            </div>
+            <!-- Tab-pane-02 -->
+            <div class="tab-pane" id="tab-02" role="tabpanel">
+              <h3>Idioma</h3>                
+              <!-- == Agregar nuevo == -->
+              <button class="add-button openModal">
+                <p>Agregar idioma</p>
+                <i class="fa-solid fa-plus"></i>
+              </button>           
+            </div>
+            <!-- Tab-pane-03 -->
+            <div class="tab-pane" id="tab-03" role="tabpanel">
+              <h3>Programas</h3>
+              <!-- == Agregar nuevo == -->
+              <button class="add-button openModal">
+                <p>Agregar programa</p>
+                <i class="fa-solid fa-plus"></i>
+              </button>           
+            </div>            
+          </div>
+        </div>          
+      </div>
+
+      <!-- ====== Modal ====== -->
+      <div id="modal" class="modal">
+        <!-- == Modal content == -->
+       <div class="modal-content">
+         <!-- == Header == -->
+         <header class="modal-header">
+           <h2>Idioma 1</h2>
+           <span class="close" onclick="closeModal()">&times;</span>
+         </header>
+         <!-- == Body == -->
+         <div class="modal-body">
+          <!-- Form -->
+          <form>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-3">
+              <!-- Form-group -->
+              <div class="form-group">
+                <label for="language">Idioma <span>*</span></label>
+                <input class="form-control" type="text" id="language" name="language"  required placeholder="Agrega un idioma">
+              </div>  
+              <!-- Form-group -->
+              <div class="form-group">
+                <label for="level">Nivel <span>*</span></label>
+                <select id="level" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Principiante">Principiante</option>
+                  <option value="Intermedio">Intermedio</option>
+                  <option value="Avanzado">Avanzado</option>
+                  <option value="Experto">Experto</option>
+                </select> 
+              </div>  
+            </div>
+            <!-- Form-group -->
+            <div class="form-group">
+              <label for="request">Requerimiento <span>*</span></label>
+              <textarea class="form-control" id="request" name="request" rows="4" cols="50" placeholder="Ejem: Comprensión de una amplia variedad de textos de complejidad alta. Sabe expresarse de forma fluida sin muestras muy evidentes de esfuerzo para encontrar la expresión adecuada. Puede producir textos claros, bien estructurados y detallados sobre temas de cierta complejidad." required></textarea>                
+            </div>
+          </form>             
+         </div>
+         <!-- == Footer == -->
+         <footer class="modal-footer">                       
+           <div class="btn-group">
+             <button type="reset" class="btn btn-default-inverse" onclick="closeModal()">Cancelar</button>
+             <button type="submit" class="btn btn-default">Agregar</button>          
+           </div>            
+         </footer>
+       </div>
+      </div>
+
+      <!-- ====== Footer ====== -->
+      <footer>
+        <p>Grupo Fórmula Todos los derechos reservados</p>
+      </footer>	      
+    </section>
+
+  </main>  
+
+<!--///////
+SCRIPTS
+////////-->
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/91705bc097.js" crossorigin="anonymous"></script>
+<!-- Jquery last version -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>	
+
+</body>
+</html>
