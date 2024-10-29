@@ -184,7 +184,7 @@
             <div class="tab-pane" id="tab-02" role="tabpanel">
               <h3>Idioma</h3>                
               <!-- == Agregar nuevo == -->
-              <button class="add-button openModal">
+              <button class="add-button">
                 <p>Agregar idioma</p>
                 <i class="fa-solid fa-plus"></i>
               </button>           
@@ -193,7 +193,7 @@
             <div class="tab-pane" id="tab-03" role="tabpanel">
               <h3>Programas</h3>
               <!-- == Agregar nuevo == -->
-              <button class="add-button openModal">
+              <button class="add-button">
                 <p>Agregar programa</p>
                 <i class="fa-solid fa-plus"></i>
               </button>           
@@ -203,25 +203,20 @@
       </div>
 
       <!-- ====== Modal ====== -->
+       <!-- 
       <div id="modal" class="modal">
-        <!-- == Modal content == -->
        <div class="modal-content">
-         <!-- == Header == -->
          <header class="modal-header">
            <h2>Idioma 1</h2>
            <span class="close" onclick="closeModal()">&times;</span>
          </header>
-         <!-- == Body == -->
          <div class="modal-body">
-          <!-- Form -->
           <form>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-3">
-              <!-- Form-group -->
               <div class="form-group">
                 <label for="language">Idioma <span>*</span></label>
                 <input class="form-control" type="text" id="language" name="language"  required placeholder="Agrega un idioma">
               </div>  
-              <!-- Form-group -->
               <div class="form-group">
                 <label for="level">Nivel <span>*</span></label>
                 <select id="level" class="form-control" required>
@@ -233,14 +228,12 @@
                 </select> 
               </div>  
             </div>
-            <!-- Form-group -->
             <div class="form-group">
               <label for="request">Requerimiento <span>*</span></label>
               <textarea class="form-control" id="request" name="request" rows="4" cols="50" placeholder="Ejem: Comprensión de una amplia variedad de textos de complejidad alta. Sabe expresarse de forma fluida sin muestras muy evidentes de esfuerzo para encontrar la expresión adecuada. Puede producir textos claros, bien estructurados y detallados sobre temas de cierta complejidad." required></textarea>                
             </div>
           </form>             
          </div>
-         <!-- == Footer == -->
          <footer class="modal-footer">                       
            <div class="btn-group">
              <button type="reset" class="btn btn-default-inverse" onclick="closeModal()">Cancelar</button>
@@ -248,7 +241,8 @@
            </div>            
          </footer>
        </div>
-      </div>
+      </div>      
+      -->
 
       <!-- ====== Footer ====== -->
       <footer>

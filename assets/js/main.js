@@ -84,33 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* # Modal
 ---------------------------------------------- */
-// Obtener el modal y el botón de cierre
-var modal = document.getElementById('modal');
-var closeButton = document.querySelector('.close');
-// Función para abrir el modal
-function openModal() {
-  modal.style.display = "block";
-}
-// Función para cerrar el modal
-function closeModal() {
-  modal.style.display = "none";
-}
-// Event listener para cerrar el modal cuando se hace clic en el botón de cierre
-closeButton.addEventListener('click', closeModal);
 
-// Event listener para cerrar el modal cuando se hace clic fuera del contenido del modal
-window.addEventListener('click', function(event) {
-  if (event.target == modal) {
-    closeModal();
-  }
-});
-// Manejar clic enlaces para abrir el modal
-var openModalLinks = document.querySelectorAll('.openModal');
-openModalLinks.forEach(function(link) {
-  link.addEventListener('click', function() {
-    openModal();
-  });
-});
 
 /* # Switches
 ---------------------------------------------- */
