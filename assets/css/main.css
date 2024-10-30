@@ -3203,8 +3203,7 @@ legend {
   background-color: rgba(0, 0, 0, 0.7);
   overflow: auto;
 }
-
-.modal-content {
+.modal .modal-content {
   background-color: #ffffff;
   margin: 6% auto;
   padding: 0;
@@ -3213,40 +3212,34 @@ legend {
   max-width: 600px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.modal-header,
-.modal-body,
-.modal-footer {
+.modal .modal-content .modal-header,
+.modal .modal-content .modal-body,
+.modal .modal-content .modal-footer {
   padding: 1rem;
 }
-
-.modal-header {
+.modal .modal-content .modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #c4cddb;
 }
-
-.modal-header h2 {
+.modal .modal-content .modal-header h2 {
   margin: 0;
 }
-
-.modal-footer {
-  border-top: 1px solid #c4cddb;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.btn-close {
+.modal .modal-content .modal-header .btn-close {
   font-size: 24px;
   font-weight: bold;
   color: #c4cddb;
   cursor: pointer;
   transition: color 0.3s;
 }
-
-.btn-close:hover {
+.modal .modal-content .modal-header .btn-close:hover {
   color: #1F2937;
+}
+.modal .modal-content .modal-footer {
+  border-top: 1px solid #c4cddb;
+  display: flex;
+  justify-content: flex-end;
 }
 
 /*Para este proyecto en particular*/
@@ -3264,7 +3257,7 @@ legend {
 ----------------------------------------------- */
 /*A partir de 768px se aplicarán estos estilos*/
 @media (min-width: 768px) {
-  .modal-content {
+  .modal .modal-content {
     width: 80%;
     max-width: 1000px;
   }
