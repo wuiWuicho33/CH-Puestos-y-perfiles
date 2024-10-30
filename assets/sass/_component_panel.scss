@@ -8,9 +8,9 @@
     margin-bottom: 1rem;
 
     .panel-header {
-      padding:1rem;
+      padding: 0.5rem 1rem;
       background-color:$secondary-color;
-      color:white;
+      color:$primary-color;
       border-bottom: 1px solid rgba(0, 0, 0, .125);
       border-radius:0.5rem 0.5rem 0 0;
     }    
