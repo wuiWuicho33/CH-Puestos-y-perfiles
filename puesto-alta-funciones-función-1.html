@@ -122,7 +122,7 @@
           <!-- Panel-Header -->
           <header class="panel-header">
             <h3>Función 1</h3>
-            <button class="openModal">
+            <button data-modal="modal-01">
               <i class="fa-solid fa-pen"></i>
             </button>            
           </header>
@@ -187,83 +187,11 @@
         </div>        
 
         <!-- == Agregar nuevo == -->
-         <button class="add-button openModal">
+         <button class="add-button" data-modal="modal-02">
           <p>Agregar otra función</p>
           <i class="fa-solid fa-plus"></i>
          </button>
 
-      </div>
-        
-      <!-- ====== Modal ====== -->
-      <div id="modal" class="modal">
-         <!-- == Modal content == -->
-        <div class="modal-content">
-          <!-- == Header == -->
-          <header class="modal-header">
-            <h2>Editar Función 1 / Función 2</h2>
-            <span class="close" onclick="closeModal()">&times;</span>
-          </header>
-          <!-- == Body == -->
-          <div class="modal-body">
-            <form>
-              <!-- Item -->
-              <div class="form-group">
-                <label for="function">Función <span>*</span></label>
-                <textarea class="form-control" id="function" name="function" rows="4" cols="50" placeholder="Redacta una función, debe ser clara y concisa." required></textarea>                
-              </div>
-              <!-- Item -->
-              <div class="form-group">
-                <label for="contribution">Contribución <span>*</span></label>
-                <input class="form-control" type="text" id="contribution" name="contribution"  required placeholder="Agrega una contribución">
-              </div>  
-              <!-- Grid -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-                <div class="grid-item">
-                  <label for="Frequency">Frecuencia <span>*</span></label>
-                  <select id="Frequency" class="form-control" required>
-                    <option value="" disabled selected>-- Selecciona --</option>
-                    <option value="Diario">Diario</option>
-                    <option value="Semanal">Semanal</option>
-                    <option value="Quincenal">Quincenal</option>  
-                    <option value="Mensual">Mensual</option>            
-                    <option value="Bimestral">Bimestral</option>
-                    <option value="Anual">Anual</option>
-                  </select> 
-                </div>
-                <div class="grid-item">
-                  <label for="Impact">Impacto de fallos <span>*</span></label>
-                  <select id="Impact" class="form-control" required>
-                    <option value="" disabled selected>-- Selecciona --</option>
-                    <option value="Grave">Grave</option>
-                    <option value="Muy graves">Muy graves</option>
-                    <option value="Considerables">Considerables</option>
-                  </select> 
-                </div>
-                <div class="grid-item">
-                  <label for="complexity">Complejidad <span>*</span></label>
-                  <select id="complexity" class="form-control" required>
-                    <option value="" disabled selected>-- Selecciona --</option>
-                    <option value="Baja">Baja</option>
-                    <option value="Media">Media</option>            
-                    <option value="Alta">Alta</option>                    
-                  </select> 
-                </div>                
-                <div class="form-group">
-                  <label for="prioritization">Porcentaje de priorización</label>
-                  <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
-                </div>                                                        
-              </div>  
-            </form>              
-          </div>
-          <!-- == Footer == -->
-          <footer class="modal-footer">
-            <button type="reset" class="btn btn-danger-inverse"><i class="fa-solid fa-trash-can"></i> Eliminar</button> <!-- Sólo para el modal de edición -->                            
-            <div class="btn-group">
-              <button type="reset" class="btn btn-default-inverse" onclick="closeModal()">Cancelar</button>
-              <button type="submit" class="btn btn-default">Guardar</button>          
-            </div>            
-          </footer>
-        </div>
       </div>
 
       <!-- ====== Footer ====== -->
@@ -271,6 +199,153 @@
         <p>Grupo Fórmula Todos los derechos reservados</p>
       </footer>	      
     </section>
+
+    <!-- Modales
+    ========================================== -->    
+    <!-- ====== Modal-01 ====== -->
+    <div id="modal-01" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Editar función 1</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form>
+            <!-- Item -->
+            <div class="form-group">
+              <label for="function">Función <span>*</span></label>
+              <textarea class="form-control" id="function" name="function" rows="4" cols="50" placeholder="Redacta una función, debe ser clara y concisa." required></textarea>                
+            </div>
+            <!-- Item -->
+            <div class="form-group">
+              <label for="contribution">Contribución <span>*</span></label>
+              <input class="form-control" type="text" id="contribution" name="contribution"  required placeholder="Agrega una contribución">
+            </div>  
+            <!-- Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+              <div class="grid-item">
+                <label for="Frequency">Frecuencia <span>*</span></label>
+                <select id="Frequency" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Diario">Diario</option>
+                  <option value="Semanal">Semanal</option>
+                  <option value="Quincenal">Quincenal</option>  
+                  <option value="Mensual">Mensual</option>            
+                  <option value="Bimestral">Bimestral</option>
+                  <option value="Anual">Anual</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="Impact">Impacto de fallos <span>*</span></label>
+                <select id="Impact" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Grave">Grave</option>
+                  <option value="Muy graves">Muy graves</option>
+                  <option value="Considerables">Considerables</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="complexity">Complejidad <span>*</span></label>
+                <select id="complexity" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Baja">Baja</option>
+                  <option value="Media">Media</option>            
+                  <option value="Alta">Alta</option>                    
+                </select> 
+              </div>                
+              <div class="form-group">
+                <label for="prioritization">Porcentaje de priorización</label>
+                <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
+              </div>                                                        
+            </div>  
+          </form> 
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+          <button type="reset" class="btn btn-danger-inverse"><i class="fa-solid fa-trash-can"></i> Eliminar</button> <!-- Sólo para el modal de edición -->          
+          <div class="btn-group">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Agregar</button>          
+          </div>
+        </div>
+      </div>
+    </div>    
+
+    <!-- ====== Modal-02 ====== -->
+    <div id="modal-02" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Función 2</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form>
+            <!-- Item -->
+            <div class="form-group">
+              <label for="function">Función <span>*</span></label>
+              <textarea class="form-control" id="function" name="function" rows="4" cols="50" placeholder="Redacta una función, debe ser clara y concisa." required></textarea>                
+            </div>
+            <!-- Item -->
+            <div class="form-group">
+              <label for="contribution">Contribución <span>*</span></label>
+              <input class="form-control" type="text" id="contribution" name="contribution"  required placeholder="Agrega una contribución">
+            </div>  
+            <!-- Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+              <div class="grid-item">
+                <label for="Frequency">Frecuencia <span>*</span></label>
+                <select id="Frequency" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Diario">Diario</option>
+                  <option value="Semanal">Semanal</option>
+                  <option value="Quincenal">Quincenal</option>  
+                  <option value="Mensual">Mensual</option>            
+                  <option value="Bimestral">Bimestral</option>
+                  <option value="Anual">Anual</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="Impact">Impacto de fallos <span>*</span></label>
+                <select id="Impact" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Grave">Grave</option>
+                  <option value="Muy graves">Muy graves</option>
+                  <option value="Considerables">Considerables</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="complexity">Complejidad <span>*</span></label>
+                <select id="complexity" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Baja">Baja</option>
+                  <option value="Media">Media</option>            
+                  <option value="Alta">Alta</option>                    
+                </select> 
+              </div>                
+              <div class="form-group">
+                <label for="prioritization">Porcentaje de priorización</label>
+                <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
+              </div>                                                        
+            </div>  
+          </form> 
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+          <div class="btn-group">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Agregar</button>          
+          </div>
+        </div>
+      </div>
+    </div>        
 
   </main>  
 
