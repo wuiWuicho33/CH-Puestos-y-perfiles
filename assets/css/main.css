@@ -3249,6 +3249,11 @@ legend {
   color: #000;
 }
 
+/*Para este proyecto en particular*/
+.modal-footer button {
+  margin-right: auto;
+}
+
 /* ==============
 # MEDIAQUERIES
 ============== */
