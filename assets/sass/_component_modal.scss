@@ -49,6 +49,11 @@
         }  
       }  
     } 
+
+    .modal-body {
+      max-height: 400px;
+      overflow-y: auto;
+    }
     
     .modal-footer {
       border-top: 1px solid $tertiary-color;

@@ -3236,6 +3236,10 @@ legend {
 .modal .modal-content .modal-header .btn-close:hover {
   color: #1F2937;
 }
+.modal .modal-content .modal-body {
+  max-height: 400px;
+  overflow-y: auto;
+}
 .modal .modal-content .modal-footer {
   border-top: 1px solid #c4cddb;
   display: flex;

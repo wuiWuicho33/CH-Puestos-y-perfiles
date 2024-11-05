@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<title>Puesto - Alta de competencias </title>
+	<link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body> 
+
+  <!-- =========
+  * SIDEBAR *
+  ========== -->
+  <section class="sidebar">
+
+    <!-- Header
+    ========================================== -->    
+    <header>
+      <img class="logo" src="assets/img/logo.png">
+    </header>
+
+    <!-- Side-menu
+    ========================================== -->              		 
+    <ul class="side-menu">
+      <!-- ====== Sub-menu ====== -->
+      <li class='sub-menu active'>
+        <a href='#'>
+          <i class="fa-solid fa-user-tie"></i> Puesto<div class='fa fa-solid fa-chevron-right right'></div>
+        </a>
+        <ul>
+          <li><a href='puesto-consulta-puestos.html'>Consulta</a></li>
+          <li><a href='puesto-consulta-solicitudes.html'>Consulta de soluciones</a></li>
+          <li><a href='puesto-alta-puesto-descripcion.html'>Alta</a></li>
+          <li><a href='#'>Solicitud</a></li>
+          <li><a href='#'>Autorización</a></li>
+        </ul>
+      </li>      
+      <!-- ====== Links ====== -->
+      <li><a href='#'><i class="fa-solid fa-key"></i> Permisos y roles</a></li>
+      <li><a href='#'><i class="fa-solid fa-users"></i> Usuarios</a></li>
+    </ul>
+  </section>
+
+	<!-- =========
+  * MAIN *
+  ========== -->
+  <main class="main">
+
+    <!-- Navbar
+    ========================================== -->        
+    <nav class="navbar">
+      <!-- ====== Togle ====== -->
+      <button class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+			<!-- ====== Links ====== -->
+      <div class="navbar-links">
+        <a href="#">
+          <i class="fa-solid fa-house mr-1"></i> <span class="d-none d-md-block">Home</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-bell"></i>
+        </a>
+        <!-- ====== Dropdown-user ====== -->
+				<div class="dropdown-user">
+					<!-- == Btn == -->
+					<button class="dropbtn">
+						<img src="http://via.placeholder.com/100x100"> <span class="d-none d-md-block">Nombre de usuario</span>
+					</button>
+          <!-- == Links == -->
+					<div class="dropdown-user-links">
+					<a href="#">Mi perfil <i class="fa-regular fa-credit-card"></i></a>
+					<a href="#">Ajustes <i class="fa-solid fa-gear"></i></a>
+					<a href="#">Cerrar sesión <i class="fa-solid fa-right-from-bracket"></i></a>
+					</div>
+				</div>		
+      </div>
+    </nav>
+
+    <!-- Content
+    ========================================== -->     
+    <section class="content">
+      <!-- ====== Title ====== -->
+      <div>
+        <h1>Alta de puesto</h1>
+      </div> 
+      <!-- ====== Default-Box ====== -->
+      <div class="default-box">
+        <!-- == Secondary-menu == -->
+        <ul class="secondary_menu">
+          <li>
+            <a href="puesto-alta-puesto-descripcion.html" aria-current="page">Puesto</a>
+          </li>
+          <li>
+            <a href="puesto-alta-funciones.html">Funciones</a>
+          </li>
+          <li>
+            <a href="puesto-alta-relaciones-internas.html">Relaciones internas</a>
+          </li>
+          <li>
+            <a href="puesto-alta-relaciones-externas.html">Relaciones externas</a>
+          </li>
+          <li>
+            <a href="puesto-alta-requerimientos.html">Requerimientos</a>
+          </li>
+          <li>
+            <a href="#">Experiencia</a>
+          </li>
+          <li>
+            <a href="#">Recursos</a>
+          </li>
+          <li  class="active">
+            <a href="#">Nivel de competencias</a>
+          </li>
+        </ul>
+        <!-- == Guide text == -->
+        <h2>Nivel de competencias</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste qui nulla deleniti facilis, sint aperiam harum cupiditate minus ab quo.</p>
+        <!-- == Tabs component == -->
+        <div class="tabs-container pb-3" id="tabs-container-1">
+          <!-- Buttons -->
+          <div class="tabs">
+            <button class="tab-button active" data-target="tab-01" aria-controls="tab-01" role="tab">Nivel profesional</button>
+            <button class="tab-button" data-target="tab-02" aria-controls="tab-02" role="tab">Visión</button>
+            <button class="tab-button" data-target="tab-03" aria-controls="tab-03" role="tab">Personas</button>
+            <button class="tab-button" data-target="tab-04" aria-controls="tab-04" role="tab">Gestión</button>
+          </div>
+          <!-- Content -->
+          <div class="tab-content">
+            <!-- Tab-pane-01 -->
+            <div class="tab-pane active" id="tab-01" role="tabpanel">
+              <!-- form-group -->
+              <div class="form-group">
+                <label for="level">Nivel profesional</label>
+                <input class="form-control" type="text" id="level" name="level" required placeholder="Agrega el nivel profesional">
+              </div>                                                        
+            </div>
+            <!-- Tab-pane-02 -->
+            <div class="tab-pane" id="tab-02" role="tabpanel">
+
+              <!-- == Panel == -->
+              <div class="panel">
+                <!-- Panel-Header -->
+                <header class="panel-header">
+                  <h3>Visión</h3>
+                  <button data-modal="modal-01">
+                    <i class="fa-solid fa-pen"></i>
+                  </button>            
+                </header>
+                <!-- Panel-body -->
+                <div class="panel-body">
+                  <div class="table-responsive">
+                    <table>
+                      <!-- == table head == -->
+                      <thead>
+                        <tr>
+                          <th>Concepto</th>
+                          <th>Rango</th>
+                          <th>Nivel de desarrollo de competencia</th>
+                        </tr>
+                      </thead>
+                      <!-- == Table body == -->
+                      <tbody>
+                        <tr>
+                          <td>Visión estrategica - Oportunidades de negocio</td>
+                          <td>Nivel 2: 2.30-2.59</td>
+                          <td>Está fortaleciendo su empleo de las habilidades.</td>
+                        </tr>
+                        <tr>
+                          <td>Planeación</td>
+                          <td>Nivel 4: 3.87-4.00</td>
+                          <td>Transmite sus habilidades a otras personas.</td>
+                        </tr>                    
+                      </tbody>
+                    </table>
+                  </div>
+                </div>  
+              </div>
+
+            </div>
+            <!-- Tab-pane-03 -->
+            <div class="tab-pane" id="tab-03" role="tabpanel">
+
+
+              <!-- == Panel == -->
+              <div class="panel">
+                <!-- Panel-Header -->
+                <header class="panel-header">
+                  <h3>Liderazgo</h3>
+                  <button data-modal="modal-02">
+                    <i class="fa-solid fa-pen"></i>
+                  </button>            
+                </header>
+                <!-- Panel-body -->
+                <div class="panel-body">  
+                  <div class="table-responsive mb-4">
+                    <table>
+                      <!-- == table head == -->
+                      <thead>
+                        <tr>
+                          <th>Concepto</th>
+                          <th>Rango</th>
+                          <th>Nivel de desarrollo de competencia</th>
+                        </tr>
+                      </thead>
+                      <!-- == Table body == -->
+                      <tbody>
+                        <tr>
+                          <td>Liderazgo - Supervisión de procesos</td>
+                          <td>Nivel 4: 3.87-4.00</td>
+                          <td>Transmite sus habilidades a otras personas.</td>
+                        </tr>
+                        <tr>
+                          <td>Comunicación efectiva</td>
+                          <td>Nivel 4: 3.70-3.86</td>
+                          <td>Aplica la competencia en escenarios diferentes y novedosos.</td>
+                        </tr>
+                        <tr>
+                          <td>Potencial de desarrollo</td>
+                          <td>Nivel 2: 2.30-2.59</td>
+                          <td>Está fortaleciendo su empleo de las habilidades.</td>
+                        </tr>                                        
+                      </tbody>
+                    </table>  
+                  </div>                                  
+                </div>  
+              </div>
+
+              <!-- == Panel == -->
+              <div class="panel">
+                <!-- Panel-Header -->
+                <header class="panel-header">
+                  <h3>Trabajo en equipo</h3>
+                  <button data-modal="modal-03">
+                    <i class="fa-solid fa-pen"></i>
+                  </button>            
+                </header>
+                <!-- Panel-body -->
+                <div class="panel-body"> 
+                  <div class="table-responsive">
+                    <table>
+                      <!-- == table head == -->
+                      <thead>
+                        <tr>
+                          <th>Concepto</th>
+                          <th>Rango</th>
+                          <th>Nivel de desarrollo de competencia</th>
+                        </tr>
+                      </thead>
+                      <!-- == Table body == -->
+                      <tbody>
+                        <tr>
+                          <td>Inteligencia emocional</td>
+                          <td>Nivel 3: 2.60-2.89</td>
+                          <td>Demuestra las habilidades cuando el entorno es favorable.</td>
+                        </tr>                                      
+                      </tbody>
+                    </table>
+                  </div>                                    
+                </div>  
+              </div>              
+
+            </div>            
+            <!-- Tab-pane-04 -->
+            <div class="tab-pane" id="tab-04" role="tabpanel">
+
+              <!-- == Panel == -->
+              <div class="panel">
+                <!-- Panel-Header -->
+                <header class="panel-header">
+                  <h3>Decisión</h3>
+                  <button data-modal="modal-04">
+                    <i class="fa-solid fa-pen"></i>
+                  </button>            
+                </header>
+                <!-- Panel-body -->
+                <div class="panel-body">    
+                  <div class="table-responsive mb-4">
+                    <table>
+                      <!-- == table head == -->
+                      <thead>
+                        <tr>
+                          <th>Concepto</th>
+                          <th>Rango</th>
+                          <th>Nivel de desarrollo de competencia</th>
+                        </tr>
+                      </thead>
+                      <!-- == Table body == -->
+                      <tbody>
+                        <tr>
+                          <td>Toma de decisiones tácticas u operativas</td>
+                          <td>Nivel 3: 2.90-3.19</td>
+                          <td>Aplica la competencia en su trabajo cotidiano.</td>
+                        </tr>
+                        <tr>
+                          <td>Compromiso - Asumir responsabilidades</td>
+                          <td>Nivel 3: 2.60-2.89</td>
+                          <td>Demuestra las habilidades cuando el entorno es favorable.</td>
+                        </tr>
+                        <tr>
+                          <td>Actitud de servicio</td>
+                          <td>Nivel 3: 2.90-3.19</td>
+                          <td>Aplica la competencia en su trabajo cotidiano.</td>
+                        </tr>
+                        <tr>
+                          <td>Gestión del cambio</td>
+                          <td>Nivel 2: 2.30-2.59</td>
+                          <td>Está fortaleciendo su empleo de las habilidades.</td>
+                        </tr>
+                        <tr>
+                          <td>Solución de problemas - Capacidad de análisis</td>
+                          <td>Nivel 3: 2.60-2.89</td>
+                          <td>Demuestra las habilidades cuando el entorno es favorable.</td>
+                        </tr>
+                        <tr>
+                          <td>Iniciativa</td>
+                          <td>Nivel 2: 2.30-2.59</td>
+                          <td>Está fortaleciendo su empleo de las habilidades.</td>
+                        </tr>                                                                                                   
+                      </tbody>
+                    </table>  
+                  </div>                                                     
+                </div>  
+              </div>   
+
+              <!-- == Panel == -->
+              <div class="panel">
+                <!-- Panel-Header -->
+                <header class="panel-header">
+                  <h3>Ejecución</h3>
+                  <button data-modal="modal-05">
+                    <i class="fa-solid fa-pen"></i>
+                  </button>            
+                </header>
+                <!-- Panel-body -->
+                <div class="panel-body">
+                  <div class="table-responsive">
+                    <table>
+                      <!-- == table head == -->
+                      <thead>
+                        <tr>
+                          <td>Concepto</td>
+                          <td>Rango</td>
+                          <td>Nivel de desarrollo de la competencia</td>
+                        </tr>   
+                      </thead>
+                      <!-- == Table body == -->
+                      <tbody>
+                        <tr>
+                          <td>Creatividad</td>
+                          <td>Nivel 1: 1.30-1.69</td>
+                          <td>Posee algunas habilidades, pero generalmente no las emplea.</td>
+                        </tr>
+                        <tr>
+                          <td>Enfoque a resultados – Logro de objetivos</td>
+                          <td>Nivel 4: 3.50-3.69</td>
+                          <td>Especialista en la aplicación de la competencia.</td>
+                        </tr>                                                                                                
+                      </tbody>
+                    </table>
+                  </div>                                                        
+                </div>  
+              </div> 
+
+            </div>             
+          </div>
+        </div>          
+      </div>     
+
+      <!-- ====== Footer ====== -->
+      <footer>
+        <p>Grupo Fórmula Todos los derechos reservados</p>
+      </footer>	      
+    </section>
+
+    <!-- Modales
+    ========================================== --> 
+
+    <!-- ====== Modal-01 ====== -->
+    <div id="modal-01" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Visión</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form id="miFormulario">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+
+              <div class="form-group">
+                <label for="a-concept-01">Concepto <span>*</span></label>
+                <input class="form-control" type="text" id="a-concept-01" name="a-concept-01"  required placeholder="Agrega un concepto">
+              </div>  
+              <div class="form-group">
+                <label for="a-range-01">Rango <span>*</span></label>
+                <input class="form-control" type="text" id="a-range-01" name="a-range-01"  required placeholder="Agrega un rango">
+              </div>                 
+              <div class="form-group">
+                <label for="a-level-of-development-01">Nivel de desarrollo de competencia <span>*</span></label>
+                <input class="form-control" type="text" id="a-level-of-development-01" name="a-level-of-development-01"  required placeholder="Agrega un nivel de desarrollo">
+              </div>  
+              
+              <div class="form-group">
+                <label for="a-concept-02">Concepto <span>*</span></label>
+                <input class="form-control" type="text" id="a-concept-02" name="a-concept-02"  required placeholder="Agrega un concepto">
+              </div>  
+              <div class="form-group">
+                <label for="a-range-02">Rango <span>*</span></label>
+                <input class="form-control" type="text" id="a-range-02" name="a-range-02"  required placeholder="Agrega un rango">
+              </div>                 
+              <div class="form-group">
+                <label for="a-level-of-development-02">Nivel de desarrollo de competencia <span>*</span></label>
+                <input class="form-control" type="text" id="a-level-of-development-02" name="a-level-of-development-02"  required placeholder="Agrega un nivel de desarrollo">
+              </div>                                             
+
+            </div>
+          </form>   
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+          <div class="btn-group">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Agregar</button>          
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ====== Modal-02 ====== -->
+    <div id="modal-02" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Liderazgo</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form id="miFormulario">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+
+              <div class="form-group">
+                <label for="b-concept-01">Concepto <span>*</span></label>
+                <input class="form-control" type="text" id="b-concept-01" name="b-concept-01"  required placeholder="Agrega un concepto">
+              </div>  
+              <div class="form-group">
+                <label for="b-range-01">Rango <span>*</span></label>
+                <input class="form-control" type="text" id="b-range-01" name="b-range-01"  required placeholder="Agrega un rango">
+              </div>                 
+              <div class="form-group">
+                <label for="b-level-of-development-01">Nivel de desarrollo de competencia <span>*</span></label>
+                <input class="form-control" type="text" id="b-level-of-development-01" name="b-level-of-development-01"  required placeholder="Agrega un nivel de desarrollo">
+              </div>  
+
+              <div class="form-group">
+                <label for="b-concept-02">Concepto <span>*</span></label>
+                <input class="form-control" type="text" id="b-concept-02" name="b-concept-02"  required placeholder="Agrega un concepto">
+              </div>  
+              <div class="form-group">
+                <label for="b-range-02">Rango <span>*</span></label>
+                <input class="form-control" type="text" id="b-range-02" name="b-range-02"  required placeholder="Agrega un rango">
+              </div>                 
+              <div class="form-group">
+                <label for="b-level-of-development-02">Nivel de desarrollo de competencia <span>*</span></label>
+                <input class="form-control" type="text" id="b-level-of-development-02" name="b-level-of-development-02"  required placeholder="Agrega un nivel de desarrollo">
+              </div>               
+
+              <div class="form-group">
+                <label for="b-concept-03">Concepto <span>*</span></label>
+                <input class="form-control" type="text" id="b-concept-03" name="b-concept-03"  required placeholder="Agrega un concepto">
+              </div>  
+              <div class="form-group">
+                <label for="b-range-03">Rango <span>*</span></label>
+                <input class="form-control" type="text" id="b-range-03" name="b-range-03"  required placeholder="Agrega un rango">
+              </div>                 
+              <div class="form-group">
+                <label for="b-level-of-development-03">Nivel de desarrollo de competencia <span>*</span></label>
+                <input class="form-control" type="text" id="b-level-of-development-03" name="b-level-of-development-03"  required placeholder="Agrega un nivel de desarrollo">
+              </div>               
+
+            </div>
+          </form>   
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+          <div class="btn-group">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Agregar</button>          
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ====== Modal-03 ====== -->
+    <div id="modal-03" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Trabajo en equipo</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form id="miFormulario">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+
+              <div class="form-group">
+                <label for="c-concept-01">Concepto <span>*</span></label>
+                <input class="form-control" type="text" id="c-concept-01" name="c-concept-01"  required placeholder="Agrega un concepto">
+              </div>  
+              <div class="form-group">
+                <label for="c-range-01">Rango <span>*</span></label>
+                <input class="form-control" type="text" id="c-range-01" name="c-range-01"  required placeholder="Agrega un rango">
+              </div>                 
+              <div class="form-group">
+                <label for="c-level-of-development-01">Nivel de desarrollo de competencia <span>*</span></label>
+                <input class="form-control" type="text" id="c-level-of-development-01" name="c-level-of-development-01"  required placeholder="Agrega un nivel de desarrollo">
+              </div> 
+
+            </div>                        
+          </form>   
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+          <div class="btn-group">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Agregar</button>          
+          </div>
+        </div>
+      </div>
+    </div>  
+    
+    <!-- ====== Modal-04 ====== -->
+    <div id="modal-04" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Decisión</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form id="miFormulario">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+
+              <div class="form-group">
+                <label for="d-concept-01">Concepto <span>*</span></label>
+                <input class="form-control" type="text" id="d-concept-01" name="d-concept-01"  required placeholder="Agrega un concepto">
+              </div>  
+              <div class="form-group">
+                <label for="d-range-01">Rango <span>*</span></label>
+                <input class="form-control" type="text" id="d-range-01" name="d-range-01"  required placeholder="Agrega un rango">
+              </div>                 
+              <div class="form-group">
+                <label for="d-level-of-development-01">Nivel de desarrollo de competencia <span>*</span></label>
+                <input class="form-control" type="text" id="d-level-of-development-01" name="d-level-of-development-01"  required placeholder="Agrega un nivel de desarrollo">
+              </div>                               
+
+              <div class="form-group">
+                <label for="d-concept-02">Concepto <span>*</span></label>
+                <input class="form-control" type="text" id="d-concept-02" name="d-concept-02"  required placeholder="Agrega un concepto">
+              </div>  
+              <div class="form-group">
+                <label for="d-range-02">Rango <span>*</span></label>
+                <input class="form-control" type="text" id="d-range-02" name="d-range-02"  required placeholder="Agrega un rango">
+              </div>                 
+              <div class="form-group">
+                <label for="d-level-of-development-02">Nivel de desarrollo de competencia <span>*</span></label>
+                <input class="form-control" type="text" id="d-level-of-development-02" name="d-level-of-development-02"  required placeholder="Agrega un nivel de desarrollo">
+              </div>                               
+              
+              <div class="form-group">
+                <label for="d-concept-03">Concepto <span>*</span></label>
+                <input class="form-control" type="text" id="d-concept-03" name="d-concept-03"  required placeholder="Agrega un concepto">
+              </div>  
+              <div class="form-group">
+                <label for="d-range-03">Rango <span>*</span></label>
+                <input class="form-control" type="text" id="d-range-03" name="d-range-03"  required placeholder="Agrega un rango">
+              </div>                 
+              <div class="form-group">
+                <label for="d-level-of-development-03">Nivel de desarrollo de competencia <span>*</span></label>
+                <input class="form-control" type="text" id="d-level-of-development-03" name="d-level-of-development-03"  required placeholder="Agrega un nivel de desarrollo">
+              </div>                               
+              
+              <div class="form-group">
+                <label for="d-concept-04">Concepto <span>*</span></label>
+                <input class="form-control" type="text" id="d-concept-04" name="d-concept-04"  required placeholder="Agrega un concepto">
+              </div>  
+              <div class="form-group">
+                <label for="d-range-04">Rango <span>*</span></label>
+                <input class="form-control" type="text" id="d-range-04" name="d-range-04"  required placeholder="Agrega un rango">
+              </div>                 
+              <div class="form-group">
+                <label for="d-level-of-development-04">Nivel de desarrollo de competencia <span>*</span></label>
+                <input class="form-control" type="text" id="d-level-of-development-04" name="d-level-of-development-04"  required placeholder="Agrega un nivel de desarrollo">
+              </div>                               
+              
+              <div class="form-group">
+                <label for="d-concept-05">Concepto <span>*</span></label>
+                <input class="form-control" type="text" id="d-concept-05" name="d-concept-05"  required placeholder="Agrega un concepto">
+              </div>  
+              <div class="form-group">
+                <label for="d-range-05">Rango <span>*</span></label>
+                <input class="form-control" type="text" id="d-range-05" name="d-range-05"  required placeholder="Agrega un rango">
+              </div>                 
+              <div class="form-group">
+                <label for="d-level-of-development-05">Nivel de desarrollo de competencia <span>*</span></label>
+                <input class="form-control" type="text" id="d-level-of-development-05" name="d-level-of-development-05"  required placeholder="Agrega un nivel de desarrollo">
+              </div>                               
+              
+              <div class="form-group">
+                <label for="d-concept-06">Concepto <span>*</span></label>
+                <input class="form-control" type="text" id="d-concept-06" name="d-concept-06"  required placeholder="Agrega un concepto">
+              </div>  
+              <div class="form-group">
+                <label for="d-range-06">Rango <span>*</span></label>
+                <input class="form-control" type="text" id="d-range-06" name="d-range-06"  required placeholder="Agrega un rango">
+              </div>                 
+              <div class="form-group">
+                <label for="d-level-of-development-06">Nivel de desarrollo de competencia <span>*</span></label>
+                <input class="form-control" type="text" id="d-level-of-development-06" name="d-level-of-development-06"  required placeholder="Agrega un nivel de desarrollo">
+              </div>     
+
+            </div>                        
+          </form>   
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+          <div class="btn-group">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Agregar</button>          
+          </div>
+        </div>
+      </div>
+    </div>   
+    
+    <!-- ====== Modal-05 ====== -->
+    <div id="modal-05" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Ejecución</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form id="miFormulario">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+
+              <div class="form-group">
+                <label for="e-concept-01">Concepto <span>*</span></label>
+                <input class="form-control" type="text" id="e-concept-01" name="e-concept-01"  required placeholder="Agrega un concepto">
+              </div>  
+              <div class="form-group">
+                <label for="e-range-01">Rango <span>*</span></label>
+                <input class="form-control" type="text" id="e-range-01" name="e-range-01"  required placeholder="Agrega un rango">
+              </div>                 
+              <div class="form-group">
+                <label for="e-level-of-development-01">Nivel de desarrollo de competencia <span>*</span></label>
+                <input class="form-control" type="text" id="e-level-of-development-01" name="e-level-of-development-01"  required placeholder="Agrega un nivel de desarrollo">
+              </div>                               
+
+              <div class="form-group">
+                <label for="e-concept-02">Concepto <span>*</span></label>
+                <input class="form-control" type="text" id="e-concept-02" name="e-concept-02"  required placeholder="Agrega un concepto">
+              </div>  
+              <div class="form-group">
+                <label for="e-range-02">Rango <span>*</span></label>
+                <input class="form-control" type="text" id="e-range-02" name="e-range-02"  required placeholder="Agrega un rango">
+              </div>                 
+              <div class="form-group">
+                <label for="e-level-of-development-02">Nivel de desarrollo de competencia <span>*</span></label>
+                <input class="form-control" type="text" id="e-level-of-development-02" name="e-level-of-development-02"  required placeholder="Agrega un nivel de desarrollo">
+              </div>                                                                    
+                                                      
+            </div>                        
+          </form>   
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+          <div class="btn-group">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Agregar</button>          
+          </div>
+        </div>
+      </div>
+    </div>    
+
+  </main>  
+
+<!--///////
+SCRIPTS
+////////-->
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/91705bc097.js" crossorigin="anonymous"></script>
+<!-- Jquery last version -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>	
+
+</body>
+</html>
