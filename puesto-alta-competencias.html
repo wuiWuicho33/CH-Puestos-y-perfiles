@@ -124,12 +124,22 @@
           <div class="tab-content">
 
             <!-- Tab-pane-01 -->
-            <div class="tab-pane active" id="tab-01" role="tabpanel">
-              <!-- form-group -->
-              <div class="form-group">
-                <label for="level">Nivel profesional</label>
-                <input class="form-control" type="text" id="level" name="level" required placeholder="Agrega el nivel profesional">
-              </div>                                                        
+            <div class="tab-pane active" id="tab-01" role="tabpanel">                                                         
+              <!-- Grid-item -->
+              <div class="grid-item">
+                <label for="level">Nivel profesional <span>*</span></label>
+                <select id="level" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Director">Director</option>
+                  <option value="Gerente">Gerente</option>
+                  <option value="Mando medio">Mando medio</option>
+                  <option value="Comercial">Comercial</option>
+                  <option value="Creativo">Creativo</option>
+                  <option value="Contribuidor individual">Contribuidor individual</option>
+                  <option value="Operativo">Operativo</option>
+                  <option value="N/A">N/A</option>
+                </select> 
+              </div>
             </div>
             <!-- Tab-pane-02 -->
             <div class="tab-pane" id="tab-02" role="tabpanel">            
