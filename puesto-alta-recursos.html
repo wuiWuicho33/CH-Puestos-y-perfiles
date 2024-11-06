@@ -149,8 +149,15 @@
             <!-- Item -->
             <div class="form-group">
               <label for="responsibility">Responsabilidad sobre recursos económicos <span>*</span></label>
-              <textarea class="form-control" id="responsibility" name="responsibility" rows="4" cols="50" placeholder="Redacta una responsabilidad, debe ser clara y concisa." required></textarea>                
-            </div>                              
+              <select id="responsibility" class="form-control" required>
+                <option value="" disabled selected>-- Selecciona --</option>
+                <option value="Responsable de recursos materiales, financieros y/o económicos para desempeñar su función sin autoridad para disponer de estos  fuera de normas definidas.">Responsable de recursos materiales, financieros y/o económicos para desempeñar su función sin autoridad para disponer de estos  fuera de normas definidas.</option>
+                <option value="Tiene recursos materiales, financieros y/o económicos asignados con autoridad limitada para disponer dentro de un presupuesto asignado.">Tiene recursos materiales, financieros y/o económicos asignados con autoridad limitada para disponer dentro de un presupuesto asignado.</option>
+                <option value="Además de los recursos materiales, financieros y/o económicos a su cargo puede autorizar gastos o el uso de equipo y materiales en su área.">Además de los recursos materiales, financieros y/o económicos a su cargo puede autorizar gastos o el uso de equipo y materiales en su área.</option>
+                <option value="Tiene autoridad para disponer, asignar y administrar los recursos materiales, financieros y/o econóomicos del centro u obra dentro del presupuesto.">Tiene autoridad para disponer, asignar y administrar los recursos materiales, financieros y/o econóomicos del centro u obra dentro del presupuesto.</option>
+                <option value="Tiene autoridad para disponer, asignar y administrar los recursos del centro u obra, incluso fuera del presupuesto">Tiene autoridad para disponer, asignar y administrar los recursos del centro u obra, incluso fuera del presupuesto</option>
+              </select> 
+            </div>                        
           </form>   
         </div>
         <!-- == Modal-footer == -->

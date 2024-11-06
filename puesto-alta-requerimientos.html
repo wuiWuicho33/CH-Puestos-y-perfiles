@@ -322,9 +322,19 @@
                 </select> 
               </div>
               <div class="grid-item">
-                <label for="position">Puesto</label>
-                <input class="form-control" type="text" id="position" name="position" required placeholder="Ingresa un puesto">
-              </div>                                                        
+                <label for="position">Puesto <span>*</span></label>
+                <select id="position" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Especialista">Especialista</option>
+                  <option value="Supervisor o Coor-dinador">Supervisor o Coor-dinador</option>
+                  <option value="Jefe de área o departamento">Jefe de área o departamento</option>  
+                  <option value="Gerente junior">Gerente junior</option>            
+                  <option value="Gerente senior">Gerente senior</option>
+                  <option value="Director junior">Director junior</option>
+                  <option value="Director senior">Director senior</option>
+                  <option value="N/A">N/A</option>
+                </select> 
+              </div>                                                       
             </div>  
             <!-- Item -->
             <div class="form-group">
