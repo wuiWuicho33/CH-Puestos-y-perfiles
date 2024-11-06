@@ -113,7 +113,7 @@
         <p>Llena los siguientes campos para describir el puesto que se dará de alta.</p>
         <!-- == Tabs component == -->
         <div class="tabs-container pb-3" id="tabs-container-1">
-          <!-- Buttons -->
+          <!-- Tabs buttons -->
           <div class="tabs">
             <button class="tab-button active" data-target="tab-01" aria-controls="tab-01" role="tab">Ficha de identificación</button>
             <button class="tab-button" data-target="tab-02" aria-controls="tab-02" role="tab">Ficha de organización</button>
@@ -125,7 +125,7 @@
               <h3>Ficha de identificación</h3>
                 <!-- Form -->
                 <form id="miFormulario">
-                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-3">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-4">
                     <!-- Grid item -->
                     <div class="grid-item">
                       <label for="select-position">Puesto <span>*</span></label>
@@ -194,42 +194,71 @@
               <h3>Ficha de organización</h3>
                 <!-- Form -->
                 <form id="miFormulario">
-                  <!-- Text area -->
+                  <!-- Select -->
                   <div class="form-group">
-                    <label for="select-boss">Selecciona el jefe inmediato<span>*</span></label>
+                    <label for="select-boss">Jefe inmediato<span>*</span></label>
                     <select id="select-boss" class="form-control" required>
                       <option value="" disabled selected>-- Selecciona --</option>
                       <option value="Jefe 1">Jefe 1</option>
-                      <option value="Jefe 1">Jefe 2</option>
-                      <option value="Jefe 1">Jefe 3</option>
-                      <option value="Jefe 1">Jefe 4</option>
-                      <option value="Jefe 1">Jefe 5</option>              
+                      <option value="Jefe 2">Jefe 2</option>
+                      <option value="Jefe 3">Jefe 3</option>
+                      <option value="Jefe 4">Jefe 4</option>
+                      <option value="Jefe 5">Jefe 5</option>              
                     </select> 
                   </div>
-                  <!-- Radio Button -->
-                  <fieldset class="form-group">
-                    <legend>Puestos que le reportan: </legend>
-                    <label class="radio-label">
-                      <input type="radio" name="opcion" value="opcion1" checked>
-                      Directos: Supervisa a empleados que realizan actividades rutinarias
-                    </label>
-                    <label class="radio-label">
-                      <input type="radio" name="opcion" value="opcion2">
-                      Indirectos: N/A
-                    </label>
-                  </fieldset>                      
-                  <!-- Radio Button -->
-                  <fieldset class="form-group">
-                    <legend>Grado de supervisión: </legend>
-                    <label class="radio-label">
-                      <input type="radio" name="opcion" value="opcion3" checked>
-                      Directos: Supervisa a empleados que realizan actividades semi-complejas
-                    </label>
-                    <label class="radio-label">
-                      <input type="radio" name="opcion" value="opcion4">
-                      Indirectos: N/A
-                    </label>
-                  </fieldset>
+
+                  <h3>Puestos que le reportan</h3>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 mb-4">
+                    <!-- Select -->
+                    <div class="grid-item">
+                      <label for="direct-positions">Directos<span>*</span></label>
+                      <select id="direct-positions" class="form-control" required>
+                        <option value="" disabled selected>-- Selecciona --</option>
+                        <option value="Supervisa a empleados que realizan actividades rutinarias">Supervisa a empleados que realizan actividades rutinarias</option>
+                        <option value="Supervisa a empleados que realizan actividades semi-complejas">Supervisa a empleados que realizan actividades semi-complejas</option>
+                        <option value="Supervisa a empleados que realizan actividades complejas">Supervisa a empleados que realizan actividades complejas</option>
+                        <option value="N/A">N/A</option>
+                      </select> 
+                    </div>
+                    <!-- Select -->
+                    <div class="grid-item">
+                      <label for="indirect-positions">Indirectos<span>*</span></label>
+                      <select id="indirect-positions" class="form-control" required>
+                        <option value="" disabled selected>-- Selecciona --</option>
+                        <option value="Supervisa a empleados que realizan actividades rutinarias">Supervisa a empleados que realizan actividades rutinarias</option>
+                        <option value="Supervisa a empleados que realizan actividades semi-complejas">Supervisa a empleados que realizan actividades semi-complejas</option>
+                        <option value="Supervisa a empleados que realizan actividades complejas">Supervisa a empleados que realizan actividades complejas</option>
+                        <option value="N/A">N/A</option>
+                      </select> 
+                    </div>                                    
+                  </div>
+
+                  <h3>Grado de supervisión</h3>
+                  <div class="grid grid-cols-1 sm:grid-cols-2 mb-4">
+                    <!-- Select -->
+                    <div class="grid-item">
+                      <label for="direct-supervision-degree">Directos<span>*</span></label>
+                      <select id="direct-supervision-degree" class="form-control" required>
+                        <option value="" disabled selected>-- Selecciona --</option>
+                        <option value="Supervisa a empleados que realizan actividades rutinarias">Supervisa a empleados que realizan actividades rutinarias</option>
+                        <option value="Supervisa a empleados que realizan actividades semi-complejas">Supervisa a empleados que realizan actividades semi-complejas</option>
+                        <option value="Supervisa a empleados que realizan actividades complejas">Supervisa a empleados que realizan actividades complejas</option>
+                        <option value="N/A">N/A</option>
+                      </select> 
+                    </div>
+                    <!-- Select -->
+                    <div class="grid-item">
+                      <label for="indirect-supervision-degree">Indirectos<span>*</span></label>
+                      <select id="indirect-supervision-degree" class="form-control" required>
+                        <option value="" disabled selected>-- Selecciona --</option>
+                        <option value="Supervisa a empleados que realizan actividades rutinarias">Supervisa a empleados que realizan actividades rutinarias</option>
+                        <option value="Supervisa a empleados que realizan actividades semi-complejas">Supervisa a empleados que realizan actividades semi-complejas</option>
+                        <option value="Supervisa a empleados que realizan actividades complejas">Supervisa a empleados que realizan actividades complejas</option>
+                        <option value="N/A">N/A</option>
+                      </select> 
+                    </div>                                    
+                  </div>                  
+
                   <!-- Alert -->
                   <div class="alert alert-success" role="alert" aria-live="assertive">
                     <p><strong>Éxito:</strong> Se guardaron los datos.</p>
