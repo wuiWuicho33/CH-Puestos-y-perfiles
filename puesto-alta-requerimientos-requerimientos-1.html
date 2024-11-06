@@ -128,22 +128,27 @@
               <h3>Educación</h3>
                 <!-- Form -->
                 <form id="miFormulario">
-                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-3">
-                    <!-- Form-group -->
-                    <div class="form-group">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-4">
+                    <!-- grid-item -->
+                    <div class="grid-item">
                       <label for="profile">Perfil <span>*</span></label>
                       <input class="form-control" type="text" id="profile" name="profile"  required placeholder="Ejem: Maestría en derecho">
                     </div>  
-                    <!-- Form-group -->
-                    <div class="form-group">
+                    <!-- grid-item -->
+                    <div class="grid-item">
                       <label for="level">Nivel <span>*</span></label>
                       <select id="level" class="form-control" required>
                         <option value="" disabled selected>-- Selecciona --</option>
-                        <option value="Área 1">Licenciatura</option>
-                        <option value="Área 1">Maestría</option>
-                        <option value="Área 1">Doctorado</option>
+                        <option value="Educación primaria">Educación primaria</option>
+                        <option value="Educación secundaria">Educación secundaria</option>
+                        <option value="Bachillerato/Preparatoria">Bachillerato/Preparatoria</option>
+                        <option value="Técnico/Tecnológico">Técnico/Tecnológico</option>
+                        <option value="Educación superior (Título universitario de licenciatura)">Educación superior (Título universitario de licenciatura)</option>
+                        <option value="Maestría">Maestría</option>
+                        <option value="Posgrado/Doctorado">Posgrado/Doctorado</option>
+                        <option value="N/A">N/A</option>
                       </select> 
-                    </div>  
+                    </div>    
                   </div>
                   <!-- Form-group -->
                   <div class="form-group">
@@ -289,7 +294,7 @@
                 <!-- Panel-Header -->
                 <header class="panel-header">
                   <h3>Experiencia 1</h3>
-                  <button data-modal="modal-01">
+                  <button data-modal="modal-05">
                     <i class="fa-solid fa-pen"></i>
                   </button>            
                 </header>
@@ -299,7 +304,7 @@
                   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-4">
                     <div class="grid-item">
                       <h4>Años de experiencia</h4>
-                      <p>7 años o más</p>
+                      <p>1 a 3 años</p>
                     </div>
                     <div class="grid-item">
                       <h4>Puesto</h4>
@@ -347,7 +352,7 @@
                 </button>
               </div>        
               <!-- == Agregar nuevo == -->
-              <button class="add-button" data-modal="modal-02">
+              <button class="add-button" data-modal="modal-06">
                 <p>Agregar otra experiencia</p>
                 <i class="fa-solid fa-plus"></i>
               </button>
@@ -378,12 +383,12 @@
         <!-- == Modal-body == -->
         <div class="modal-body">
           <form id="miFormulario">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-3">
-              <div class="form-group">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-4">
+              <div class="grid-item">
                 <label for="language">Idioma <span>*</span></label>
                 <input class="form-control" type="text" id="language" name="language"  required placeholder="Agrega un idioma">
               </div>  
-              <div class="form-group">
+              <div class="grid-item">
                 <label for="level">Nivel <span>*</span></label>
                 <select id="level" class="form-control" required>
                   <option value="" disabled selected>-- Selecciona --</option>
@@ -424,12 +429,12 @@
         <!-- == Modal-body == -->
         <div class="modal-body">
           <form id="miFormulario">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-3">
-              <div class="form-group">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-4">
+              <div class="grid-item">
                 <label for="language">Idioma <span>*</span></label>
                 <input class="form-control" type="text" id="language" name="language"  required placeholder="Agrega un idioma">
               </div>  
-              <div class="form-group">
+              <div class="grid-item">
                 <label for="level">Nivel <span>*</span></label>
                 <select id="level" class="form-control" required>
                   <option value="" disabled selected>-- Selecciona --</option>
@@ -461,7 +466,7 @@
       <div class="modal-content">
         <!-- == Modal-header == -->
         <div class="modal-header">
-          <h2>Programa 1</h2>
+          <h2>Editar programa 1</h2>
           <span class="btn-close" data-dismiss="modal">
             <i class="fa-solid fa-xmark"></i>
           </span>
@@ -469,12 +474,12 @@
         <!-- == Modal-body == -->
         <div class="modal-body">
           <form id="miFormulario">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-3">
-              <div class="form-group">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-4">
+              <div class="grid-item">
                 <label for="program">Programa <span>*</span></label>
                 <input class="form-control" type="text" id="program" name="program"  required placeholder="Agrega un programa">
               </div>  
-              <div class="form-group">
+              <div class="grid-item">
                 <label for="level-use">Nivel de uso<span>*</span></label>
                 <select id="level-use" class="form-control" required>
                   <option value="" disabled selected>-- Selecciona --</option>
@@ -515,12 +520,12 @@
         <!-- == Modal-body == -->
         <div class="modal-body">
           <form id="miFormulario">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-3">
-              <div class="form-group">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-4">
+              <div class="grid-item">
                 <label for="program">Programa <span>*</span></label>
                 <input class="form-control" type="text" id="program" name="program"  required placeholder="Agrega un programa">
               </div>  
-              <div class="form-group">
+              <div class="grid-item">
                 <label for="level-use">Nivel de uso<span>*</span></label>
                 <select id="level-use" class="form-control" required>
                   <option value="" disabled selected>-- Selecciona --</option>
@@ -535,6 +540,103 @@
               <label for="request-02">Requerimiento <span>*</span></label>
               <textarea class="form-control" id="request-02" name="request-02" rows="4" cols="50" placeholder="Ejem: Conocimiento sólido de los principios y aplicaciones del sistema a nivel captura o carga de información / Utiliza herramientas del sistema para análisis de datos en un nivel intermedio." required></textarea>                
             </div>
+          </form>   
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+          <div class="btn-group">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Agregar</button>          
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+    <!-- ====== Modal-05 ====== -->
+    <div id="modal-05" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Editar experiencia 1</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form id="miFormulario">
+            <!-- Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-4">
+              <div class="grid-item">
+                <label for="experience">Años de experiecia <span>*</span></label>
+                <select id="experience" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Menos de 1 año">Menos de 1 año</option>
+                  <option value="1 a 3 años">1 a 3 años</option>
+                  <option value="3 a 5 años">3 a 5 años</option>  
+                  <option value="5 a 7 años">5 a 7 años</option>            
+                  <option value="Más de 7 años">Más de 7 años</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="position">Puesto</label>
+                <input class="form-control" type="text" id="position" name="position" required placeholder="Ingresa un puesto">
+              </div>                                                        
+            </div>  
+            <!-- Item -->
+            <div class="form-group">
+              <label for="areas">Áreas <span>*</span></label>
+              <textarea class="form-control" id="areas" name="areas" rows="4" cols="50" placeholder="Agrega las áreas de expertiz separadas por un salto de línea." required></textarea>                
+            </div>                              
+          </form>   
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+          <button type="reset" class="btn btn-danger-inverse"><i class="fa-solid fa-trash-can"></i> Eliminar</button> <!-- Sólo para el modal de edición -->
+          <div class="btn-group">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Agregar</button>          
+          </div>
+        </div>
+      </div>
+    </div>    
+    
+    <!-- ====== Modal-06 ====== -->
+    <div id="modal-06" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Experiencia 2</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form id="miFormulario">
+            <!-- Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-4">
+              <div class="grid-item">
+                <label for="experience">Años de experiecia <span>*</span></label>
+                <select id="experience" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Menos de 1 año">Menos de 1 año</option>
+                  <option value="1 a 3 años">1 a 3 años</option>
+                  <option value="3 a 5 años">3 a 5 años</option>  
+                  <option value="5 a 7 años">5 a 7 años</option>            
+                  <option value="Más de 7 años">Más de 7 años</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="position">Puesto</label>
+                <input class="form-control" type="text" id="position" name="position" required placeholder="Ingresa un puesto">
+              </div>                                                        
+            </div>  
+            <!-- Item -->
+            <div class="form-group">
+              <label for="areas">Áreas <span>*</span></label>
+              <textarea class="form-control" id="areas" name="areas" rows="4" cols="50" placeholder="Agrega las áreas de expertiz separadas por un salto de línea." required></textarea>                
+            </div>                              
           </form>   
         </div>
         <!-- == Modal-footer == -->

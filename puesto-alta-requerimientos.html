@@ -127,20 +127,25 @@
               <h3>Educación</h3>
                 <!-- Form -->
                 <form id="miFormulario">
-                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-3">
-                    <!-- Form-group -->
-                    <div class="form-group">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-4">
+                    <!-- grid-item -->
+                    <div class="grid-item">
                       <label for="profile">Perfil <span>*</span></label>
                       <input class="form-control" type="text" id="profile" name="profile"  required placeholder="Ejem: Maestría en derecho">
                     </div>  
-                    <!-- Form-group -->
-                    <div class="form-group">
+                    <!-- grid-item -->
+                    <div class="grid-item">
                       <label for="level">Nivel <span>*</span></label>
                       <select id="level" class="form-control" required>
                         <option value="" disabled selected>-- Selecciona --</option>
-                        <option value="Área 1">Licenciatura</option>
-                        <option value="Área 1">Maestría</option>
-                        <option value="Área 1">Doctorado</option>
+                        <option value="Educación primaria">Educación primaria</option>
+                        <option value="Educación secundaria">Educación secundaria</option>
+                        <option value="Bachillerato/Preparatoria">Bachillerato/Preparatoria</option>
+                        <option value="Técnico/Tecnológico">Técnico/Tecnológico</option>
+                        <option value="Educación superior (Título universitario de licenciatura)">Educación superior (Título universitario de licenciatura)</option>
+                        <option value="Maestría">Maestría</option>
+                        <option value="Posgrado/Doctorado">Posgrado/Doctorado</option>
+                        <option value="N/A">N/A</option>
                       </select> 
                     </div>  
                   </div>
@@ -213,12 +218,12 @@
         <!-- == Modal-body == -->
         <div class="modal-body">
           <form id="miFormulario">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-3">
-              <div class="form-group">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-4">
+              <div class="grid-item">
                 <label for="language">Idioma <span>*</span></label>
                 <input class="form-control" type="text" id="language" name="language"  required placeholder="Agrega un idioma">
               </div>  
-              <div class="form-group">
+              <div class="grid-item">
                 <label for="level">Nivel <span>*</span></label>
                 <select id="level" class="form-control" required>
                   <option value="" disabled selected>-- Selecciona --</option>
@@ -258,12 +263,12 @@
         <!-- == Modal-body == -->
         <div class="modal-body">
           <form id="miFormulario">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-3">
-              <div class="form-group">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-4">
+              <div class="grid-item">
                 <label for="program">Programa <span>*</span></label>
                 <input class="form-control" type="text" id="program" name="program"  required placeholder="Agrega un programa">
               </div>  
-              <div class="form-group">
+              <div class="grid-item">
                 <label for="level-use">Nivel de uso<span>*</span></label>
                 <select id="level-use" class="form-control" required>
                   <option value="" disabled selected>-- Selecciona --</option>
@@ -304,22 +309,19 @@
         <div class="modal-body">
           <form id="miFormulario">
             <!-- Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-4">
               <div class="grid-item">
                 <label for="experience">Años de experiecia <span>*</span></label>
                 <select id="experience" class="form-control" required>
                   <option value="" disabled selected>-- Selecciona --</option>
-                  <option value="1 año o más">1 año o más</option>
-                  <option value="2 años o más">2 años o más</option>
-                  <option value="3 años o más">3 años o más</option>  
-                  <option value="4 años o más">4 años o más</option>            
-                  <option value="5 años o más">5 años o más</option>
-                  <option value="6 años o más">6 años o más</option>
-                  <option value="7 años o más">7 años o más</option>
-                  <option value="8 años o más">9 años o más</option>
+                  <option value="Menos de 1 año">Menos de 1 año</option>
+                  <option value="1 a 3 años">1 a 3 años</option>
+                  <option value="3 a 5 años">3 a 5 años</option>  
+                  <option value="5 a 7 años">5 a 7 años</option>            
+                  <option value="Más de 7 años">Más de 7 años</option>
                 </select> 
               </div>
-              <div class="form-group">
+              <div class="grid-item">
                 <label for="position">Puesto</label>
                 <input class="form-control" type="text" id="position" name="position" required placeholder="Ingresa un puesto">
               </div>                                                        
