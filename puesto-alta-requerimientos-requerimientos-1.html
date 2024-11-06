@@ -102,9 +102,6 @@
             <a href="puesto-alta-requerimientos.html">Requerimientos</a>
           </li>
           <li>
-            <a href="puesto-alta-experiencia.html">Experiencia</a>
-          </li>
-          <li>
             <a href="puesto-alta-recursos.html">Recursos</a>
           </li>
           <li>
@@ -121,9 +118,11 @@
             <button class="tab-button active" data-target="tab-01" aria-controls="tab-01" role="tab">Educación</button>
             <button class="tab-button" data-target="tab-02" aria-controls="tab-02" role="tab">Idiomas</button>
             <button class="tab-button" data-target="tab-03" aria-controls="tab-03" role="tab">Programas</button>
+            <button class="tab-button" data-target="tab-04" aria-controls="tab-04" role="tab">Experiencia</button>
           </div>
           <!-- Content -->
           <div class="tab-content">
+
             <!-- Tab-pane-01 -->
             <div class="tab-pane active" id="tab-01" role="tabpanel">
               <h3>Educación</h3>
@@ -177,6 +176,7 @@
                   </div>
                 </form>                  
             </div>
+
             <!-- Tab-pane-02 -->
             <div class="tab-pane" id="tab-02" role="tabpanel">
               <h3>Idiomas</h3>        
@@ -207,7 +207,6 @@
                   <p>Comprensión de una amplia variedad de textos de complejidad alta. Sabe expresarse de forma fluida sin muestras muy evidentes de esfuerzo para encontrar la expresión adecuada. Puede producir textos claros, bien estructurados y detallados sobre temas de cierta complejidad.</p>
                 </div>  
               </div>                      
-
               <!-- Alert -->
               <div class="alert alert-success" role="alert" aria-live="assertive">
                 <p><strong>Éxito:</strong> Se agregó el idioma.</p>
@@ -222,13 +221,13 @@
                   <i class="fas fa-times"></i>
                 </button>
               </div>
-
               <!-- Agregar nuevo -->
               <button class="add-button" data-modal="modal-02">
                 <p>Agregar nuevo idioma</p>
                 <i class="fa-solid fa-plus"></i>
               </button>           
             </div>
+
             <!-- Tab-pane-03 -->
             <div class="tab-pane" id="tab-03" role="tabpanel">
               <h3>Programas</h3>
@@ -258,8 +257,7 @@
                   <h4>Requerimiento</h4>
                   <p>Conocimiento sólido de los principios y aplicaciones del sistema a nivel captura o carga de información / Utiliza herramientas del sistema para análisis de datos en un nivel intermedio.</p>
                 </div>  
-              </div>   
-              
+              </div>                 
               <!-- Alert -->
               <div class="alert alert-success" role="alert" aria-live="assertive">
                 <p><strong>Éxito:</strong> Se agregó el programa.</p>
@@ -273,14 +271,88 @@
                 <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
                   <i class="fas fa-times"></i>
                 </button>
-              </div>              
-              
+              </div>                            
               <!-- Agregar nuevo -->
               <button class="add-button" data-modal="modal-04">
                 <p>Agregar nuevo programa</p>
                 <i class="fa-solid fa-plus"></i>
               </button>           
-            </div>            
+            </div>
+
+            <!-- Tab-pane-04 -->
+            <div class="tab-pane" id="tab-04" role="tabpanel">
+              <!-- == Guide text == -->
+              <h2>Experiencia</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut alias, error soluta omnis optio cumque est ullam nesciunt accusamus odio.</p>
+              <!-- == Panel == -->
+              <div class="panel">
+                <!-- Panel-Header -->
+                <header class="panel-header">
+                  <h3>Experiencia 1</h3>
+                  <button data-modal="modal-01">
+                    <i class="fa-solid fa-pen"></i>
+                  </button>            
+                </header>
+                <!-- Panel-body -->
+                <div class="panel-body">            
+                  <!-- Grid -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mb-4">
+                    <div class="grid-item">
+                      <h4>Años de experiencia</h4>
+                      <p>7 años o más</p>
+                    </div>
+                    <div class="grid-item">
+                      <h4>Puesto</h4>
+                      <p>Gerente senior</p>
+                    </div>
+                  </div>              
+                  <!-- Text -->
+                  <h4>Áreas</h4>
+                  <p>
+                    Elaboración de estrategias legales. <br>
+                    Constitución de empresas, títulos y operaciones de crédito. <br>
+                    Conocimiento en operaciones comerciales y temas financieros. <br>
+                    Obligaciones civiles y mercantiles. <br>
+                    Actas de asamblea.Compliance y gobierno corporativo. <br>
+                    Conocimiento en telecomunicaciones.Conocimiento en propiedad intelectual.</p>            
+                </div>  
+              </div>
+              <!-- == Alerts == -->
+              <!-- Alert -->
+              <div class="alert alert-success" role="alert" aria-live="assertive">
+                <p><strong>Éxito:</strong> Se creó la experiencia.</p>
+                <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <!-- Alert -->
+              <div class="alert alert-warning" role="alert" aria-live="assertive">
+                <p><strong>Advertencia:</strong> No se creo la experiencia.</p>
+                <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>                                                    
+              <!-- Alert -->
+              <div class="alert alert-success" role="alert" aria-live="assertive">
+                <p><strong>Éxito:</strong> Se editó la experiencia.</p>
+                <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <!-- Alert -->
+              <div class="alert alert-warning" role="alert" aria-live="assertive">
+                <p><strong>Advertencia:</strong> No se editó la experiencia.</p>
+                <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>        
+              <!-- == Agregar nuevo == -->
+              <button class="add-button" data-modal="modal-02">
+                <p>Agregar otra experiencia</p>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div> 
+                                                                                   
           </div>
         </div>          
       </div>  
