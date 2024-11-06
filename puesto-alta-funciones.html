@@ -149,8 +149,14 @@
             <!-- Item -->
             <div class="form-group">
               <label for="contribution">Contribución <span>*</span></label>
-              <input class="form-control" type="text" id="contribution" name="contribution"  required placeholder="Agrega una contribución">
-            </div>  
+              <select id="contribution" class="form-control" required>
+                <option value="" disabled selected>-- Selecciona --</option>
+                <option value="Entrega resultados para el área">Entrega resultados para el área</option>
+                <option value="Trabaja en el logro de los objetivos a corto plazo">Trabaja en el logro de los objetivos a corto plazo</option>
+                <option value="Establece y desarrolla procesos y planes a mediano plazo">Establece y desarrolla procesos y planes a mediano plazo</option>  
+                <option value="Establece e implementa estrategias de negocios y objetivos">Establece e implementa estrategias de negocios y objetivos</option>            
+              </select> 
+            </div>            
             <!-- Grid -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
               <div class="grid-item">
