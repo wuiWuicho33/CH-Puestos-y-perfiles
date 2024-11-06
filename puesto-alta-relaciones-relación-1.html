@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<title>Puesto - Alta de relaciones internas - Relación 1</title>
+	<link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body> 
+
+  <!-- =========
+  * SIDEBAR *
+  ========== -->
+  <section class="sidebar">
+
+    <!-- Header
+    ========================================== -->    
+    <header>
+      <img class="logo" src="assets/img/logo.png">
+    </header>
+
+    <!-- Side-menu
+    ========================================== -->              		 
+    <ul class="side-menu">
+      <!-- ====== Sub-menu ====== -->
+      <li class='sub-menu active'>
+        <a href='#'>
+          <i class="fa-solid fa-user-tie"></i> Puesto<div class='fa fa-solid fa-chevron-right right'></div>
+        </a>
+        <ul>
+          <li><a href='puesto-consulta-puestos.html'>Consulta</a></li>
+          <li><a href='puesto-consulta-solicitudes.html'>Consulta de soluciones</a></li>
+          <li><a href='puesto-alta-puesto-descripcion.html'>Alta</a></li>
+          <li><a href='#'>Solicitud</a></li>
+          <li><a href='#'>Autorización</a></li>
+        </ul>
+      </li>      
+      <!-- ====== Links ====== -->
+      <li><a href='#'><i class="fa-solid fa-key"></i> Permisos y roles</a></li>
+      <li><a href='#'><i class="fa-solid fa-users"></i> Usuarios</a></li>
+    </ul>
+  </section>
+
+	<!-- =========
+  * MAIN *
+  ========== -->
+  <main class="main">
+
+    <!-- Navbar
+    ========================================== -->        
+    <nav class="navbar">
+      <!-- ====== Togle ====== -->
+      <button class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+			<!-- ====== Links ====== -->
+      <div class="navbar-links">
+        <a href="#">
+          <i class="fa-solid fa-house mr-1"></i> <span class="d-none d-md-block">Home</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-bell"></i>
+        </a>
+        <!-- ====== Dropdown-user ====== -->
+				<div class="dropdown-user">
+					<!-- == Btn == -->
+					<button class="dropbtn">
+						<img src="http://via.placeholder.com/100x100"> <span class="d-none d-md-block">Nombre de usuario</span>
+					</button>
+          <!-- == Links == -->
+					<div class="dropdown-user-links">
+					<a href="#">Mi perfil <i class="fa-regular fa-credit-card"></i></a>
+					<a href="#">Ajustes <i class="fa-solid fa-gear"></i></a>
+					<a href="#">Cerrar sesión <i class="fa-solid fa-right-from-bracket"></i></a>
+					</div>
+				</div>		
+      </div>
+    </nav>
+
+    <!-- Content
+    ========================================== -->     
+    <section class="content">
+      <!-- ====== Title ====== -->
+      <div>
+        <h1>Alta de puesto</h1>
+      </div> 
+      <!-- ====== Default-Box ====== -->
+      <div class="default-box">
+        <!-- == Secondary-menu == -->
+        <ul class="secondary_menu">
+          <li>
+            <a href="puesto-alta-puesto-descripcion.html" aria-current="page">Puesto</a>
+          </li>
+          <li>
+            <a href="puesto-alta-funciones.html">Funciones</a>
+          </li>
+          <li class="active">
+            <a href="puesto-alta-relaciones.html">Relaciones</a>
+          </li>
+          <li>
+            <a href="puesto-alta-requerimientos.html">Requerimientos</a>
+          </li>
+          <li>
+            <a href="puesto-alta-experiencia.html">Experiencia</a>
+          </li>
+          <li>
+            <a href="puesto-alta-recursos.html">Recursos</a>
+          </li>
+          <li>
+            <a href="puesto-alta-competencias.html">Nivel de competencias</a>
+          </li>
+        </ul>
+        <!-- == Guide text == -->
+        <h2>Relaciones</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut alias, error soluta omnis optio cumque est ullam nesciunt accusamus odio.</p>
+
+        <div  class="mb-5">
+          <h3>Relaciones internas</h3>
+          <!-- == Panel == -->
+          <div class="panel">
+            <!-- Panel-Header -->
+            <header class="panel-header">
+              <h3>Relación interna 1</h3>
+              <button data-modal="modal-01">
+                <i class="fa-solid fa-pen"></i>
+              </button>            
+            </header>
+            <!-- Panel-body -->
+            <div class="panel-body">
+              <!-- Text -->
+              <h4>Área</h4>
+              <p>Dirección / Accionistas</p>
+              <!-- Text -->
+              <h4>Envío de información /  Solicitud de entregables</h4>
+              <p>Asesorar sobre los requisitos y como gestionar los asuntos legales de los accionistas y directores corporativos.</p>
+              <!-- Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+                <div class="grid-item">
+                  <h4>Frecuencia</h4>
+                  <p>Diario</p>
+                </div>
+                <div class="grid-item">
+                  <h4>Tipo de comunicación</h4>
+                  <p>Influenciar</p>
+                </div>                
+                <div class="grid-item">
+                  <h4>Impacto de fallos</h4>
+                  <p>Grave</p>
+                </div>
+                <div class="grid-item">
+                  <h4>Porcentaje de priorización</h4>
+                  <p>15%</p>
+                </div>
+              </div>              
+            </div>  
+          </div>
+          <!-- == Alerts == -->
+          <!-- Alert -->
+          <div class="alert alert-success" role="alert" aria-live="assertive">
+            <p><strong>Éxito:</strong> Se creó la relación.</p>
+            <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <!-- Alert -->
+          <div class="alert alert-warning" role="alert" aria-live="assertive">
+            <p><strong>Advertencia:</strong> No se creo la relación.</p>
+            <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <!-- Alert -->
+          <div class="alert alert-success" role="alert" aria-live="assertive">
+            <p><strong>Éxito:</strong> Se editó la relación.</p>
+            <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <!-- Alert -->
+          <div class="alert alert-warning" role="alert" aria-live="assertive">
+            <p><strong>Advertencia:</strong> No se editó la relación.</p>
+            <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>         
+          <!-- == Agregar nuevo == -->
+          <button class="add-button" data-modal="modal-02">
+            <p>Agregar otra relación</p>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>   
+        
+        <div>
+          <h3>Relaciones externas</h3>
+          <!-- == Panel == -->
+          <div class="panel">
+            <!-- Panel-Header -->
+            <header class="panel-header">
+              <h3>Relación externa 1</h3>
+              <button data-modal="modal-03">
+                <i class="fa-solid fa-pen"></i>
+              </button>            
+            </header>
+            <!-- Panel-body -->
+            <div class="panel-body">
+              <!-- Text -->
+              <h4>Área</h4>
+              <p>Proveedores</p>
+              <!-- Text -->
+              <h4>Envío de información /  Solicitud de entregables</h4>
+              <p>Asesorar sobre los requisitos y como gestionar los asuntos legales de los accionistas y directores corporativos.</p>
+              <!-- Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+                <div class="grid-item">
+                  <h4>Frecuencia</h4>
+                  <p>Diario</p>
+                </div>
+                <div class="grid-item">
+                  <h4>Tipo de comunicación</h4>
+                  <p>Influenciar</p>
+                </div>                
+                <div class="grid-item">
+                  <h4>Impacto de fallos</h4>
+                  <p>Grave</p>
+                </div>
+                <div class="grid-item">
+                  <h4>Porcentaje de priorización</h4>
+                  <p>15%</p>
+                </div>
+              </div>              
+            </div>  
+          </div>
+          <!-- == Alerts == -->
+          <!-- Alert -->
+          <div class="alert alert-success" role="alert" aria-live="assertive">
+            <p><strong>Éxito:</strong> Se creó la relación.</p>
+            <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <!-- Alert -->
+          <div class="alert alert-warning" role="alert" aria-live="assertive">
+            <p><strong>Advertencia:</strong> No se creo la relación.</p>
+            <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <!-- Alert -->
+          <div class="alert alert-success" role="alert" aria-live="assertive">
+            <p><strong>Éxito:</strong> Se editó la relación.</p>
+            <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <!-- Alert -->
+          <div class="alert alert-warning" role="alert" aria-live="assertive">
+            <p><strong>Advertencia:</strong> No se editó la relación.</p>
+            <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>           
+          <!-- == Agregar nuevo == -->
+          <button class="add-button" data-modal="modal-04">
+            <p>Agregar otra relación</p>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- ====== Footer ====== -->
+      <footer>
+        <p>Grupo Fórmula Todos los derechos reservados</p>
+      </footer>	      
+    </section>
+
+    <!-- Modales
+    ========================================== -->    
+    <!-- ====== Modal-01 ====== -->
+    <div id="modal-01" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Editar relación interna 1</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form id="miFormulario">
+            <!-- Item -->              
+            <div class="form-group">
+              <label for="area">Área <span>*</span></label>
+              <select id="area" class="form-control" required>
+                <option value="" disabled selected>-- Selecciona --</option>
+                <option value="Dirección / Accionistas">Dirección / Accionistas</option>
+                <option value="Comercial">Comercial</option>
+                <option value="FInanzas, técnica, auditoria, interna">FInanzas, técnica, auditoria, interna</option>                    
+              </select> 
+            </div>              
+            <!-- Item -->
+            <div class="form-group">
+              <label for="deliverable">Envío de información / Solicitud de entregables <span>*</span></label>
+              <textarea class="form-control" id="deliverable" name="deliverable" rows="4" cols="50" placeholder="Redacta una solicitud, debe ser clara y concisa." required></textarea>                
+            </div>
+            <!-- Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+              <div class="grid-item">
+                <label for="Frequency">Frecuencia <span>*</span></label>
+                <select id="Frequency" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Diario">Diario</option>
+                  <option value="Semanal">Semanal</option>
+                  <option value="Quincenal">Quincenal</option>  
+                  <option value="Mensual">Mensual</option>            
+                  <option value="Bimestral">Bimestral</option>
+                  <option value="Anual">Anual</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="Comunication">Tipo de comunicación <span>*</span></label>
+                <select id="Comunication" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Influenciar">Influenciar</option>
+                  <option value="Intercambiar">Intercambiar</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="Impact">impacto de fallos <span>*</span></label>
+                <select id="Impact" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Grave">Grave</option>
+                  <option value="Muy graves">Muy graves</option>
+                  <option value="Considerables">Considerables</option>
+                </select> 
+              </div>                
+              <div class="form-group">
+                <label for="prioritization">Porcentaje de priorización</label>
+                <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
+              </div>                                                        
+            </div>  
+          </form> 
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+          <button type="reset" class="btn btn-danger-inverse"><i class="fa-solid fa-trash-can"></i> Eliminar</button> <!-- Sólo para el modal de edición -->
+          <div class="btn-group">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Aceptar</button>          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====== Modal-02 ====== -->
+    <div id="modal-02" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Relación interna 2</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form id="miFormulario">
+            <!-- Item -->              
+            <div class="form-group">
+              <label for="area">Área <span>*</span></label>
+              <select id="area" class="form-control" required>
+                <option value="" disabled selected>-- Selecciona --</option>
+                <option value="Dirección / Accionistas">Dirección / Accionistas</option>
+                <option value="Comercial">Comercial</option>
+                <option value="FInanzas, técnica, auditoria, interna">FInanzas, técnica, auditoria, interna</option>                    
+              </select> 
+            </div>              
+            <!-- Item -->
+            <div class="form-group">
+              <label for="deliverable">Envío de información / Solicitud de entregables <span>*</span></label>
+              <textarea class="form-control" id="deliverable" name="deliverable" rows="4" cols="50" placeholder="Redacta una solicitud, debe ser clara y concisa." required></textarea>                
+            </div>
+            <!-- Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+              <div class="grid-item">
+                <label for="Frequency">Frecuencia <span>*</span></label>
+                <select id="Frequency" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Diario">Diario</option>
+                  <option value="Semanal">Semanal</option>
+                  <option value="Quincenal">Quincenal</option>  
+                  <option value="Mensual">Mensual</option>            
+                  <option value="Bimestral">Bimestral</option>
+                  <option value="Anual">Anual</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="Comunication">Tipo de comunicación <span>*</span></label>
+                <select id="Comunication" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Influenciar">Influenciar</option>
+                  <option value="Intercambiar">Intercambiar</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="Impact">impacto de fallos <span>*</span></label>
+                <select id="Impact" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Grave">Grave</option>
+                  <option value="Muy graves">Muy graves</option>
+                  <option value="Considerables">Considerables</option>
+                </select> 
+              </div>                
+              <div class="form-group">
+                <label for="prioritization">Porcentaje de priorización</label>
+                <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
+              </div>                                                        
+            </div>  
+          </form> 
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+          <div class="btn-group">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Agregar</button>          
+          </div>
+        </div>
+      </div>
+    </div>    
+    
+    <!-- ====== Modal-03 ====== -->
+    <div id="modal-03" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Editar relación externa 1</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form id="miFormulario">
+            <!-- Item -->              
+            <div class="form-group">
+              <label for="area">Área <span>*</span></label>
+              <select id="area" class="form-control" required>
+                <option value="" disabled selected>-- Selecciona --</option>
+                <option value="Proveedores">Proveedores</option>
+                <option value="Abogados externos">Abogados externos</option>
+              </select> 
+            </div>              
+            <!-- Item -->
+            <div class="form-group">
+              <label for="deliverable">Envío de información / Solicitud de entregables <span>*</span></label>
+              <textarea class="form-control" id="deliverable" name="deliverable" rows="4" cols="50" placeholder="Redacta una solicitud, debe ser clara y concisa." required></textarea>                
+            </div>
+            <!-- Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+              <div class="grid-item">
+                <label for="Frequency">Frecuencia <span>*</span></label>
+                <select id="Frequency" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Diario">Diario</option>
+                  <option value="Semanal">Semanal</option>
+                  <option value="Quincenal">Quincenal</option>  
+                  <option value="Mensual">Mensual</option>            
+                  <option value="Bimestral">Bimestral</option>
+                  <option value="Anual">Anual</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="Comunication">Tipo de comunicación <span>*</span></label>
+                <select id="Comunication" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Influenciar">Influenciar</option>
+                  <option value="Intercambiar">Intercambiar</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="Impact">impacto de fallos <span>*</span></label>
+                <select id="Impact" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Grave">Grave</option>
+                  <option value="Muy graves">Muy graves</option>
+                  <option value="Considerables">Considerables</option>
+                </select> 
+              </div>                
+              <div class="form-group">
+                <label for="prioritization">Porcentaje de priorización</label>
+                <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
+              </div>                                                        
+            </div>  
+          </form> 
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+          <button type="reset" class="btn btn-danger-inverse"><i class="fa-solid fa-trash-can"></i> Eliminar</button> <!-- Sólo para el modal de edición -->
+          <div class="btn-group">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Aceptar</button>          
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ====== Modal-04 ====== -->
+    <div id="modal-04" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Relación externa 2</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form id="miFormulario">
+            <!-- Item -->              
+            <div class="form-group">
+              <label for="area">Área <span>*</span></label>
+              <select id="area" class="form-control" required>
+                <option value="" disabled selected>-- Selecciona --</option>
+                <option value="Proveedores">Proveedores</option>
+                <option value="Abogados externos">Abogados externos</option>
+              </select> 
+            </div>              
+            <!-- Item -->
+            <div class="form-group">
+              <label for="deliverable">Envío de información / Solicitud de entregables <span>*</span></label>
+              <textarea class="form-control" id="deliverable" name="deliverable" rows="4" cols="50" placeholder="Redacta una solicitud, debe ser clara y concisa." required></textarea>                
+            </div>
+            <!-- Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+              <div class="grid-item">
+                <label for="Frequency">Frecuencia <span>*</span></label>
+                <select id="Frequency" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Diario">Diario</option>
+                  <option value="Semanal">Semanal</option>
+                  <option value="Quincenal">Quincenal</option>  
+                  <option value="Mensual">Mensual</option>            
+                  <option value="Bimestral">Bimestral</option>
+                  <option value="Anual">Anual</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="Comunication">Tipo de comunicación <span>*</span></label>
+                <select id="Comunication" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Influenciar">Influenciar</option>
+                  <option value="Intercambiar">Intercambiar</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="Impact">impacto de fallos <span>*</span></label>
+                <select id="Impact" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Grave">Grave</option>
+                  <option value="Muy graves">Muy graves</option>
+                  <option value="Considerables">Considerables</option>
+                </select> 
+              </div>                
+              <div class="form-group">
+                <label for="prioritization">Porcentaje de priorización</label>
+                <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
+              </div>                                                        
+            </div>  
+          </form>
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+          <div class="btn-group">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Agregar</button>          
+          </div>
+        </div>
+      </div>
+    </div>    
+
+  </main>  
+
+<!--///////
+SCRIPTS
+////////-->
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/91705bc097.js" crossorigin="anonymous"></script>
+<!-- Jquery last version -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Main JS -->
+<script src="assets/js/main.js"></script>	
+
+</body>
+</html>
