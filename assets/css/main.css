@@ -2767,7 +2767,7 @@ label span {
 }
 .form-control::placeholder {
   color: #1F2937;
-  opacity: 1;
+  opacity: 0.8;
 }
 .form-control:disabled {
   background-color: #03559E;
@@ -2837,7 +2837,7 @@ legend {
   width: 100%;
   /*max-width: 300px;*/
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
   box-sizing: border-box;
 }
 
