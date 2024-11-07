@@ -592,12 +592,24 @@
                   <option value="N/A">N/A</option>
                 </select> 
               </div>                                                         
-            </div>  
-            <!-- Item -->
-            <div class="form-group">
-              <label for="areas">Áreas <span>*</span></label>
-              <textarea class="form-control" id="areas" name="areas" rows="4" cols="50" placeholder="Agrega las áreas de expertiz separadas por un salto de línea." required></textarea>                
-            </div>                              
+            </div>              
+            <!-- Contenedor para los elementos que el usuario ingrese -->
+            <div class="areaItemContainer" id="areaItemContainer1">
+            </div>
+            <!-- Button -->
+            <button class="btn btn-default btn-add-element" onclick="mostrarInput(1)">
+              Añadir un área
+            </button>            
+            <!-- Formulario para agregar un nuevo elemento de input (Oculto por defecto) -->
+            <div id="newAreaItem1" class="newAreaItem" style="display: none;">
+              <label for="area" id="label-area">Área de expertiz</label>
+              <input type="text" id="area1" placeholder="Agrega un área de expertiz">
+              <!-- Buttons -->
+              <div class="mt-4">
+                <button class="btn btn-default-inverse" onclick="cancelar(1)">Cancelar</button>
+                <button class="btn btn-default" onclick="agregarElemento(1)">Añadir</button>                  
+              </div>
+            </div>            
           </form>   
         </div>
         <!-- == Modal-footer == -->
@@ -652,11 +664,23 @@
                 </select> 
               </div>                                                         
             </div>  
-            <!-- Item -->
-            <div class="form-group">
-              <label for="areas">Áreas <span>*</span></label>
-              <textarea class="form-control" id="areas" name="areas" rows="4" cols="50" placeholder="Agrega las áreas de expertiz separadas por un salto de línea." required></textarea>                
-            </div>                              
+            <!-- Contenedor para los elementos que el usuario ingrese -->
+            <div class="areaItemContainer" id="areaItemContainer2">
+            </div>
+            <!-- Button -->
+            <button class="btn btn-default btn-add-element" onclick="mostrarInput(2)">
+              Añadir un área
+            </button>
+            <!-- Formulario para agregar un nuevo elemento de input (Oculto por defecto) -->
+            <div id="newAreaItem2" class="newAreaItem" style="display: none;">
+              <label for="area" id="label-area">Área de expertiz</label>
+              <input type="text" id="area2" placeholder="Agrega un área de expertiz">
+              <!-- Buttons -->
+              <div class="mt-4">
+                <button class="btn btn-default-inverse" onclick="cancelar(2)">Cancelar</button>
+                <button class="btn btn-default" onclick="agregarElemento(2)">Añadir</button>                  
+              </div>
+            </div>                                        
           </form>   
         </div>
         <!-- == Modal-footer == -->

@@ -2818,20 +2818,20 @@ legend {
 # ADD Input
 ============================================== */
 /* Estilo para el botón de agregar un elemento */
-#newAreaItem {
+.newAreaItem {
   margin-top: 15px;
 }
 
 /* Estilos para los labels e inputs*/
-#areaItemContainer label,
-#newAreaItem label {
+.areaItemContainer label,
+.newAreaItem label {
   display: block;
   font-size: 1rem;
   margin-bottom: 5px;
 }
 
-#areaItemContainer input,
-#newAreaItem input {
+.areaItemContainer input,
+.newAreaItem input {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   width: 100%;
@@ -2841,15 +2841,15 @@ legend {
   box-sizing: border-box;
 }
 
-#areaItemContainer input:hover,
-#areaItemContainer input:focus,
-#newAreaItem input:hover,
-#newAreaItem input:focus {
+.areaItemContainer input:hover,
+.areaItemContainer input:focus,
+.newAreaItem input:hover,
+.newAreaItem input:focus {
   border-color: #E84A3C;
   outline: none;
 }
 
-#areaItemContainer {
+.areaItemContainer {
   margin-bottom: 1rem;
   font-size: 1rem;
 }

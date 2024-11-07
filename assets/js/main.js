@@ -167,30 +167,30 @@ function closeAlert(button) {
 	}, 500);
   }
 
-
 /* # NewItemInput
 ---------------------------------------------- */
-  // Función para mostrar el formulario de entrada
-function mostrarInput() {
-    const newAreaItem = document.getElementById('newAreaItem');
+// Función para mostrar el formulario de entrada específico
+function mostrarInput(formId) {
+    const newAreaItem = document.getElementById(`newAreaItem${formId}`);
     
     // Mostrar el div con el input y label
     newAreaItem.style.display = 'block';
     
-    // Ocultar el botón de "Añadir un elemento"
-    document.querySelector('.btn-add-element').style.display = 'none';
+    // Ocultar todos los botones de "Añadir un área"
+    const botonesAdd = document.querySelectorAll('.btn-add-element');
+    botonesAdd.forEach(boton => boton.style.display = 'none');
 }
 
-// Función para agregar el nuevo elemento
-function agregarElemento() {
-    const inputArea = document.getElementById('area');
+// Función para agregar el nuevo elemento (con ID específico)
+function agregarElemento(formId) {
+    const inputArea = document.getElementById(`area${formId}`);
     const areaValue = inputArea.value.trim();
     
     if (areaValue) {
-        // Crear un nuevo contenedor para el label y el input
-        const contenedor = document.getElementById('areaItemContainer');
+        // Obtener el contenedor específico para este formulario
+        const contenedor = document.getElementById(`areaItemContainer${formId}`);
         
-        // Crear un div para el nuevo elemento
+        // Crear un nuevo contenedor para el label y el input
         const newAreaItemDiv = document.createElement('div');
         newAreaItemDiv.classList.add('elemento-agregado');
         
@@ -232,26 +232,28 @@ function agregarElemento() {
         newAreaItemDiv.appendChild(nuevoLabel);
         newAreaItemDiv.appendChild(inputContenedor);
         
-        // Agregar el nuevo div al contenedor de elementos
+        // Agregar el nuevo div al contenedor específico
         contenedor.appendChild(newAreaItemDiv);
         
         // Limpiar el input
         inputArea.value = '';
         
         // Regresar al estado inicial
-        document.getElementById('newAreaItem').style.display = 'none';
-        document.querySelector('.btn-add-element').style.display = 'inline-block';
+        document.getElementById(`newAreaItem${formId}`).style.display = 'none';
+        const botonesAdd = document.querySelectorAll('.btn-add-element');
+        botonesAdd.forEach(boton => boton.style.display = 'inline-block');
     } else {
         alert("Por favor, ingresa un área de expertiz.");
     }
 }
 
-// Función para cancelar el formulario y regresar al estado inicial
-function cancelar() {
+// Función para cancelar el formulario y regresar al estado inicial (con ID específico)
+function cancelar(formId) {
     // Limpiar el input y regresar al estado inicial
-    document.getElementById('area').value = '';
-    document.getElementById('newAreaItem').style.display = 'none';
-    document.querySelector('.btn-add-element').style.display = 'inline-block';
+    document.getElementById(`area${formId}`).value = '';
+    document.getElementById(`newAreaItem${formId}`).style.display = 'none';
+    const botonesAdd = document.querySelectorAll('.btn-add-element');
+    botonesAdd.forEach(boton => boton.style.display = 'inline-block');
 }
 
 
