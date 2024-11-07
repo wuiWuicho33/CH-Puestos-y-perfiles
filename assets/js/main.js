@@ -168,5 +168,93 @@ function closeAlert(button) {
   }
 
 
+/* # NewItemInput
+---------------------------------------------- */
+  // Función para mostrar el formulario de entrada
+function mostrarInput() {
+    const newAreaItem = document.getElementById('newAreaItem');
+    
+    // Mostrar el div con el input y label
+    newAreaItem.style.display = 'block';
+    
+    // Ocultar el botón de "Añadir un elemento"
+    document.querySelector('.btn-add-element').style.display = 'none';
+}
+
+// Función para agregar el nuevo elemento
+function agregarElemento() {
+    const inputArea = document.getElementById('area');
+    const areaValue = inputArea.value.trim();
+    
+    if (areaValue) {
+        // Crear un nuevo contenedor para el label y el input
+        const contenedor = document.getElementById('areaItemContainer');
+        
+        // Crear un div para el nuevo elemento
+        const newAreaItemDiv = document.createElement('div');
+        newAreaItemDiv.classList.add('elemento-agregado');
+        
+        // Crear el label
+        const nuevoLabel = document.createElement('label');
+        nuevoLabel.setAttribute('for', 'area');
+        nuevoLabel.textContent = 'Área de expertiz';
+        
+        // Asignar las clases al nuevo label para que tenga el mismo estilo
+        nuevoLabel.classList.add('label-area');
+        
+        // Crear el input con el valor ingresado
+        const nuevoInput = document.createElement('input');
+        nuevoInput.type = 'text';
+        nuevoInput.value = areaValue; // Asignamos el texto ingresado por el usuario
+        nuevoInput.setAttribute('placeholder', 'Agrega un área de expertiz');
+        
+        // Asignar las clases al nuevo input para que tenga el mismo estilo
+        nuevoInput.classList.add('input-area');
+        
+        // Crear el ícono de basura
+        const iconoBote = document.createElement('i');
+        iconoBote.classList.add('fas', 'fa-trash', 'btn-trash'); // Usamos Font Awesome para el ícono
+        
+        // Añadir un evento para eliminar el elemento
+        iconoBote.addEventListener('click', function() {
+            contenedor.removeChild(newAreaItemDiv); // Elimina el contenedor del área
+        });
+        
+        // Crear un contenedor para el input y el ícono de basura
+        const inputContenedor = document.createElement('div');
+        inputContenedor.classList.add('input-container');
+        
+        // Añadir el input y el ícono al contenedor
+        inputContenedor.appendChild(nuevoInput);
+        inputContenedor.appendChild(iconoBote);
+        
+        // Agregar el label y el contenedor del input al nuevo div
+        newAreaItemDiv.appendChild(nuevoLabel);
+        newAreaItemDiv.appendChild(inputContenedor);
+        
+        // Agregar el nuevo div al contenedor de elementos
+        contenedor.appendChild(newAreaItemDiv);
+        
+        // Limpiar el input
+        inputArea.value = '';
+        
+        // Regresar al estado inicial
+        document.getElementById('newAreaItem').style.display = 'none';
+        document.querySelector('.btn-add-element').style.display = 'inline-block';
+    } else {
+        alert("Por favor, ingresa un área de expertiz.");
+    }
+}
+
+// Función para cancelar el formulario y regresar al estado inicial
+function cancelar() {
+    // Limpiar el input y regresar al estado inicial
+    document.getElementById('area').value = '';
+    document.getElementById('newAreaItem').style.display = 'none';
+    document.querySelector('.btn-add-element').style.display = 'inline-block';
+}
+
+
+
 
   
