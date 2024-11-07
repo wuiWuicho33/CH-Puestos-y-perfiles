@@ -21,7 +21,7 @@
 	width: 100%;
 	/*max-width: 300px;*/
 	border-radius: 5px;
-	border: 1px solid $primary-color;
+	border: 1px solid $tertiary-color;
 	box-sizing: border-box;
 }
 .areaItemContainer input:hover,
@@ -68,8 +68,10 @@
     font-size: 1rem;
     margin-left: 10px;
     transition: color 0.3s ease;
-    padding: 1rem;
+    padding: 0.7rem;
+    border-radius: 0.3rem;
 }
 .btn-trash:hover {
     color: $danger-color;
+    background-color: $tertiary-color;
 }

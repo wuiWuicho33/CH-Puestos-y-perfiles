@@ -2837,7 +2837,7 @@ legend {
   width: 100%;
   /*max-width: 300px;*/
   border-radius: 5px;
-  border: 1px solid #ffffff;
+  border: 1px solid #c4cddb;
   box-sizing: border-box;
 }
 
@@ -2885,11 +2885,13 @@ legend {
   font-size: 1rem;
   margin-left: 10px;
   transition: color 0.3s ease;
-  padding: 1rem;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
 }
 
 .btn-trash:hover {
   color: #f11f0b;
+  background-color: #c4cddb;
 }
 
 /* ==============================================
