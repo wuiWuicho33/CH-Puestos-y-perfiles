@@ -235,7 +235,6 @@ components.forEach(component => {
     initComponent(component);
 });
 
-
 // Agregar 3 inputs
 document.addEventListener("DOMContentLoaded", function() {
     const components = document.querySelectorAll('.component-container');
@@ -247,7 +246,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const addButton = component.querySelector('.addButton');
         const addedItemsContainer = component.querySelector('.addedItemsContainer');
         const conceptInput = component.querySelector('.conceptInput');
-        const rangeInput = component.querySelector('.rangeInput');
+        const rangeSelect = component.querySelector('#a-range-01'); // Ahora es un select
         const levelInput = component.querySelector('.levelInput');
 
         // Mostrar el área para añadir un nuevo elemento
@@ -261,20 +260,40 @@ document.addEventListener("DOMContentLoaded", function() {
             inputSection.style.display = 'none';
             addNewItemBtn.style.display = 'block';
             conceptInput.value = '';
-            rangeInput.value = '';
+            rangeSelect.selectedIndex = 0;  // Resetear el select
             levelInput.value = '';
         });
 
         // Añadir un nuevo elemento con los valores de los inputs
         addButton.addEventListener('click', function() {
             const concept = conceptInput.value;
-            const range = rangeInput.value;
+            const range = rangeSelect.value;  // Obtener el valor seleccionado del select
             const level = levelInput.value;
 
             if (concept && range && level) {
                 const addedItem = document.createElement('div');
                 addedItem.classList.add('addedItem');
-                addedItem.innerHTML = `
+                
+                // Crear un nuevo select para el rango con las mismas opciones
+                const rangeOptionsHTML = `
+                    <option value="" disabled selected>-- Selecciona --</option>
+                    <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
+                    <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
+                    <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
+                    <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-3.13</option>
+                    <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
+                    <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
+                    <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
+                    <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.87-4.00</option>
+                `;
+
+                // Crear el select dinámicamente para el nuevo item
+                const rangeSelectElement = document.createElement('select');
+                rangeSelectElement.classList.add('addedInput');
+                rangeSelectElement.innerHTML = rangeOptionsHTML;
+                rangeSelectElement.value = range; // Establecer el valor seleccionado
+
+                const addedItemHTML = `
                     <div class="inputRow">
                         <div class="inputColumn">
                             <label for="concept">Concepto</label>
@@ -282,7 +301,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         </div>
                         <div class="inputColumn">
                             <label for="range">Rango</label>
-                            <input type="text" class="addedInput" placeholder="Introduce el rango" value="${range}">
+                            ${rangeSelectElement.outerHTML} <!-- Insertar el select dinámico -->
                         </div>
                         <div class="inputColumn">
                             <label for="level">Nivel de desarrollo de competencia</label>
@@ -291,15 +310,17 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                     <a href="#" class="deleteLink">
                         <i class="fa-solid fa-trash"></i>
-                        Eliminar                        
+                        Eliminar
                     </a>
                 `;
 
+                addedItem.innerHTML = addedItemHTML;
                 addedItemsContainer.appendChild(addedItem);
+
                 inputSection.style.display = 'none';
                 addNewItemBtn.style.display = 'block';
                 conceptInput.value = '';
-                rangeInput.value = '';
+                rangeSelect.selectedIndex = 0;  // Resetear el select
                 levelInput.value = '';
             } else {
                 alert('Por favor, completa todos los campos.');
