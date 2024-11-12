@@ -2818,10 +2818,11 @@ legend {
 Componente 1
 ====================*/
 /* Estilo básico para el contenedor principal */
+/*
 .container {
-  margin: 20px;
+    margin: 20px;
 }
-
+*/
 /* Fila para los inputs */
 .row {
   display: flex;
