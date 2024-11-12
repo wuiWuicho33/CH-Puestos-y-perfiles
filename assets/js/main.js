@@ -147,13 +147,16 @@ function updateLabels() {
 
 /* # Form
 ---------------------------------------------- */
+// Evita que el formulario se envíe
+/*
 const formulario = document.getElementById('miFormulario');
 formulario.addEventListener('submit', function(event) {
 	if (!formulario.checkValidity()) {
 		alert('Por favor, selecciona una opción.');
-		event.preventDefault(); // Evita que el formulario se envíe
+		event.preventDefault(); 
 	}
 });
+*/
 
 /* # Alert
 ---------------------------------------------- */
@@ -166,6 +169,3 @@ function closeAlert(button) {
 	  alert.style.display = 'none';
 	}, 500);
   }
-
-/* # NewItemInput
----------------------------------------------- */

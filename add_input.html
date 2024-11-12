@@ -16,16 +16,17 @@
     STYLESHEETS
     ///////////-->
     <!-- Custom Styles CSS -->
-    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/add_input.css" rel="stylesheet" type="text/css">
     <!-- Incluir Font Awesome para los íconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
 <!-- Componente 1 -->
-<div class="wrapper-items">
+<div class="wrapper-item">
     <div class="added-items"></div>
     <button class="addItemBtn">Añadir un área</button>
+
     <div class="inputArea" style="display: none;">
         <div class="row">
             <div class="column">
@@ -38,12 +39,14 @@
             <button class="addBtn">Añadir</button>
         </div>
     </div>
+
 </div>
 
 <!-- Componente 2 -->
-<div class="wrapper-items">
+<div class="wrapper-item">
     <div class="added-items"></div>
     <button class="addItemBtn">Añadir un área</button>
+
     <div class="inputArea" style="display: none;">
         <div class="row">
             <div class="column">
@@ -56,6 +59,7 @@
             <button class="addBtn">Añadir</button>
         </div>
     </div>
+
 </div>
 
 
@@ -71,6 +75,7 @@
     <!-- Área donde se mostrarán los elementos añadidos -->
     <div class="addedItemsContainer"></div>    
     <button class="addNewItemBtn">Añadir un elemento</button>
+
     <!-- Área para los inputs y botones adicionales -->
     <div class="inputSection" style="display: none;">
         <div class="inputRow">
@@ -87,6 +92,7 @@
                 <input type="text" class="levelInput" placeholder="Introduce el nivel de competencia">
             </div>
         </div>
+
         <div class="actionButtons">
             <button class="cancelButton">Cancelar</button>
             <button class="addButton">Añadir</button>
@@ -99,6 +105,7 @@
 <div class="component-container">
     <div class="addedItemsContainer"></div>
     <button class="addNewItemBtn">Añadir un elemento</button>
+
     <div class="inputSection" style="display: none;">
         <div class="inputRow">
             <div class="inputColumn">
@@ -114,17 +121,20 @@
                 <input type="text" class="levelInput" placeholder="Introduce el nivel de competencia">
             </div>
         </div>
+
         <div class="actionButtons">
             <button class="cancelButton">Cancelar</button>
             <button class="addButton">Añadir</button>
         </div>
     </div>
-</div>   
+
+</div> 
 
 <!--//////////
 JAVASCRIPTS
 ///////////-->
-
+<!-- Librery -->
+<script src="assets/js/jquery.min.js"></script>
 <!-- Custom JS -->
 <script src="assets/js/add_input.js"></script>
 

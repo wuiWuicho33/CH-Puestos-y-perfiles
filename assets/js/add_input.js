@@ -1,6 +1,26 @@
-/*=========
-LAYOUT
-=========*/
+
+/* # Side_menu
+---------------------------------------------- */
+$('.sub-menu ul').hide(); // Esconde todos los submenús al cargar la página
+
+$(".sub-menu > a").click(function (event) {
+	event.preventDefault(); // Evita que el enlace navegue
+
+	const $subMenu = $(this).parent(".sub-menu").children("ul");
+
+	// Cierra otros submenús
+	$('.sub-menu ul').slideUp(100); // Aumentar a 100ms
+	$('.sub-menu').removeClass('active-ddn');
+
+	// Alterna el submenú actual
+	if ($subMenu.is(':visible')) {
+		$subMenu.slideUp(100); // Aumentar a 100ms
+	} else {
+		$subMenu.slideDown(100); // Aumentar a 100ms
+		$(this).parent().addClass('active-ddn');
+	}
+});
+
 
 // Agregar área
 function initComponent(component) {
@@ -59,7 +79,7 @@ function initComponent(component) {
 }
 
 // Inicializar todos los componentes en la página
-const components = document.querySelectorAll('.wrapper-items');
+const components = document.querySelectorAll('.wrapper-item');
 components.forEach(component => {
     initComponent(component);
 });
@@ -143,4 +163,3 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
