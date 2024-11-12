@@ -201,60 +201,45 @@
         </div>
         <!-- == Modal-body == -->
         <div class="modal-body">
-          <form id="miFormulario">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="a-concept-01">Concepto <span>*</span></label>
-                <input class="form-control" type="text" id="a-concept-01" name="a-concept-01"  required placeholder="Agrega un concepto">
-              </div>              
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="a-range-01">Rango <span>*</span></label>
-                <select id="a-range-01" class="form-control" required>
-                  <option value="" disabled selected>-- Selecciona --</option>
-                  <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
-                  <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
-                  <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
-                  <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
-                  <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
-                  <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.70-3.86</option>
-                </select> 
-              </div>      
-              <!-- Grid-item -->        
-              <div class="grid-item">
-                <label for="a-level-of-development-01">Nivel de desarrollo de competencia <span>*</span></label>
-                <input class="form-control" type="text" id="a-level-of-development-01" name="a-level-of-development-01"  required placeholder="Agrega un nivel de desarrollo">
-              </div>  
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="a-concept-02">Concepto <span>*</span></label>
-                <input class="form-control" type="text" id="a-concept-02" name="a-concept-02"  required placeholder="Agrega un concepto">
-              </div>  
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="a-range-02">Rango <span>*</span></label>
-                <select id="a-range-02" class="form-control" required>
-                  <option value="" disabled selected>-- Selecciona --</option>
-                  <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
-                  <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
-                  <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
-                  <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
-                  <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
-                  <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.70-3.86</option>
-                </select> 
-              </div>   
-              <!-- Grid-item -->              
-              <div class="grid-item">
-                <label for="a-level-of-development-02">Nivel de desarrollo de competencia <span>*</span></label>
-                <input class="form-control" type="text" id="a-level-of-development-02" name="a-level-of-development-02"  required placeholder="Agrega un nivel de desarrollo">
-              </div>                                             
+
+          <!-- Componente agregar inputs -->
+          <div class="component-container">
+            <!-- Área donde se mostrarán los elementos añadidos -->
+            <div class="addedItemsContainer"></div>    
+            <button class="addNewItemBtn">Añadir un elemento</button>
+            <!-- Área para los inputs y botones adicionales -->
+            <div class="inputSection" style="display: none;">
+                <div class="inputRow">
+                    <div class="inputColumn">
+                        <label for="concept">Concepto <span>*</span></label>
+                        <input type="text" class="conceptInput" placeholder="Introduce el concepto">
+                    </div>
+                    <div class="inputColumn">
+                        <label for="a-range-01">Rango <span>*</span></label>
+                        <select id="a-range-01" class="form-control" required>
+                            <option value="" disabled selected>-- Selecciona --</option>
+                            <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
+                            <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
+                            <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
+                            <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-3.13</option>
+                            <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
+                            <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
+                            <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
+                            <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.87-4.00</option>
+                        </select> 
+                    </div>
+                    <div class="inputColumn">
+                        <label for="level">Nivel de desarrollo de competencia <span>*</span></label>
+                        <input type="text" class="levelInput" placeholder="Introduce el nivel de competencia">
+                    </div>
+                </div>        
+                <div class="actionButtons">
+                    <button class="cancelButton">Cancelar</button>
+                    <button class="addButton">Añadir</button>
+                </div>
             </div>
-          </form>   
+          </div>  
+
         </div>
         <!-- == Modal-footer == -->
         <div class="modal-footer">
@@ -278,85 +263,45 @@
         </div>
         <!-- == Modal-body == -->
         <div class="modal-body">
-          <form id="miFormulario">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="b-concept-01">Concepto <span>*</span></label>
-                <input class="form-control" type="text" id="b-concept-01" name="b-concept-01"  required placeholder="Agrega un concepto">
-              </div>  
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="b-range-01">Rango <span>*</span></label>
-                <select id="b-range-01" class="form-control" required>
-                  <option value="" disabled selected>-- Selecciona --</option>
-                  <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
-                  <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
-                  <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
-                  <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
-                  <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
-                  <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.70-3.86</option>
-                </select> 
-              </div>     
-              <!-- Grid-item -->            
-              <div class="grid-item">
-                <label for="b-level-of-development-01">Nivel de desarrollo de competencia <span>*</span></label>
-                <input class="form-control" type="text" id="b-level-of-development-01" name="b-level-of-development-01"  required placeholder="Agrega un nivel de desarrollo">
-              </div>  
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="b-concept-02">Concepto <span>*</span></label>
-                <input class="form-control" type="text" id="b-concept-02" name="b-concept-02"  required placeholder="Agrega un concepto">
-              </div>  
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="b-range-02">Rango <span>*</span></label>
-                <select id="b-range-02" class="form-control" required>
-                  <option value="" disabled selected>-- Selecciona --</option>
-                  <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
-                  <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
-                  <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
-                  <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
-                  <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
-                  <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.70-3.86</option>
-                </select> 
-              </div>      
-              <!-- Grid-item -->           
-              <div class="grid-item">
-                <label for="b-level-of-development-02">Nivel de desarrollo de competencia <span>*</span></label>
-                <input class="form-control" type="text" id="b-level-of-development-02" name="b-level-of-development-02"  required placeholder="Agrega un nivel de desarrollo">
-              </div>   
-              <!-- Grid-item -->            
-              <div class="grid-item">
-                <label for="b-concept-03">Concepto <span>*</span></label>
-                <input class="form-control" type="text" id="b-concept-03" name="b-concept-03"  required placeholder="Agrega un concepto">
-              </div>  
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="b-range-03">Rango <span>*</span></label>
-                <select id="b-range-03" class="form-control" required>
-                  <option value="" disabled selected>-- Selecciona --</option>
-                  <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
-                  <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
-                  <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
-                  <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
-                  <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
-                  <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.70-3.86</option>
-                </select> 
-              </div>   
-              <!-- Grid-item -->              
-              <div class="grid-item">
-                <label for="b-level-of-development-03">Nivel de desarrollo de competencia <span>*</span></label>
-                <input class="form-control" type="text" id="b-level-of-development-03" name="b-level-of-development-03"  required placeholder="Agrega un nivel de desarrollo">
-              </div>               
+
+          <!-- Componente agregar inputs -->
+          <div class="component-container">
+            <!-- Área donde se mostrarán los elementos añadidos -->
+            <div class="addedItemsContainer"></div>    
+            <button class="addNewItemBtn">Añadir un elemento</button>
+            <!-- Área para los inputs y botones adicionales -->
+            <div class="inputSection" style="display: none;">
+                <div class="inputRow">
+                    <div class="inputColumn">
+                        <label for="concept">Concepto <span>*</span></label>
+                        <input type="text" class="conceptInput" placeholder="Introduce el concepto">
+                    </div>
+                    <div class="inputColumn">
+                        <label for="a-range-01">Rango <span>*</span></label>
+                        <select id="a-range-01" class="form-control" required>
+                            <option value="" disabled selected>-- Selecciona --</option>
+                            <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
+                            <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
+                            <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
+                            <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-3.13</option>
+                            <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
+                            <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
+                            <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
+                            <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.87-4.00</option>
+                        </select> 
+                    </div>
+                    <div class="inputColumn">
+                        <label for="level">Nivel de desarrollo de competencia <span>*</span></label>
+                        <input type="text" class="levelInput" placeholder="Introduce el nivel de competencia">
+                    </div>
+                </div>        
+                <div class="actionButtons">
+                    <button class="cancelButton">Cancelar</button>
+                    <button class="addButton">Añadir</button>
+                </div>
             </div>
-          </form>   
+          </div>          
+
         </div>
         <!-- == Modal-footer == -->
         <div class="modal-footer">
@@ -380,35 +325,45 @@
         </div>
         <!-- == Modal-body == -->
         <div class="modal-body">
-          <form id="miFormulario">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="c-concept-01">Concepto <span>*</span></label>
-                <input class="form-control" type="text" id="c-concept-01" name="c-concept-01"  required placeholder="Agrega un concepto">
-              </div>  
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="c-range-01">Rango <span>*</span></label>
-                <select id="c-range-01" class="form-control" required>
-                  <option value="" disabled selected>-- Selecciona --</option>
-                  <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
-                  <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
-                  <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
-                  <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
-                  <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
-                  <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.70-3.86</option>
-                </select> 
-              </div>    
-              <!-- Grid-item -->            
-              <div class="grid-item">
-                <label for="c-level-of-development-01">Nivel de desarrollo de competencia <span>*</span></label>
-                <input class="form-control" type="text" id="c-level-of-development-01" name="c-level-of-development-01"  required placeholder="Agrega un nivel de desarrollo">
-              </div> 
-            </div>                        
-          </form>   
+
+          <!-- Componente agregar inputs -->
+          <div class="component-container">
+            <!-- Área donde se mostrarán los elementos añadidos -->
+            <div class="addedItemsContainer"></div>    
+            <button class="addNewItemBtn">Añadir un elemento</button>
+            <!-- Área para los inputs y botones adicionales -->
+            <div class="inputSection" style="display: none;">
+                <div class="inputRow">
+                    <div class="inputColumn">
+                        <label for="concept">Concepto <span>*</span></label>
+                        <input type="text" class="conceptInput" placeholder="Introduce el concepto">
+                    </div>
+                    <div class="inputColumn">
+                        <label for="a-range-01">Rango <span>*</span></label>
+                        <select id="a-range-01" class="form-control" required>
+                            <option value="" disabled selected>-- Selecciona --</option>
+                            <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
+                            <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
+                            <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
+                            <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-3.13</option>
+                            <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
+                            <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
+                            <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
+                            <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.87-4.00</option>
+                        </select> 
+                    </div>
+                    <div class="inputColumn">
+                        <label for="level">Nivel de desarrollo de competencia <span>*</span></label>
+                        <input type="text" class="levelInput" placeholder="Introduce el nivel de competencia">
+                    </div>
+                </div>        
+                <div class="actionButtons">
+                    <button class="cancelButton">Cancelar</button>
+                    <button class="addButton">Añadir</button>
+                </div>
+            </div>
+          </div>  
+
         </div>
         <!-- == Modal-footer == -->
         <div class="modal-footer">
@@ -432,160 +387,45 @@
         </div>
         <!-- == Modal-body == -->
         <div class="modal-body">
-          <form id="miFormulario">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="d-concept-01">Concepto <span>*</span></label>
-                <input class="form-control" type="text" id="d-concept-01" name="d-concept-01"  required placeholder="Agrega un concepto">
-              </div>  
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="d-range-01">Rango <span>*</span></label>
-                <select id="d-range-01" class="form-control" required>
-                  <option value="" disabled selected>-- Selecciona --</option>
-                  <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
-                  <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
-                  <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
-                  <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
-                  <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
-                  <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.70-3.86</option>
-                </select> 
-              </div>  
-              <!-- Grid-item -->                            
-              <div class="grid-item">
-                <label for="d-level-of-development-01">Nivel de desarrollo de competencia <span>*</span></label>
-                <input class="form-control" type="text" id="d-level-of-development-01" name="d-level-of-development-01"  required placeholder="Agrega un nivel de desarrollo">
-              </div>                               
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="d-concept-02">Concepto <span>*</span></label>
-                <input class="form-control" type="text" id="d-concept-02" name="d-concept-02"  required placeholder="Agrega un concepto">
-              </div>  
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="d-range-02">Rango <span>*</span></label>
-                <select id="d-range-02" class="form-control" required>
-                  <option value="" disabled selected>-- Selecciona --</option>
-                  <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
-                  <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
-                  <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
-                  <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
-                  <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
-                  <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.70-3.86</option>
-                </select> 
-              </div>      
-              <!-- Grid-item -->                         
-              <div class="grid-item">
-                <label for="d-level-of-development-02">Nivel de desarrollo de competencia <span>*</span></label>
-                <input class="form-control" type="text" id="d-level-of-development-02" name="d-level-of-development-02"  required placeholder="Agrega un nivel de desarrollo">
-              </div>                               
-              <!-- Grid-item -->              
-              <div class="grid-item">
-                <label for="d-concept-03">Concepto <span>*</span></label>
-                <input class="form-control" type="text" id="d-concept-03" name="d-concept-03"  required placeholder="Agrega un concepto">
-              </div>  
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="d-range-03">Rango <span>*</span></label>
-                <select id="d-range-03" class="form-control" required>
-                  <option value="" disabled selected>-- Selecciona --</option>
-                  <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
-                  <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
-                  <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
-                  <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
-                  <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
-                  <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.70-3.86</option>
-                </select> 
-              </div>     
-              <!-- Grid-item -->                         
-              <div class="grid-item">
-                <label for="d-level-of-development-03">Nivel de desarrollo de competencia <span>*</span></label>
-                <input class="form-control" type="text" id="d-level-of-development-03" name="d-level-of-development-03"  required placeholder="Agrega un nivel de desarrollo">
-              </div>                               
-              <!-- Grid-item -->              
-              <div class="grid-item">
-                <label for="d-concept-04">Concepto <span>*</span></label>
-                <input class="form-control" type="text" id="d-concept-04" name="d-concept-04"  required placeholder="Agrega un concepto">
-              </div>  
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="d-range-04">Rango <span>*</span></label>
-                <select id="d-range-04" class="form-control" required>
-                  <option value="" disabled selected>-- Selecciona --</option>
-                  <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
-                  <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
-                  <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
-                  <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
-                  <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
-                  <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.70-3.86</option>
-                </select> 
-              </div>  
-              <!-- Grid-item -->                          
-              <div class="grid-item">
-                <label for="d-level-of-development-04">Nivel de desarrollo de competencia <span>*</span></label>
-                <input class="form-control" type="text" id="d-level-of-development-04" name="d-level-of-development-04"  required placeholder="Agrega un nivel de desarrollo">
-              </div>                               
-              <!-- Grid-item -->              
-              <div class="grid-item">
-                <label for="d-concept-05">Concepto <span>*</span></label>
-                <input class="form-control" type="text" id="d-concept-05" name="d-concept-05"  required placeholder="Agrega un concepto">
-              </div>  
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="d-range-05">Rango <span>*</span></label>
-                <select id="d-range-05" class="form-control" required>
-                  <option value="" disabled selected>-- Selecciona --</option>
-                  <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
-                  <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
-                  <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
-                  <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
-                  <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
-                  <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.70-3.86</option>
-                </select> 
-              </div>    
-              <!-- Grid-item -->                          
-              <div class="grid-item">
-                <label for="d-level-of-development-05">Nivel de desarrollo de competencia <span>*</span></label>
-                <input class="form-control" type="text" id="d-level-of-development-05" name="d-level-of-development-05"  required placeholder="Agrega un nivel de desarrollo">
-              </div>                               
-              <!-- Grid-item -->              
-              <div class="grid-item">
-                <label for="d-concept-06">Concepto <span>*</span></label>
-                <input class="form-control" type="text" id="d-concept-06" name="d-concept-06"  required placeholder="Agrega un concepto">
-              </div>  
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="d-range-06">Rango <span>*</span></label>
-                <select id="d-range-06" class="form-control" required>
-                  <option value="" disabled selected>-- Selecciona --</option>
-                  <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
-                  <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
-                  <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
-                  <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
-                  <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
-                  <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.70-3.86</option>
-                </select> 
-              </div>     
-              <!-- Grid-item -->                         
-              <div class="grid-item">
-                <label for="d-level-of-development-06">Nivel de desarrollo de competencia <span>*</span></label>
-                <input class="form-control" type="text" id="d-level-of-development-06" name="d-level-of-development-06"  required placeholder="Agrega un nivel de desarrollo">
-              </div>     
-            </div>                        
-          </form>   
+
+          <!-- Componente agregar inputs -->
+          <div class="component-container">
+            <!-- Área donde se mostrarán los elementos añadidos -->
+            <div class="addedItemsContainer"></div>    
+            <button class="addNewItemBtn">Añadir un elemento</button>
+            <!-- Área para los inputs y botones adicionales -->
+            <div class="inputSection" style="display: none;">
+                <div class="inputRow">
+                    <div class="inputColumn">
+                        <label for="concept">Concepto <span>*</span></label>
+                        <input type="text" class="conceptInput" placeholder="Introduce el concepto">
+                    </div>
+                    <div class="inputColumn">
+                        <label for="a-range-01">Rango <span>*</span></label>
+                        <select id="a-range-01" class="form-control" required>
+                            <option value="" disabled selected>-- Selecciona --</option>
+                            <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
+                            <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
+                            <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
+                            <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-3.13</option>
+                            <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
+                            <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
+                            <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
+                            <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.87-4.00</option>
+                        </select> 
+                    </div>
+                    <div class="inputColumn">
+                        <label for="level">Nivel de desarrollo de competencia <span>*</span></label>
+                        <input type="text" class="levelInput" placeholder="Introduce el nivel de competencia">
+                    </div>
+                </div>        
+                <div class="actionButtons">
+                    <button class="cancelButton">Cancelar</button>
+                    <button class="addButton">Añadir</button>
+                </div>
+            </div>
+          </div>  
+
         </div>
         <!-- == Modal-footer == -->
         <div class="modal-footer">
@@ -609,60 +449,45 @@
         </div>
         <!-- == Modal-body == -->
         <div class="modal-body">
-          <form id="miFormulario">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="e-concept-01">Concepto <span>*</span></label>
-                <input class="form-control" type="text" id="e-concept-01" name="e-concept-01"  required placeholder="Agrega un concepto">
-              </div>  
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="e-range-01">Rango <span>*</span></label>
-                <select id="e-range-01" class="form-control" required>
-                  <option value="" disabled selected>-- Selecciona --</option>
-                  <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
-                  <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
-                  <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
-                  <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
-                  <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
-                  <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.70-3.86</option>
-                </select> 
-              </div>   
-              <!-- Grid-item -->                            
-              <div class="grid-item">
-                <label for="e-level-of-development-01">Nivel de desarrollo de competencia <span>*</span></label>
-                <input class="form-control" type="text" id="e-level-of-development-01" name="e-level-of-development-01"  required placeholder="Agrega un nivel de desarrollo">
-              </div>                               
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="e-concept-02">Concepto <span>*</span></label>
-                <input class="form-control" type="text" id="e-concept-02" name="e-concept-02"  required placeholder="Agrega un concepto">
-              </div>  
-              <!-- Grid-item -->
-              <div class="grid-item">
-                <label for="e-range-02">Rango <span>*</span></label>
-                <select id="e-range-02" class="form-control" required>
-                  <option value="" disabled selected>-- Selecciona --</option>
-                  <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
-                  <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
-                  <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-2.83</option>
-                  <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
-                  <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
-                  <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
-                  <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.70-3.86</option>
-                </select> 
-              </div>    
-              <!-- Grid-item -->                          
-              <div class="grid-item">
-                <label for="e-level-of-development-02">Nivel de desarrollo de competencia <span>*</span></label>
-                <input class="form-control" type="text" id="e-level-of-development-02" name="e-level-of-development-02"  required placeholder="Agrega un nivel de desarrollo">
-              </div>                                                                                                                          
-            </div>                        
-          </form>   
+
+          <!-- Componente agregar inputs -->
+          <div class="component-container">
+            <!-- Área donde se mostrarán los elementos añadidos -->
+            <div class="addedItemsContainer"></div>    
+            <button class="addNewItemBtn">Añadir un elemento</button>
+            <!-- Área para los inputs y botones adicionales -->
+            <div class="inputSection" style="display: none;">
+                <div class="inputRow">
+                    <div class="inputColumn">
+                        <label for="concept">Concepto <span>*</span></label>
+                        <input type="text" class="conceptInput" placeholder="Introduce el concepto">
+                    </div>
+                    <div class="inputColumn">
+                        <label for="a-range-01">Rango <span>*</span></label>
+                        <select id="a-range-01" class="form-control" required>
+                            <option value="" disabled selected>-- Selecciona --</option>
+                            <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
+                            <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
+                            <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
+                            <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-3.13</option>
+                            <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
+                            <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
+                            <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
+                            <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.87-4.00</option>
+                        </select> 
+                    </div>
+                    <div class="inputColumn">
+                        <label for="level">Nivel de desarrollo de competencia <span>*</span></label>
+                        <input type="text" class="levelInput" placeholder="Introduce el nivel de competencia">
+                    </div>
+                </div>        
+                <div class="actionButtons">
+                    <button class="cancelButton">Cancelar</button>
+                    <button class="addButton">Añadir</button>
+                </div>
+            </div>
+          </div>  
+
         </div>
         <!-- == Modal-footer == -->
         <div class="modal-footer">
