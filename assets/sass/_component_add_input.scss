@@ -2,9 +2,11 @@
 Componente 1
 ====================*/
 /* Estilo básico para el contenedor principal */
-.container {
-    margin: 20px;
-}
+/*
+    .container {
+        margin: 20px;
+    }
+*/
 
 /* Fila para los inputs */
 .row {
@@ -74,11 +76,13 @@ select {
     flex-direction: column;
     gap: 5px;
     margin-bottom: 1rem;
+    position: relative;
+    /*
     padding: 10px;
+    background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 4px;
-    background-color: #f9f9f9;
-    position: relative;
+    */    
 }
 
 /* Estilo para los enlaces de eliminar */
@@ -89,7 +93,7 @@ select {
     font-size: 14px;
     display: none;
     background-color: red;
-    width: 70px;
+    width: 90px;
     padding: 10px;
 }
 
@@ -142,9 +146,7 @@ select {
 Componente 2
 ====================*/
 /* Estilo básico para el contenedor principal */
-.component-container {
-    margin: 20px;
-}
+/*.component-container {margin: 20px;}*/
 
 /* Fila para los inputs */
 .inputRow {
@@ -214,10 +216,12 @@ select {
     margin-bottom: 5px;
     width: 100%;
     box-sizing: border-box;
+    /*
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
     background-color: #f9f9f9;
+    */
     position: relative;
 }
 
@@ -242,7 +246,7 @@ select {
     font-size: 14px;
     display: none;
     background-color: red;
-    width: 70px;
+    width: 90px;
     padding: 10px;
 }
 
@@ -254,3 +258,9 @@ select {
 .addedItem .deleteLink:hover {
     cursor: pointer;
 }
+
+/*Pendientes*/
+/*
+Unificar estilos duplicados de los botones de añadir, eliminar y crear componentes
+Cambiar la clase de los component-container por ID
+*/
