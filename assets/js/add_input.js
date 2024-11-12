@@ -59,7 +59,7 @@ function initComponent(component) {
 }
 
 // Inicializar todos los componentes en la página
-const components = document.querySelectorAll('.container');
+const components = document.querySelectorAll('.wrapper-items');
 components.forEach(component => {
     initComponent(component);
 });
