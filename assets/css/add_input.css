@@ -1,0 +1,315 @@
+/*====================
+Componente 1
+====================*/
+/* Estilo básico para el contenedor principal */
+.container {
+    margin: 20px;
+}
+
+/* Fila para los inputs */
+.row {
+    display: flex;
+    gap: 20px; /* Espacio entre las columnas de los inputs */
+    margin-bottom: 10px;
+}
+
+/* Estilo para cada columna de los inputs */
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;  /* Asegura que los label y input se apilen verticalmente */
+}
+
+/* Estilo para los inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff; /* Fondo blanco para evitar interferencia con el placeholder */
+    color: #333; /* Color de texto normal */
+}
+
+/* Contenedor de los botones */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo para el área de los items añadidos */
+.added-items {
+    margin-top: 20px;
+}
+
+/* Estilo para cada item añadido */
+.added-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+/* Estilo para los enlaces de eliminar */
+.delete-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: none;
+    background-color: red;
+    width: 70px;
+    padding: 10px;
+}
+
+/* Mostrar el enlace de "Eliminar" cuando se hace hover sobre el item */
+.added-item:hover .delete-link {
+    display: inline-block;
+}
+
+/* Cambiar el estilo del enlace cuando se hace hover */
+.delete-link:hover {
+    cursor: pointer;
+}
+
+/* Estilo para los botones */
+/*
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+*/
+
+/* Botón "Añadir un área" */
+/*.addItemBtn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+}
+
+.addItemBtn:hover {
+    background-color: #0056b3;
+}*/
+
+/* Botón "Cancelar" */
+/*
+.cancelBtn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.cancelBtn:hover {
+    background-color: #5a6268;
+}
+*/
+
+
+/* Botón "Añadir" */
+/*
+.addBtn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.addBtn:hover {
+    background-color: #218838;
+}
+*/
+
+/*====================
+Componente 2
+====================*/
+/* Estilo básico para el contenedor principal */
+.component-container {
+    margin: 20px;
+}
+
+/* Fila para los inputs */
+.inputRow {
+    display: flex;
+    gap: 20px; /* Espacio entre las columnas de los inputs */
+    margin-bottom: 20px;
+}
+
+/* Estilo para cada columna de los inputs */
+.inputColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para los inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Color de texto */
+}
+
+/* Estilo para los placeholders de los inputs */
+input::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Contenedor de los botones */
+.actionButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo para los items añadidos */
+.addedItemsContainer {
+    margin-top: 20px;
+}
+
+/* Estilo para cada item añadido */
+.addedItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.addedItem .inputRow {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+/* Estilo para los inputs dentro de los elementos añadidos */
+.addedItem .addedInput {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+    color: #333;
+}
+
+/* Estilo para el enlace de eliminar */
+.addedItem .deleteLink {
+    margin-top: 3px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: none;
+    background-color: red;
+    width: 70px;
+    padding: 10px;
+}
+
+/* Mostrar el enlace de "Eliminar" cuando se hace hover */
+.addedItem:hover .deleteLink {
+    display: inline-block;
+}
+
+.addedItem .deleteLink:hover {
+    cursor: pointer;
+}
+
+/* -- Nuevas reglas para responsive design -- */
+
+/* En vistas de dispositivos móviles y tabletas */
+@media (max-width: 768px) {
+    /* Asegúrate de que los elementos en .inputRow y .addedItem estén en una sola columna */
+    .inputRow {
+        flex-direction: column;
+    }
+    
+    .inputColumn {
+        flex: none; /* Establecer el flex a 'none' para que no ocupe más de lo necesario */
+        width: 100%; /* Hacer que cada columna ocupe el 100% del ancho disponible */
+    }
+
+    /* Los items añadidos deben estar en una sola columna también */
+    .addedItem .inputRow {
+        flex-direction: column; /* Colocar los inputs en columna */
+    }
+}
+
+/* En vistas de escritorio (mayor a 768px) */
+@media (min-width: 769px) {
+    /* Mantener la disposición de 3 columnas para el formulario */
+    .inputRow {
+        flex-direction: row; /* Mantener las columnas alineadas horizontalmente */
+    }
+    
+    .inputColumn {
+        flex: 1; /* Cada columna ocupará un tercio del ancho */
+    }
+
+    /* Los items añadidos también se mostrarán en tres columnas en vista de escritorio */
+    .addedItem .inputRow {
+        flex-direction: row; /* Alinear los inputs horizontalmente */
+    }
+}
+/* Estilo para los botones */
+/*
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+*/
+
+/* Botón "Añadir un elemento" */
+/*
+.addNewItemBtn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+}
+
+.addNewItemBtn:hover {
+    background-color: #0056b3;
+}
+*/
+
+/* Botón "Cancelar" */
+/*
+.cancelButton {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.cancelButton:hover {
+    background-color: #5a6268;
+}
+*/
+
+/* Botón "Añadir" */
+/*
+.addButton {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.addButton:hover {
+    background-color: #218838;
+}
+*/
