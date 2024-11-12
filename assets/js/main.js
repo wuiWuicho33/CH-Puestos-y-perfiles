@@ -230,14 +230,14 @@ function initComponent(component) {
 }
 
 // Inicializar todos los componentes en la página
-const components = document.querySelectorAll('.wrapper-item');
+const components = document.querySelectorAll('#wrapper-item');
 components.forEach(component => {
     initComponent(component);
 });
 
 // Agregar 3 inputs
 document.addEventListener("DOMContentLoaded", function() {
-    const components = document.querySelectorAll('.component-container');
+    const components = document.querySelectorAll('#component-container');
 
     components.forEach(component => {
         const addNewItemBtn = component.querySelector('.addNewItemBtn');
