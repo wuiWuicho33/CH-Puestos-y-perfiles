@@ -3520,8 +3520,10 @@ Cambiar la clase de los component-container por ID
 /*A partir de 768px se aplicarán estos estilos*/
 @media (min-width: 768px) {
   .modal .modal-content {
-    width: 80%;
     max-width: 1000px;
+  }
+  .modal.modal-lg .modal-content {
+    max-width: 1500px;
   }
 }
 /* # Desktop
