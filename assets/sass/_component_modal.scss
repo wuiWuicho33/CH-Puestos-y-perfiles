@@ -84,18 +84,12 @@
 
   .modal {
     .modal-content {
-      //width: 80%;
       max-width: 1000px;
+      &.modal-lg{
+        max-width: 1500px;  
+      }
     }    
   }
-
-  .modal.modal-lg {
-    .modal-content {
-      max-width: 1500px;
-    }    
-  }
-
-
 }
 /* # Desktop
 ----------------------------------------------- */
