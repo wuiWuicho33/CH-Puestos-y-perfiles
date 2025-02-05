@@ -3225,6 +3225,51 @@ Cambiar la clase de los component-container por ID
   color: #E84A3C;
 }
 
+/*--------------- Btn-circle ---------------*/
+.btn-circle {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #E84A3C;
+  border-radius: 50%;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-circle i {
+  color: #E84A3C;
+}
+.btn-circle:hover {
+  background-color: #E84A3C;
+}
+.btn-circle:hover i {
+  color: #ffffff;
+}
+
+.btn-circle-inverse {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: #19345B;
+  border: 1px solid #19345B;
+  border-radius: 50%;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.btn-circle-inverse i {
+  color: #ffffff;
+}
+.btn-circle-inverse:hover {
+  background-color: #ffffff;
+}
+.btn-circle-inverse:hover i {
+  color: #19345B;
+}
+
 .alert {
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
