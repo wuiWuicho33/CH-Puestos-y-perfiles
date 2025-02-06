@@ -2695,6 +2695,16 @@ td, th {
   border: 1px solid #c4cddb;
 }
 
+/*Tablas con contenido alineado hacia la derecha*/
+table.align-right th,
+table.align-right td {
+  text-align: right;
+}
+table.align-right th:first-child,
+table.align-right td:first-child {
+  text-align: left;
+}
+
 /* ==============================================
 # MEDIAQUERIES
 ============================================== */
