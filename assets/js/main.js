@@ -117,46 +117,45 @@ window.onclick = function(event) {
 ---------------------------------------------- */
 // Función para actualizar el texto del label basado en el estado del switch
 function updateLabels() {
-	const switches = document.querySelectorAll('.switch-input');
-	switches.forEach(switchElement => {
-		const labelElement = switchElement.parentElement.previousElementSibling;
-		if (labelElement) {
-			switchElement.addEventListener('change', function() {
-				labelElement.textContent = this.checked ? getCheckedText(this) : getUncheckedText(this);
-			});
-		}
-	});
-  }
-  // Obtiene el texto para el estado checked
-  function getCheckedText(element) {
-	if (element.classList.contains('state-switch-note')) {
-		return element.parentElement.previousElementSibling.textContent === 'Inactivo' ? 'Activo' : 'Sí';
-	}
-	return 'Si';
-  }
-  // Obtiene el texto para el estado unchecked
-  function getUncheckedText(element) {
-	if (element.classList.contains('state-switch-note')) {
-		return element.parentElement.previousElementSibling.textContent === 'Activo' ? 'Inactivo' : 'No';
-	}
-	return 'No';
-  }
-  
-  // Inicializa la funcionalidad de los interruptores
-  updateLabels();
+    const switches = document.querySelectorAll('.switch-input');
+    switches.forEach(switchElement => {
+        const labelElement = switchElement.parentElement.previousElementSibling;
+        if (labelElement) {
+            switchElement.addEventListener('change', function() {
+                labelElement.textContent = this.checked ? getCheckedText(this) : getUncheckedText(this);
+            });
+        }
+    });
+}
 
-/* # Form
----------------------------------------------- */
-// Evita que el formulario se envíe
-/*
-const formulario = document.getElementById('miFormulario');
-formulario.addEventListener('submit', function(event) {
-	if (!formulario.checkValidity()) {
-		alert('Por favor, selecciona una opción.');
-		event.preventDefault(); 
-	}
-});
-*/
+// Obtiene el texto para el estado checked
+function getCheckedText(element) {
+    if (element.classList.contains('state-switch-note')) {
+        // Cambio de texto para la opción "Inactivo/Activo"
+        return element.parentElement.previousElementSibling.textContent === 'Inactivo' ? 'Activo' : 'Sí';
+    } else if (element.classList.contains('state-switch-accept-reject')) {
+        // Cambio de texto para la opción "Rechazar/Aceptar"
+        return 'Aceptar';
+    }
+    return 'Si';
+}
+
+// Obtiene el texto para el estado unchecked
+function getUncheckedText(element) {
+    if (element.classList.contains('state-switch-note')) {
+        // Cambio de texto para la opción "Inactivo/Activo"
+        return element.parentElement.previousElementSibling.textContent === 'Activo' ? 'Inactivo' : 'No';
+    } else if (element.classList.contains('state-switch-accept-reject')) {
+        // Cambio de texto para la opción "Rechazar/Aceptar"
+        return 'Rechazar';
+    }
+    return 'No';
+}
+
+// Inicializa la funcionalidad de los interruptores
+updateLabels();
+
+
 
 /* # Alert
 ---------------------------------------------- */
