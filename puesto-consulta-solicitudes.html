@@ -299,7 +299,7 @@
         <div class="modal-body">
           <form id="miFormulario" class="grid">
             <!-- Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
               <div class="grid-item">
                 <label for="Code">Código <span>*</span></label>
                 <select id="Code" class="form-control" required>
@@ -335,16 +335,19 @@
                   <option value="En proceso">En proceso</option>
                   <option value="Rechazado">Rechazado</option>
                 </select> 
-              </div>                                                                       
+              </div>                    
+              <!-- Switch-wrapper -->
+              <div class="switch-group">
+                <span class="switch-label">Rechazar</span>
+                <label class="switch">
+                  <input type="checkbox" class="switch-input state-switch-accept-reject">
+                  <span class="slider"></span>
+                </label>
+              </div>                              
             </div>  
-            <!-- Switch-wrapper -->
-            <div class="switch-group">
-              <span class="switch-label">Rechazar</span>
-              <label class="switch">
-                <input type="checkbox" class="switch-input state-switch-accept-reject">
-                <span class="slider"></span>
-              </label>
-            </div>                
+            <div>
+              <button type="submit" class="btn btn-danger-inverse"><i class="fa-solid fa-trash"></i> Eliminar</button>   
+            </div>            
           </form>   
         </div>
         <!-- == Modal-footer == -->
