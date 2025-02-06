@@ -3584,6 +3584,40 @@ Cambiar la clase de los component-container por ID
 /* # Desktop
 ----------------------------------------------- */
 /*A partir de 992px y 1200 se aplicarán estos estilos*/
+/* ==============================================
+# LABELS
+============================================== */
+.label {
+  display: inline;
+  padding: 0.3rem 1rem;
+  font-size: 75%;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 1rem;
+}
+
+.label {
+  color: #ffffff;
+}
+
+.label-primary {
+  background-color: #03559E;
+}
+
+.label-warning {
+  background-color: #e7b246;
+}
+
+.label-success {
+  background-color: #4CAF50;
+}
+
+.label-danger {
+  background-color: #f11f0b;
+}
+
 ul.secondary_menu {
   display: flex;
   padding: 0 0 2rem;
