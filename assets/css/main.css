@@ -2276,18 +2276,17 @@ Tabletas horizontales */
 }
 .dropdown-user .dropbtn {
   background-color: #ffffff;
-  color: #134983;
+  color: #1F2937;
   padding: 10px 15px;
   font-size: 1rem;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
+  height: 100%;
 }
-.dropdown-user .dropbtn img {
-  width: 25px;
+.dropdown-user .dropbtn i {
   margin-right: 10px;
-  border-radius: 50%;
 }
 .dropdown-user:hover .dropdown-user-links {
   display: block;

@@ -96,19 +96,19 @@
   /*button*/
   .dropbtn {
     background-color:$primary-color;
-    color:$fifth-color;
+    color:$primary-text-color;
     padding: 10px 15px;
     font-size: 1rem;
     border: none;
     cursor: pointer;
     display:flex;
     align-items:center;  
+    height: 100%;
 
-    img{
-      width: 25px;
+    i{
       margin-right: 10px;
-      border-radius: 50%;
-    }  
+    }
+
   }  
 
   /*Dropdown-links*/
