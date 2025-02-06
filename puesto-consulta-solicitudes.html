@@ -172,7 +172,7 @@
                 </div>                
               </td>
               <td>
-                <!-- Botones de radio -->                
+                <!-- Botones de aceptar y rechazar -->                
                 <div class="flex gap-2 justify-end align-center">            
                   <label class="radio-label">
                     <input type="radio" id="reject" name="terms-01" value="reject">
@@ -204,7 +204,7 @@
                 </div>                
               </td>
               <td>
-                <!-- Botones de radio -->                
+                <!-- Botones de aceptar y rechazar -->                
                 <div class="flex gap-2 justify-end align-center">            
                   <label class="radio-label">
                     <input type="radio" id="reject" name="terms-02" value="reject">
@@ -236,7 +236,7 @@
                 </div>                
               </td>
               <td>
-                <!-- Botones de radio -->                
+                <!-- Botones de aceptar y rechazar -->                
                 <div class="flex gap-2 justify-end align-center">            
                   <label class="radio-label">
                     <input type="radio" id="reject" name="terms-03" value="reject">
@@ -268,7 +268,7 @@
                 </div>                
               </td>
               <td>
-                <!-- Botones de radio -->                
+                <!-- Botones de aceptar y rechazar -->                
                 <div class="flex gap-2 justify-end align-center">            
                   <label class="radio-label">
                     <input type="radio" id="reject" name="terms-04" value="reject">
@@ -373,6 +373,35 @@
         </div>
       </div>
     </div>      
+
+    <!-- ====== Modal-02 ====== -->
+    <div id="modal-02" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Rechazado</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form id="miFormulario" class="grid">
+            <!-- Item -->
+            <div class="form-group">
+              <label for="rejection">Motivo de rechazo <span>*</span></label>
+              <textarea class="form-control" id="rejection" name="rejection" rows="4" cols="50" placeholder="Describe brevemente el motivo de rechazo." required></textarea>                
+            </div>                            
+          </form>   
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Aceptar</button>          
+        </div>
+      </div>
+    </div>   
+
 
   </main>  
 

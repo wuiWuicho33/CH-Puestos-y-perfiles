@@ -113,6 +113,19 @@ window.onclick = function(event) {
     }
 };
 
+/* # Escuchar el cambio en el radio de "Rechazar"
+---------------------------------------------- */
+document.querySelectorAll('input[type="radio"][value="reject"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+        if (this.checked) {
+            // Cuando "Rechazar" es seleccionado, abrir el modal
+            const modalId = "modal-02"; 
+            openModal(modalId);
+        }
+    });
+});
+
+
 /* # Switches
 ---------------------------------------------- */
 // Función para actualizar el texto del label basado en el estado del switch
