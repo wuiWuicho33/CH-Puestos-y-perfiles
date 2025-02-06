@@ -126,36 +126,24 @@ function updateLabels() {
             });
         }
     });
-}
-
-// Obtiene el texto para el estado checked
-function getCheckedText(element) {
+  }
+  // Obtiene el texto para el estado checked
+  function getCheckedText(element) {
     if (element.classList.contains('state-switch-note')) {
-        // Cambio de texto para la opción "Inactivo/Activo"
         return element.parentElement.previousElementSibling.textContent === 'Inactivo' ? 'Activo' : 'Sí';
-    } else if (element.classList.contains('state-switch-accept-reject')) {
-        // Cambio de texto para la opción "Rechazar/Aceptar"
-        return 'Aceptar';
     }
     return 'Si';
-}
-
-// Obtiene el texto para el estado unchecked
-function getUncheckedText(element) {
+  }
+  // Obtiene el texto para el estado unchecked
+  function getUncheckedText(element) {
     if (element.classList.contains('state-switch-note')) {
-        // Cambio de texto para la opción "Inactivo/Activo"
         return element.parentElement.previousElementSibling.textContent === 'Activo' ? 'Inactivo' : 'No';
-    } else if (element.classList.contains('state-switch-accept-reject')) {
-        // Cambio de texto para la opción "Rechazar/Aceptar"
-        return 'Rechazar';
     }
     return 'No';
-}
-
-// Inicializa la funcionalidad de los interruptores
-updateLabels();
-
-
+  }
+  
+  // Inicializa la funcionalidad de los interruptores
+  updateLabels();
 
 /* # Alert
 ---------------------------------------------- */
