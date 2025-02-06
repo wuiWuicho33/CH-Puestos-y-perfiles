@@ -58,7 +58,7 @@
     .modal-footer {
       border-top: 1px solid $tertiary-color;
       display: flex;
-      justify-content: flex-end;    
+      justify-content: space-between;    
     }
 
   }  
@@ -66,9 +66,11 @@
 }
 
 /*Para este proyecto en particular*/
+/*
 .modal-footer {
   button{margin-right: auto;}
 }
+*/
 
 /* ==============
 # MEDIAQUERIES

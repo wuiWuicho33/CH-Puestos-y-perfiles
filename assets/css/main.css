@@ -3556,14 +3556,15 @@ Cambiar la clase de los component-container por ID
 .modal .modal-content .modal-footer {
   border-top: 1px solid #c4cddb;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 /*Para este proyecto en particular*/
-.modal-footer button {
-  margin-right: auto;
+/*
+.modal-footer {
+  button{margin-right: auto;}
 }
-
+*/
 /* ==============
 # MEDIAQUERIES
 ============== */
