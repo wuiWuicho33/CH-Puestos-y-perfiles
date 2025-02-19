@@ -8,7 +8,7 @@ ul.side-menu{
 
   /*Clase active para los elementos li*/
   li.active > a {
-    background: $sixty-color;
+    background: $highlight-color;
     color:$tertiary-color;
   }
 
