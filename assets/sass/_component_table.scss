@@ -9,7 +9,7 @@ table {
 }
 
 thead {
-  background-color: $sixty-color;
+  background-color: $seventy-color;
   color: $white-color;
 }
 
@@ -48,8 +48,7 @@ table.align-right{
 ============================================== */
 /* # Mobile
 -------------------------------------------------------------------- */
-@media (min-width: 425px) {    
-}
+@media (min-width: 425px) {}
 
 /*=> 640px Igual o mayor a 640px se aplicarán los siguientes estilos */
 @media (min-width: 640px) {
@@ -58,18 +57,3 @@ table.align-right{
     font-size: 1rem; 
   }
 }    
-
-/* # Tablet
--------------------------------------------------------------------- */
-/*=> 768px Igual o mayor a 768px se aplicarán los siguientes estilos */
-@media (min-width: 768px) {}
-
-/*=> 1024px Igual o mayor a 1024px se aplicarán los siguientes estilos */
-@media (min-width: 1024px) {}
-/* # Desktop
--------------------------------------------------------------------- */
-/*=> 1280px Igual o mayor a 1280px se aplicarán los siguientes estilos */
-@media (min-width: 1280px) {}
-
-/*=> 1536px Igual o mayor a 1536px se aplicarán los siguientes estilos */
-@media (min-width: 1536px) {}
