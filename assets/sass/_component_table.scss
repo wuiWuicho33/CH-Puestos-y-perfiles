@@ -12,6 +12,18 @@ thead {
   background-color: $seventy-color;
   color: $white-color;
 }
+/*Para evitar que el table head se vaya a segundas líneas*/
+thead th {
+  white-space: nowrap;
+}
+
+/*Para que aparezcan puntos suspensivos si el texto es muy largo*/
+/*
+thead th {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+*/
 
 tbody tr{
   background-color:$primary-color; 
