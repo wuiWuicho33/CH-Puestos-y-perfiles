@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* Imported files and fonts */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /*Variables scss  */
 /*Fonts*/
 /*Colors*/
@@ -44,15 +44,15 @@ a:hover, a:active {
   # Fonts
 ----------------------------------------------- */
 body, form, label, input, textarea, select, a {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto", serif;
+  font-weight: 300;
   font-size: 1rem; /*font-size:16px;*/
   line-height: 1.5;
 }
 
 p, ul, ol {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto", serif;
+  font-weight: 300;
   font-size: 1rem;
   line-height: 1.5rem;
   padding: 0;
@@ -71,8 +71,8 @@ p.lead {
 }
 
 th, td {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-family: "Roboto", serif;
+  font-weight: 300;
   font-size: 1rem;
 }
 
@@ -85,7 +85,7 @@ small {
 }
 
 strong {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", serif;
   font-weight: 500;
 }
 
@@ -93,7 +93,7 @@ strong {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6,
 .home h1, .home h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", serif;
   font-weight: 700;
   margin: 0 0 0.5rem 0;
   padding: 0;
@@ -124,7 +124,7 @@ h6, .h6 {
 }
 
 h2.teaser {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", serif;
   font-size: 1.1rem;
   font-weight: 700;
   font-style: italic;
@@ -149,7 +149,7 @@ h2.teaser {
 }
 
 .btn {
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", serif;
   font-weight: normal;
 }
 
@@ -3094,7 +3094,7 @@ Cambiar la clase de los component-container por ID
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 5px;
-  font-family: "Kanit", sans-serif;
+  font-family: "Roboto", serif;
 }
 .btn i {
   font-size: 1rem;

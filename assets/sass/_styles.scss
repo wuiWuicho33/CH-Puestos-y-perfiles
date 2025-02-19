@@ -31,14 +31,14 @@ a {
   # Fonts
 ----------------------------------------------- */
 body, form, label, input, textarea, select, a{
-  font-family:$primary-font;
-  font-weight: 400;  
+  font-family:$secondary-font;
+  font-weight: 300;  
   font-size:1rem; /*font-size:16px;*/
   line-height: 1.5;
 }
 p,ul,ol {
-  font-family:$primary-font;
-  font-weight: 400;  
+  font-family:$secondary-font;
+  font-weight: 300;  
   font-size:1rem;  
   line-height: 1.5rem;
   padding: 0;
@@ -52,15 +52,15 @@ p.lead{
   font-weight: 400;
 }
 th,td {
-  font-family:$primary-font;
-  font-weight: 400;  
+  font-family:$secondary-font;
+  font-weight: 300;  
   font-size:1rem;  
 }
 
 a{font-size:1rem;}
 small {font-size: 80%;}
 strong {
-  font-family:$primary-font;
+  font-family:$secondary-font;
   font-weight: 500;  
 }
 /*Títulos*/
