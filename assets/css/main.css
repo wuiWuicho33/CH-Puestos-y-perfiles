@@ -346,6 +346,33 @@ img {
   background-color: rgba(255, 255, 255, 0.55);
 }
 
+/*A partir de 1024px se aplicarán estos estilos => 1024px
+Tabletas horizontales*/
+@media (min-width: 1024px) {
+  /* Márgenes y espaciados */
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin: 0 0 1.5rem 0;
+  }
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+  h2, .h2 {
+    font-size: 2rem;
+  }
+  h3, .h3 {
+    font-size: 1.75rem;
+  }
+  h4, .h4 {
+    font-size: 1.5rem;
+  }
+  h5, .h5 {
+    font-size: 1.25rem;
+  }
+  h6, .h6 {
+    font-size: 1rem;
+  }
+}
 /* -----------------------------------------------
   # Utilities
 ----------------------------------------------- */
@@ -579,6 +606,53 @@ img {
   display: table-cell;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/*Eliminar esto*/
+/*Ya tengo floats*/
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+/*display sustituye a hidden*/
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none;
+  }
+}
 /* ==============================================
 # MEDIAQUERIES
 ============================================== */
@@ -604,6 +678,24 @@ img {
   .d-sm-grid {
     display: grid;
   }
+  .mb-sm-0 {
+    margin-bottom: 0;
+  }
+  .mb-sm-1 {
+    margin-bottom: 0.25rem;
+  }
+  .mb-sm-2 {
+    margin-bottom: 0.5rem;
+  }
+  .mb-sm-3 {
+    margin-bottom: 1rem;
+  }
+  .mb-sm-4 {
+    margin-bottom: 1.5rem;
+  }
+  .mb-sm-5 {
+    margin-bottom: 3rem;
+  }
 }
 /* # Tablet
 -------------------------------------------------------------------- */
@@ -627,6 +719,24 @@ img {
   .d-md-grid {
     display: grid;
   }
+  .mb-md-0 {
+    margin-bottom: 0;
+  }
+  .mb-md-1 {
+    margin-bottom: 0.25rem;
+  }
+  .mb-md-2 {
+    margin-bottom: 0.5rem;
+  }
+  .mb-md-3 {
+    margin-bottom: 1rem;
+  }
+  .mb-md-4 {
+    margin-bottom: 1.5rem;
+  }
+  .mb-md-5 {
+    margin-bottom: 3rem;
+  }
 }
 /*=> 1024px Igual o mayor a 1024px se aplicarán los siguientes estilos */
 @media (min-width: 1024px) {
@@ -647,6 +757,24 @@ img {
   }
   .d-lg-grid {
     display: grid;
+  }
+  .mb-lg-0 {
+    margin-bottom: 0;
+  }
+  .mb-lg-1 {
+    margin-bottom: 0.25rem;
+  }
+  .mb-lg-2 {
+    margin-bottom: 0.5rem;
+  }
+  .mb-lg-3 {
+    margin-bottom: 1rem;
+  }
+  .mb-lg-4 {
+    margin-bottom: 1.5rem;
+  }
+  .mb-lg-5 {
+    margin-bottom: 3rem;
   }
 }
 /* # Desktop
@@ -671,35 +799,26 @@ img {
   .d-xl-grid {
     display: grid;
   }
+  .mb-xl-0 {
+    margin-bottom: 0;
+  }
+  .mb-xl-1 {
+    margin-bottom: 0.25rem;
+  }
+  .mb-xl-2 {
+    margin-bottom: 0.5rem;
+  }
+  .mb-xl-3 {
+    margin-bottom: 1rem;
+  }
+  .mb-xl-4 {
+    margin-bottom: 1.5rem;
+  }
+  .mb-xl-5 {
+    margin-bottom: 3rem;
+  }
 }
 /*=> 1536px Igual o mayor a 1536px se aplicarán los siguientes estilos */
-/*A partir de 1024px se aplicarán estos estilos => 1024px
-Tabletas horizontales*/
-@media (min-width: 1024px) {
-  /* Márgenes y espaciados */
-  h1, h2, h3, h4, h5, h6,
-  .h1, .h2, .h3, .h4, .h5, .h6 {
-    margin: 0 0 1.5rem 0;
-  }
-  h1, .h1 {
-    font-size: 2.5rem;
-  }
-  h2, .h2 {
-    font-size: 2rem;
-  }
-  h3, .h3 {
-    font-size: 1.75rem;
-  }
-  h4, .h4 {
-    font-size: 1.5rem;
-  }
-  h5, .h5 {
-    font-size: 1.25rem;
-  }
-  h6, .h6 {
-    font-size: 1rem;
-  }
-}
 /* ==============================================
 # CONTAINER - CSS GRID - GAP - SPAN
 ============================================== */
