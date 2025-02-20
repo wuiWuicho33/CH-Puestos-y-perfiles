@@ -3108,14 +3108,14 @@ Cambiar la clase de los component-container por ID
 
 /*--------------- Btn-default ---------------*/
 .btn-default {
-  background-color: #0F4C95;
+  background-color: #1464c3;
   color: #ffffff;
 }
 .btn-default i {
   color: #ffffff;
 }
 .btn-default:hover {
-  background: #ca3c2f;
+  background: #0F4C95;
   color: #ffffff;
 }
 .btn-default:hover i {

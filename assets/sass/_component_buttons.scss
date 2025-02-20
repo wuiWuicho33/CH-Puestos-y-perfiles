@@ -19,14 +19,14 @@
 
 /*--------------- Btn-default ---------------*/
 .btn-default {
-  background-color: $highlight-color; 
-  
+  background-color: lighten($highlight-color, 10%); 
   color: $primary-color;
   //Estilos de i
   i {color: $primary-color;}    
+
   //Hover
   &:hover{
-    background:$strong-highlight-color;
+    background:$highlight-color;
     color: $primary-color;
     //Estilos de i en inverse
     i {color: $primary-color;}      
