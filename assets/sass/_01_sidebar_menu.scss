@@ -61,6 +61,7 @@ ul.side-menu{
     border-left: 4px solid transparent;
     
     &:hover {
+      background: $sixty-color;
       color:$primary-color;
       border-left: 4px solid $highlight-color;
     }

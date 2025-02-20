@@ -2418,6 +2418,7 @@ ul.side-menu li ul li a {
   border-left: 4px solid transparent;
 }
 ul.side-menu li ul li a:hover {
+  background: #528BD7;
   color: #ffffff;
   border-left: 4px solid #0F4C95;
 }
