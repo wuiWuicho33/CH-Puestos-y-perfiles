@@ -17,6 +17,8 @@ ul.secondary_menu {
       padding: 5px 10px; 
       color: $primary-text-color;
       text-decoration: none;       
+
+      small{font-size: 70%;}
     }    
 
     &:hover {

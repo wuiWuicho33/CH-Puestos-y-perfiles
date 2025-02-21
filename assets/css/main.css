@@ -4007,6 +4007,9 @@ ul.secondary_menu li a {
   color: #011E44;
   text-decoration: none;
 }
+ul.secondary_menu li a small {
+  font-size: 70%;
+}
 ul.secondary_menu li:hover {
   border-color: #0F4C95;
 }
