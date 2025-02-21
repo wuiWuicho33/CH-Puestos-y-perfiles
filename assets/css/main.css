@@ -3938,6 +3938,16 @@ html {
   border-radius: 1rem;
 }
 
+.label-circle {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  font-size: 0.5rem;
+  line-height: 1rem;
+  text-align: center;
+}
+
 .label {
   color: #ffffff;
 }
@@ -3945,17 +3955,36 @@ html {
 .label-primary {
   background-color: #A3B9F1;
 }
+.label-primary i {
+  color: #ffffff;
+}
 
 .label-warning {
   background-color: #db9a17;
+}
+.label-warning i {
+  color: #ffffff;
 }
 
 .label-success {
   background-color: #35a038;
 }
+.label-success i {
+  color: #ffffff;
+}
 
 .label-danger {
   background-color: #b92214;
+}
+.label-danger i {
+  color: #ffffff;
+}
+
+.label-disable {
+  background-color: #A3B9F1;
+}
+.label-disable i {
+  color: #ffffff;
 }
 
 ul.secondary_menu {
@@ -3971,7 +4000,9 @@ ul.secondary_menu li {
   flex: 0 0 auto;
 }
 ul.secondary_menu li a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
   padding: 5px 10px;
   color: #011E44;
   text-decoration: none;

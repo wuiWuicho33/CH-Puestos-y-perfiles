@@ -11,10 +11,12 @@ ul.secondary_menu {
     flex: 0 0 auto;
 
     a {
-      display: block;  
+      display: flex;  
+      align-items: center;
+      gap: 0.25rem;
       padding: 5px 10px; 
       color: $primary-text-color;
-      text-decoration: none; 
+      text-decoration: none;       
     }    
 
     &:hover {
