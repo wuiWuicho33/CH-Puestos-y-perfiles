@@ -4,11 +4,11 @@ ul.secondary_menu {
   overflow-x: auto;
   white-space: nowrap;
 
-  li {
-    border-bottom: 2px solid transparent;
+  li {    
     cursor: pointer;
     transition: border-color ease-in 0.5s;
     flex: 0 0 auto;
+    border-bottom: 2px solid $fourth-color; //border-bottom: 2px solid transparent; regresar esta línea en el componente original    
 
     a {
       display: flex;  
@@ -20,22 +20,33 @@ ul.secondary_menu {
     }    
 
     &:hover {
-      border-bottom: 2px solid $highlight-color;
+      border-color: $highlight-color;
 
       a {
         color: $highlight-color;
-        font-weight: bold;
+        font-weight: 500;
       }
     }
 
     &.active {
-      border-bottom: 2px solid $highlight-color;
+      border-color: $highlight-color;
 
       a {
         color: $highlight-color;
-        font-weight: bold;
+        font-weight: 500;
       }
     }
+
+
+    //Este bloque aplica sólo para este proyecto - Borrar después
+    &.complete {
+      border-color: $success-color;
+
+      a {
+        color: $success-color;
+        font-weight: 500;
+      }
+    }    
 
   }
 }

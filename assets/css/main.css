@@ -3994,10 +3994,10 @@ ul.secondary_menu {
   white-space: nowrap;
 }
 ul.secondary_menu li {
-  border-bottom: 2px solid transparent;
   cursor: pointer;
   transition: border-color ease-in 0.5s;
   flex: 0 0 auto;
+  border-bottom: 2px solid #A3B9F1;
 }
 ul.secondary_menu li a {
   display: flex;
@@ -4008,18 +4008,25 @@ ul.secondary_menu li a {
   text-decoration: none;
 }
 ul.secondary_menu li:hover {
-  border-bottom: 2px solid #0F4C95;
+  border-color: #0F4C95;
 }
 ul.secondary_menu li:hover a {
   color: #0F4C95;
-  font-weight: bold;
+  font-weight: 500;
 }
 ul.secondary_menu li.active {
-  border-bottom: 2px solid #0F4C95;
+  border-color: #0F4C95;
 }
 ul.secondary_menu li.active a {
   color: #0F4C95;
-  font-weight: bold;
+  font-weight: 500;
+}
+ul.secondary_menu li.complete {
+  border-color: #35a038;
+}
+ul.secondary_menu li.complete a {
+  color: #35a038;
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=main.css.map */
