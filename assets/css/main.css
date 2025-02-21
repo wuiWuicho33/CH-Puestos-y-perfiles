@@ -3989,7 +3989,7 @@ html {
 
 ul.secondary_menu {
   display: flex;
-  padding: 0 0 2rem;
+  padding: 0 0 0.5rem;
   overflow-x: auto;
   white-space: nowrap;
 }
@@ -4027,6 +4027,14 @@ ul.secondary_menu li.complete {
 ul.secondary_menu li.complete a {
   color: #35a038;
   font-weight: 500;
+}
+
+/*A partir de 1024px se aplicarán estos estilos => 1024px
+Tabletas horizontales*/
+@media (min-width: 1024px) {
+  ul.secondary_menu {
+    padding: 0 0 1rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
