@@ -73,7 +73,7 @@ input[type="radio"] {
   height: 20px; 
   margin-right: 5px;
   margin-bottom: 4px;
-  accent-color: $highlight-color; 
+  accent-color: lighten($highlight-color, 10%); 
   border: 2px solid $tertiary-color; 
   border-radius: 4px; 
 }
