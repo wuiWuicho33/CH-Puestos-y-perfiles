@@ -3992,6 +3992,15 @@ ul.secondary_menu {
   padding: 0 0 0.5rem;
   overflow-x: auto;
   white-space: nowrap;
+  /*Background color*/
+  /*Bar color*/
+}
+ul.secondary_menu::-webkit-scrollbar {
+  width: 10px;
+  background-color: #ffffff;
+}
+ul.secondary_menu::-webkit-scrollbar-thumb {
+  background: #cedaf8;
 }
 ul.secondary_menu li {
   cursor: pointer;
@@ -4036,7 +4045,7 @@ ul.secondary_menu li.complete a {
 Tabletas horizontales*/
 @media (min-width: 1024px) {
   ul.secondary_menu {
-    padding: 0 0 1rem;
+    padding: 0 0 0.5rem;
   }
 }
 

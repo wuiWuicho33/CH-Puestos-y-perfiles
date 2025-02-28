@@ -4,6 +4,9 @@ ul.secondary_menu {
   overflow-x: auto;
   white-space: nowrap;
 
+  &::-webkit-scrollbar{width: 10px; background-color:$primary-color;}/*Background color*/
+  &::-webkit-scrollbar-thumb{background:$tertiary-color;}/*Bar color*/
+
   li {    
     cursor: pointer;
     transition: border-color ease-in 0.5s;
@@ -58,6 +61,8 @@ ul.secondary_menu {
 Tabletas horizontales*/
 @media (min-width: 1024px) {
   ul.secondary_menu {
-    padding: 0 0 1rem;
+    padding: 0 0 0.5rem;
+
+    &::-webkit-scrollbar{}        
   }
 }
