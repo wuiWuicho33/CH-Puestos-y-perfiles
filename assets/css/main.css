@@ -2568,6 +2568,10 @@ ul.side-menu li ul li a:hover {
   color: #ffffff;
   border-left: 4px solid #0F4C95;
 }
+ul.side-menu li ul li a.active {
+  color: #ffffff;
+  font-weight: 400;
+}
 
 /* ==============================================
 # LAYOUT

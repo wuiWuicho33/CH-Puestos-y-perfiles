@@ -65,6 +65,14 @@ ul.side-menu{
       color:$primary-color;
       border-left: 4px solid $highlight-color;
     }
+
+    //Eliminar esto después, sólo es para este proyecto.
+    &.active {      
+      color:$primary-color;      
+      font-weight: 400;
+    }    
   }
+
+
 
 }
