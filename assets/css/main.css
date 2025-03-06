@@ -3824,7 +3824,7 @@ html {
   justify-content: space-between;
   align-items: center;
 }
-.panel-header h3 {
+.panel-header h4 {
   margin-bottom: 0;
 }
 .panel-header button {
