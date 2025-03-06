@@ -4026,18 +4026,18 @@ ul.secondary_menu li:hover a {
   color: #0F4C95;
   font-weight: 500;
 }
-ul.secondary_menu li.active {
-  border-color: #0F4C95;
-}
-ul.secondary_menu li.active a {
-  color: #0F4C95;
-  font-weight: 500;
-}
 ul.secondary_menu li.complete {
   border-color: #35a038;
 }
 ul.secondary_menu li.complete a {
   color: #35a038;
+  font-weight: 500;
+}
+ul.secondary_menu li.active {
+  border-color: #0F4C95;
+}
+ul.secondary_menu li.active a {
+  color: #0F4C95;
   font-weight: 500;
 }
 

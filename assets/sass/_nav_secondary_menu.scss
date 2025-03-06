@@ -33,15 +33,6 @@ ul.secondary_menu {
       }
     }
 
-    &.active {
-      border-color: $highlight-color;
-
-      a {
-        color: $highlight-color;
-        font-weight: 500;
-      }
-    }
-
 
     //Este bloque aplica sólo para este proyecto - Borrar después
     &.complete {
@@ -51,7 +42,18 @@ ul.secondary_menu {
         color: $success-color;
         font-weight: 500;
       }
+    }   
+    //Este bloque aplica sólo para este proyecto - Borrar después
+    
+    &.active {
+      border-color: $highlight-color;
+
+      a {
+        color: $highlight-color;
+        font-weight: 500;
+      }
     }    
+
 
   }
 }
