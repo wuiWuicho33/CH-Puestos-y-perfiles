@@ -80,53 +80,49 @@
 
     <!-- Content
     ============================ -->     
-    <section class="content">
+    <section class="content grid gap-5">
       <!-- ====== Title ====== -->
       <div>
         <h1>Revisión - Perfiles y descriptivos de puestos</h1>
       </div> 
       <!-- ====== Filters-section ====== -->
-      <div class="grid grid-cols-12 py-5">
-        <!-- == Form == -->
-        <div class="col-span-12 lg:col-span-10">
-          <form class="filter flex flex-col lg:flex-row gap-2">      
-            <!-- Form-group -->                                                  
-            <div>
-              <label for="select-position">Puesto</label>      
-              <select class="form-control w-100" id="select-position">
-                <option selected>Seleccionar</option>
-                <option>Puesto 1</option>
-                <option>Puesto 2</option>
-                <option>Puesto 3</option>       
-              </select>                        
-            </div>          
-            <!-- Form-group -->                                       
-            <div>
-              <label for="select-area">Área</label>      
-              <select class="form-control w-100" id="select-area">
-                <option selected>Seleccionar</option>
-                <option>Área 1</option>
-                <option>Área 2</option>
-                <option>Área 3</option>             
-              </select>                        
-            </div>
-            <!-- Estatús -->                               
-            <div>
-              <label for="select-status">Estatus</label>      
-              <select class="form-control w-100" id="select-status">
-                <option selected>Seleccionar</option>
-                <option>Activo</option>
-                <option>Inactivo</option>       
-              </select>                        
-            </div>                      
-          </form>          
-        </div>
-        <!-- == Buttons == -->      
-        <div class="col-span-12 lg:col-span-2 flex flex-row-reverse">
-          <div class="self-end">
-            <button class="btn btn-default-inverse">Buscar puestos</button>
+      <div class="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-2">
+        <!-- == Form == -->        
+        <form class="flex flex-col lg:flex-row gap-2">      
+          <!-- Form-group -->                                                  
+          <div>
+            <label for="select-position">Puesto</label>      
+            <select class="form-control w-100" id="select-position">
+              <option selected>Seleccionar</option>
+              <option>Puesto 1</option>
+              <option>Puesto 2</option>
+              <option>Puesto 3</option>       
+            </select>                        
+          </div>          
+          <!-- Form-group -->                                       
+          <div>
+            <label for="select-area">Área</label>      
+            <select class="form-control w-100" id="select-area">
+              <option selected>Seleccionar</option>
+              <option>Área 1</option>
+              <option>Área 2</option>
+              <option>Área 3</option>             
+            </select>                        
           </div>
-        </div>      
+          <!-- Estatús -->                               
+          <div>
+            <label for="select-status">Estatus</label>      
+            <select class="form-control w-100" id="select-status">
+              <option selected>Seleccionar</option>
+              <option>Activo</option>
+              <option>Inactivo</option>       
+            </select>                        
+          </div>                      
+        </form>                  
+        <!-- == Buttons == -->  
+         <div class="flex flex-row-reverse">
+          <button class="btn btn-default-inverse">Buscar puestos</button>          
+         </div>    
       </div>
       <!-- ====== Table ====== -->          
       <div class="table-responsive">
