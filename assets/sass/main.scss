@@ -1,30 +1,32 @@
-@import 'variables';
+/*Deafult theme*/
+@import '_default_colors';
 
 /*Base*/
-@import 'styles';
-@import 'utilities';
-@import 'grid';
-@import 'flexbox';
+@import 'base/_styles';
+@import 'base/_utilities';
+@import 'base/_grid';
+@import 'base/_flexbox';
 
 /*Components*/
-@import 'componentes';
-@import 'component_table';
-@import 'component_form';
-@import 'component_add_input';
-@import 'component_buttons';
-@import 'component_alerts';
-@import 'component_switch';
-@import 'component_tabs';
-@import 'component_tooltips';
-@import 'component_panel';
-@import 'component_modal';
-@import 'component_labels';
-@import 'nav_secondary_menu';
+@import 'components/_componentes';
+@import 'components/_table';
+@import 'components/_form';
+@import 'components/_add_input';
+@import 'components/_buttons';
+@import 'components/_alerts';
+@import 'components/_switch';
+@import 'components/_tabs';
+@import 'components/_tooltips';
+@import 'components/_panel';
+@import 'components/_modal';
+@import 'components/_labels';
 
 /*Layout*/
-@import '01_sidebar_layout';
-@import '01_sidebar_menu';
-@import '01_layout';
+@import 'navs/_secondary_menu';
 
+/*Layout*/
+@import 'layout/_layout';
+@import 'layout/_sidebar_layout';
+@import 'layout/_sidebar_menu';
 
 //@import 'nav_standar_navbar'; /*Navbar stándar para sitios web normales*/
