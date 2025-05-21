@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+	<title>Puesto - Consuta de solicitudes</title>
+	<link href="../assets/css/main.css" rel="stylesheet">
+</head>
+<body> 
+
+  <!-- =========
+  * SIDEBAR *
+  ========== -->
+  <section class="sidebar">
+
+    <!-- Header
+    ========================================== -->    
+    <header>
+      <img class="logo" src="../assets/img/logo.svg">
+    </header>
+
+    <!-- Side-menu
+    ========================================== -->              		 
+    <ul class="side-menu">
+      <!-- ====== Sub-menu ====== -->
+      <li class='sub-menu active'>
+        <a href='#'>
+          <i class="fa-solid fa-user-tie"></i> Puesto<div class='fa fa-solid fa-chevron-right right'></div>
+        </a>
+        <ul>
+          <li><a href='consulta-puestos.html'>Consulta</a></li>
+          <li><a href='consulta-solicitudes.html' class="active">Consulta de soluciones</a></li>
+          <li><a href='alta-puesto-descripcion.html'>Alta</a></li>
+          <li><a href='#'>Solicitud</a></li>
+          <li><a href='#'>Autorización</a></li>
+        </ul>
+      </li>      
+      <!-- ====== Links ====== -->
+      <li><a href='#'><i class="fa-solid fa-key"></i> Permisos y roles</a></li>
+      <li><a href='#'><i class="fa-solid fa-users"></i> Usuarios</a></li>
+    </ul>
+  </section>
+
+	<!-- =========
+  * MAIN *
+  ========== -->
+  <main class="main">
+
+    <!-- Navbar
+    ========================================== -->        
+    <nav class="navbar">
+      <!-- ====== Togle ====== -->
+      <button class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+			<!-- ====== Links ====== -->
+      <div class="navbar-links">
+        <a href="#">
+          <i class="fa-solid fa-house mr-1"></i> <span class="d-none d-md-block">Home</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-bell"></i>
+        </a>
+        <!-- ====== Dropdown-user ====== -->
+				<div class="dropdown-user">
+					<!-- == Btn == -->
+					<button class="dropbtn">
+						<i class="fa-solid fa-user"></i> <span class="d-none d-md-block">Nombre de usuario</span>
+					</button>
+          <!-- == Links == -->
+					<div class="dropdown-user-links">
+					<a href="#">Mi perfil <i class="fa-regular fa-credit-card"></i></a>
+					<a href="#">Ajustes <i class="fa-solid fa-gear"></i></a>
+					<a href="#">Cerrar sesión <i class="fa-solid fa-right-from-bracket"></i></a>
+					</div>
+				</div>		
+      </div>
+    </nav>
+
+    <!-- Content
+    ============================ -->     
+    <section class="content">
+      <!-- ====== Title ====== -->
+      <div>
+        <h1>Revisión - Perfiles y descriptivos de puestos</h1>
+      </div> 
+      <!-- ====== Filters-section ====== -->
+      <div class="grid grid-cols-12 py-5">
+        <!-- == Form == -->
+        <div class="col-span-12 lg:col-span-10">
+          <form class="filter flex flex-col lg:flex-row gap-2">      
+            <!-- Form-group -->                                                  
+            <div>
+              <label for="select-position">Puesto</label>      
+              <select class="form-control w-100" id="select-position">
+                <option selected>Seleccionar</option>
+                <option>Puesto 1</option>
+                <option>Puesto 2</option>
+                <option>Puesto 3</option>       
+              </select>                        
+            </div>          
+            <!-- Form-group -->                                       
+            <div>
+              <label for="select-area">Área</label>      
+              <select class="form-control w-100" id="select-area">
+                <option selected>Seleccionar</option>
+                <option>Área 1</option>
+                <option>Área 2</option>
+                <option>Área 3</option>             
+              </select>                        
+            </div>
+            <!-- Estatús -->                               
+            <div>
+              <label for="select-status">Estatus</label>      
+              <select class="form-control w-100" id="select-status">
+                <option selected>Seleccionar</option>
+                <option>Activo</option>
+                <option>Inactivo</option>       
+              </select>                        
+            </div>                      
+          </form>          
+        </div>
+        <!-- == Buttons == -->      
+        <div class="col-span-12 lg:col-span-2 flex flex-row-reverse">
+          <div class="self-end">
+            <button class="btn btn-default-inverse">Buscar puestos</button>
+          </div>
+        </div>      
+      </div>
+      <!-- ====== Table ====== -->          
+      <div class="table-responsive">
+        <table class="align-right">
+          <!-- == table head == -->
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Puesto</th>
+              <th>Área</th>
+              <th>Estátus</th>
+              <th>Autorización</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <!-- == Table body == -->
+          <tbody>
+            <tr>
+              <td>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="checkbox1"> Opción 1
+                </label>                
+              </td>
+              <td>Nombre de puesto</td>
+              <td>Capital humano</td>
+              <td>
+                <div class="label label-success">
+                  <i class="fa-solid fa-check"></i> Autorizado
+                </div>                
+              </td>
+              <td>
+                <!-- Botones de aceptar y rechazar -->                
+                <div class="flex gap-2 justify-end align-center">            
+                  <label class="radio-label">
+                    <input type="radio" id="reject" name="terms-01" value="reject">
+                    Rechazado
+                  </label>        
+
+                  <label class="radio-label">
+                    <input type="radio" id="accept" name="terms-01" value="accept" checked>
+                    Aceptado
+                  </label>                  
+                </div>                                                  
+              </td>
+              <td>
+                <a class="btn-circle mr-1">
+                  <i class="fa-solid fa-eye"></i>
+                </a> 
+                <a class="btn-circle" data-modal="modal-01">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </a>                                                   
+              </td>              
+            </tr>
+            <tr>
+              <td>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="checkbox2"> Opción 2
+                </label>                
+              </td>
+              <td>Nombre de puesto</td>
+              <td>Capital humano</td>
+              <td>
+                <div class="label label-primary">
+                  <i class="fa fa-search"></i> En revisión
+                </div>                
+              </td>
+              <td>
+                <!-- Botones de aceptar y rechazar -->                
+                <div class="flex gap-2 justify-end align-center">            
+                  <label class="radio-label">
+                    <input type="radio" id="reject" name="terms-02" value="reject">
+                    Rechazado
+                  </label>        
+
+                  <label class="radio-label">
+                    <input type="radio" id="accept" name="terms-02" value="accept" checked>
+                    Aceptado
+                  </label>                  
+                </div>                
+              </td>
+              <td>
+                <a class="btn-circle mr-1">
+                  <i class="fa-solid fa-eye"></i>
+                </a> 
+                <a class="btn-circle" data-modal="modal-01">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </a>                                                   
+              </td>                                     
+            </tr>
+            <tr>
+              <td>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="checkbox3"> Opción 3
+                </label>                
+              </td>
+              <td>Nombre de puesto</td>
+              <td>Capital humano</td>
+              <td>
+                <div class="label label-warning">
+                  <i class="fa fa-spinner fa-spin"></i> En proceso
+                </div>                
+              </td>
+              <td>
+                <!-- Botones de aceptar y rechazar -->                
+                <div class="flex gap-2 justify-end align-center">            
+                  <label class="radio-label">
+                    <input type="radio" id="reject" name="terms-03" value="reject">
+                    Rechazado
+                  </label>        
+
+                  <label class="radio-label">
+                    <input type="radio" id="accept" name="terms-03" value="accept" checked>
+                    Aceptado
+                  </label>                  
+                </div>                 
+              </td>
+              <td>
+                <a class="btn-circle mr-1">
+                  <i class="fa-solid fa-eye"></i>
+                </a> 
+                <a class="btn-circle" data-modal="modal-01">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </a>                                                   
+              </td>                                     
+            </tr>
+            <tr>
+              <td>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="checkbox4"> Opción 4
+                </label>                
+              </td>
+              <td>Nombre de puesto</td>
+              <td>Capital humano</td>
+              <td>
+                <div class="label label-danger">
+                  <i class="fa-solid fa-thumbs-down"></i> Rechazado
+                </div>                
+              </td>
+              <td>
+                <!-- Botones de aceptar y rechazar -->                
+                <div class="flex gap-2 justify-end align-center">            
+                  <label class="radio-label">
+                    <input type="radio" id="reject" name="terms-04" value="reject">
+                    Rechazado
+                  </label>        
+
+                  <label class="radio-label">
+                    <input type="radio" id="accept" name="terms-04" value="accept" checked>
+                    Aceptado
+                  </label>                  
+                </div> 
+              </td>
+              <td>
+                <a class="btn-circle mr-1">
+                  <i class="fa-solid fa-eye"></i>
+                </a> 
+                <a class="btn-circle" data-modal="modal-01">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </a>                                                   
+              </td>                                     
+            </tr>
+          </tbody>
+        </table>        
+      </div>            
+      <!-- ===== Footer ===== -->
+      <footer>
+        <p>Grupo Fórmula Todos los derechos reservados</p>
+      </footer>	      
+    </section>
+
+    <!-- Modales
+    ========================================== -->    
+    <!-- ====== Modal-01 ====== -->
+    <div id="modal-01" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Editar solicitud</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form id="miFormulario" class="grid">
+            <!-- Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+              <div class="grid-item">
+                <label for="Code">Código <span>*</span></label>
+                <select id="Code" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="A000">A000</option>
+                  <option value="A001">A001</option>
+                  <option value="A002">A002</option>
+                  <option value="A003">A003</option>
+                  <option value="A004">A004</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="rol">Puesto <span>*</span></label>
+                <input class="form-control" type="text" id="rol" name="rol" required placeholder="Ingresa un puesto">
+              </div>               
+              <div class="grid-item">
+                <label for="Area">Área <span>*</span></label>
+                <select id="Area" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Area A">Area A</option>
+                  <option value="Area B">Area B</option>
+                  <option value="Area C">Area C</option>
+                  <option value="Area D">Area D</option>
+                  <option value="Area E">Area E</option>
+                </select> 
+              </div>
+              <div class="grid-item">
+                <label for="status">Estatús <span>*</span></label>
+                <select id="status" class="form-control" required>
+                  <option value="" disabled selected>-- Selecciona --</option>
+                  <option value="Autorizado">Autorizado</option>
+                  <option value="En revisión">En revisión</option>
+                  <option value="En proceso">En proceso</option>
+                  <option value="Rechazado">Rechazado</option>
+                </select> 
+              </div>                    
+              <!-- Switch-wrapper -->
+              <div class="switch-group">
+                <span class="switch-label">Rechazar</span>
+                <label class="switch">
+                  <input type="checkbox" class="switch-input state-switch-accept-reject">
+                  <span class="slider"></span>
+                </label>
+              </div>                              
+            </div>  
+            <div>
+              <button type="submit" class="btn btn-danger-inverse"><i class="fa-solid fa-trash"></i> Eliminar</button>   
+            </div>            
+          </form>   
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Agregar</button>          
+        </div>
+      </div>
+    </div>      
+
+    <!-- ====== Modal-02 ====== -->
+    <div id="modal-02" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Rechazado</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <form id="miFormulario" class="grid">
+            <!-- Item -->
+            <div class="form-group">
+              <label for="rejection">Motivo de rechazo <span>*</span></label>
+              <textarea class="form-control" id="rejection" name="rejection" rows="4" cols="50" placeholder="Describe brevemente el motivo de rechazo." required></textarea>                
+            </div>                            
+          </form>   
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer">
+            <button type="reset" class="btn btn-default-inverse" data-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-default">Aceptar</button>          
+        </div>
+      </div>
+    </div>   
+
+
+  </main>  
+
+<!--///////
+SCRIPTS
+////////-->
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/91705bc097.js" crossorigin="anonymous"></script>
+<!-- Jquery last version -->
+<script src="../assets/js/jquery.min.js"></script>
+<!-- Main JS -->
+<script src="../assets/js/main.js"></script>	
+
+</body>
+</html>
