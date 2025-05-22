@@ -3806,6 +3806,15 @@ html {
   color: #011E44;
 }
 
+/* # Default-box
+----------------------------------------------- */
+.default-box {
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+}
+
 /* ==============================================
 # MODAL
 ============================================== */
@@ -4038,15 +4047,6 @@ section.footer {
 }
 .login-box .content footer p, .login-box .content footer a {
   font-size: 0.875rem;
-}
-
-/* # Default-box
------------------------------------------------ */
-.default-box {
-  background-color: #ffffff;
-  padding: 1rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  border-radius: 0.5rem;
 }
 
 /* ==============================================
