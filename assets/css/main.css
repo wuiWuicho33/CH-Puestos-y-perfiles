@@ -3571,6 +3571,39 @@ Cambiar la clase de los component-container por ID
   display: block;
 }
 
+/* # card
+---------------------------------------------- */
+.card {
+  background-color: #ffffff;
+  background-clip: border-box;
+  border-radius: 0.5rem;
+  border: 1px solid #cedaf8;
+  margin-bottom: 1rem;
+}
+.card .card-header {
+  padding: 1rem 1rem;
+  background-color: #ffffff;
+  color: #528BD7;
+  border-bottom: 1px solid #cedaf8;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.card .card-header h3, .card .card-header h4 {
+  margin-bottom: 0;
+}
+.card .card-body {
+  padding: 1rem;
+}
+.card .card-footer {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-top: 1px solid #cedaf8;
+  border-radius: 0 0 0.5rem 0.5rem;
+  text-align: left;
+}
+.card .card-footer p {
+  word-break: break-all;
+}
+
 /* ==============================================
 # TOOLTIPS
 ============================================== */
