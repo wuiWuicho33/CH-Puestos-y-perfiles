@@ -2,7 +2,7 @@
 # BUTTONS
 ============================================== */
 .btn {
-  display: inline-block;
+  //display: inline-block;
   padding: .375rem .75rem;
   border: 1px solid transparent;
   border-radius:.25rem;
@@ -10,8 +10,10 @@
   font-weight: bold;
   text-align: center;
   cursor: pointer;
-  gap: 0.25rem;
-
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
   i{
     font-size:1rem;
     line-height: 1.5;
