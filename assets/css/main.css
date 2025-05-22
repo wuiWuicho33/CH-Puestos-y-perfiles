@@ -3213,11 +3213,11 @@ Cambiar la clase de los component-container por ID
   font-weight: bold;
   text-align: center;
   cursor: pointer;
+  gap: 0.25rem;
 }
 .btn i {
   font-size: 1rem;
   line-height: 1.5;
-  margin-right: 0.25rem;
 }
 
 /* Btn-properties */
