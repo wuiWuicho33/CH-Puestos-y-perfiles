@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+	<title>Puesto - Consuta de solicitudes</title>
+	<link href="../assets/css/main.css" rel="stylesheet">
+</head>
+<body> 
+
+  <!-- =========
+  * SIDEBAR *
+  ========== -->
+  <section class="sidebar">
+
+    <!-- Header
+    ========================================== -->    
+    <header>
+      <img class="logo" src="../assets/img/logo.svg">
+    </header>
+
+    <!-- Side-menu
+    ========================================== -->              		 
+    <ul class="side-menu">
+      <!-- ====== Sub-menu ====== -->
+      <li class='sub-menu active'>
+        <a href='#'>
+          <i class="fa-solid fa-user-tie"></i> Puesto<div class='fa fa-solid fa-chevron-right right'></div>
+        </a>
+        <ul>
+          <li><a href='consulta-solicitudes.html' class="active">Consulta de solicitudes</a></li>
+          <li><a href='alta-puesto-descripcion.html'>Alta</a></li>
+          <li><a href='#'>Solicitud</a></li>
+          <li><a href='#'>Autorización</a></li>
+        </ul>
+      </li>      
+      <!-- ====== Links ====== -->
+      <li><a href='#'><i class="fa-solid fa-key"></i> Permisos y roles</a></li>
+      <li><a href='#'><i class="fa-solid fa-users"></i> Usuarios</a></li>
+    </ul>
+  </section>
+
+	<!-- =========
+  * MAIN *
+  ========== -->
+  <main class="main">
+
+    <!-- Navbar
+    ========================================== -->        
+    <nav class="navbar">
+      <!-- ====== Togle ====== -->
+      <button class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+			<!-- ====== Links ====== -->
+      <div class="navbar-links">
+        <a href="#">
+          <i class="fa-solid fa-house mr-1"></i> <span class="d-none d-md-block">Home</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-bell"></i>
+        </a>
+        <!-- ====== Dropdown-user ====== -->
+				<div class="dropdown-user">
+					<!-- == Btn == -->
+					<button class="dropbtn">
+						<i class="fa-solid fa-user"></i> <span class="d-none d-md-block">Nombre de usuario</span>
+					</button>
+          <!-- == Links == -->
+					<div class="dropdown-user-links">
+					<a href="#">Mi perfil <i class="fa-regular fa-credit-card"></i></a>
+					<a href="#">Ajustes <i class="fa-solid fa-gear"></i></a>
+					<a href="#">Cerrar sesión <i class="fa-solid fa-right-from-bracket"></i></a>
+					</div>
+				</div>		
+      </div>
+    </nav>
+
+    <!-- Content
+    ============================ -->     
+    <section class="content grid gap-5">
+      <!-- ====== Title ====== -->
+      <div class="mb-4">
+        <h1>Revisión - Perfiles y descriptivos de puestos</h1>
+      </div> 
+      <!-- ====== Card ====== -->
+      <div class="card">
+        <header class="card-header">
+          <h4>Card title</h4>
+        </header>
+        <div class="card-body">                    
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur, quisquam harum inventore magnam veritatis cupiditate dolorem molestias, libero repellat assumenda vel autem optio beatae eos maiores et aliquam eum!</p>
+        </div>
+        <footer class="card-footer">                    
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </footer>            
+      </div>
+      <!-- ===== Footer ===== -->
+      <footer>
+        <p>Grupo Fórmula Todos los derechos reservados</p>
+      </footer>	      
+    </section>
+
+  </main>  
+
+<!--///////
+SCRIPTS
+////////-->
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/91705bc097.js" crossorigin="anonymous"></script>
+<!-- Jquery last version -->
+<script src="../assets/js/jquery.min.js"></script>
+<!-- Main JS -->
+<script src="../assets/js/main.js"></script>	
+
+</body>
+</html>
