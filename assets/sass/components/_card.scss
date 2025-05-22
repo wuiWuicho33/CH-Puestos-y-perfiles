@@ -14,12 +14,17 @@
       border-bottom: 1px solid $tertiary-color;
       border-radius:0.5rem 0.5rem 0 0;
 
-      h3,h4{
+      h2,h3,h4{
         margin-bottom: 0;
       }
     }    
 
-    .card-body {padding:1rem;}     
+    .card-body {
+      padding:1rem;
+      h3,h4,h5,h6{
+        margin-bottom: 0;
+      }      
+    }     
 
     .card-footer {
       background-color:$primary-color;

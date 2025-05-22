@@ -3725,11 +3725,14 @@ Cambiar la clase de los component-container por ID
   border-bottom: 1px solid #cedaf8;
   border-radius: 0.5rem 0.5rem 0 0;
 }
-.card .card-header h3, .card .card-header h4 {
+.card .card-header h2, .card .card-header h3, .card .card-header h4 {
   margin-bottom: 0;
 }
 .card .card-body {
   padding: 1rem;
+}
+.card .card-body h3, .card .card-body h4, .card .card-body h5, .card .card-body h6 {
+  margin-bottom: 0;
 }
 .card .card-footer {
   background-color: #ffffff;
