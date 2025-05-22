@@ -254,7 +254,62 @@
                 <i class="fas fa-chevron-down acordeon-icon"></i>
               </button>
               <div class="acordeon-body">
-                <p>Lorem</p>
+                <!-- Form -->
+                <form id="miFormulario" class="grid gap-5">
+                  <!-- Item -->
+                  <div>
+                    <label for="function">Función <span>*</span></label>
+                    <textarea class="form-control" id="function" name="function" rows="4" cols="50" placeholder="Redacta una función, debe ser clara y concisa." required></textarea>                
+                  </div>
+                  <!-- Item -->
+                  <div>
+                    <label for="contribution">Contribución <span>*</span></label>
+                    <select id="contribution" class="form-control" required>
+                      <option value="" disabled selected>-- Selecciona --</option>
+                      <option value="Entrega resultados para el área">Entrega resultados para el área</option>
+                      <option value="Trabaja en el logro de los objetivos a corto plazo">Trabaja en el logro de los objetivos a corto plazo</option>
+                      <option value="Establece y desarrolla procesos y planes a mediano plazo">Establece y desarrolla procesos y planes a mediano plazo</option>  
+                      <option value="Establece e implementa estrategias de negocios y objetivos">Establece e implementa estrategias de negocios y objetivos</option>            
+                    </select> 
+                  </div>            
+                  <!-- Grid -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+                    <div>
+                      <label for="Frequency">Frecuencia <span>*</span></label>
+                      <select id="Frequency" class="form-control" required>
+                        <option value="" disabled selected>-- Selecciona --</option>
+                        <option value="Diario">Diario</option>
+                        <option value="Semanal">Semanal</option>
+                        <option value="Quincenal">Quincenal</option>  
+                        <option value="Mensual">Mensual</option>            
+                        <option value="Bimestral">Bimestral</option>
+                        <option value="Anual">Anual</option>
+                      </select> 
+                    </div>
+                    <div>
+                      <label for="Impact">Impacto de fallos <span>*</span></label>
+                      <select id="Impact" class="form-control" required>
+                        <option value="" disabled selected>-- Selecciona --</option>
+                        <option value="Grave">Grave</option>
+                        <option value="Muy graves">Muy graves</option>
+                        <option value="Considerables">Considerables</option>
+                      </select> 
+                    </div>
+                    <div>
+                      <label for="complexity">Complejidad <span>*</span></label>
+                      <select id="complexity" class="form-control" required>
+                        <option value="" disabled selected>-- Selecciona --</option>
+                        <option value="Baja">Baja</option>
+                        <option value="Media">Media</option>            
+                        <option value="Alta">Alta</option>                    
+                      </select> 
+                    </div>                
+                    <div>
+                      <label for="prioritization">Porcentaje de priorización</label>
+                      <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
+                    </div>                                                        
+                  </div>  
+                </form>
               </div>
             </div>
             <div class="acordeon-item">
