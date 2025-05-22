@@ -102,7 +102,7 @@
               </button>
               <div class="acordeon-body">
                 <!-- == Tabs == -->
-                <div class="tabs-container pb-3" id="tabs-container-1">
+                <div class="tabs-container" id="tabs-container-1">
                   <!-- Tabs buttons -->
                   <div class="tabs">
                     <button class="tab-button active" data-target="tab-01" aria-controls="tab-01" role="tab">Ficha de identificación</button>
@@ -309,7 +309,12 @@
                       <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
                     </div>                                                        
                   </div>  
-                </form>
+                  <!-- Buttons -->
+                  <div class="flex flex-col sm:flex-row-reverse gap-2">
+                    <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                    <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                  </div>                  
+                </form>                
               </div>
             </div>
             <div class="acordeon-item">
@@ -318,7 +323,151 @@
                 <i class="fas fa-chevron-down acordeon-icon"></i>
               </button>
               <div class="acordeon-body">
-                <p>Lorem</p>
+                <!-- == Tabs == -->
+                <div class="tabs-container" id="tabs-container-1">
+                  <!-- Tabs buttons -->
+                  <div class="tabs">
+                    <button class="tab-button active" data-target="tab-03" aria-controls="tab-03" role="tab">Relaciones internas</button>
+                    <button class="tab-button" data-target="tab-04" aria-controls="tab-04" role="tab">Relaciones externas</button>
+                  </div>
+                  <!-- Content -->
+                  <div class="tab-content">
+                    <!-- Tab-pane-03 -->
+                    <div class="tab-pane active" id="tab-03" role="tabpanel">
+                        <!-- <h4>Ficha de identificación</h4> -->
+                        <!-- Form -->
+                        <form id="miFormulario" class="grid gap-5">
+                          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                            <!-- Grid item -->
+                            <div>
+                              <span class="tooltip-top" data-tooltip="Haz clic para buscar puestos según los filtros">
+                                <i class="fa-solid fa-circle-question"></i>
+                              </span>
+                              <label for="select-position">Puesto <span>*</span></label>
+                              <select id="select-position" name="select-position" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona el puesto --</option>
+                                <option value="Puesto 1">Puesto 1</option>
+                                <option value="Puesto 2">Puesto 2</option>
+                                <option value="Puesto 3">Puesto 3</option>
+                                <option value="Puesto 4">Puesto 4</option>
+                                <option value="Puesto 5">Puesto 5</option>              
+                              </select> 
+                            </div>
+                            <!-- Grid item -->
+                            <div>
+                              <label for="select-code">Código de puesto <span>*</span></label>
+                              <select id="select-code" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona el código de puesto --</option>
+                                <option value="Código 1">Código 1</option>
+                                <option value="Código 1">Código 2</option>
+                                <option value="Código 1">Código 3</option>
+                                <option value="Código 1">Código 4</option>
+                                <option value="Código 1">Código 5</option>              
+                              </select> 
+                            </div>
+                            <!-- Grid item -->
+                            <div>
+                              <label for="select-area">Área <span>*</span></label>
+                              <select id="select-area" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona el área --</option>
+                                <option value="Área 1">Área 1</option>
+                                <option value="Área 1">Área 2</option>
+                                <option value="Área 1">Área 3</option>
+                                <option value="Área 1">Área 4</option>
+                                <option value="Área 1">Área 5</option>              
+                              </select> 
+                            </div>  
+                          </div>
+                          <!-- Text area -->
+                          <div>
+                            <label for="objective">Objetivo del puesto <span>*</span></label>
+                            <textarea class="form-control" id="objective" name="objective" rows="4" cols="50" placeholder="Escribe el objectivo aquí..." required></textarea>                
+                          </div>                                                  
+                          <!-- Buttons -->
+                          <div class="flex flex-col sm:flex-row-reverse gap-2">
+                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                            <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                          </div>
+                        </form>                  
+                    </div>
+                    <!-- Tab-pane-04 -->
+                    <div class="tab-pane" id="tab-04" role="tabpanel">
+                        <!-- <h4>Ficha de organización</h4> -->
+                        <!-- Form -->
+                        <form id="miFormulario" class="grid gap-5">
+                          <!-- Select -->
+                          <div>
+                            <label for="select-boss">Jefe inmediato<span>*</span></label>
+                            <select id="select-boss" class="form-control" required>
+                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value="Jefe 1">Jefe 1</option>
+                              <option value="Jefe 2">Jefe 2</option>
+                              <option value="Jefe 3">Jefe 3</option>
+                              <option value="Jefe 4">Jefe 4</option>
+                              <option value="Jefe 5">Jefe 5</option>              
+                            </select> 
+                          </div>
+                          
+                          <h6>Puestos que le reportan</h6>
+                          <div class="grid grid-cols-1 sm:grid-cols-2">
+                            <!-- Select -->
+                            <div>
+                              <label for="direct-positions">Directos<span>*</span></label>
+                              <select id="direct-positions" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona --</option>
+                                <option value="Supervisa a empleados que realizan actividades rutinarias">Supervisa a empleados que realizan actividades rutinarias</option>
+                                <option value="Supervisa a empleados que realizan actividades semi-complejas">Supervisa a empleados que realizan actividades semi-complejas</option>
+                                <option value="Supervisa a empleados que realizan actividades complejas">Supervisa a empleados que realizan actividades complejas</option>
+                                <option value="N/A">N/A</option>
+                              </select> 
+                            </div>
+                            <!-- Select -->
+                            <div>
+                              <label for="indirect-positions">Indirectos<span>*</span></label>
+                              <select id="indirect-positions" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona --</option>
+                                <option value="Supervisa a empleados que realizan actividades rutinarias">Supervisa a empleados que realizan actividades rutinarias</option>
+                                <option value="Supervisa a empleados que realizan actividades semi-complejas">Supervisa a empleados que realizan actividades semi-complejas</option>
+                                <option value="Supervisa a empleados que realizan actividades complejas">Supervisa a empleados que realizan actividades complejas</option>
+                                <option value="N/A">N/A</option>
+                              </select> 
+                            </div>                                    
+                          </div>
+
+                          <h6>Grado de supervisión</h6>
+                          <div class="grid grid-cols-1 sm:grid-cols-2">
+                            <!-- Grid-item -->
+                            <div>
+                              <label for="direct-supervision-degree">Directos<span>*</span></label>
+                              <select id="direct-supervision-degree" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona --</option>
+                                <option value="Supervisa a empleados que realizan actividades rutinarias">Supervisa a empleados que realizan actividades rutinarias</option>
+                                <option value="Supervisa a empleados que realizan actividades semi-complejas">Supervisa a empleados que realizan actividades semi-complejas</option>
+                                <option value="Supervisa a empleados que realizan actividades complejas">Supervisa a empleados que realizan actividades complejas</option>
+                                <option value="N/A">N/A</option>
+                              </select> 
+                            </div>
+                            <!-- Grid-item -->
+                            <div>
+                              <label for="indirect-supervision-degree">Indirectos<span>*</span></label>
+                              <select id="indirect-supervision-degree" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona --</option>
+                                <option value="Supervisa a empleados que realizan actividades rutinarias">Supervisa a empleados que realizan actividades rutinarias</option>
+                                <option value="Supervisa a empleados que realizan actividades semi-complejas">Supervisa a empleados que realizan actividades semi-complejas</option>
+                                <option value="Supervisa a empleados que realizan actividades complejas">Supervisa a empleados que realizan actividades complejas</option>
+                                <option value="N/A">N/A</option>
+                              </select> 
+                            </div>                                    
+                          </div>                  
+                          <!-- Buttons -->
+                          <div class="flex flex-col sm:flex-row-reverse gap-2">
+                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                            <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                          </div>
+                        </form>        
+                    </div>
+                  </div>
+                </div> 
               </div>
             </div>
             <div class="acordeon-item">
