@@ -648,20 +648,27 @@
                   <div class="tab-content">
                     <!-- Tab-pane-01 -->
                     <div class="tab-pane active" id="tab-09" role="tabpanel">                                                         
-                      <!-- Item -->
-                      <div>
-                        <label for="professional_level">Nivel profesional <span>*</span></label>
-                        <select id="professional_level" class="form-control" required>
-                          <option value="" disabled selected>-- Selecciona --</option>
-                          <option value="Director">Director</option>
-                          <option value="Gerente">Gerente</option>
-                          <option value="Mando medio">Mando medio</option>
-                          <option value="Comercial">Comercial</option>
-                          <option value="Creativo">Creativo</option>
-                          <option value="Contribuidor individual">Contribuidor individual</option>
-                          <option value="Operativo">Operativo</option>
-                          <option value="N/A">N/A</option>
-                        </select> 
+                      <div class="grid gap-5">
+                        <!-- Item -->
+                        <div>
+                          <label for="professional_level">Nivel profesional <span>*</span></label>
+                          <select id="professional_level" class="form-control" required>
+                            <option value="" disabled selected>-- Selecciona --</option>
+                            <option value="Director">Director</option>
+                            <option value="Gerente">Gerente</option>
+                            <option value="Mando medio">Mando medio</option>
+                            <option value="Comercial">Comercial</option>
+                            <option value="Creativo">Creativo</option>
+                            <option value="Contribuidor individual">Contribuidor individual</option>
+                            <option value="Operativo">Operativo</option>
+                            <option value="N/A">N/A</option>
+                          </select> 
+                        </div>
+                        <!-- Buttons -->
+                        <div class="flex flex-col sm:flex-row-reverse gap-2">
+                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                          <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                        </div>                                             
                       </div>
                     </div>
                     <!-- Tab-pane-10 -->
@@ -764,17 +771,64 @@
                     <!-- Tab-pane-12 -->
                     <div class="tab-pane" id="tab-12" role="tabpanel">
                       <div class="grid gap-5">
-                      <!-- Agregar nuevo -->
-                      <button class="add-button" data-modal="modal-04">
-                        Agregar decisión
-                        <i class="fa-solid fa-plus"></i>
-                      </button>                             
-                      <!-- Agregar nuevo -->
-                      <button class="add-button" data-modal="modal-05">
-                        Agregar ejecución
-                        <i class="fa-solid fa-plus"></i>
-                      </button>   
-                      </div>
+                        <h5>Decisión</h5>
+                        <!-- Form -->
+                        <form class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                          <div>
+                            <label for="decision-concept">Concepto <span>*</span></label>
+                            <input class="form-control" type="text" id="decision-concept" name="decision-concept"  required placeholder="Introduce el concepto">
+                          </div>  
+                          <div>
+                            <label for="decision-range">Rango <span>*</span></label>
+                            <select id="decision-range" class="form-control" required>
+                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
+                              <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
+                              <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
+                              <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-3.13</option>
+                              <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
+                              <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
+                              <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
+                              <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.87-4.00</option>
+                            </select> 
+                          </div>  
+                          <div>
+                            <label for="decision-competence">Nivel de desarrollo de competencia <span>*</span></label>
+                            <input class="form-control" type="text" id="decision-competence" name="decision-competence"  required placeholder="Introduce el nivel de competencia">
+                          </div>                                                                               
+                        </form>
+                        <h5>Ejecución</h5>
+                        <!-- Form -->
+                        <form class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                          <div>
+                            <label for="execution-concept">Concepto <span>*</span></label>
+                            <input class="form-control" type="text" id="execution-concept" name="execution-concept"  required placeholder="Introduce el concepto">
+                          </div>  
+                          <div>
+                            <label for="execution-range">Rango <span>*</span></label>
+                            <select id="execution-range" class="form-control" required>
+                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
+                              <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
+                              <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
+                              <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-3.13</option>
+                              <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
+                              <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
+                              <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
+                              <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.87-4.00</option>
+                            </select> 
+                          </div>  
+                          <div>
+                            <label for="execution-competence">Nivel de desarrollo de competencia <span>*</span></label>
+                            <input class="form-control" type="text" id="execution-competence" name="execution-competence"  required placeholder="Introduce el nivel de competencia">
+                          </div>                                                     
+                        </form>                       
+                        <!-- Buttons -->
+                        <div class="flex flex-col sm:flex-row-reverse gap-2">
+                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                          <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                        </div>                       
+                      </div>   
                     </div> 
                   </div>
                 </div> 
