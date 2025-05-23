@@ -649,7 +649,75 @@
                 <i class="fas fa-chevron-down acordeon-icon"></i>
               </button>
               <div class="acordeon-body">
-                <p>Lorem</p>
+                <!-- == Tabs component == -->
+                <div class="tabs-container" id="tabs-container-1">
+                  <!-- Buttons -->
+                  <div class="tabs">
+                    <button class="tab-button active" data-target="tab-09" aria-controls="tab-09" role="tab">Nivel profesional</button>
+                    <button class="tab-button" data-target="tab-10" aria-controls="tab-10" role="tab">Visión</button>
+                    <button class="tab-button" data-target="tab-11" aria-controls="tab-11" role="tab">Personas</button>
+                    <button class="tab-button" data-target="tab-12" aria-controls="tab-12" role="tab">Gestión</button>
+                  </div>
+                  <!-- Content -->
+                  <div class="tab-content">
+                    <!-- Tab-pane-01 -->
+                    <div class="tab-pane active" id="tab-09" role="tabpanel">                                                         
+                      <!-- Item -->
+                      <div>
+                        <label for="level">Nivel profesional <span>*</span></label>
+                        <select id="level" class="form-control" required>
+                          <option value="" disabled selected>-- Selecciona --</option>
+                          <option value="Director">Director</option>
+                          <option value="Gerente">Gerente</option>
+                          <option value="Mando medio">Mando medio</option>
+                          <option value="Comercial">Comercial</option>
+                          <option value="Creativo">Creativo</option>
+                          <option value="Contribuidor individual">Contribuidor individual</option>
+                          <option value="Operativo">Operativo</option>
+                          <option value="N/A">N/A</option>
+                        </select> 
+                      </div>
+                    </div>
+                    <!-- Tab-pane-10 -->
+                    <div class="tab-pane" id="tab-10" role="tabpanel">            
+                      <!-- Agregar nuevo -->
+                      <button class="add-button" data-modal="modal-01">
+                        Agregar visión
+                        <i class="fa-solid fa-plus"></i>
+                      </button>  
+                    </div>
+                    <!-- Tab-pane-11 -->
+                    <div class="tab-pane" id="tab-11" role="tabpanel">              
+                      <div class="grid gap-5">
+                        <!-- Agregar nuevo -->
+                        <button class="add-button" data-modal="modal-02">
+                          Agregar liderazgo
+                          <i class="fa-solid fa-plus"></i>
+                        </button>                             
+                        <!-- Agregar nuevo -->
+                        <button class="add-button" data-modal="modal-03">
+                          Agregar trabajo en equipo
+                          <i class="fa-solid fa-plus"></i>
+                        </button>                
+                      </div>
+                    </div>            
+                    <!-- Tab-pane-12 -->
+                    <div class="tab-pane" id="tab-12" role="tabpanel">
+                      <div class="grid gap-5">
+                      <!-- Agregar nuevo -->
+                      <button class="add-button" data-modal="modal-04">
+                        Agregar decisión
+                        <i class="fa-solid fa-plus"></i>
+                      </button>                             
+                      <!-- Agregar nuevo -->
+                      <button class="add-button" data-modal="modal-05">
+                        Agregar ejecución
+                        <i class="fa-solid fa-plus"></i>
+                      </button>   
+                      </div>
+                    </div> 
+                  </div>
+                </div> 
               </div>
             </div>
             <div class="acordeon-item">
