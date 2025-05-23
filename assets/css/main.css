@@ -3667,7 +3667,7 @@ Cambiar la clase de los component-container por ID
   display: flex;
   border: 1px solid #cedaf8;
   border-bottom: none;
-  background-color: #ebf5f8;
+  background-color: #ffffff;
 }
 
 /* # Tabs button
@@ -3675,7 +3675,7 @@ Cambiar la clase de los component-container por ID
 .tab-button {
   padding: 10px 20px;
   border: none;
-  background: #ebf5f8;
+  background: #ffffff;
   cursor: pointer;
   text-align: center;
   transition: background 0.3s;
@@ -3684,7 +3684,7 @@ Cambiar la clase de los component-container por ID
 }
 
 .tab-button.active {
-  background: #ffffff;
+  background: #ebf5f8;
 }
 
 .tab-button:hover, .tab-button:focus {

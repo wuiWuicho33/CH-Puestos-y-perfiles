@@ -11,7 +11,7 @@
     display: flex; 
     border: 1px solid $tertiary-color;
     border-bottom: none;    
-    background-color: $secondary-color;
+    background-color: $primary-color;
 }
 
 /* # Tabs button
@@ -19,7 +19,7 @@
 .tab-button {
     padding: 10px 20px;
     border: none;
-    background: $secondary-color;
+    background: $primary-color;
     cursor: pointer;
     text-align: center;
     transition: background 0.3s;
@@ -27,7 +27,7 @@
     border-right: 1px solid $tertiary-color;
 }
 .tab-button.active {
-    background: $primary-color;
+    background: $secondary-color;
     //border-bottom: 2px solid $highlight-color;
 }
 .tab-button:hover, .tab-button:focus {
