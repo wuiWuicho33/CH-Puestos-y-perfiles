@@ -3212,7 +3212,6 @@ Cambiar la clase de los component-container por ID
   font-weight: bold;
   text-align: center;
   cursor: pointer;
-  align-items: center;
 }
 .btn i {
   font-size: 1rem;
@@ -3533,6 +3532,25 @@ Cambiar la clase de los component-container por ID
 }
 .btn-circle-inverse:hover i {
   color: #ffffff;
+}
+
+.add-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  color: #1464c3;
+  border: none;
+  border-top: 1px solid #cedaf8;
+  border-bottom: 1px solid #cedaf8;
+  padding: 1rem 0.75rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.add-button:hover {
+  border-color: #1464c3;
+  color: #0F4C95;
 }
 
 .alert {
