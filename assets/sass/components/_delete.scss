@@ -13,6 +13,10 @@
       color:$primary-color;
       border-bottom: 1px solid rgba(0, 0, 0, .125);
       border-radius:0.5rem 0.5rem 0 0;
+
+      h3{
+        margin-bottom: 0;
+      }
     }    
 
     .panel-body {padding:1rem;}     

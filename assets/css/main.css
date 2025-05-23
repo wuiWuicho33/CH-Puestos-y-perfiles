@@ -3962,6 +3962,9 @@ html {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.5rem 0.5rem 0 0;
 }
+.panel .panel-header h3 {
+  margin-bottom: 0;
+}
 .panel .panel-body {
   padding: 1rem;
 }
@@ -4158,6 +4161,264 @@ html {
   margin: 0;
 }
 
+/*====================
+Componente 1
+====================*/
+/* Estilo básico para el contenedor principal */
+/*
+    .container {
+        margin: 20px;
+    }
+*/
+/* Fila para los inputs */
+.row {
+  display: flex;
+  gap: 20px; /* Espacio entre las columnas de los inputs */
+  margin-bottom: 10px;
+}
+
+/* Estilo para cada columna de los inputs */
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Asegura que los label y input se apilen verticalmente */
+}
+
+/* Estilo para los inputs y selects */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff; /* Fondo blanco para evitar interferencia con el placeholder */
+  color: #333; /* Color de texto normal */
+}
+
+/* Estilo para los elementos label */
+.inputColumn label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Estilo para los placeholders de los inputs */
+input::placeholder,
+select::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+/* Estilo específico para el select */
+select {
+  appearance: auto; /* Dejar que el navegador maneje la flecha del select */
+  -webkit-appearance: auto; /* En Chrome y Safari */
+  -moz-appearance: auto; /* En Firefox */
+}
+
+/* Estilo para el contenedor de los botones */
+.button-container,
+.actionButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilo para el área de los items añadidos */
+.added-items {
+  margin-top: 20px;
+}
+
+/* Estilo para cada item añadido */
+.added-item,
+.addedItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 1rem;
+  position: relative;
+  /*
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  */
+}
+
+/* Estilo para los enlaces de eliminar */
+.delete-link,
+.deleteLink {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: none;
+  background-color: red;
+  width: 90px;
+  padding: 10px;
+}
+
+/* Mostrar el enlace de "Eliminar" cuando se hace hover sobre el item */
+.added-item:hover .delete-link,
+.addedItem:hover .deleteLink {
+  display: inline-block;
+}
+
+/* Cambiar el estilo del enlace cuando se hace hover */
+.delete-link:hover,
+.deleteLink:hover {
+  cursor: pointer;
+}
+
+/* -- Nuevas reglas para responsive design -- */
+/* En vistas de dispositivos móviles y tabletas */
+@media (max-width: 768px) {
+  /* Asegúrate de que los elementos en .inputRow y .addedItem estén en una sola columna */
+  .inputRow,
+  .addedItem .inputRow {
+    flex-direction: column;
+  }
+  .inputColumn {
+    flex: none; /* Establecer el flex a 'none' para que no ocupe más de lo necesario */
+    width: 100%; /* Hacer que cada columna ocupe el 100% del ancho disponible */
+  }
+}
+/* En vistas de escritorio (mayor a 768px) */
+@media (min-width: 769px) {
+  /* Mantener la disposición de 3 columnas para el formulario */
+  .inputRow {
+    flex-direction: row; /* Mantener las columnas alineadas horizontalmente */
+  }
+  .inputColumn {
+    flex: 1; /* Cada columna ocupará un tercio del ancho */
+  }
+  /* Los items añadidos también se mostrarán en tres columnas en vista de escritorio */
+  .addedItem .inputRow {
+    flex-direction: row; /* Alinear los inputs horizontalmente */
+  }
+}
+/*====================
+Componente 2
+====================*/
+/* Estilo básico para el contenedor principal */
+/*.component-container {margin: 20px;}*/
+/* Fila para los inputs */
+.inputRow {
+  display: flex;
+  gap: 20px; /* Espacio entre las columnas de los inputs */
+  margin-bottom: 20px;
+}
+
+/* Estilo para cada columna de los inputs */
+.inputColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo para los inputs y selects */
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #fff; /* Fondo blanco */
+  color: #333; /* Color de texto */
+}
+
+/* Estilo para los elementos label */
+.inputColumn label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Estilo para los placeholders de los inputs */
+input::placeholder,
+select::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+/* Estilo para el select */
+select {
+  appearance: auto; /* Permite que el navegador maneje la flecha estándar */
+  -webkit-appearance: auto; /* En Chrome y Safari */
+  -moz-appearance: auto; /* En Firefox */
+}
+
+/* Contenedor de los botones */
+.actionButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilo para los items añadidos */
+.addedItemsContainer {
+  margin-top: 20px;
+}
+
+/* Estilo para cada item añadido */
+.addedItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  /*
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  */
+  position: relative;
+}
+
+.addedItem .inputRow {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 5px;
+}
+
+/* Estilo para los inputs dentro de los elementos añadidos */
+.addedItem .addedInput {
+  background-color: #f0f0f0;
+  border-color: #ccc;
+  color: #333;
+}
+
+/* Estilo para el enlace de eliminar */
+.addedItem .deleteLink {
+  margin-top: 3px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  display: none;
+  background-color: red;
+  width: 90px;
+  padding: 10px;
+}
+
+/* Mostrar el enlace de "Eliminar" cuando se hace hover */
+.addedItem:hover .deleteLink {
+  display: inline-block;
+}
+
+.addedItem .deleteLink:hover {
+  cursor: pointer;
+}
+
+/*Pendientes*/
+/*
+Unificar estilos duplicados de los botones de añadir, eliminar y crear componentes
+Cambiar la clase de los component-container por ID
+*/
 /*Layout*/
 ul.secondary_menu {
   display: flex;
