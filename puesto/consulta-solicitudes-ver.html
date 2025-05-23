@@ -505,12 +505,12 @@
                             </div>  
                           </div>
                           <!-- Form-group -->
-                          <div class="form-group">
+                          <div>
                             <label for="request">Requerimiento <span>*</span></label>
                             <textarea class="form-control" id="request" name="request" rows="4" cols="50" placeholder="Ejem: Se requiere maestría en derecho corporativo, relaciones comerciales o su equivalente." required></textarea>                
                           </div>
                           <!-- Form-group -->
-                          <div class="form-group">
+                          <div>
                             <label for="request">Conocimientos técnicos <span>*</span></label>
                             <textarea class="form-control" id="request" name="request" rows="4" cols="50" placeholder="Ejem: Comprensión comprobada en leyes mercantil y civil, requisitos de marcas registradas y derechos de autor." required></textarea>                
                           </div>                                                            
@@ -540,7 +540,7 @@
                             </select> 
                           </div>  
                         </div>
-                        <div class="form-group">
+                        <div>
                           <label for="request">Requerimiento <span>*</span></label>
                           <textarea class="form-control" id="request" name="request" rows="4" cols="50" placeholder="Ejem: Comprensión de una amplia variedad de textos de complejidad alta. Sabe expresarse de forma fluida sin muestras muy evidentes de esfuerzo para encontrar la expresión adecuada. Puede producir textos claros, bien estructurados y detallados sobre temas de cierta complejidad." required></textarea>                
                         </div>
@@ -570,7 +570,7 @@
                             </select> 
                           </div>  
                         </div>
-                        <div class="form-group">
+                        <div>
                           <label for="request-02">Requerimiento <span>*</span></label>
                           <textarea class="form-control" id="request-02" name="request-02" rows="4" cols="50" placeholder="Ejem: Conocimiento sólido de los principios y aplicaciones del sistema a nivel captura o carga de información / Utiliza herramientas del sistema para análisis de datos en un nivel intermedio." required></textarea>                
                         </div>
@@ -623,6 +623,40 @@
                 </div>  
               </div>
             </div>
+            <div class="acordeon-item">
+              <button class="acordeon-header">
+                Recursos
+                <i class="fas fa-chevron-down acordeon-icon"></i>
+              </button>
+              <div class="acordeon-body">
+                <form class="grid gap-5">
+                  <div class="grid grid-cols-1 sm:grid-cols-2"> 
+                    <!-- Item -->
+                    <div>
+                      <label for="required tool">Equipo o herramienta requerida</label>
+                      <input class="form-control" type="text" id="required tool" name="required tool" required placeholder="Ingresa un equipo o herramienta requerida">
+                    </div> 
+                    <!-- Item -->
+                    <div>
+                      <label for="responsibility">Responsabilidad sobre recursos económicos <span>*</span></label>
+                      <select id="responsibility" class="form-control" required>
+                        <option value="" disabled selected>-- Selecciona --</option>
+                        <option value="Responsable de recursos materiales, financieros y/o económicos para desempeñar su función sin autoridad para disponer de estos  fuera de normas definidas.">Responsable de recursos materiales, financieros y/o económicos para desempeñar su función sin autoridad para disponer de estos  fuera de normas definidas.</option>
+                        <option value="Tiene recursos materiales, financieros y/o económicos asignados con autoridad limitada para disponer dentro de un presupuesto asignado.">Tiene recursos materiales, financieros y/o económicos asignados con autoridad limitada para disponer dentro de un presupuesto asignado.</option>
+                        <option value="Además de los recursos materiales, financieros y/o económicos a su cargo puede autorizar gastos o el uso de equipo y materiales en su área.">Además de los recursos materiales, financieros y/o económicos a su cargo puede autorizar gastos o el uso de equipo y materiales en su área.</option>
+                        <option value="Tiene autoridad para disponer, asignar y administrar los recursos materiales, financieros y/o econóomicos del centro u obra dentro del presupuesto.">Tiene autoridad para disponer, asignar y administrar los recursos materiales, financieros y/o econóomicos del centro u obra dentro del presupuesto.</option>
+                        <option value="Tiene autoridad para disponer, asignar y administrar los recursos del centro u obra, incluso fuera del presupuesto">Tiene autoridad para disponer, asignar y administrar los recursos del centro u obra, incluso fuera del presupuesto</option>
+                      </select> 
+                    </div>  
+                  </div>
+                  <!-- Buttons -->
+                  <div class="flex flex-col sm:flex-row-reverse gap-2">
+                    <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                    <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                  </div>                                        
+                </form> 
+              </div>
+            </div>            
             <div class="acordeon-item">
               <button class="acordeon-header">
                 Nivel en competencias
