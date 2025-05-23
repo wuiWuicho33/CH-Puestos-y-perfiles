@@ -680,11 +680,38 @@
                     </div>
                     <!-- Tab-pane-10 -->
                     <div class="tab-pane" id="tab-10" role="tabpanel">            
-                      <!-- Agregar nuevo -->
-                      <button class="add-button" data-modal="modal-01">
-                        Agregar visión
-                        <i class="fa-solid fa-plus"></i>
-                      </button>  
+                      <!-- Form -->
+                      <form>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-4">
+                          <div>
+                            <label for="concept">Concepto <span>*</span></label>
+                            <input class="form-control" type="text" id="concept" name="concept"  required placeholder="Introduce el concepto">
+                          </div>  
+                          <div>
+                            <label for="Range">Rango <span>*</span></label>
+                            <select id="Range" class="form-control" required>
+                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
+                              <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
+                              <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
+                              <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-3.13</option>
+                              <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
+                              <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
+                              <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
+                              <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.87-4.00</option>
+                            </select> 
+                          </div>  
+                          <div>
+                            <label for="competence">Nivel de desarrollo de competencia <span>*</span></label>
+                            <input class="form-control" type="text" id="competence" name="competence"  required placeholder="Introduce el nivel de competencia">
+                          </div>                            
+                        </div>
+                        <!-- Buttons -->
+                        <div class="flex flex-col sm:flex-row-reverse gap-2">
+                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                          <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                        </div>                              
+                      </form>  
                     </div>
                     <!-- Tab-pane-11 -->
                     <div class="tab-pane" id="tab-11" role="tabpanel">              
