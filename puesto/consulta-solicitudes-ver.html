@@ -114,7 +114,7 @@
                     <div class="tab-pane active" id="tab-01" role="tabpanel">
                         <!-- <h4>Ficha de identificación</h4> -->
                         <!-- Form -->
-                        <form id="miFormulario" class="grid gap-5">
+                        <form class="grid gap-5">
                           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                             <!-- Grid item -->
                             <div>
@@ -172,7 +172,7 @@
                     <div class="tab-pane" id="tab-02" role="tabpanel">
                         <!-- <h4>Ficha de organización</h4> -->
                         <!-- Form -->
-                        <form id="miFormulario" class="grid gap-5">
+                        <form class="grid gap-5">
                           <!-- Select -->
                           <div>
                             <label for="select-boss">Jefe inmediato<span>*</span></label>
@@ -255,7 +255,7 @@
               </button>
               <div class="acordeon-body">
                 <!-- Form -->
-                <form id="miFormulario" class="grid gap-5">
+                <form class="grid gap-5">
                   <!-- Item -->
                   <div>
                     <label for="function">Función <span>*</span></label>
@@ -334,137 +334,118 @@
                   <div class="tab-content">
                     <!-- Tab-pane-03 -->
                     <div class="tab-pane active" id="tab-03" role="tabpanel">
-                        <!-- <h4>Ficha de identificación</h4> -->
-                        <!-- Form -->
-                        <form id="miFormulario" class="grid gap-5">
-                          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-                            <!-- Grid item -->
-                            <div>
-                              <span class="tooltip-top" data-tooltip="Haz clic para buscar puestos según los filtros">
-                                <i class="fa-solid fa-circle-question"></i>
-                              </span>
-                              <label for="select-position">Puesto <span>*</span></label>
-                              <select id="select-position" name="select-position" class="form-control" required>
-                                <option value="" disabled selected>-- Selecciona el puesto --</option>
-                                <option value="Puesto 1">Puesto 1</option>
-                                <option value="Puesto 2">Puesto 2</option>
-                                <option value="Puesto 3">Puesto 3</option>
-                                <option value="Puesto 4">Puesto 4</option>
-                                <option value="Puesto 5">Puesto 5</option>              
-                              </select> 
-                            </div>
-                            <!-- Grid item -->
-                            <div>
-                              <label for="select-code">Código de puesto <span>*</span></label>
-                              <select id="select-code" class="form-control" required>
-                                <option value="" disabled selected>-- Selecciona el código de puesto --</option>
-                                <option value="Código 1">Código 1</option>
-                                <option value="Código 1">Código 2</option>
-                                <option value="Código 1">Código 3</option>
-                                <option value="Código 1">Código 4</option>
-                                <option value="Código 1">Código 5</option>              
-                              </select> 
-                            </div>
-                            <!-- Grid item -->
-                            <div>
-                              <label for="select-area">Área <span>*</span></label>
-                              <select id="select-area" class="form-control" required>
-                                <option value="" disabled selected>-- Selecciona el área --</option>
-                                <option value="Área 1">Área 1</option>
-                                <option value="Área 1">Área 2</option>
-                                <option value="Área 1">Área 3</option>
-                                <option value="Área 1">Área 4</option>
-                                <option value="Área 1">Área 5</option>              
-                              </select> 
-                            </div>  
-                          </div>
-                          <!-- Text area -->
+                      <!-- <h4>Ficha de identificación</h4> -->
+                      <!-- Form -->
+                      <form class="grid gap-5">
+                        <!-- Item -->              
+                        <div>
+                          <label for="area">Área <span>*</span></label>
+                          <select id="area" class="form-control" required>
+                            <option value="" disabled selected>-- Selecciona --</option>
+                            <option value="Dirección / Accionistas">Dirección / Accionistas</option>
+                            <option value="Comercial">Comercial</option>
+                            <option value="FInanzas, técnica, auditoria, interna">FInanzas, técnica, auditoria, interna</option>                    
+                          </select> 
+                        </div>              
+                        <!-- Item -->
+                        <div>
+                          <label for="deliverable">Envío de información / Solicitud de entregables <span>*</span></label>
+                          <textarea class="form-control" id="deliverable" name="deliverable" rows="4" cols="50" placeholder="Redacta una solicitud, debe ser clara y concisa." required></textarea>                
+                        </div>
+                        <!-- Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
                           <div>
-                            <label for="objective">Objetivo del puesto <span>*</span></label>
-                            <textarea class="form-control" id="objective" name="objective" rows="4" cols="50" placeholder="Escribe el objectivo aquí..." required></textarea>                
-                          </div>                                                  
-                          <!-- Buttons -->
-                          <div class="flex flex-col sm:flex-row-reverse gap-2">
-                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
-                            <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                            <label for="Frequency">Frecuencia <span>*</span></label>
+                            <select id="Frequency" class="form-control" required>
+                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value="Diario">Diario</option>
+                              <option value="Semanal">Semanal</option>
+                              <option value="Quincenal">Quincenal</option>  
+                              <option value="Mensual">Mensual</option>            
+                              <option value="Bimestral">Bimestral</option>
+                              <option value="Anual">Anual</option>
+                            </select> 
                           </div>
-                        </form>                  
+                          <div>
+                            <label for="Comunication">Tipo de comunicación <span>*</span></label>
+                            <select id="Comunication" class="form-control" required>
+                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value="Influenciar">Influenciar</option>
+                              <option value="Intercambiar">Intercambiar</option>
+                            </select> 
+                          </div>
+                          <div>
+                            <label for="Impact">Impacto de fallos <span>*</span></label>
+                            <select id="Impact" class="form-control" required>
+                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value="Grave">Grave</option>
+                              <option value="Muy graves">Muy graves</option>
+                              <option value="Considerables">Considerables</option>
+                            </select> 
+                          </div>                
+                          <div>
+                            <label for="prioritization">Porcentaje de priorización</label>
+                            <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
+                          </div>                                                        
+                        </div>  
+                      </form>                
                     </div>
                     <!-- Tab-pane-04 -->
                     <div class="tab-pane" id="tab-04" role="tabpanel">
                         <!-- <h4>Ficha de organización</h4> -->
                         <!-- Form -->
-                        <form id="miFormulario" class="grid gap-5">
-                          <!-- Select -->
+                        <form class="grid gap-5">
+                          <!-- Item -->              
                           <div>
-                            <label for="select-boss">Jefe inmediato<span>*</span></label>
-                            <select id="select-boss" class="form-control" required>
+                            <label for="area">Área <span>*</span></label>
+                            <select id="area" class="form-control" required>
                               <option value="" disabled selected>-- Selecciona --</option>
-                              <option value="Jefe 1">Jefe 1</option>
-                              <option value="Jefe 2">Jefe 2</option>
-                              <option value="Jefe 3">Jefe 3</option>
-                              <option value="Jefe 4">Jefe 4</option>
-                              <option value="Jefe 5">Jefe 5</option>              
+                              <option value="Proveedores">Proveedores</option>
+                              <option value="Abogados externos">Abogados externos</option>
                             </select> 
+                          </div>              
+                          <!-- Item -->
+                          <div>
+                            <label for="deliverable">Envío de información / Solicitud de entregables <span>*</span></label>
+                            <textarea class="form-control" id="deliverable" name="deliverable" rows="4" cols="50" placeholder="Redacta una solicitud, debe ser clara y concisa." required></textarea>                
                           </div>
-                          
-                          <h6>Puestos que le reportan</h6>
-                          <div class="grid grid-cols-1 sm:grid-cols-2">
-                            <!-- Select -->
+                          <!-- Grid -->
+                          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
                             <div>
-                              <label for="direct-positions">Directos<span>*</span></label>
-                              <select id="direct-positions" class="form-control" required>
+                              <label for="Frequency">Frecuencia <span>*</span></label>
+                              <select id="Frequency" class="form-control" required>
                                 <option value="" disabled selected>-- Selecciona --</option>
-                                <option value="Supervisa a empleados que realizan actividades rutinarias">Supervisa a empleados que realizan actividades rutinarias</option>
-                                <option value="Supervisa a empleados que realizan actividades semi-complejas">Supervisa a empleados que realizan actividades semi-complejas</option>
-                                <option value="Supervisa a empleados que realizan actividades complejas">Supervisa a empleados que realizan actividades complejas</option>
-                                <option value="N/A">N/A</option>
+                                <option value="Diario">Diario</option>
+                                <option value="Semanal">Semanal</option>
+                                <option value="Quincenal">Quincenal</option>  
+                                <option value="Mensual">Mensual</option>            
+                                <option value="Bimestral">Bimestral</option>
+                                <option value="Anual">Anual</option>
                               </select> 
                             </div>
-                            <!-- Select -->
                             <div>
-                              <label for="indirect-positions">Indirectos<span>*</span></label>
-                              <select id="indirect-positions" class="form-control" required>
+                              <label for="Comunication">Tipo de comunicación <span>*</span></label>
+                              <select id="Comunication" class="form-control" required>
                                 <option value="" disabled selected>-- Selecciona --</option>
-                                <option value="Supervisa a empleados que realizan actividades rutinarias">Supervisa a empleados que realizan actividades rutinarias</option>
-                                <option value="Supervisa a empleados que realizan actividades semi-complejas">Supervisa a empleados que realizan actividades semi-complejas</option>
-                                <option value="Supervisa a empleados que realizan actividades complejas">Supervisa a empleados que realizan actividades complejas</option>
-                                <option value="N/A">N/A</option>
-                              </select> 
-                            </div>                                    
-                          </div>
-
-                          <h6>Grado de supervisión</h6>
-                          <div class="grid grid-cols-1 sm:grid-cols-2">
-                            <!-- Grid-item -->
-                            <div>
-                              <label for="direct-supervision-degree">Directos<span>*</span></label>
-                              <select id="direct-supervision-degree" class="form-control" required>
-                                <option value="" disabled selected>-- Selecciona --</option>
-                                <option value="Supervisa a empleados que realizan actividades rutinarias">Supervisa a empleados que realizan actividades rutinarias</option>
-                                <option value="Supervisa a empleados que realizan actividades semi-complejas">Supervisa a empleados que realizan actividades semi-complejas</option>
-                                <option value="Supervisa a empleados que realizan actividades complejas">Supervisa a empleados que realizan actividades complejas</option>
-                                <option value="N/A">N/A</option>
+                                <option value="Influenciar">Influenciar</option>
+                                <option value="Intercambiar">Intercambiar</option>
                               </select> 
                             </div>
-                            <!-- Grid-item -->
                             <div>
-                              <label for="indirect-supervision-degree">Indirectos<span>*</span></label>
-                              <select id="indirect-supervision-degree" class="form-control" required>
+                              <label for="Impact">Impacto de fallos <span>*</span></label>
+                              <select id="Impact" class="form-control" required>
                                 <option value="" disabled selected>-- Selecciona --</option>
-                                <option value="Supervisa a empleados que realizan actividades rutinarias">Supervisa a empleados que realizan actividades rutinarias</option>
-                                <option value="Supervisa a empleados que realizan actividades semi-complejas">Supervisa a empleados que realizan actividades semi-complejas</option>
-                                <option value="Supervisa a empleados que realizan actividades complejas">Supervisa a empleados que realizan actividades complejas</option>
-                                <option value="N/A">N/A</option>
+                                <option value="Grave">Grave</option>
+                                <option value="Muy graves">Muy graves</option>
+                                <option value="Considerables">Considerables</option>
                               </select> 
-                            </div>                                    
-                          </div>                  
-                          <!-- Buttons -->
-                          <div class="flex flex-col sm:flex-row-reverse gap-2">
-                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
-                            <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                          </div>
-                        </form>        
+                            </div>                
+                            <div>
+                              <label for="prioritization">Porcentaje de priorización</label>
+                              <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
+                            </div>                                                        
+                          </div>  
+                        </form>      
                     </div>
                   </div>
                 </div> 
