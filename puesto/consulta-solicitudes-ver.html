@@ -681,15 +681,15 @@
                     <!-- Tab-pane-10 -->
                     <div class="tab-pane" id="tab-10" role="tabpanel">            
                       <!-- Form -->
-                      <form>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-4">
+                      <form class="grid gap-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                           <div>
-                            <label for="concept">Concepto <span>*</span></label>
-                            <input class="form-control" type="text" id="concept" name="concept"  required placeholder="Introduce el concepto">
+                            <label for="concept-01">Concepto <span>*</span></label>
+                            <input class="form-control" type="text" id="concept-01" name="concept-01"  required placeholder="Introduce el concepto">
                           </div>  
                           <div>
-                            <label for="Range">Rango <span>*</span></label>
-                            <select id="Range" class="form-control" required>
+                            <label for="Range-01">Rango <span>*</span></label>
+                            <select id="Range-01" class="form-control" required>
                               <option value="" disabled selected>-- Selecciona --</option>
                               <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
                               <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
@@ -702,8 +702,8 @@
                             </select> 
                           </div>  
                           <div>
-                            <label for="competence">Nivel de desarrollo de competencia <span>*</span></label>
-                            <input class="form-control" type="text" id="competence" name="competence"  required placeholder="Introduce el nivel de competencia">
+                            <label for="competence-01">Nivel de desarrollo de competencia <span>*</span></label>
+                            <input class="form-control" type="text" id="competence-01" name="competence-01"  required placeholder="Introduce el nivel de competencia">
                           </div>                            
                         </div>
                         <!-- Buttons -->
@@ -714,19 +714,68 @@
                       </form>  
                     </div>
                     <!-- Tab-pane-11 -->
-                    <div class="tab-pane" id="tab-11" role="tabpanel">              
-                      <div class="grid gap-5">
-                        <!-- Agregar nuevo -->
-                        <button class="add-button" data-modal="modal-02">
-                          Agregar liderazgo
-                          <i class="fa-solid fa-plus"></i>
-                        </button>                             
-                        <!-- Agregar nuevo -->
-                        <button class="add-button" data-modal="modal-03">
-                          Agregar trabajo en equipo
-                          <i class="fa-solid fa-plus"></i>
-                        </button>                
-                      </div>
+                    <div class="tab-pane" id="tab-11" role="tabpanel">                        
+                      <h5>Liderazgo</h5>
+                      <!-- Form -->
+                      <form>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                          <div>
+                            <label for="concept-02">Concepto <span>*</span></label>
+                            <input class="form-control" type="text" id="concept-02" name="concept-02"  required placeholder="Introduce el concepto">
+                          </div>  
+                          <div>
+                            <label for="Range-02">Rango <span>*</span></label>
+                            <select id="Range-02" class="form-control" required>
+                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
+                              <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
+                              <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
+                              <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-3.13</option>
+                              <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
+                              <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
+                              <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
+                              <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.87-4.00</option>
+                            </select> 
+                          </div>  
+                          <div>
+                            <label for="competence-02">Nivel de desarrollo de competencia <span>*</span></label>
+                            <input class="form-control" type="text" id="competence-02" name="competence-02"  required placeholder="Introduce el nivel de competencia">
+                          </div>                            
+                        </div>                              
+                      </form>
+                      <h5>Trabajo en equipo</h5>
+                      <!-- Form -->
+                      <form>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                          <div>
+                            <label for="concept-03">Concepto <span>*</span></label>
+                            <input class="form-control" type="text" id="concept-03" name="concept-03"  required placeholder="Introduce el concepto">
+                          </div>  
+                          <div>
+                            <label for="Range-03">Rango <span>*</span></label>
+                            <select id="Range-03" class="form-control" required>
+                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value="Nivel 2: 2.00-2.23">Nivel 2: 2.00-2.23</option>
+                              <option value="Nivel 2: 2.30-2.53">Nivel 2: 2.30-2.53</option>
+                              <option value="Nivel 3: 2.30-2.83">Nivel 3: 2.30-2.83</option>
+                              <option value="Nivel 3: 2.30-3.13">Nivel 3: 2.30-3.13</option>
+                              <option value="Nivel 3: 3.30-3.43">Nivel 3: 3.30-3.43</option>
+                              <option value="Nivel 4: 3.50-3.63">Nivel 4: 3.50-3.63</option>
+                              <option value="Nivel 4: 3.70-3.86">Nivel 4: 3.70-3.86</option>
+                              <option value="Nivel 4: 3.87-4.00">Nivel 4: 3.87-4.00</option>
+                            </select> 
+                          </div>  
+                          <div>
+                            <label for="competence-03">Nivel de desarrollo de competencia <span>*</span></label>
+                            <input class="form-control" type="text" id="competence-03" name="competence-03"  required placeholder="Introduce el nivel de competencia">
+                          </div>                            
+                        </div>                             
+                      </form>                       
+                      <!-- Buttons -->
+                      <div class="flex flex-col sm:flex-row-reverse gap-2">
+                        <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                      </div>                       
                     </div>            
                     <!-- Tab-pane-12 -->
                     <div class="tab-pane" id="tab-12" role="tabpanel">
