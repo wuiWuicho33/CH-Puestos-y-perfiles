@@ -2865,7 +2865,6 @@ table.align-right td:first-child {
 label {
   display: inline-block;
   margin-bottom: 0.25rem;
-  white-space: nowrap;
 }
 
 label span {
