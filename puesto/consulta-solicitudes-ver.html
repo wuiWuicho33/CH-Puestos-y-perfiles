@@ -232,7 +232,7 @@
                   <div>
                     <label for="function">Función <span>*</span></label>
                     <textarea class="form-control" id="function" name="function" rows="4" cols="50" placeholder="Redacta una función, debe ser clara y concisa." required></textarea>                
-                  </div>
+                  </div>           
                   <!-- Item -->
                   <div>
                     <label for="collaboration">Contribución <span>*</span></label>
@@ -243,9 +243,9 @@
                       <option value="Establece y desarrolla procesos y planes a mediano plazo">Establece y desarrolla procesos y planes a mediano plazo</option>  
                       <option value="Establece e implementa estrategias de negocios y objetivos">Establece e implementa estrategias de negocios y objetivos</option>            
                     </select> 
-                  </div>            
+                  </div>                                       
                   <!-- Grid -->
-                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
                     <div>
                       <label for="periodicity">Frecuencia <span>*</span></label>
                       <select id="periodicity" class="form-control" required>
@@ -280,13 +280,15 @@
                       <label for="preference">Porcentaje de priorización</label>
                       <input class="form-control" type="text" id="preference" name="preference" required placeholder="Ingresa un porcentaje">
                     </div>                                                        
-                  </div>  
-                  <!-- Buttons -->
-                  <div class="flex flex-col sm:flex-row-reverse gap-2">
-                    <button type="submit" class="btn btn-dark">Guardar y continuar</button>
-                    <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                  </div>                  
-                </form>                
+                  </div>                    
+                  <p><b>Total de porcentaje de priorización:</b> 100%</p>
+                  <p class="small">Las autoridades y la toma de decisiones de acuerdo a este perfil y descripción de puesto están en función a las políticas, procesos y lineamientos, vigentes definidos por Grupo Fórmula.</p>                  
+                </form> 
+                <!-- Buttons -->
+                <div class="flex flex-col sm:flex-row-reverse gap-2">
+                  <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                  <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                </div>                                
               </div>
             </div>
             <div class="acordeon-item">

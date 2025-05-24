@@ -58,7 +58,9 @@ th,td {
 }
 
 a{font-size:1rem;}
-small {font-size: 80%;}
+
+small,.small{font-size: 80%;}
+
 strong {
   font-family:$secondary-font;
   font-weight: 500;  

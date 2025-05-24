@@ -235,7 +235,7 @@ a {
   font-size: 1rem;
 }
 
-small {
+small, .small {
   font-size: 80%;
 }
 
