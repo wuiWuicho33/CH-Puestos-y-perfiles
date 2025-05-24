@@ -1,1 +1,0 @@
-Se corrije el estilo del botón de display inline a flex
