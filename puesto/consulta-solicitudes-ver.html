@@ -210,9 +210,9 @@
                             </label>
                           </fieldset>                                   
                           <!-- Buttons -->
-                          <div class="flex flex-row-reverse gap-2">
-                            <button type="submit" class="btn btn-dark">Guardar</button>
-                            <button type="reset" class="btn btn-dark-inverse">Resetear</button>                
+                          <div class="flex flex-col sm:flex-row-reverse gap-2">
+                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                            <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
                           </div>
                         </form>         
                     </div>
@@ -280,15 +280,17 @@
                       <label for="preference">Porcentaje de priorización</label>
                       <input class="form-control" type="text" id="preference" name="preference" required placeholder="Ingresa un porcentaje">
                     </div>                                                        
-                  </div>                    
-                  <p><b>Total de porcentaje de priorización:</b> 100%</p>
-                  <p class="small">Las autoridades y la toma de decisiones de acuerdo a este perfil y descripción de puesto están en función a las políticas, procesos y lineamientos, vigentes definidos por Grupo Fórmula.</p>                  
-                </form> 
+                  </div>  
+                  <div class="flex flex-col md:flex-row gap-5">
+                    <p class="small">Las autoridades y la toma de decisiones de acuerdo a este perfil y descripción de puesto están en función a las políticas, procesos y lineamientos, vigentes definidos por Grupo Fórmula.</p>                  
+                    <p><b>Total de porcentaje de priorización:</b> 100%</p>
+                  </div>
                 <!-- Buttons -->
                 <div class="flex flex-col sm:flex-row-reverse gap-2">
                   <button type="submit" class="btn btn-dark">Guardar y continuar</button>
                   <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                </div>                                
+                </div>                                                                    
+                </form> 
               </div>
             </div>
             <div class="acordeon-item">
@@ -363,12 +365,12 @@
                           </div>                                                        
                         </div>  
                         <p><b>Total de porcentaje de priorización:</b> 100%</p>
-                      </form>   
-                      <!-- Buttons -->
-                      <div class="flex flex-col sm:flex-row-reverse gap-2">
-                        <button type="submit" class="btn btn-dark">Guardar y continuar</button>
-                        <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                      </div>                         
+                        <!-- Buttons -->
+                        <div class="flex flex-col sm:flex-row-reverse gap-2">
+                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                          <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                        </div>                         
+                      </form>                           
                     </div>
                     <!-- Tab-pane-04 -->
                     <div class="tab-pane" id="tab-04" role="tabpanel">
@@ -426,12 +428,12 @@
                             </div>                                                        
                           </div>   
                           <p><b>Total de porcentaje de priorización:</b> 100%</p>                         
-                        </form>      
-                        <!-- Buttons -->
-                        <div class="flex flex-col sm:flex-row-reverse gap-2">
-                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
-                          <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                        </div>                        
+                          <!-- Buttons -->
+                          <div class="flex flex-col sm:flex-row-reverse gap-2">
+                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                            <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                          </div>                           
+                        </form>                             
                     </div>
                   </div>
                 </div> 
@@ -456,47 +458,47 @@
                   <div class="tab-content">
                     <!-- Tab-pane-05 -->
                     <div class="tab-pane active" id="tab-05" role="tabpanel">
-                        <!-- Form -->
-                        <form class="grid gap-5">
-                          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
-                            <!-- grid-item -->
-                            <div>
-                              <label for="studies">Área de estudios <span>*</span></label>
-                              <input class="form-control" type="text" id="studies" name="studies"  required placeholder="Ejem: Maestría en derecho">
-                            </div>  
-                            <!-- grid-item -->
-                            <div>
-                              <label for="level">Nivel <span>*</span></label>
-                              <select id="level" class="form-control" required>
-                                <option value="" disabled selected>-- Selecciona --</option>
-                                <option value="Educación primaria">Educación primaria</option>
-                                <option value="Educación secundaria">Educación secundaria</option>
-                                <option value="Bachillerato/Preparatoria">Bachillerato/Preparatoria</option>
-                                <option value="Técnico/Tecnológico">Técnico/Tecnológico</option>
-                                <option value="Educación superior (Título universitario de licenciatura)">Educación superior (Título universitario de licenciatura)</option>
-                                <option value="Licenciatura">Licenciatura</option>
-                                <option value="Maestría">Maestría</option>
-                                <option value="Posgrado/Doctorado">Posgrado/Doctorado</option>
-                                <option value="N/A">N/A</option>
-                              </select> 
-                            </div>  
-                          </div>
-                          <!-- Form-group -->
+                      <!-- Form -->
+                      <form class="grid gap-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+                          <!-- grid-item -->
                           <div>
-                            <label for="requirement">Requerimiento <span>*</span></label>
-                            <textarea class="form-control" id="requirement" name="requirement" rows="4" cols="50" placeholder="Ejem: Se requiere maestría en derecho corporativo, relaciones comerciales o su equivalente." required></textarea>                
-                          </div>
-                          <!-- Form-group -->
+                            <label for="studies">Área de estudios <span>*</span></label>
+                            <input class="form-control" type="text" id="studies" name="studies"  required placeholder="Ejem: Maestría en derecho">
+                          </div>  
+                          <!-- grid-item -->
                           <div>
-                            <label for="knowledge">Conocimientos técnicos <span>*</span></label>
-                            <textarea class="form-control" id="knowledge" name="knowledge" rows="4" cols="50" placeholder="Ejem: Comprensión comprobada en leyes mercantil y civil, requisitos de marcas registradas y derechos de autor." required></textarea>                
-                          </div>                                                            
-                          <!-- Buttons -->
-                          <div class="flex flex-col sm:flex-row-reverse gap-2">
-                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
-                            <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                          </div>      
-                        </form>                  
+                            <label for="level">Nivel <span>*</span></label>
+                            <select id="level" class="form-control" required>
+                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value="Educación primaria">Educación primaria</option>
+                              <option value="Educación secundaria">Educación secundaria</option>
+                              <option value="Bachillerato/Preparatoria">Bachillerato/Preparatoria</option>
+                              <option value="Técnico/Tecnológico">Técnico/Tecnológico</option>
+                              <option value="Educación superior (Título universitario de licenciatura)">Educación superior (Título universitario de licenciatura)</option>
+                              <option value="Licenciatura">Licenciatura</option>
+                              <option value="Maestría">Maestría</option>
+                              <option value="Posgrado/Doctorado">Posgrado/Doctorado</option>
+                              <option value="N/A">N/A</option>
+                            </select> 
+                          </div>  
+                        </div>
+                        <!-- Form-group -->
+                        <div>
+                          <label for="requirement">Requerimiento <span>*</span></label>
+                          <textarea class="form-control" id="requirement" name="requirement" rows="4" cols="50" placeholder="Ejem: Se requiere maestría en derecho corporativo, relaciones comerciales o su equivalente." required></textarea>                
+                        </div>
+                        <!-- Form-group -->
+                        <div>
+                          <label for="knowledge">Conocimientos técnicos <span>*</span></label>
+                          <textarea class="form-control" id="knowledge" name="knowledge" rows="4" cols="50" placeholder="Ejem: Comprensión comprobada en leyes mercantil y civil, requisitos de marcas registradas y derechos de autor." required></textarea>                
+                        </div>                                                            
+                        <!-- Buttons -->
+                        <div class="flex flex-col sm:flex-row-reverse gap-2">
+                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                          <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                        </div>      
+                      </form>                  
                     </div>
                     <!-- Tab-pane-06 -->
                     <div class="tab-pane" id="tab-06" role="tabpanel">
@@ -658,7 +660,7 @@
                   <div class="tab-content">
                     <!-- Tab-pane-01 -->
                     <div class="tab-pane active" id="tab-09" role="tabpanel">                                                         
-                      <div class="grid gap-5">
+                      <form class="grid gap-5">
                         <!-- Item -->
                         <div>
                           <label for="professional_level">Nivel profesional <span>*</span></label>
@@ -679,7 +681,7 @@
                           <button type="submit" class="btn btn-dark">Guardar y continuar</button>
                           <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
                         </div>                                             
-                      </div>
+                      </form>
                     </div>
                     <!-- Tab-pane-10 -->
                     <div class="tab-pane" id="tab-10" role="tabpanel"> 
@@ -707,13 +709,13 @@
                           <div>
                             <label for="competence">Nivel de desarrollo de competencia <span>*</span></label>
                             <input class="form-control" type="text" id="competence" name="competence"  required placeholder="Introduce el nivel de competencia">
-                          </div>                                                                      
-                        </form> 
-                        <!-- Buttons -->
-                        <div class="flex flex-col sm:flex-row-reverse gap-2">
-                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
-                          <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                        </div>   
+                          </div>
+                          <!-- Buttons -->
+                          <div class="flex flex-col sm:flex-row-reverse gap-2">
+                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                            <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                          </div>                                                                                                 
+                        </form>   
                       </div>    
                     </div>
                     <!-- Tab-pane-11 -->
@@ -769,13 +771,13 @@
                           <div>
                             <label for="team-competence">Nivel de desarrollo de competencia <span>*</span></label>
                             <input class="form-control" type="text" id="team-competence" name="team-competence"  required placeholder="Introduce el nivel de competencia">
-                          </div>                                                     
-                        </form>                       
+                          </div>
+                        </form>                                              
                         <!-- Buttons -->
                         <div class="flex flex-col sm:flex-row-reverse gap-2">
                           <button type="submit" class="btn btn-dark">Guardar y continuar</button>
                           <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                        </div>                       
+                        </div>                                                                                                       
                       </div>                       
                     </div>            
                     <!-- Tab-pane-12 -->
