@@ -115,7 +115,7 @@
                         <!-- <h4>Ficha de identificación</h4> -->
                         <!-- Form -->
                         <form class="grid gap-5">
-                          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                             <!-- Grid item -->
                             <div>
                               <span class="tooltip-top" data-tooltip="Haz clic para buscar puestos según los filtros">
@@ -162,9 +162,9 @@
                             <textarea class="form-control" id="objective" name="objective" rows="4" cols="50" placeholder="Escribe el objectivo aquí..." required></textarea>                
                           </div>                                                  
                           <!-- Buttons -->
-                          <div class="flex flex-col sm:flex-row-reverse gap-2">
-                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                          <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                             <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
                           </div>
                         </form>                  
                     </div>
@@ -186,33 +186,35 @@
                             </select> 
                           </div>
                           <!-- Radio Button -->
-                          <fieldset>
-                            <legend>Puestos que le reportan: </legend>
-                            <label class="radio-label">
-                              <input type="radio" name="rol" value="rol-01" checked>
-                              Directos: Supervisa a empleados que realizan actividades rutinarias
-                            </label>
-                            <label class="radio-label">
-                              <input type="radio" name="rol" value="rol-02">
-                              Indirectos: N/A
-                            </label>
-                          </fieldset>                      
-                          <!-- Radio Button -->
-                          <fieldset>
-                            <legend>Grado de supervisión: </legend>
-                            <label class="radio-label">
-                              <input type="radio" name="grade" value="grade-01" checked>
-                              Directos: Supervisa a empleados que realizan actividades semi-complejas
-                            </label>
-                            <label class="radio-label">
-                              <input type="radio" name="grade" value="grade-02">
-                              Indirectos: N/A
-                            </label>
-                          </fieldset>                                   
+                          <div class="grid grid-cols-1 sm:grid-cols-2 ga-5">
+                            <fieldset>
+                              <legend>Puestos que le reportan: </legend>
+                              <label class="radio-label">
+                                <input type="radio" name="rol" value="rol-01" checked>
+                                Directos: Supervisa a empleados que realizan actividades rutinarias
+                              </label>
+                              <label class="radio-label">
+                                <input type="radio" name="rol" value="rol-02">
+                                Indirectos: N/A
+                              </label>
+                            </fieldset>                      
+                            <!-- Radio Button -->
+                            <fieldset>
+                              <legend>Grado de supervisión: </legend>
+                              <label class="radio-label">
+                                <input type="radio" name="grade" value="grade-01" checked>
+                                Directos: Supervisa a empleados que realizan actividades semi-complejas
+                              </label>
+                              <label class="radio-label">
+                                <input type="radio" name="grade" value="grade-02">
+                                Indirectos: N/A
+                              </label>
+                            </fieldset>                           
+                          </div>                                  
                           <!-- Buttons -->
-                          <div class="flex flex-col sm:flex-row-reverse gap-2">
-                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                          <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                             <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
                           </div>
                         </form>         
                     </div>
@@ -281,15 +283,15 @@
                       <input class="form-control" type="text" id="preference" name="preference" required placeholder="Ingresa un porcentaje">
                     </div>                                                        
                   </div>  
-                  <div class="flex flex-col md:flex-row gap-5">
+                  <div class="flex flex-col-reverse md:flex-row gap-5">
                     <p class="small">Las autoridades y la toma de decisiones de acuerdo a este perfil y descripción de puesto están en función a las políticas, procesos y lineamientos, vigentes definidos por Grupo Fórmula.</p>                  
                     <p><b>Total de porcentaje de priorización:</b> 100%</p>
                   </div>
-                <!-- Buttons -->
-                <div class="flex flex-col sm:flex-row-reverse gap-2">
-                  <button type="submit" class="btn btn-dark">Guardar y continuar</button>
-                  <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                </div>                                                                    
+                  <!-- Buttons -->
+                  <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
+                    <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                    <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                  </div>
                 </form> 
               </div>
             </div>
@@ -366,10 +368,10 @@
                         </div>  
                         <p><b>Total de porcentaje de priorización:</b> 100%</p>
                         <!-- Buttons -->
-                        <div class="flex flex-col sm:flex-row-reverse gap-2">
-                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                           <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                        </div>                         
+                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        </div>
                       </form>                           
                     </div>
                     <!-- Tab-pane-04 -->
@@ -429,10 +431,10 @@
                           </div>   
                           <p><b>Total de porcentaje de priorización:</b> 100%</p>                         
                           <!-- Buttons -->
-                          <div class="flex flex-col sm:flex-row-reverse gap-2">
-                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                          <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                             <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                          </div>                           
+                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                          </div>
                         </form>                             
                     </div>
                   </div>
@@ -494,10 +496,10 @@
                           <textarea class="form-control" id="knowledge" name="knowledge" rows="4" cols="50" placeholder="Ejem: Comprensión comprobada en leyes mercantil y civil, requisitos de marcas registradas y derechos de autor." required></textarea>                
                         </div>                                                            
                         <!-- Buttons -->
-                        <div class="flex flex-col sm:flex-row-reverse gap-2">
-                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                           <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                        </div>      
+                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        </div>     
                       </form>                  
                     </div>
                     <!-- Tab-pane-06 -->
@@ -524,10 +526,10 @@
                           <textarea class="form-control" id="application" name="application" rows="4" cols="50" placeholder="Ejem: Comprensión de una amplia variedad de textos de complejidad alta. Sabe expresarse de forma fluida sin muestras muy evidentes de esfuerzo para encontrar la expresión adecuada. Puede producir textos claros, bien estructurados y detallados sobre temas de cierta complejidad." required></textarea>                
                         </div>
                         <!-- Buttons -->
-                        <div class="flex flex-col sm:flex-row-reverse gap-2">
-                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                           <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                        </div>                              
+                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        </div>                             
                       </form>          
                     </div>
                     <!-- Tab-pane-07 -->
@@ -554,10 +556,10 @@
                           <textarea class="form-control" id="demand" name="demand" rows="4" cols="50" placeholder="Ejem: Conocimiento sólido de los principios y aplicaciones del sistema a nivel captura o carga de información / Utiliza herramientas del sistema para análisis de datos en un nivel intermedio." required></textarea>                
                         </div>
                         <!-- Buttons -->
-                        <div class="flex flex-col sm:flex-row-reverse gap-2">
-                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                           <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                        </div>                              
+                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        </div>                            
                       </form>   
                     </div>
                     <!-- Tab-pane-08 -->
@@ -597,10 +599,10 @@
                           <textarea class="form-control" id="experience-area" name="experience-area" rows="4" cols="50" placeholder="Describa el área de experiencia." required></textarea>                
                         </div>                         
                         <!-- Buttons -->
-                        <div class="flex flex-col sm:flex-row-reverse gap-2">
-                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                           <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                        </div>                                                      
+                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        </div>
                       </form>                                
                     </div>                                    
                   </div>
@@ -634,10 +636,10 @@
                     </div>  
                   </div>
                   <!-- Buttons -->
-                  <div class="flex flex-col sm:flex-row-reverse gap-2">
-                    <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                  <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                     <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                  </div>                                        
+                    <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                  </div>
                 </form> 
               </div>
             </div>            
@@ -677,17 +679,17 @@
                           </select> 
                         </div>
                         <!-- Buttons -->
-                        <div class="flex flex-col sm:flex-row-reverse gap-2">
-                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                           <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                        </div>                                             
+                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        </div>                                          
                       </form>
                     </div>
                     <!-- Tab-pane-10 -->
                     <div class="tab-pane" id="tab-10" role="tabpanel"> 
-                      <div class="grid gap-5">
-                        <!-- Form -->
-                        <form class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+                      <!-- Form -->
+                      <form class="grid gap-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                           <div>
                             <label for="concept">Concepto <span>*</span></label>
                             <input class="form-control" type="text" id="concept" name="concept"  required placeholder="Introduce el concepto">
@@ -709,14 +711,14 @@
                           <div>
                             <label for="competence">Nivel de desarrollo de competencia <span>*</span></label>
                             <input class="form-control" type="text" id="competence" name="competence"  required placeholder="Introduce el nivel de competencia">
-                          </div>
-                          <!-- Buttons -->
-                          <div class="flex flex-col sm:flex-row-reverse gap-2">
-                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
-                            <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                          </div>                                                                                                 
-                        </form>   
-                      </div>    
+                          </div> 
+                        </div> 
+                        <!-- Buttons -->
+                        <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
+                          <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        </div>                                                                                                                        
+                      </form>                                                 
                     </div>
                     <!-- Tab-pane-11 -->
                     <div class="tab-pane" id="tab-11" role="tabpanel"> 
@@ -774,10 +776,10 @@
                           </div>
                         </form>                                              
                         <!-- Buttons -->
-                        <div class="flex flex-col sm:flex-row-reverse gap-2">
-                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                           <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                        </div>                                                                                                       
+                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        </div>                                                                                                                                                                                                                              
                       </div>                       
                     </div>            
                     <!-- Tab-pane-12 -->
@@ -836,10 +838,10 @@
                           </div>                                                     
                         </form>                       
                         <!-- Buttons -->
-                        <div class="flex flex-col sm:flex-row-reverse gap-2">
-                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                           <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                        </div>                       
+                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        </div>                      
                       </div>   
                     </div> 
                   </div>
