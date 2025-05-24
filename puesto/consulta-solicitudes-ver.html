@@ -168,54 +168,53 @@
                       </form>                  
                     </div>
                     <!-- Tab-pane-02 -->
-                    <div class="tab-pane" id="tab-02" role="tabpanel">
-                        <!-- <h4>Ficha de organización</h4> -->
-                        <!-- Form -->
-                        <form class="grid gap-5">
-                          <!-- Text area -->
-                          <div>
-                            <label for="select-boss">Selecciona el jefe inmediato<span>*</span></label>
-                            <select id="select-boss" class="form-control" required>
-                              <option value="" disabled selected>-- Selecciona --</option>
-                              <option value="Jefe 1">Jefe 1</option>
-                              <option value="Jefe 1">Jefe 2</option>
-                              <option value="Jefe 1">Jefe 3</option>
-                              <option value="Jefe 1">Jefe 4</option>
-                              <option value="Jefe 1">Jefe 5</option>              
-                            </select> 
-                          </div>
+                    <div class="tab-pane" id="tab-02" role="tabpanel">->
+                      <!-- Form -->
+                      <form class="grid gap-5">
+                        <!-- Text area -->
+                        <div>
+                          <label for="select-boss">Selecciona el jefe inmediato<span>*</span></label>
+                          <select id="select-boss" class="form-control" required>
+                            <option value="" disabled selected>-- Selecciona --</option>
+                            <option value="Jefe 1">Jefe 1</option>
+                            <option value="Jefe 1">Jefe 2</option>
+                            <option value="Jefe 1">Jefe 3</option>
+                            <option value="Jefe 1">Jefe 4</option>
+                            <option value="Jefe 1">Jefe 5</option>              
+                          </select> 
+                        </div>
+                        <!-- Radio Button -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 ga-5">
+                          <fieldset>
+                            <legend>Puestos que le reportan: </legend>
+                            <label class="radio-label">
+                              <input type="radio" name="rol" value="rol-01" checked>
+                              Directos: Supervisa a empleados que realizan actividades rutinarias
+                            </label>
+                            <label class="radio-label">
+                              <input type="radio" name="rol" value="rol-02">
+                              Indirectos: N/A
+                            </label>
+                          </fieldset>                      
                           <!-- Radio Button -->
-                          <div class="grid grid-cols-1 sm:grid-cols-2 ga-5">
-                            <fieldset>
-                              <legend>Puestos que le reportan: </legend>
-                              <label class="radio-label">
-                                <input type="radio" name="rol" value="rol-01" checked>
-                                Directos: Supervisa a empleados que realizan actividades rutinarias
-                              </label>
-                              <label class="radio-label">
-                                <input type="radio" name="rol" value="rol-02">
-                                Indirectos: N/A
-                              </label>
-                            </fieldset>                      
-                            <!-- Radio Button -->
-                            <fieldset>
-                              <legend>Grado de supervisión: </legend>
-                              <label class="radio-label">
-                                <input type="radio" name="grade" value="grade-01" checked>
-                                Directos: Supervisa a empleados que realizan actividades semi-complejas
-                              </label>
-                              <label class="radio-label">
-                                <input type="radio" name="grade" value="grade-02">
-                                Indirectos: N/A
-                              </label>
-                            </fieldset>                           
-                          </div>                                  
-                          <!-- Buttons -->
-                          <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
-                            <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                            <button type="submit" class="btn btn-dark">Guardar y continuar</button>
-                          </div>
-                        </form>         
+                          <fieldset>
+                            <legend>Grado de supervisión: </legend>
+                            <label class="radio-label">
+                              <input type="radio" name="grade" value="grade-01" checked>
+                              Directos: Supervisa a empleados que realizan actividades semi-complejas
+                            </label>
+                            <label class="radio-label">
+                              <input type="radio" name="grade" value="grade-02">
+                              Indirectos: N/A
+                            </label>
+                          </fieldset>                           
+                        </div>                                  
+                        <!-- Buttons -->
+                        <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
+                          <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
+                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                        </div>
+                      </form>         
                     </div>
                   </div>
                 </div>      
