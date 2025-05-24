@@ -3687,6 +3687,12 @@ Cambiar la clase de los component-container por ID
   border-bottom: none;
   background-color: #ffffff;
 }
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
 
 /* # Tabs button
 ------------------------------------ */

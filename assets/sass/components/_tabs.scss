@@ -13,6 +13,11 @@
     border: 1px solid $tertiary-color;
     border-bottom: none;    
     background-color: $primary-color;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: stretch;
+    }    
 }
 
 /* # Tabs button
