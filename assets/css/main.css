@@ -3678,11 +3678,11 @@ Cambiar la clase de los component-container por ID
 .tabs-container {
   width: 100%;
   margin: auto;
-  margin-top: 20px;
 }
 
 .tabs {
   display: flex;
+  flex-wrap: wrap;
   border: 1px solid #cedaf8;
   border-bottom: none;
   background-color: #ffffff;
