@@ -184,7 +184,7 @@
                           </select> 
                         </div>
                         <!-- Radio Button -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 ga-5">
+                        <div class="form-group grid grid-cols-1 sm:grid-cols-2 ga-5">
                           <fieldset>
                             <legend>Puestos que le reportan: </legend>
                             <label class="radio-label">
@@ -228,7 +228,7 @@
               <div class="acordeon-body">
                 <!-- Form -->
                 <form class="grid gap-5">
-                  <div class="grid gap-5 form-group">
+                  <div class="form-group grid gap-5">
                     <!-- Item -->
                     <div>
                       <label for="function">Función <span>*</span></label>
@@ -314,57 +314,59 @@
                     <div class="tab-pane active" id="tab-03" role="tabpanel">
                       <!-- Form -->
                       <form class="grid gap-5">
-                        <!-- Item -->              
-                        <div>
-                          <label for="region">Área <span>*</span></label>
-                          <select id="region" class="form-control" required>
-                            <option value="" disabled selected>-- Selecciona --</option>
-                            <option value="Dirección / Accionistas">Dirección / Accionistas</option>
-                            <option value="Comercial">Comercial</option>
-                            <option value="FInanzas, técnica, auditoria, interna">FInanzas, técnica, auditoria, interna</option>                    
-                          </select> 
-                        </div>              
-                        <!-- Item -->
-                        <div>
-                          <label for="deliverable">Envío de información / Solicitud de entregables <span>*</span></label>
-                          <textarea class="form-control" id="deliverable" name="deliverable" rows="4" cols="50" placeholder="Redacta una solicitud, debe ser clara y concisa." required></textarea>                
+                        <div class="form-group grid gap-5">
+                          <!-- Item -->              
+                          <div>
+                            <label for="region">Área <span>*</span></label>
+                            <select id="region" class="form-control" required>
+                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value="Dirección / Accionistas">Dirección / Accionistas</option>
+                              <option value="Comercial">Comercial</option>
+                              <option value="FInanzas, técnica, auditoria, interna">FInanzas, técnica, auditoria, interna</option>                    
+                            </select> 
+                          </div>              
+                          <!-- Item -->
+                          <div>
+                            <label for="deliverable">Envío de información / Solicitud de entregables <span>*</span></label>
+                            <textarea class="form-control" id="deliverable" name="deliverable" rows="4" cols="50" placeholder="Redacta una solicitud, debe ser clara y concisa." required></textarea>                
+                          </div>
+                          <!-- Grid -->
+                          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+                            <div>
+                              <label for="frequency">Frecuencia <span>*</span></label>
+                              <select id="frequency" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona --</option>
+                                <option value="Diario">Diario</option>
+                                <option value="Semanal">Semanal</option>
+                                <option value="Quincenal">Quincenal</option>  
+                                <option value="Mensual">Mensual</option>            
+                                <option value="Bimestral">Bimestral</option>
+                                <option value="Anual">Anual</option>
+                              </select> 
+                            </div>
+                            <div>
+                              <label for="comunication">Tipo de comunicación <span>*</span></label>
+                              <select id="comunication" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona --</option>
+                                <option value="Influenciar">Influenciar</option>
+                                <option value="Intercambiar">Intercambiar</option>
+                              </select> 
+                            </div>
+                            <div>
+                              <label for="impact">Impacto de fallos <span>*</span></label>
+                              <select id="impact" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona --</option>
+                                <option value="Grave">Grave</option>
+                                <option value="Muy graves">Muy graves</option>
+                                <option value="Considerables">Considerables</option>
+                              </select> 
+                            </div>                
+                            <div>
+                              <label for="prioritization">Porcentaje de priorización</label>
+                              <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
+                            </div>                                                        
+                          </div>  
                         </div>
-                        <!-- Grid -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
-                          <div>
-                            <label for="frequency">Frecuencia <span>*</span></label>
-                            <select id="frequency" class="form-control" required>
-                              <option value="" disabled selected>-- Selecciona --</option>
-                              <option value="Diario">Diario</option>
-                              <option value="Semanal">Semanal</option>
-                              <option value="Quincenal">Quincenal</option>  
-                              <option value="Mensual">Mensual</option>            
-                              <option value="Bimestral">Bimestral</option>
-                              <option value="Anual">Anual</option>
-                            </select> 
-                          </div>
-                          <div>
-                            <label for="comunication">Tipo de comunicación <span>*</span></label>
-                            <select id="comunication" class="form-control" required>
-                              <option value="" disabled selected>-- Selecciona --</option>
-                              <option value="Influenciar">Influenciar</option>
-                              <option value="Intercambiar">Intercambiar</option>
-                            </select> 
-                          </div>
-                          <div>
-                            <label for="impact">Impacto de fallos <span>*</span></label>
-                            <select id="impact" class="form-control" required>
-                              <option value="" disabled selected>-- Selecciona --</option>
-                              <option value="Grave">Grave</option>
-                              <option value="Muy graves">Muy graves</option>
-                              <option value="Considerables">Considerables</option>
-                            </select> 
-                          </div>                
-                          <div>
-                            <label for="prioritization">Porcentaje de priorización</label>
-                            <input class="form-control" type="text" id="prioritization" name="prioritization" required placeholder="Ingresa un porcentaje">
-                          </div>                                                        
-                        </div>  
                         <p><b>Total de porcentaje de priorización:</b> 100%</p>
                         <!-- Buttons -->
                         <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
@@ -377,56 +379,58 @@
                     <div class="tab-pane" id="tab-04" role="tabpanel">
                       <!-- Form -->
                       <form class="grid gap-5">
-                        <!-- Item -->              
-                        <div>
-                          <label for="sector">Área <span>*</span></label>
-                          <select id="sector" class="form-control" required>
-                            <option value="" disabled selected>-- Selecciona --</option>
-                            <option value="Proveedores">Proveedores</option>
-                            <option value="Abogados externos">Abogados externos</option>
-                          </select> 
-                        </div>              
-                        <!-- Item -->
-                        <div>
-                          <label for="request">Envío de información / Solicitud de entregables <span>*</span></label>
-                          <textarea class="form-control" id="request" name="request" rows="4" cols="50" placeholder="Redacta una solicitud, debe ser clara y concisa." required></textarea>                
+                        <div class="form-group grid gap-5">
+                          <!-- Item -->              
+                          <div>
+                            <label for="sector">Área <span>*</span></label>
+                            <select id="sector" class="form-control" required>
+                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value="Proveedores">Proveedores</option>
+                              <option value="Abogados externos">Abogados externos</option>
+                            </select> 
+                          </div>              
+                          <!-- Item -->
+                          <div>
+                            <label for="request">Envío de información / Solicitud de entregables <span>*</span></label>
+                            <textarea class="form-control" id="request" name="request" rows="4" cols="50" placeholder="Redacta una solicitud, debe ser clara y concisa." required></textarea>                
+                          </div>
+                          <!-- Grid -->
+                          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+                            <div>
+                              <label for="regularity">Frecuencia <span>*</span></label>
+                              <select id="regularity" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona --</option>
+                                <option value="Diario">Diario</option>
+                                <option value="Semanal">Semanal</option>
+                                <option value="Quincenal">Quincenal</option>  
+                                <option value="Mensual">Mensual</option>            
+                                <option value="Bimestral">Bimestral</option>
+                                <option value="Anual">Anual</option>
+                              </select> 
+                            </div>
+                            <div>
+                              <label for="relationship">Tipo de comunicación <span>*</span></label>
+                              <select id="relationship" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona --</option>
+                                <option value="Influenciar">Influenciar</option>
+                                <option value="Intercambiar">Intercambiar</option>
+                              </select> 
+                            </div>
+                            <div>
+                              <label for="failed">Impacto de fallos <span>*</span></label>
+                              <select id="failed" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona --</option>
+                                <option value="Grave">Grave</option>
+                                <option value="Muy graves">Muy graves</option>
+                                <option value="Considerables">Considerables</option>
+                              </select> 
+                            </div>                
+                            <div>
+                              <label for="preponderance">Porcentaje de priorización</label>
+                              <input class="form-control" type="text" id="preponderance" name="preponderance" required placeholder="Ingresa un porcentaje">
+                            </div>                                                        
+                          </div>   
                         </div>
-                        <!-- Grid -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
-                          <div>
-                            <label for="regularity">Frecuencia <span>*</span></label>
-                            <select id="regularity" class="form-control" required>
-                              <option value="" disabled selected>-- Selecciona --</option>
-                              <option value="Diario">Diario</option>
-                              <option value="Semanal">Semanal</option>
-                              <option value="Quincenal">Quincenal</option>  
-                              <option value="Mensual">Mensual</option>            
-                              <option value="Bimestral">Bimestral</option>
-                              <option value="Anual">Anual</option>
-                            </select> 
-                          </div>
-                          <div>
-                            <label for="relationship">Tipo de comunicación <span>*</span></label>
-                            <select id="relationship" class="form-control" required>
-                              <option value="" disabled selected>-- Selecciona --</option>
-                              <option value="Influenciar">Influenciar</option>
-                              <option value="Intercambiar">Intercambiar</option>
-                            </select> 
-                          </div>
-                          <div>
-                            <label for="failed">Impacto de fallos <span>*</span></label>
-                            <select id="failed" class="form-control" required>
-                              <option value="" disabled selected>-- Selecciona --</option>
-                              <option value="Grave">Grave</option>
-                              <option value="Muy graves">Muy graves</option>
-                              <option value="Considerables">Considerables</option>
-                            </select> 
-                          </div>                
-                          <div>
-                            <label for="preponderance">Porcentaje de priorización</label>
-                            <input class="form-control" type="text" id="preponderance" name="preponderance" required placeholder="Ingresa un porcentaje">
-                          </div>                                                        
-                        </div>   
                         <p><b>Total de porcentaje de priorización:</b> 100%</p>                         
                         <!-- Buttons -->
                         <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
@@ -503,25 +507,27 @@
                     <!-- Tab-pane-06 -->
                     <div class="tab-pane" id="tab-06" role="tabpanel">
                       <form class="grid gap-5">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+                        <div class="form-group grid gap-5">
+                          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+                            <div>
+                              <label for="language">Idioma <span>*</span></label>
+                              <input class="form-control" type="text" id="language" name="language"  required placeholder="Agrega un idioma">
+                            </div>  
+                            <div>
+                              <label for="position">Nivel <span>*</span></label>
+                              <select id="position" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona --</option>
+                                <option value="Principiante">Principiante</option>
+                                <option value="Intermedio">Intermedio</option>
+                                <option value="Avanzado">Avanzado</option>
+                                <option value="Experto">Experto</option>
+                              </select> 
+                            </div>  
+                          </div>
                           <div>
-                            <label for="language">Idioma <span>*</span></label>
-                            <input class="form-control" type="text" id="language" name="language"  required placeholder="Agrega un idioma">
-                          </div>  
-                          <div>
-                            <label for="position">Nivel <span>*</span></label>
-                            <select id="position" class="form-control" required>
-                              <option value="" disabled selected>-- Selecciona --</option>
-                              <option value="Principiante">Principiante</option>
-                              <option value="Intermedio">Intermedio</option>
-                              <option value="Avanzado">Avanzado</option>
-                              <option value="Experto">Experto</option>
-                            </select> 
-                          </div>  
-                        </div>
-                        <div>
-                          <label for="application">Requerimiento <span>*</span></label>
-                          <textarea class="form-control" id="application" name="application" rows="4" cols="50" placeholder="Ejem: Comprensión de una amplia variedad de textos de complejidad alta. Sabe expresarse de forma fluida sin muestras muy evidentes de esfuerzo para encontrar la expresión adecuada. Puede producir textos claros, bien estructurados y detallados sobre temas de cierta complejidad." required></textarea>                
+                            <label for="application">Requerimiento <span>*</span></label>
+                            <textarea class="form-control" id="application" name="application" rows="4" cols="50" placeholder="Ejem: Comprensión de una amplia variedad de textos de complejidad alta. Sabe expresarse de forma fluida sin muestras muy evidentes de esfuerzo para encontrar la expresión adecuada. Puede producir textos claros, bien estructurados y detallados sobre temas de cierta complejidad." required></textarea>                
+                          </div>
                         </div>
                         <!-- Buttons -->
                         <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
@@ -533,25 +539,27 @@
                     <!-- Tab-pane-07 -->
                     <div class="tab-pane" id="tab-07" role="tabpanel">
                       <form class="grid gap-5">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+                        <div class="form-group grid gap-5">
+                          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+                            <div>
+                              <label for="program">Programa <span>*</span></label>
+                              <input class="form-control" type="text" id="program" name="program"  required placeholder="Agrega un programa">
+                            </div>  
+                            <div>
+                              <label for="level-use">Nivel de uso<span>*</span></label>
+                              <select id="level-use" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona --</option>
+                                <option value="Básico">Básico</option>
+                                <option value="Intermedio">Intermedio</option>
+                                <option value="Avanzado">Avanzado</option>
+                                <option value="Experto">Experto</option>
+                              </select> 
+                            </div>  
+                          </div>
                           <div>
-                            <label for="program">Programa <span>*</span></label>
-                            <input class="form-control" type="text" id="program" name="program"  required placeholder="Agrega un programa">
-                          </div>  
-                          <div>
-                            <label for="level-use">Nivel de uso<span>*</span></label>
-                            <select id="level-use" class="form-control" required>
-                              <option value="" disabled selected>-- Selecciona --</option>
-                              <option value="Básico">Básico</option>
-                              <option value="Intermedio">Intermedio</option>
-                              <option value="Avanzado">Avanzado</option>
-                              <option value="Experto">Experto</option>
-                            </select> 
-                          </div>  
-                        </div>
-                        <div>
-                          <label for="demand">Requerimiento <span>*</span></label>
-                          <textarea class="form-control" id="demand" name="demand" rows="4" cols="50" placeholder="Ejem: Conocimiento sólido de los principios y aplicaciones del sistema a nivel captura o carga de información / Utiliza herramientas del sistema para análisis de datos en un nivel intermedio." required></textarea>                
+                            <label for="demand">Requerimiento <span>*</span></label>
+                            <textarea class="form-control" id="demand" name="demand" rows="4" cols="50" placeholder="Ejem: Conocimiento sólido de los principios y aplicaciones del sistema a nivel captura o carga de información / Utiliza herramientas del sistema para análisis de datos en un nivel intermedio." required></textarea>                
+                          </div>
                         </div>
                         <!-- Buttons -->
                         <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
@@ -563,39 +571,41 @@
                     <!-- Tab-pane-08 -->
                     <div class="tab-pane" id="tab-08" role="tabpanel">
                       <form class="grid gap-5">
-                        <!-- Grid -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
-                          <div>
-                            <label for="experience">Años de experiecia <span>*</span></label>
-                            <select id="experience" class="form-control" required>
-                              <option value="" disabled selected>-- Selecciona --</option>
-                              <option value="Menos de 1 año">Menos de 1 año</option>
-                              <option value="1 a 3 años">1 a 3 años</option>
-                              <option value="3 a 5 años">3 a 5 años</option>  
-                              <option value="5 a 7 años">5 a 7 años</option>            
-                              <option value="Más de 7 años">Más de 7 años</option>
-                            </select> 
+                        <div class="form-group grid gap-5">
+                          <!-- Grid -->
+                          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+                            <div>
+                              <label for="experience">Años de experiecia <span>*</span></label>
+                              <select id="experience" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona --</option>
+                                <option value="Menos de 1 año">Menos de 1 año</option>
+                                <option value="1 a 3 años">1 a 3 años</option>
+                                <option value="3 a 5 años">3 a 5 años</option>  
+                                <option value="5 a 7 años">5 a 7 años</option>            
+                                <option value="Más de 7 años">Más de 7 años</option>
+                              </select> 
+                            </div>
+                            <div>
+                              <label for="post">Puesto <span>*</span></label>
+                              <select id="post" class="form-control" required>
+                                <option value="" disabled selected>-- Selecciona --</option>
+                                <option value="Especialista">Especialista</option>
+                                <option value="Supervisor o Coor-dinador">Supervisor o Coor-dinador</option>
+                                <option value="Jefe de área o departamento">Jefe de área o departamento</option>  
+                                <option value="Gerente junior">Gerente junior</option>            
+                                <option value="Gerente senior">Gerente senior</option>
+                                <option value="Director junior">Director junior</option>
+                                <option value="Director senior">Director senior</option>
+                                <option value="N/A">N/A</option>
+                              </select> 
+                            </div>                                                       
                           </div>
+                          <!-- Item -->
                           <div>
-                            <label for="post">Puesto <span>*</span></label>
-                            <select id="post" class="form-control" required>
-                              <option value="" disabled selected>-- Selecciona --</option>
-                              <option value="Especialista">Especialista</option>
-                              <option value="Supervisor o Coor-dinador">Supervisor o Coor-dinador</option>
-                              <option value="Jefe de área o departamento">Jefe de área o departamento</option>  
-                              <option value="Gerente junior">Gerente junior</option>            
-                              <option value="Gerente senior">Gerente senior</option>
-                              <option value="Director junior">Director junior</option>
-                              <option value="Director senior">Director senior</option>
-                              <option value="N/A">N/A</option>
-                            </select> 
-                          </div>                                                       
-                        </div>
-                        <!-- Item -->
-                        <div>
-                          <label for="experience-area">Área <span>*</span></label>
-                          <textarea class="form-control" id="experience-area" name="experience-area" rows="4" cols="50" placeholder="Describa el área de experiencia." required></textarea>                
-                        </div>                         
+                            <label for="experience-area">Área <span>*</span></label>
+                            <textarea class="form-control" id="experience-area" name="experience-area" rows="4" cols="50" placeholder="Describa el área de experiencia." required></textarea>                
+                          </div>  
+                        </div>                       
                         <!-- Buttons -->
                         <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                           <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
@@ -614,7 +624,7 @@
               </button>
               <div class="acordeon-body">
                 <form class="grid gap-5">
-                  <div class="grid grid-cols-1 sm:grid-cols-2"> 
+                  <div class="form-group grid grid-cols-1 sm:grid-cols-2"> 
                     <!-- Item -->
                     <div>
                       <label for="required tool">Equipo o herramienta requerida</label>

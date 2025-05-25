@@ -2848,7 +2848,7 @@ table.align-right td:first-child {
 ----------------------------------------------- */
 .form-group {
   border-bottom: 1px solid #A3B9F1;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .form-group-inline {
