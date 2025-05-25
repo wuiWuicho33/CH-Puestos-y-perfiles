@@ -4,7 +4,10 @@
 
 /* # Form-group
 ----------------------------------------------- */
-.form-group {margin-bottom: 1.5rem;}
+.form-group {
+  border-bottom: 1px solid $fourth-color;
+  padding-bottom: 2rem;
+}
 
 .form-group-inline {
   display: flex;

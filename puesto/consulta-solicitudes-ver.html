@@ -159,12 +159,12 @@
                         <div>
                           <label for="objective">Objetivo del puesto <span>*</span></label>
                           <textarea class="form-control" id="objective" name="objective" rows="4" cols="50" placeholder="Escribe el objectivo aquí..." required></textarea>                
-                        </div>                                                  
+                        </div>                 
                         <!-- Buttons -->
                         <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                           <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
                           <button type="submit" class="btn btn-dark">Guardar y continuar</button>
-                        </div>
+                        </div>                                                                                                     
                       </form>                  
                     </div>
                     <!-- Tab-pane-02 -->
@@ -228,68 +228,70 @@
               <div class="acordeon-body">
                 <!-- Form -->
                 <form class="grid gap-5">
-                  <!-- Item -->
-                  <div>
-                    <label for="function">Función <span>*</span></label>
-                    <textarea class="form-control" id="function" name="function" rows="4" cols="50" placeholder="Redacta una función, debe ser clara y concisa." required></textarea>                
-                  </div>           
-                  <!-- Item -->
-                  <div>
-                    <label for="collaboration">Contribución <span>*</span></label>
-                    <select id="collaboration" class="form-control" required>
-                      <option value="" disabled selected>-- Selecciona --</option>
-                      <option value="Entrega resultados para el área">Entrega resultados para el área</option>
-                      <option value="Trabaja en el logro de los objetivos a corto plazo">Trabaja en el logro de los objetivos a corto plazo</option>
-                      <option value="Establece y desarrolla procesos y planes a mediano plazo">Establece y desarrolla procesos y planes a mediano plazo</option>  
-                      <option value="Establece e implementa estrategias de negocios y objetivos">Establece e implementa estrategias de negocios y objetivos</option>            
-                    </select> 
-                  </div>                                       
-                  <!-- Grid -->
-                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+                  <div class="grid gap-5 form-group">
+                    <!-- Item -->
                     <div>
-                      <label for="periodicity">Frecuencia <span>*</span></label>
-                      <select id="periodicity" class="form-control" required>
+                      <label for="function">Función <span>*</span></label>
+                      <textarea class="form-control" id="function" name="function" rows="4" cols="50" placeholder="Redacta una función, debe ser clara y concisa." required></textarea>                
+                    </div>           
+                    <!-- Item -->
+                    <div>
+                      <label for="collaboration">Contribución <span>*</span></label>
+                      <select id="collaboration" class="form-control" required>
                         <option value="" disabled selected>-- Selecciona --</option>
-                        <option value="Diario">Diario</option>
-                        <option value="Semanal">Semanal</option>
-                        <option value="Quincenal">Quincenal</option>  
-                        <option value="Mensual">Mensual</option>            
-                        <option value="Bimestral">Bimestral</option>
-                        <option value="Anual">Anual</option>
+                        <option value="Entrega resultados para el área">Entrega resultados para el área</option>
+                        <option value="Trabaja en el logro de los objetivos a corto plazo">Trabaja en el logro de los objetivos a corto plazo</option>
+                        <option value="Establece y desarrolla procesos y planes a mediano plazo">Establece y desarrolla procesos y planes a mediano plazo</option>  
+                        <option value="Establece e implementa estrategias de negocios y objetivos">Establece e implementa estrategias de negocios y objetivos</option>            
                       </select> 
+                    </div>                                       
+                    <!-- Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+                      <div>
+                        <label for="periodicity">Frecuencia <span>*</span></label>
+                        <select id="periodicity" class="form-control" required>
+                          <option value="" disabled selected>-- Selecciona --</option>
+                          <option value="Diario">Diario</option>
+                          <option value="Semanal">Semanal</option>
+                          <option value="Quincenal">Quincenal</option>  
+                          <option value="Mensual">Mensual</option>            
+                          <option value="Bimestral">Bimestral</option>
+                          <option value="Anual">Anual</option>
+                        </select> 
+                      </div>
+                      <div>
+                        <label for="repercussion">Impacto de fallos <span>*</span></label>
+                        <select id="repercussion" class="form-control" required>
+                          <option value="" disabled selected>-- Selecciona --</option>
+                          <option value="Grave">Grave</option>
+                          <option value="Muy graves">Muy graves</option>
+                          <option value="Considerables">Considerables</option>
+                        </select> 
+                      </div>
+                      <div>
+                        <label for="difficulty">Complejidad <span>*</span></label>
+                        <select id="difficulty" class="form-control" required>
+                          <option value="" disabled selected>-- Selecciona --</option>
+                          <option value="Baja">Baja</option>
+                          <option value="Media">Media</option>            
+                          <option value="Alta">Alta</option>                    
+                        </select> 
+                      </div>                
+                      <div>
+                        <label for="preference">Porcentaje de priorización</label>
+                        <input class="form-control" type="text" id="preference" name="preference" required placeholder="Ingresa un porcentaje">
+                      </div>                                                        
+                    </div>  
+                    <div class="flex flex-col-reverse md:flex-row gap-5">
+                      <p class="small">Las autoridades y la toma de decisiones de acuerdo a este perfil y descripción de puesto están en función a las políticas, procesos y lineamientos, vigentes definidos por Grupo Fórmula.</p>                  
+                      <p><b>Total de porcentaje de priorización:</b> 100%</p>
                     </div>
-                    <div>
-                      <label for="repercussion">Impacto de fallos <span>*</span></label>
-                      <select id="repercussion" class="form-control" required>
-                        <option value="" disabled selected>-- Selecciona --</option>
-                        <option value="Grave">Grave</option>
-                        <option value="Muy graves">Muy graves</option>
-                        <option value="Considerables">Considerables</option>
-                      </select> 
-                    </div>
-                    <div>
-                      <label for="difficulty">Complejidad <span>*</span></label>
-                      <select id="difficulty" class="form-control" required>
-                        <option value="" disabled selected>-- Selecciona --</option>
-                        <option value="Baja">Baja</option>
-                        <option value="Media">Media</option>            
-                        <option value="Alta">Alta</option>                    
-                      </select> 
-                    </div>                
-                    <div>
-                      <label for="preference">Porcentaje de priorización</label>
-                      <input class="form-control" type="text" id="preference" name="preference" required placeholder="Ingresa un porcentaje">
-                    </div>                                                        
-                  </div>  
-                  <div class="flex flex-col-reverse md:flex-row gap-5">
-                    <p class="small">Las autoridades y la toma de decisiones de acuerdo a este perfil y descripción de puesto están en función a las políticas, procesos y lineamientos, vigentes definidos por Grupo Fórmula.</p>                  
-                    <p><b>Total de porcentaje de priorización:</b> 100%</p>
                   </div>
                   <!-- Buttons -->
                   <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                     <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
                     <button type="submit" class="btn btn-dark">Guardar y continuar</button>
-                  </div>
+                  </div>                                  
                 </form> 
               </div>
             </div>
@@ -876,11 +878,13 @@
             <i class="fa-solid fa-file-pdf"></i> Descargar pdf
           </button>      
           <div class="flex justify-between gap-2">  
-            <button class="btn btn-dark-inverse">
-              <i class="fa-solid fa-thumbs-down mr-1"></i> <span class="d-none d-sm-inline">Rechazar</span>
+            <button class="btn btn-lighter-inverse">
+              <i class="fa-solid fa-thumbs-down mr-1"></i> 
+              <span class="d-none d-sm-inline">Rechazar</span>
             </button>        
-            <button class="btn btn-dark">
-              <i class="fa-solid fa-thumbs-up mr-1"></i> <span class="d-none d-sm-inline">Autorizar</span>
+            <button class="btn btn-lighter">
+              <i class="fa-solid fa-thumbs-up mr-1"></i> 
+              <span class="d-none d-sm-inline">Autorizar</span>
             </button>                    
           </div>
         </footer>            
