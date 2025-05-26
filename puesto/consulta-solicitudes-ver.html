@@ -61,13 +61,13 @@
         <a href="#">
           <i class="fa-solid fa-bell"></i>
         </a>
-        <!-- ====== Dropdown-user ====== -->
+        <!-- ------ Dropdown-user ------ -->
 				<div class="dropdown-user">
-					<!-- == Btn == -->
+          <!-- Btn -->
 					<button class="dropbtn">
 						<i class="fa-solid fa-user"></i> <span class="d-none d-md-block">Nombre de usuario</span>
 					</button>
-          <!-- == Links == -->
+          <!-- Links -->
 					<div class="dropdown-user-links">
 					<a href="#">Mi perfil <i class="fa-regular fa-credit-card"></i></a>
 					<a href="#">Ajustes <i class="fa-solid fa-gear"></i></a>
@@ -78,7 +78,7 @@
     </nav>
 
     <!-- Content
-    ============================ -->     
+    ========================================== -->      
     <section class="content grid gap-5">
       <!-- ====== Title ====== -->
       <div class="mb-4">
@@ -86,29 +86,41 @@
       </div> 
       <!-- ====== Card ====== -->
       <div class="card">
+        <!-- ------ Header ------ -->
         <header class="card-header flex justify-between items-center">
           <h2>Nombre de puesto 1</h2>
           <a href="consulta-solicitudes.html">
             <i class="fa-solid fa-arrow-left-long"></i>
           </a>
         </header>
-        <div class="card-body">                    
-          <!-- Accordion -->
+        <!-- ------ Card-body ------ -->
+        <div class="card-body">                         
+          <!-- ----
+          Accordion 
+          ----- -->
           <div class="acordeon">
+            <!-- Acordeon-item
+            ------------------------------------------ -->               
             <div class="acordeon-item">
+              <!-- ------ Acordeon-header ------ --> 
               <button class="acordeon-header">
                 Perfil y descripción de puesto
                 <i class="fas fa-chevron-down acordeon-icon"></i>
               </button>
+              <!-- ------ Acordeon-body ------ --> 
               <div class="acordeon-body">
-                <!-- == Tabs == -->
+                <!-- ====
+                * TABS *
+                ===== -->
                 <div class="tabs-container" id="tabs-container-1">
-                  <!-- Tabs buttons -->
+                  <!-- Tabs buttons
+                  ========================================== -->  
                   <div class="tabs">
                     <button class="tab-button active" data-target="tab-01" aria-controls="tab-01" role="tab">Ficha de identificación</button>
                     <button class="tab-button" data-target="tab-02" aria-controls="tab-02" role="tab">Ficha de organización</button>
                   </div>
-                  <!-- Content -->
+                  <!-- Tabs content
+                  ========================================== -->  
                   <div class="tab-content">
                     <!-- Tab-pane-01 -->
                     <div class="tab-pane active" id="tab-01" role="tabpanel">
@@ -234,14 +246,22 @@
                 </div>      
               </div>
             </div>
+            <!-- Acordeon-item
+            ------------------------------------------ -->               
             <div class="acordeon-item">
+              <!-- ------ Acordeon-header ------ --> 
               <button class="acordeon-header">
                 Funciones y responsabilidades
                 <i class="fas fa-chevron-down acordeon-icon"></i>
               </button>
+              <!-- ------ Acordeon-body ------ -->
               <div class="acordeon-body">
-                <!-- Form -->
+                <!-- ====
+                * FORM *
+                ===== -->
                 <form class="myForm grid gap-5">
+                  <!-- Items
+                  ========================================== --> 
                   <div class="form-group grid gap-5">
                     <!-- Item -->
                     <div>
@@ -301,6 +321,8 @@
                       <p><b>Total de porcentaje de priorización:</b> 100%</p>
                     </div>
                   </div>
+                  <!-- Buttons
+                  ========================================== --> 
                   <!-- Buttons -->
                   <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                     <button type="button" class="btn btn-dark editBtn">
@@ -316,20 +338,28 @@
                 </form> 
               </div>
             </div>
+            <!-- Acordeon-item
+            ------------------------------------------ -->               
             <div class="acordeon-item">
+              <!-- ------ Acordeon-header ------ -->
               <button class="acordeon-header">
                 Relaciones
                 <i class="fas fa-chevron-down acordeon-icon"></i>
               </button>
+              <!-- ------ Acordeon-body ------ -->
               <div class="acordeon-body">
-                <!-- == Tabs == -->
+                <!-- ====
+                * TABS *
+                ===== -->
                 <div class="tabs-container" id="tabs-container-1">
-                  <!-- Tabs buttons -->
+                  <!-- Tabs buttons
+                  ========================================== --> 
                   <div class="tabs">
                     <button class="tab-button active" data-target="tab-03" aria-controls="tab-03" role="tab">Relaciones internas</button>
                     <button class="tab-button" data-target="tab-04" aria-controls="tab-04" role="tab">Relaciones externas</button>
                   </div>
-                  <!-- Content -->
+                  <!-- Tabs content
+                  ========================================== --> 
                   <div class="tab-content">
                     <!-- Tab-pane-03 -->
                     <div class="tab-pane active" id="tab-03" role="tabpanel">
@@ -478,22 +508,30 @@
                 </div> 
               </div>
             </div>
+            <!-- Acordeon-item
+            ------------------------------------------ -->               
             <div class="acordeon-item">
+              <!-- ------ Acordeon-header ------ -->
               <button class="acordeon-header">
                 Requisitos del puesto
                 <i class="fas fa-chevron-down acordeon-icon"></i>
               </button>
+              <!-- ------ Acordeon-body ------ -->
               <div class="acordeon-body">                
-                <!-- == Tabs component == -->
+                <!-- ====
+                * TABS *
+                ===== -->
                 <div class="tabs-container" id="tabs-container-1">
-                  <!-- Buttons -->
+                  <!-- Tabs buttons
+                  ========================================== --> 
                   <div class="tabs">
                     <button class="tab-button active" data-target="tab-05" aria-controls="tab-05" role="tab">Educación</button>
                     <button class="tab-button" data-target="tab-06" aria-controls="tab-06" role="tab">Idiomas</button>
                     <button class="tab-button" data-target="tab-07" aria-controls="tab-07" role="tab">Programas</button>
                     <button class="tab-button" data-target="tab-08" aria-controls="tab-08" role="tab">Experiencia</button>
                   </div>
-                  <!-- Content -->
+                  <!-- Tabs content
+                  ========================================== -->                   
                   <div class="tab-content">
                     <!-- Tab-pane-05 -->
                     <div class="tab-pane active" id="tab-05" role="tabpanel">
@@ -680,13 +718,22 @@
                 </div>  
               </div>
             </div>
+            <!-- Acordeon-item
+            ------------------------------------------ -->               
             <div class="acordeon-item">
+              <!-- ------ Acordeon-header ------ -->
               <button class="acordeon-header">
                 Recursos
                 <i class="fas fa-chevron-down acordeon-icon"></i>
               </button>
+              <!-- ------ Acordeon-body ------ -->
               <div class="acordeon-body">
+                <!-- ====
+                * FORM *
+                ===== -->
                 <form class="myForm grid gap-5">
+                  <!-- Items
+                  ========================================== --> 
                   <div class="form-group grid grid-cols-1 sm:grid-cols-2"> 
                     <!-- Item -->
                     <div>
@@ -706,7 +753,8 @@
                       </select> 
                     </div>  
                   </div>
-                  <!-- Buttons -->
+                  <!-- Buttons
+                  ========================================== --> 
                   <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
                     <button type="button" class="btn btn-dark editBtn">
                       <i class="fa-solid fa-pen-to-square mr-1"></i> Editar
@@ -721,22 +769,30 @@
                 </form> 
               </div>
             </div>            
+            <!-- Acordeon-item
+            ------------------------------------------ -->               
             <div class="acordeon-item">
+              <!-- ------ Acordeon-header ------ -->
               <button class="acordeon-header">
                 Nivel en competencias
                 <i class="fas fa-chevron-down acordeon-icon"></i>
               </button>
+              <!-- ------ Acordeon-body ------ -->
               <div class="acordeon-body">
-                <!-- == Tabs component == -->
+                <!-- ====
+                * TABS *
+                ===== -->
                 <div class="tabs-container" id="tabs-container-1">
-                  <!-- Buttons -->
+                  <!-- Tabs buttons
+                  ========================================== --> 
                   <div class="tabs">
                     <button class="tab-button active" data-target="tab-09" aria-controls="tab-09" role="tab">Nivel profesional</button>
                     <button class="tab-button" data-target="tab-10" aria-controls="tab-10" role="tab">Visión</button>
                     <button class="tab-button" data-target="tab-11" aria-controls="tab-11" role="tab">Personas</button>
                     <button class="tab-button" data-target="tab-12" aria-controls="tab-12" role="tab">Gestión</button>
                   </div>
-                  <!-- Content -->
+                  <!-- Tabs content
+                  ========================================== --> 
                   <div class="tab-content">
                     <!-- Tab-pane-01 -->
                     <div class="tab-pane active" id="tab-09" role="tabpanel">                                                         
@@ -951,40 +1007,54 @@
                 </div> 
               </div>
             </div>
+            <!-- Acordeon-item
+            ------------------------------------------ -->               
             <div class="acordeon-item">
+              <!-- ------ Acordeon-header ------ -->
               <button class="acordeon-header">
                 Dimensionamiento del puesto
                 <i class="fas fa-chevron-down acordeon-icon"></i>
               </button>
+              <!-- ------ Acordeon-body ------ -->
               <div class="acordeon-body">
                 <p>Lorem</p>
               </div>
             </div>
+            <!-- Acordeon-item
+            ------------------------------------------ -->               
             <div class="acordeon-item">
+              <!-- ------ Acordeon-header ------ -->
               <button class="acordeon-header">
                 Impacto del puesto
                 <i class="fas fa-chevron-down acordeon-icon"></i>
               </button>
+              <!-- ------ Acordeon-body ------ -->
               <div class="acordeon-body">
                 <p>Lorem</p>
               </div>
             </div>
+            <!-- Acordeon-item
+            ------------------------------------------ -->               
             <div class="acordeon-item">
+              <!-- ------ Acordeon-header ------ -->
               <button class="acordeon-header">
                 Condiciones de trabajo
                 <i class="fas fa-chevron-down acordeon-icon"></i>
               </button>
+              <!-- ------ Acordeon-body ------ -->
               <div class="acordeon-body">
                 <p>Lorem</p>
               </div>
             </div>                                                                                  
           </div>     
-
         </div>
-        <footer class="card-footer flex flex-row justify-between gap-3">                    
+        <!-- ------ Card-footer ------ -->
+        <footer class="card-footer flex flex-row justify-between gap-3">    
+          <!-- Button -->                
           <button class="btn btn-dark-inverse">
             <i class="fa-solid fa-file-pdf"></i> Descargar pdf
           </button>      
+          <!-- Buttons -->                
           <div class="flex justify-between gap-2">  
             <button class="btn btn-lighter-inverse" data-modal="modal-01">
               <i class="fa-solid fa-thumbs-down mr-1"></i> 
@@ -1005,18 +1075,17 @@
 
     <!-- Modales
     ========================================== --> 
-
     <!-- ====== Modal-01 ====== -->
     <div id="modal-01" class="modal">
       <div class="modal-content">
-        <!-- == Modal-header == -->
+        <!-- ------ Modal-header ------ -->
         <div class="modal-header">
           <h2>Rechazo</h2>
           <span class="btn-close" data-dismiss="modal">
             <i class="fa-solid fa-xmark"></i>
           </span>
         </div>
-        <!-- == Modal-body == -->
+        <!-- ------ Modal-body ------ -->
         <div class="modal-body">
           <!-- Text area -->
           <div>
@@ -1024,7 +1093,7 @@
             <textarea class="form-control" id="rejection" name="rejection" rows="4" cols="50" placeholder="Describe brevemente el motivo de rechazo." required></textarea>                
           </div> 
         </div>
-        <!-- == Modal-footer == -->
+        <!-- ------ Modal-footer ------ -->
         <div class="modal-footer flex justify-end gap-2">
           <button type="reset" class="btn btn-dark-inverse" data-dismiss="modal">Cancelar</button>
           <button type="submit" class="btn btn-dark">Aceptar</button>          
