@@ -4426,6 +4426,36 @@ select {
 Unificar estilos duplicados de los botones de añadir, eliminar y crear componentes
 Cambiar la clase de los component-container por ID
 */
+/* Quitar padding de elementos de FOrmulario cuando está deshabilitado */
+#miFormulario input:disabled,
+#miFormulario select:disabled,
+#miFormulario textarea:disabled {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  color: inherit;
+  pointer-events: none;
+}
+
+/* Ocultar flecha del select cuando está deshabilitado */
+#miFormulario select:disabled {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: none !important;
+}
+
+/* Compatibilidad con Edge/IE */
+#miFormulario select:disabled::-ms-expand {
+  display: none;
+}
+
+/* Ocultar por defecto los botones de cancelar y guardar */
+#guardarBtn,
+#cancelarBtn {
+  display: none;
+}
+
 /*Layout*/
 ul.secondary_menu {
   display: flex;

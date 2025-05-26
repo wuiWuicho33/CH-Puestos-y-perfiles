@@ -113,7 +113,7 @@
                     <!-- Tab-pane-01 -->
                     <div class="tab-pane active" id="tab-01" role="tabpanel">
                       <!-- Form -->
-                      <form class="grid gap-5">
+                      <form id="miFormulario" class="grid gap-5">
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                           <!-- Grid item -->
                           <div>
@@ -121,7 +121,7 @@
                               <i class="fa-solid fa-circle-question"></i>
                             </span>
                             <label for="select-position">Puesto <span>*</span></label>
-                            <select id="select-position" name="select-position" class="form-control" required>
+                            <select id="select-position" name="select-position" class="form-control" required disabled>
                               <option value="" disabled selected>-- Selecciona el puesto --</option>
                               <option value="Nombre de puesto 1">Nombre de puesto 1</option>
                               <option value="Nombre de puesto 2">Nombre de puesto 2</option>
@@ -133,7 +133,7 @@
                           <!-- Grid item -->
                           <div>
                             <label for="select-code">Código de puesto <span>*</span></label>
-                            <select id="select-code" class="form-control" required>
+                            <select id="select-code" class="form-control" required disabled>
                               <option value="" disabled selected>-- Selecciona el código de puesto --</option>
                               <option value="Código 1">Código 1</option>
                               <option value="Código 1">Código 2</option>
@@ -145,7 +145,7 @@
                           <!-- Grid item -->
                           <div>
                             <label for="area">Área <span>*</span></label>
-                            <select id="area" class="form-control" required>
+                            <select id="area" class="form-control" required disabled>
                               <option value="" disabled selected>-- Selecciona el área --</option>
                               <option value="Nombre de área 1">Nombre de área 1</option>
                               <option value="Nombre de área 1">Nombre de área 2</option>
@@ -158,12 +158,19 @@
                         <!-- Text area -->
                         <div>
                           <label for="objective">Objetivo del puesto <span>*</span></label>
-                          <textarea class="form-control" id="objective" name="objective" rows="4" cols="50" placeholder="Escribe el objectivo aquí..." required></textarea>                
+                          <textarea class="form-control" id="objective" name="objective" rows="4" cols="50" placeholder="Escribe el objectivo aquí..." required disabled></textarea>                
                         </div>                 
                         <!-- Buttons -->
                         <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
-                          <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
+                          <button type="button" class="btn btn-dark" id="editarBtn">
+                            <i class="fa-solid fa-pen-to-square mr-1"></i> Editar
+                          </button>
+                          <button type="reset" class="btn btn-dark-inverse" id="cancelarBtn">
+                            Cancelar
+                          </button>
+                          <button type="submit" class="btn btn-dark" id="guardarBtn">
+                            Guardar y continuar
+                          </button>
                         </div>                                                                                                     
                       </form>                  
                     </div>
@@ -918,6 +925,7 @@ SCRIPTS
 <script src="../assets/js/sidebar.js"></script>	
 <script src="../assets/js/accordeon.js"></script>	
 <script src="../assets/js/tabs.js"></script>	
+<script src="../assets/js/mi_form.js"></script>	
 
 </body>
 </html>
