@@ -1,35 +1,38 @@
-const form = document.getElementById("Form-01");
-const editBtn = document.getElementById("editBtn");
-const saveBtn = document.getElementById("saveBtn");
-const cancelBtn = document.getElementById("cancelBtn");
+document.querySelectorAll(".myForm").forEach(form => {
+  const editBtn = form.querySelector(".editBtn");
+  const saveBtn = form.querySelector(".saveBtn");
+  const cancelBtn = form.querySelector(".cancelBtn");
 
-const toggleFields = (enable) => {
-  const elements = form.querySelectorAll("input, select, textarea, fieldset");
-  elements.forEach(el => {
-    el.disabled = !enable;
+  const toggleFields = (enable) => {
+    form.querySelectorAll("input, select, textarea, fieldset").forEach(el => {
+      el.disabled = !enable;
+    });
+  };
+
+  const resetForm = () => {
+    toggleFields(false);
+    saveBtn.style.display = "none";
+    cancelBtn.style.display = "none";
+    editBtn.style.display = "inline";
+  };
+
+  editBtn.addEventListener("click", () => {
+    toggleFields(true);
+    editBtn.style.display = "none";
+    saveBtn.style.display = "inline";
+    cancelBtn.style.display = "inline";
   });
-};
 
-const resetForm = () => {
-  toggleFields(false);
-  saveBtn.style.display = "none";
-  cancelBtn.style.display = "none";
-  editBtn.style.display = "inline";
-};
+  saveBtn.addEventListener("click", () => {
+    // lógica de guardado
+    resetForm();
+  });
 
-editBtn.addEventListener("click", () => {
-  toggleFields(true);
-  editBtn.style.display = "none";
-  saveBtn.style.display = "inline";
-  cancelBtn.style.display = "inline";
-});
+  cancelBtn.addEventListener("click", () => {
+    // lógica de cancelación
+    resetForm();
+  });
 
-saveBtn.addEventListener("click", () => {
-  // Para agregar validaciones o envío de datos
-  resetForm();
-});
-
-cancelBtn.addEventListener("click", () => {
-  // Para restaurar valores originales
+  // Deshabilitar los campos al iniciar
   resetForm();
 });

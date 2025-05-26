@@ -4427,9 +4427,9 @@ Unificar estilos duplicados de los botones de añadir, eliminar y crear componen
 Cambiar la clase de los component-container por ID
 */
 /* Quitar padding de elementos de FOrmulario cuando está deshabilitado */
-.miForm input:disabled,
-.miForm select:disabled,
-.miForm textarea:disabled {
+.myForm input:disabled,
+.myForm select:disabled,
+.myForm textarea:disabled {
   border: none;
   padding: 0;
   background-color: transparent;
@@ -4439,7 +4439,7 @@ Cambiar la clase de los component-container por ID
 }
 
 /* Ocultar flecha del select cuando está deshabilitado */
-.miForm select:disabled {
+.myForm select:disabled {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -4447,7 +4447,7 @@ Cambiar la clase de los component-container por ID
 }
 
 /* Compatibilidad con Edge/IE */
-.miForm select:disabled::-ms-expand {
+.myForm select:disabled::-ms-expand {
   display: none;
 }
 
