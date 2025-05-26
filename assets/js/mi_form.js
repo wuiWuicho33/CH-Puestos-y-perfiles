@@ -1,4 +1,4 @@
-const form = document.getElementById("miFormulario");
+const form = document.getElementById("Form-01");
 const editBtn = document.getElementById("editBtn");
 const saveBtn = document.getElementById("saveBtn");
 const cancelBtn = document.getElementById("cancelBtn");

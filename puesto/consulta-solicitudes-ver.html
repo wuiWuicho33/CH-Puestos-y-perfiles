@@ -113,7 +113,7 @@
                     <!-- Tab-pane-01 -->
                     <div class="tab-pane active" id="tab-01" role="tabpanel">
                       <!-- Form -->
-                      <form id="miFormulario" class="grid gap-5">
+                      <form id="Form-01" class="miForm grid gap-5">
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
                           <!-- Grid item -->
                           <div>
@@ -177,11 +177,11 @@
                     <!-- Tab-pane-02 -->
                     <div class="tab-pane" id="tab-02" role="tabpanel">
                       <!-- Form -->
-                      <form class="grid gap-5">
+                      <form id="Form-02" class="miForm grid gap-5">
                         <!-- Text area -->
                         <div>
                           <label for="select-boss">Selecciona el jefe inmediato<span>*</span></label>
-                          <select id="select-boss" class="form-control" required>
+                          <select id="select-boss" class="form-control" required disabled>
                             <option value="" disabled selected>-- Selecciona --</option>
                             <option value="Jefe 1">Jefe 1</option>
                             <option value="Jefe 1">Jefe 2</option>
@@ -192,7 +192,7 @@
                         </div>
                         <!-- Radio Button -->
                         <div class="form-group grid grid-cols-1 sm:grid-cols-2 ga-5">
-                          <fieldset>
+                          <fieldset disabled>
                             <legend>Puestos que le reportan: </legend>
                             <label class="radio-label">
                               <input type="radio" name="rol" value="rol-01" checked>
@@ -204,7 +204,7 @@
                             </label>
                           </fieldset>                      
                           <!-- Radio Button -->
-                          <fieldset>
+                          <fieldset disabled>
                             <legend>Grado de supervisión: </legend>
                             <label class="radio-label">
                               <input type="radio" name="grade" value="grade-01" checked>
@@ -218,9 +218,16 @@
                         </div>                                  
                         <!-- Buttons -->
                         <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
-                          <button type="reset" class="btn btn-dark-inverse">Cancelar</button>
-                          <button type="submit" class="btn btn-dark">Guardar y continuar</button>
-                        </div>
+                          <button type="button" class="btn btn-dark" id="editBtn">
+                            <i class="fa-solid fa-pen-to-square mr-1"></i> Editar
+                          </button>
+                          <button type="button" class="btn btn-dark-inverse" id="cancelBtn">
+                            Cancelar
+                          </button>
+                          <button type="button" class="btn btn-dark" id="saveBtn">
+                            Guardar y continuar
+                          </button>
+                        </div>                                                                                                     
                       </form>         
                     </div>
                   </div>
