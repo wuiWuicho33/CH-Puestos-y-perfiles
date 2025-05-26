@@ -4158,6 +4158,15 @@ html {
 .acordeon .acordeon-item .acordeon-header.open .acordeon-icon {
   transform: rotate(180deg);
 }
+.acordeon .acordeon-item .acordeon-header.disable {
+  border-left: 5px solid #A3B9F1;
+}
+.acordeon .acordeon-item .acordeon-header.warning {
+  border-left: 5px solid #db9a17;
+}
+.acordeon .acordeon-item .acordeon-header.success {
+  border-left: 5px solid #35a038;
+}
 .acordeon .acordeon-item .acordeon-body {
   background-color: #ffffff;
   padding: 15px;

@@ -38,6 +38,17 @@
         transform: rotate(180deg);
       }      
       
+      //Sólo para este proyecto
+      &.disable{
+        border-left: 5px solid $fourth-color;
+      }
+      &.warning{
+        border-left: 5px solid $warning-color;
+      }
+      &.success{
+        border-left: 5px solid $success-color;
+      }
+      
     }
 
     .acordeon-body {
