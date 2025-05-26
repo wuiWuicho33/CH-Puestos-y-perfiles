@@ -4435,6 +4435,7 @@ Cambiar la clase de los component-container por ID
   background-color: transparent;
   color: inherit;
   pointer-events: none;
+  color: #011E44;
 }
 
 /* Ocultar flecha del select cuando está deshabilitado */
@@ -4451,8 +4452,8 @@ Cambiar la clase de los component-container por ID
 }
 
 /* Ocultar por defecto los botones de cancelar y guardar */
-#saveBtn,
-#cancelBtn {
+#cancelBtn,
+#saveBtn {
   display: none;
 }
 

@@ -8,6 +8,7 @@
   background-color: transparent;
   color: inherit;
   pointer-events: none;
+  color:$primary-text-color;
 }
 
 /* Ocultar flecha del select cuando está deshabilitado */
@@ -24,7 +25,7 @@
 }
 
 /* Ocultar por defecto los botones de cancelar y guardar */
-#saveBtn,
-#cancelBtn {
+#cancelBtn,
+#saveBtn {
   display: none;
 }
