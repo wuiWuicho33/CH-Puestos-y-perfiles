@@ -986,11 +986,11 @@
             <i class="fa-solid fa-file-pdf"></i> Descargar pdf
           </button>      
           <div class="flex justify-between gap-2">  
-            <button class="btn btn-lighter-inverse">
+            <button class="btn btn-dark-inverse" data-modal="modal-01">
               <i class="fa-solid fa-thumbs-down mr-1"></i> 
               <span class="d-none d-sm-inline">Rechazar</span>
             </button>        
-            <button class="btn btn-lighter">
+            <button class="btn btn-dark">
               <i class="fa-solid fa-thumbs-up mr-1"></i> 
               <span class="d-none d-sm-inline">Autorizar</span>
             </button>                    
@@ -1002,6 +1002,35 @@
         <p>Grupo Fórmula Todos los derechos reservados</p>
       </footer>	      
     </section>
+
+    <!-- Modales
+    ========================================== --> 
+
+    <!-- ====== Modal-01 ====== -->
+    <div id="modal-01" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Rechazo</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <!-- Text area -->
+          <div>
+            <label for="rejection">Motivo de rechazo <span>*</span></label>
+            <textarea class="form-control" id="rejection" name="rejection" rows="4" cols="50" placeholder="Describe brevemente el motivo de rechazo." required></textarea>                
+          </div> 
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer flex justify-end gap-2">
+          <button type="reset" class="btn btn-dark-inverse" data-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-dark">Aceptar</button>          
+        </div>
+      </div>
+    </div>    
 
   </main>  
 
@@ -1017,6 +1046,7 @@ SCRIPTS
 <script src="../assets/js/accordeon.js"></script>	
 <script src="../assets/js/tabs.js"></script>	
 <script src="../assets/js/mi_form.js"></script>	
+<script src="../assets/js/modal.js"></script>	
 
 </body>
 </html>

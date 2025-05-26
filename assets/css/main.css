@@ -4068,8 +4068,6 @@ html {
 }
 .modal .modal-content .modal-footer {
   border-top: 1px solid #cedaf8;
-  display: flex;
-  justify-content: space-between;
 }
 
 /*Para este proyecto en particular*/
