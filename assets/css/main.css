@@ -3307,6 +3307,7 @@ Cambiar la clase de los component-container por ID
 .btn-lighter {
   background-color: #ebf5f8;
   color: #7A99E1;
+  pointer-events: none;
 }
 .btn-lighter i {
   color: #7A99E1;
@@ -3320,6 +3321,7 @@ Cambiar la clase de los component-container por ID
   background-color: #ffffff;
   color: #7A99E1;
   border-color: #ebf5f8;
+  pointer-events: none;
 }
 .btn-lighter-inverse i {
   color: #7A99E1;
