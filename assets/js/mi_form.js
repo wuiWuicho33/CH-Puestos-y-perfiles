@@ -1,37 +1,35 @@
 const form = document.getElementById("miFormulario");
-const editarBtn = document.getElementById("editarBtn");
-const guardarBtn = document.getElementById("guardarBtn");
-const cancelarBtn = document.getElementById("cancelarBtn");
+const editBtn = document.getElementById("editBtn");
+const saveBtn = document.getElementById("saveBtn");
+const cancelBtn = document.getElementById("cancelBtn");
 
-const habilitarCampos = (habilitar) => {
-  // Selecciona inputs, selects, textareas y fieldsets dentro del form
-  const elementos = form.querySelectorAll("input, select, textarea, fieldset");
-  elementos.forEach(el => {
-    // El fieldset tiene su propia propiedad disabled que afecta a todos sus hijos
-    el.disabled = !habilitar;
+const toggleFields = (enable) => {
+  const elements = form.querySelectorAll("input, select, textarea, fieldset");
+  elements.forEach(el => {
+    el.disabled = !enable;
   });
 };
 
-editarBtn.addEventListener("click", () => {
-  habilitarCampos(true);
-  editarBtn.style.display = "none";
-  guardarBtn.style.display = "inline";
-  cancelarBtn.style.display = "inline";
-});
-
-const restaurarFormulario = () => {
-  habilitarCampos(false);
-  guardarBtn.style.display = "none";
-  cancelarBtn.style.display = "none";
-  editarBtn.style.display = "inline";
+const resetForm = () => {
+  toggleFields(false);
+  saveBtn.style.display = "none";
+  cancelBtn.style.display = "none";
+  editBtn.style.display = "inline";
 };
 
-guardarBtn.addEventListener("click", () => {
-  // Aquí podrías agregar validaciones o envío de datos
-  restaurarFormulario();
+editBtn.addEventListener("click", () => {
+  toggleFields(true);
+  editBtn.style.display = "none";
+  saveBtn.style.display = "inline";
+  cancelBtn.style.display = "inline";
 });
 
-cancelarBtn.addEventListener("click", () => {
+saveBtn.addEventListener("click", () => {
+  // Aquí podrías agregar validaciones o envío de datos
+  resetForm();
+});
+
+cancelBtn.addEventListener("click", () => {
   // Aquí podrías restaurar valores originales si quieres
-  restaurarFormulario();
+  resetForm();
 });

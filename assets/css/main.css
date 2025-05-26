@@ -4451,8 +4451,8 @@ Cambiar la clase de los component-container por ID
 }
 
 /* Ocultar por defecto los botones de cancelar y guardar */
-#guardarBtn,
-#cancelarBtn {
+#saveBtn,
+#cancelBtn {
   display: none;
 }
 
