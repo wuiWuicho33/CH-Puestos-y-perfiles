@@ -25,11 +25,11 @@ editBtn.addEventListener("click", () => {
 });
 
 saveBtn.addEventListener("click", () => {
-  // Aquí podrías agregar validaciones o envío de datos
+  // Para agregar validaciones o envío de datos
   resetForm();
 });
 
 cancelBtn.addEventListener("click", () => {
-  // Aquí podrías restaurar valores originales si quieres
+  // Para restaurar valores originales
   resetForm();
 });
