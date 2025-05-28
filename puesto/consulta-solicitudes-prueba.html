@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
+	<title>Puesto - Consuta de solicitudes</title>
+	<link href="../assets/css/main.css" rel="stylesheet">
+</head>
+<body> 
+
+  <!-- =========
+  * SIDEBAR *
+  ========== -->
+  <section class="sidebar">
+
+    <!-- Header
+    ========================================== -->    
+    <header>
+      <img class="logo" src="../assets/img/logo.svg">
+    </header>
+
+    <!-- Side-menu
+    ========================================== -->              		 
+    <ul class="side-menu">
+      <!-- ====== Sub-menu ====== -->
+      <li class='sub-menu active'>
+        <a href='#'>
+          <i class="fa-solid fa-user-tie"></i> Puesto<div class='fa fa-solid fa-chevron-right right'></div>
+        </a>
+        <ul>
+          <li><a href='consulta-solicitudes.html' class="active">Consulta de solicitudes</a></li>
+          <li><a href='alta-puesto-descripcion.html'>Alta</a></li>
+          <li><a href='#'>Solicitud</a></li>
+          <li><a href='#'>Autorización</a></li>
+        </ul>
+      </li>      
+      <!-- ====== Links ====== -->
+      <li><a href='#'><i class="fa-solid fa-key"></i> Permisos y roles</a></li>
+      <li><a href='#'><i class="fa-solid fa-users"></i> Usuarios</a></li>
+    </ul>
+  </section>
+
+	<!-- =========
+  * MAIN *
+  ========== -->
+  <main class="main">
+
+    <!-- Navbar
+    ========================================== -->        
+    <nav class="navbar">
+      <!-- ====== Togle ====== -->
+      <button class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+			<!-- ====== Links ====== -->
+      <div class="navbar-links">
+        <a href="#">
+          <i class="fa-solid fa-house mr-1"></i> <span class="d-none d-md-block">Home</span>
+        </a>
+        <a href="#">
+          <i class="fa-solid fa-bell"></i>
+        </a>
+        <!-- ------ Dropdown-user ------ -->
+				<div class="dropdown-user">
+          <!-- Btn -->
+					<button class="dropbtn">
+						<i class="fa-solid fa-user"></i> <span class="d-none d-md-block">Nombre de usuario</span>
+					</button>
+          <!-- Links -->
+					<div class="dropdown-user-links">
+					<a href="#">Mi perfil <i class="fa-regular fa-credit-card"></i></a>
+					<a href="#">Ajustes <i class="fa-solid fa-gear"></i></a>
+					<a href="#">Cerrar sesión <i class="fa-solid fa-right-from-bracket"></i></a>
+					</div>
+				</div>		
+      </div>
+    </nav>
+
+    <!-- Content
+    ========================================== -->      
+    <section class="content grid gap-5">
+      <!-- ====== Title ====== -->
+      <div class="mb-4">
+        <h1>Revisión - Perfiles y descriptivos de puestos</h1>
+      </div> 
+      <!-- ====== Card ====== -->
+      <div class="card">
+        <!-- ------ Header ------ -->
+        <header class="card-header flex justify-between items-center">
+          <h2>Nombre de puesto 1</h2>
+          <a href="consulta-solicitudes.html">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </a>
+        </header>
+        <!-- ------ Card-body ------ -->
+        <div class="card-body">                         
+          <!-- ----
+          Accordion 
+          ----- -->
+          <div class="acordeon">
+            <!-- Acordeon-item
+            ------------------------------------------ -->               
+            <div class="acordeon-item">
+              <!-- ------ Acordeon-header ------ --> 
+              <button class="acordeon-header warning">
+                <div class="flex flex-row gap-1">
+                  <span class="label-circle label-warning">
+                    <i class="fa-solid fa-exclamation"></i>
+                  </span>
+                    Tab-01
+                </div>
+                <i class="fas fa-chevron-down acordeon-icon"></i>
+              </button>
+              <!-- ------ Acordeon-body ------ --> 
+              <div class="acordeon-body">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, mollitia! Eligendi cupiditate suscipit dignissimos numquam accusantium provident blanditiis, dolor deserunt eveniet illum. Quaerat inventore quisquam velit adipisci! Illum, soluta fugiat.</p> 
+              </div>
+            </div>
+            <!-- Acordeon-item
+            ------------------------------------------ -->               
+            <div class="acordeon-item">
+              <!-- ------ Acordeon-header ------ --> 
+              <button class="acordeon-header warning">
+                <div class="flex flex-row gap-1">
+                  <span class="label-circle label-warning">
+                    <i class="fa-solid fa-exclamation"></i>
+                  </span>
+                    Tab-02
+                </div>
+                <i class="fas fa-chevron-down acordeon-icon"></i>
+              </button>
+              <!-- ------ Acordeon-body ------ -->
+              <div class="acordeon-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate, fuga reiciendis repellat exercitationem cupiditate ipsam inventore laborum expedita! Maxime veniam aperiam consectetur dignissimos reprehenderit corrupti accusantium ut repellat molestiae.</p>
+              </div>
+            </div>
+            <!-- Acordeon-item
+            ------------------------------------------ -->               
+            <div class="acordeon-item">
+              <!-- ------ Acordeon-header ------ -->
+              <button class="acordeon-header warning">
+                <div class="flex flex-row gap-1">
+                  <span class="label-circle label-warning">
+                    <i class="fa-solid fa-exclamation"></i>
+                  </span>
+                    Tab-03
+                </div>
+                <i class="fas fa-chevron-down acordeon-icon"></i>
+              </button>
+              <!-- ------ Acordeon-body ------ -->
+              <div class="acordeon-body">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt praesentium unde nostrum at laborum, hic, enim vitae non itaque vel dolores minus similique veritatis illo consequatur fugit? Repellendus, quod aspernatur?</p>
+              </div>
+            </div>                                                                                  
+          </div>     
+        </div>
+        <!-- ------ Card-footer ------ -->
+        <footer class="card-footer flex flex-row justify-between gap-3">    
+          <!-- Button -->                
+          <a href="../assets/files/G060_gerente_ juridico_sr.pdf" target="_blank" class="btn btn-dark-inverse">
+            <i class="fa-solid fa-file-pdf"></i> Descargar pdf
+          </a>      
+          <!-- Buttons -->                
+          <div class="flex justify-between gap-2">  
+            <button class="btn btn-lighter-inverse" data-modal="modal-01">
+              <i class="fa-solid fa-thumbs-down mr-1"></i> 
+              <span class="d-none d-sm-inline">Rechazar</span>
+            </button>        
+            <button class="btn btn-lighter">
+              <i class="fa-solid fa-thumbs-up mr-1"></i> 
+              <span class="d-none d-sm-inline">Autorizar</span>
+            </button>                    
+          </div>
+        </footer>            
+      </div>
+      <!-- ===== Footer ===== -->
+      <footer>
+        <p>Grupo Fórmula Todos los derechos reservados</p>
+      </footer>	      
+    </section>
+
+    <!-- Modales
+    ========================================== --> 
+    <!-- ====== Modal-01 ====== -->
+    <div id="modal-01" class="modal">
+      <div class="modal-content">
+        <!-- ------ Modal-header ------ -->
+        <div class="modal-header">
+          <h2>Rechazo</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- ------ Modal-body ------ -->
+        <div class="modal-body">
+          <!-- Text area -->
+          <div>
+            <label for="rejection">Motivo de rechazo <span>*</span></label>
+            <textarea class="form-control" id="rejection" name="rejection" rows="4" cols="50" placeholder="Describe brevemente el motivo de rechazo." required></textarea>                
+          </div> 
+        </div>
+        <!-- ------ Modal-footer ------ -->
+        <div class="modal-footer flex justify-end gap-2">
+          <button type="reset" class="btn btn-dark-inverse" data-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-dark">Aceptar</button>          
+        </div>
+      </div>
+    </div>    
+
+  </main>  
+
+<!--///////
+SCRIPTS
+////////-->
+<!-- Fontawesome -->
+<script src="https://kit.fontawesome.com/91705bc097.js" crossorigin="anonymous"></script>
+<!-- Jquery last version -->
+<script src="../assets/js/jquery.min.js"></script>
+<!-- Main JS -->
+<script src="../assets/js/sidebar.js"></script>	
+<script src="../assets/js/accordeon.js"></script>	
+<script src="../assets/js/tabs.js"></script>	
+<script src="../assets/js/mi_form.js"></script>	
+<script src="../assets/js/modal.js"></script>	
+
+</body>
+</html>
