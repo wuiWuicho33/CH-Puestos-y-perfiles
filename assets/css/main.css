@@ -4121,6 +4121,9 @@ html {
   line-height: 1rem;
   text-align: center;
 }
+.label-circle i {
+  line-height: 1rem;
+}
 
 /* ==============================================
 # ACCORDEON
