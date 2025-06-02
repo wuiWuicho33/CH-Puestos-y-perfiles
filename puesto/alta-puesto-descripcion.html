@@ -160,82 +160,89 @@
             <!-- Tab-pane-01 -->
             <div class="tab-pane active" id="tab-01" role="tabpanel">
               <h3>Ficha de identificación</h3>
-                <!-- Form -->
-                <form id="miFormulario">
-                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-4">
-                    <!-- Grid item -->
-                    <div>
-                      <span class="tooltip-top" data-tooltip="Haz clic para buscar puestos según los filtros">
-                        <i class="fa-solid fa-circle-question"></i>
-                      </span>
-                      <label for="select-position">Puesto <span>*</span></label>
-                      <select id="select-position" name="select-position" class="form-control" required>
-                        <option value="" disabled selected>-- Selecciona el puesto --</option>
-                        <option value="Puesto 1">Puesto 1</option>
-                        <option value="Puesto 2">Puesto 2</option>
-                        <option value="Puesto 3">Puesto 3</option>
-                        <option value="Puesto 4">Puesto 4</option>
-                        <option value="Puesto 5">Puesto 5</option>              
-                      </select> 
-                    </div>
-                    <!-- Grid item -->
-                    <div>
-                      <label for="select-code">Código de puesto <span>*</span></label>
-                      <select id="select-code" class="form-control" required>
-                        <option value="" disabled selected>-- Selecciona el código de puesto --</option>
-                        <option value="Código 1">Código 1</option>
-                        <option value="Código 1">Código 2</option>
-                        <option value="Código 1">Código 3</option>
-                        <option value="Código 1">Código 4</option>
-                        <option value="Código 1">Código 5</option>              
-                      </select> 
-                    </div>
-                    <!-- Grid item -->
-                    <div>
-                      <label for="select-area">Área <span>*</span></label>
-                      <select id="select-area" class="form-control" required>
-                        <option value="" disabled selected>-- Selecciona el área --</option>
-                        <option value="Área 1">Área 1</option>
-                        <option value="Área 1">Área 2</option>
-                        <option value="Área 1">Área 3</option>
-                        <option value="Área 1">Área 4</option>
-                        <option value="Área 1">Área 5</option>              
-                      </select> 
-                    </div>  
-                  </div>
-                  <!-- Text area -->
+              <!-- Form -->
+              <form class="grid gap-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-4">
+                  <!-- Grid item -->
                   <div>
-                    <label for="objective">Objetivo del puesto <span>*</span></label>
-                    <textarea class="form-control" id="objective" name="objective" rows="4" cols="50" placeholder="Escribe el objectivo aquí..." required></textarea>                
+                    <span class="tooltip-top" data-tooltip="Haz clic para buscar puestos según los filtros">
+                      <i class="fa-solid fa-circle-question"></i>
+                    </span>
+                    <label for="select-position">Puesto <span>*</span></label>
+                    <select id="select-position" name="select-position" class="form-control" required>
+                      <option value="" disabled selected>-- Selecciona el puesto --</option>
+                      <option value="Puesto 1">Puesto 1</option>
+                      <option value="Puesto 2">Puesto 2</option>
+                      <option value="Puesto 3">Puesto 3</option>
+                      <option value="Puesto 4">Puesto 4</option>
+                      <option value="Puesto 5">Puesto 5</option>              
+                    </select> 
                   </div>
-                  <!-- Alert -->
-                  <div class="alert alert-success" role="alert" aria-live="assertive">
-                    <p><strong>Éxito:</strong> Se guardaron los datos.</p>
-                    <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
-                      <i class="fas fa-times"></i>
-                    </button>
+                  <!-- Grid item -->
+                  <div>
+                    <label for="select-code">Código de puesto <span>*</span></label>
+                    <select id="select-code" class="form-control" required>
+                      <option value="" disabled selected>-- Selecciona el código de puesto --</option>
+                      <option value="Código 1">Código 1</option>
+                      <option value="Código 1">Código 2</option>
+                      <option value="Código 1">Código 3</option>
+                      <option value="Código 1">Código 4</option>
+                      <option value="Código 1">Código 5</option>              
+                    </select> 
                   </div>
-                  <!-- Alert -->
-                  <div class="alert alert-warning" role="alert" aria-live="assertive">
-                    <p><strong>Advertencia:</strong> No se guardaron los datos.</p>
-                    <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
-                      <i class="fas fa-times"></i>
-                    </button>
-                  </div>                                                    
-                  <!-- Buttons -->
-                  <div class="flex flex-row-reverse gap-2">
-                    <button type="submit" class="btn btn-dark">Guardar</button>
-                    <button type="reset" class="btn btn-dark-inverse">Resetear</button>                
-                  </div>
-                </form>                  
+                  <!-- Grid item -->
+                  <div>
+                    <label for="select-area">Área <span>*</span></label>
+                    <select id="select-area" class="form-control" required>
+                      <option value="" disabled selected>-- Selecciona el área --</option>
+                      <option value="Área 1">Área 1</option>
+                      <option value="Área 1">Área 2</option>
+                      <option value="Área 1">Área 3</option>
+                      <option value="Área 1">Área 4</option>
+                      <option value="Área 1">Área 5</option>              
+                    </select> 
+                  </div>  
+                </div>
+                <!-- Text area -->
+                <div>
+                  <label for="objective">Objetivo del puesto <span>*</span></label>
+                  <textarea class="form-control" id="objective" name="objective" rows="4" cols="50" placeholder="Escribe el objectivo aquí..." required></textarea>                
+                </div>
+                <!-- Alert -->
+                <!--
+                <div class="alert alert-success" role="alert" aria-live="assertive">
+                  <p><strong>Éxito:</strong> Se guardaron los datos.</p>
+                  <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <div class="alert alert-warning" role="alert" aria-live="assertive">
+                  <p><strong>Advertencia:</strong> No se guardaron los datos.</p>
+                  <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>                                                                      
+                -->
+
+                <!-- Buttons
+                ========================================== --> 
+                <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
+                  <button type="button" class="btn btn-dark-inverse">
+                    Resetear
+                  </button>
+                  <button type="button" class="btn btn-dark">
+                    Guardar y continuar
+                  </button>
+                </div> 
+              </form>
             </div>
             <!-- Tab-pane-02 -->
             <div class="tab-pane" id="tab-02" role="tabpanel">
-              <h3>Ficha de organización</h3>
+              <h5>Ficha de organización</h5>
                 <!-- Form -->
-                <form id="miFormulario">
+                <form class="grid gap-5">
                   <!-- Select -->
-                  <div class="form-group">
+                  <div>
                     <label for="select-boss">Jefe inmediato<span>*</span></label>
                     <select id="select-boss" class="form-control" required>
                       <option value="" disabled selected>-- Selecciona --</option>
@@ -247,8 +254,8 @@
                     </select> 
                   </div>
 
-                  <h3>Puestos que le reportan</h3>
-                  <div class="grid grid-cols-1 sm:grid-cols-2 mb-4">
+                  <h5>Puestos que le reportan</h5>
+                  <div class="grid grid-cols-1 sm:grid-cols-2">
                     <!-- Select -->
                     <div>
                       <label for="direct-positions">Directos<span>*</span></label>
@@ -273,8 +280,8 @@
                     </div>                                    
                   </div>
 
-                  <h3>Grado de supervisión</h3>
-                  <div class="grid grid-cols-1 sm:grid-cols-2 mb-4">
+                  <h5>Grado de supervisión</h5>
+                  <div class="grid grid-cols-1 sm:grid-cols-2">
                     <!-- Grid-item -->
                     <div>
                       <label for="direct-supervision-degree">Directos<span>*</span></label>
@@ -300,24 +307,32 @@
                   </div>                  
 
                   <!-- Alert -->
+                  <!--
                   <div class="alert alert-success" role="alert" aria-live="assertive">
                     <p><strong>Éxito:</strong> Se guardaron los datos.</p>
                     <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
                       <i class="fas fa-times"></i>
                     </button>
                   </div>
-                  <!-- Alert -->
                   <div class="alert alert-warning" role="alert" aria-live="assertive">
                     <p><strong>Advertencia:</strong> No se guardaron los datos.</p>
                     <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert(this)">
                       <i class="fas fa-times"></i>
                     </button>
-                  </div>                                      
-                  <!-- Buttons -->
-                  <div class="flex flex-row-reverse gap-2">
-                    <button type="submit" class="btn btn-dark">Guardar</button>
-                    <button type="reset" class="btn btn-dark-inverse">Resetear</button>                
-                  </div>
+                  </div>                                                        
+                  -->
+
+                  <!-- Buttons
+                  ========================================== --> 
+                  <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
+                    <button type="button" class="btn btn-dark-inverse">
+                      Resetear
+                    </button>
+                    <button type="button" class="btn btn-dark">
+                      Guardar y siguiente
+                    </button>
+                  </div>                   
+
                 </form>        
             </div>
           </div>
