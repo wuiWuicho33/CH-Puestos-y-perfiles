@@ -3213,6 +3213,7 @@ Cambiar la clase de los component-container por ID
   font-weight: bold;
   text-align: center;
   cursor: pointer;
+  font-size: 1rem;
 }
 .btn i {
   font-size: 1rem;
