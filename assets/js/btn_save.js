@@ -28,3 +28,31 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+/* # Save and Go
+---------------------------------------------- */
+document.addEventListener('DOMContentLoaded', () => {
+  const saveAndGoLinks = document.querySelectorAll('.save-and-go');
+
+  saveAndGoLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const currentPane = link.closest('.tab-pane');
+      const currentForm = currentPane.querySelector('form');
+
+      if (currentForm.checkValidity()) {
+        e.preventDefault(); // Detiene el enlace temporalmente
+
+        // Aquí podrías guardar datos vía fetch o similar
+        console.log('Guardando datos antes de salir...');
+
+        // Simula guardado asíncrono (puedes quitar el setTimeout y usar fetch)
+        setTimeout(() => {
+          window.location.href = link.getAttribute('href');
+        }, 300); // espera opcional para guardar
+      } else {
+        e.preventDefault(); // Evita irse si no es válido
+        currentForm.reportValidity(); // Muestra errores
+      }
+    });
+  });
+});
