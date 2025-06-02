@@ -1,28 +1,30 @@
 /* # Save and Next
 ---------------------------------------------- */
 document.addEventListener('DOMContentLoaded', () => {
-  const saveAndNextBtn = document.getElementById('save-and-next');
-  const formTab1 = document.querySelector('#tab-01 form');
+  const saveButtons = document.querySelectorAll('.save-and-next');
 
-  if (saveAndNextBtn && formTab1) {
-    saveAndNextBtn.addEventListener('click', () => {
-      if (formTab1.checkValidity()) {
-        // Guardado simulado
-        console.log('Formulario válido. Guardando...');
+  saveButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const currentPane = button.closest('.tab-pane');
+      const currentForm = currentPane.querySelector('form');
 
-        // Buscar el botón de tab actual
-        const currentTabButton = document.querySelector('.tab-button.active');
+      if (currentForm.checkValidity()) {
+        // Simula guardado
+        console.log('Formulario válido. Guardando datos de:', currentPane.id);
+
+        // Encuentra el tab-button activo actual
+        const currentTabButton = document.querySelector(`.tab-button[data-target="${currentPane.id}"]`);
         const allTabButtons = Array.from(document.querySelectorAll('.tab-button'));
         const currentIndex = allTabButtons.indexOf(currentTabButton);
 
-        // Avanzar al siguiente tab si existe
+        // Avanza al siguiente tab si existe
         const nextTabButton = allTabButtons[currentIndex + 1];
         if (nextTabButton) {
           nextTabButton.click();
         }
       } else {
-        formTab1.reportValidity();
+        currentForm.reportValidity(); // Muestra errores del navegador
       }
     });
-  }
+  });
 });
