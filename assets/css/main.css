@@ -4515,6 +4515,11 @@ Cambiar la clase de los component-container por ID
   margin-right: 10px;
 }
 */
+#btnCancelar,
+#btnGuardar {
+  display: none;
+}
+
 /*Layout*/
 ul.secondary_menu {
   display: flex;
