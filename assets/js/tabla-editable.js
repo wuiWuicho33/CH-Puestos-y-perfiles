@@ -1,14 +1,14 @@
 /* # Tabla editable
 ---------------------------------------------- */
 
-const btnEditar = document.getElementById("btnEditar");
-const btnGuardar = document.getElementById("btnGuardar");
-const btnCancelar = document.getElementById("btnCancelar");
+const table_editbtn = document.getElementById("table_editbtn");
+const table_savebtn = document.getElementById("table_savebtn");
+const table_cancelbtn = document.getElementById("table_cancelbtn");
 
 const fila = document.querySelector("#tablaEditable tbody tr");
 let valoresOriginales = [];
 
-btnEditar.addEventListener("click", () => {
+table_editbtn.addEventListener("click", () => {
   valoresOriginales = [];
 
   [...fila.cells].forEach((celda) => {
@@ -19,12 +19,12 @@ btnEditar.addEventListener("click", () => {
     }
   });
 
-  btnEditar.style.display = "none";
-  btnGuardar.style.display = "inline-block";
-  btnCancelar.style.display = "inline-block";
+  table_editbtn.style.display = "none";
+  table_savebtn.style.display = "inline-block";
+  table_cancelbtn.style.display = "inline-block";
 });
 
-btnCancelar.addEventListener("click", () => {
+table_cancelbtn.addEventListener("click", () => {
   [...fila.cells].forEach((celda, i) => {
     const input = celda.querySelector("input, select, textarea");
     if (input) {
@@ -33,12 +33,12 @@ btnCancelar.addEventListener("click", () => {
     }
   });
 
-  btnEditar.style.display = "inline-block";
-  btnGuardar.style.display = "none";
-  btnCancelar.style.display = "none";
+  table_editbtn.style.display = "inline-block";
+  table_savebtn.style.display = "none";
+  table_cancelbtn.style.display = "none";
 });
 
-btnGuardar.addEventListener("click", () => {
+table_savebtn.addEventListener("click", () => {
   [...fila.cells].forEach((celda) => {
     const input = celda.querySelector("input, select, textarea");
     if (input) {
@@ -46,7 +46,7 @@ btnGuardar.addEventListener("click", () => {
     }
   });
 
-  btnEditar.style.display = "inline-block";
-  btnGuardar.style.display = "none";
-  btnCancelar.style.display = "none";
+  table_editbtn.style.display = "inline-block";
+  table_savebtn.style.display = "none";
+  table_cancelbtn.style.display = "none";
 });

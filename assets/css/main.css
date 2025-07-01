@@ -4492,8 +4492,8 @@ Cambiar la clase de los component-container por ID
   padding: 0;
 }
 
-#btnCancelar,
-#btnGuardar {
+#table_cancelbtn,
+#table_savebtn {
   display: none;
 }
 
