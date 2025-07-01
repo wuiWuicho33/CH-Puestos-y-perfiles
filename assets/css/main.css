@@ -4483,6 +4483,12 @@ Cambiar la clase de los component-container por ID
   padding: 5px;
 }
 
+#tablaEditable input,
+#tablaEditable select,
+#tablaEditable textarea {
+  margin-top: 0;
+}
+
 #tablaEditable td input[disabled],
 #tablaEditable td select[disabled],
 #tablaEditable td textarea[disabled] {
