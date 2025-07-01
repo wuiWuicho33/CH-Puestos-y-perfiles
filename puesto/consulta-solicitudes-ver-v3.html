@@ -265,8 +265,28 @@
                 <i class="fas fa-chevron-down acordeon-icon"></i>
               </button>
               <!-- ------ Acordeon-body ------ -->
-              <div class="acordeon-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta error velit, nesciunt veritatis consequatur consequuntur expedita unde delectus fugit culpa vel reiciendis repellat, labore corrupti, odit enim minus. Consectetur, rerum.</p>
+              <div class="acordeon-body">                
+                <table id="tablaEditable">
+                  <thead>
+                    <tr>
+                      <th>Nombre</th>
+                      <th>País</th>
+                      <th>Descripción</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-type="input">Juan Pérez</td>
+                      <td data-type="select">México</td>
+                      <td data-type="textarea">Usuario regular</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="buttons">
+                  <button id="btnEditar">Editar</button>
+                  <button id="btnGuardar" style="display:none;">Guardar</button>
+                  <button id="btnCancelar" style="display:none;">Cancelar</button>
+                </div>
               </div>
             </div>
             <!-- Acordeon-item
@@ -949,6 +969,7 @@ SCRIPTS
 <script src="../assets/js/mi_form.js"></script>	
 <script src="../assets/js/modal.js"></script>	
 <script src="../assets/js/button_active.js"></script>	
+<script src="../assets/js/tabla-editable.js"></script>	
 
 </body>
 </html>
