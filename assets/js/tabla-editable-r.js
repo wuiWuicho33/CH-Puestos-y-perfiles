@@ -16,11 +16,6 @@ table_editbtn.addEventListener("click", () => {
     if (input) {
       valoresOriginales.push(input.value);
       input.disabled = false;
-
-      // Asegurar que los textarea muestren el inicio del contenido
-      if (input.tagName.toLowerCase() === "textarea") {
-        input.scrollTop = 0;
-      }
     }
   });
 
