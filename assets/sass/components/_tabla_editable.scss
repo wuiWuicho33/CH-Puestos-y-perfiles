@@ -1,0 +1,49 @@
+/*
+#tablaEditable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+*/
+
+/*
+#tablaEditable td,
+#tablaEditable th {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+*/
+
+/* Ocultar apariencia de campos deshabilitados solo en esta tabla */
+#tablaEditable td input[disabled],
+#tablaEditable td select[disabled],
+#tablaEditable td textarea[disabled] {
+  border: none;
+  background: transparent;
+  font: inherit;
+  color: inherit;
+  pointer-events: none;
+  resize: none;
+  appearance: none;
+  padding: 0;
+}
+
+/*
+#tablaEditable td select[disabled] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+*/
+
+/* Botones (si están fuera de la tabla y quieres aislarlos también) */
+/*
+#tablaEditable + .buttons {
+  margin-top: 10px;
+}
+
+#tablaEditable + .buttons button {
+  margin-right: 10px;
+}
+*/
+

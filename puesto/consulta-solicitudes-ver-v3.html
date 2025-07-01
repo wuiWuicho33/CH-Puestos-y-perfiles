@@ -265,28 +265,43 @@
                 <i class="fas fa-chevron-down acordeon-icon"></i>
               </button>
               <!-- ------ Acordeon-body ------ -->
-              <div class="acordeon-body">                
-                <table id="tablaEditable">
-                  <thead>
-                    <tr>
-                      <th>Nombre</th>
-                      <th>País</th>
-                      <th>Descripción</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td data-type="input">Juan Pérez</td>
-                      <td data-type="select">México</td>
-                      <td data-type="textarea">Usuario regular</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="acordeon-body">  
+                <!-- ====== Table ====== -->  
+                <div class="table-responsive">
+                  <table id="tablaEditable">
+                    <thead>
+                      <tr>
+                        <th>Nombre</th>
+                        <th>País</th>
+                        <th>Descripción</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-type="input">
+                          <input type="text" value="Juan Pérez" disabled>
+                        </td>
+                        <td data-type="select">
+                          <select disabled>
+                            <option value="México" selected>México</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Colombia">Colombia</option>
+                          </select>
+                        </td>
+                        <td data-type="textarea">
+                          <textarea rows="1" disabled>Usuario regular</textarea>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>              
+
                 <div class="buttons">
                   <button id="btnEditar">Editar</button>
                   <button id="btnGuardar" style="display:none;">Guardar</button>
                   <button id="btnCancelar" style="display:none;">Cancelar</button>
                 </div>
+
               </div>
             </div>
             <!-- Acordeon-item
