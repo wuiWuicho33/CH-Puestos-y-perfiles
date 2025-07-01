@@ -4470,22 +4470,15 @@ Cambiar la clase de los component-container por ID
   display: none;
 }
 
-/*
+/*Estilos de tabla editable*/
 #tablaEditable {
-  width: 100%;
-  border-collapse: collapse;
   margin-bottom: 1rem;
 }
-*/
-/*
-#tablaEditable td,
-#tablaEditable th {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: left;
+
+#tablaEditable td {
+  padding: 5px;
 }
-*/
-/* Ocultar apariencia de campos deshabilitados solo en esta tabla */
+
 #tablaEditable td input[disabled],
 #tablaEditable td select[disabled],
 #tablaEditable td textarea[disabled] {
@@ -4499,22 +4492,6 @@ Cambiar la clase de los component-container por ID
   padding: 0;
 }
 
-/*
-#tablaEditable td select[disabled] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-*/
-/* Botones (si están fuera de la tabla y quieres aislarlos también) */
-/*
-#tablaEditable + .buttons {
-  margin-top: 10px;
-}
-
-#tablaEditable + .buttons button {
-  margin-right: 10px;
-}
-*/
 #btnCancelar,
 #btnGuardar {
   display: none;
