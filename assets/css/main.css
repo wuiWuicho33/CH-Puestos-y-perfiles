@@ -4475,6 +4475,10 @@ Cambiar la clase de los component-container por ID
   margin-bottom: 1rem;
 }
 
+#tablaEditable thead tr th {
+  font-weight: bold;
+}
+
 #tablaEditable td {
   padding: 5px;
 }
