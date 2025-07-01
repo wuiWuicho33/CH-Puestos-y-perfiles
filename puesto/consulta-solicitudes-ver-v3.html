@@ -271,26 +271,66 @@
                   <table id="tablaEditable">
                     <thead>
                       <tr>
-                        <th>Nombre</th>
-                        <th>País</th>
-                        <th>Descripción</th>
+                        <th>Funciones</th>
+                        <th>¿Cómo contribuye?</th>
+                        <th>Frecuencia</th>
+                        <th>Impacto de errores</th>
+                        <th>Complejidad</th>
+                        <th>% de priorización</th>                        
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td data-type="input">
-                          <input type="text" value="Juan Pérez" disabled>
+                        <td data-type="textarea">
+                          <textarea rows="1" disabled>Usuario regular</textarea>
+                        </td>                        
+                        <td data-type="select">
+                          <select disabled>
+                            <option value="" selected>-- Selecciona --</option>
+                            <option value="Entrega resultados para el área">Entrega resultados para el área</option>
+                            <option value="Trabaja en el logro de los objetivos a corto plazo">Trabaja en el logro de los objetivos a corto plazo</option>
+                            <option value="Establece y desarrolla procesos y planes a mediano plazo">Establece y desarrolla procesos y planes a mediano plazo</option>  
+                            <option value="Establece e implementa estrategias de negocios y objetivos a largo plazo">Establece e implementa estrategias de negocios y objetivos a largo plazo</option>            
+                            <option value="No aplica">No aplica</option>
+                          </select>                           
                         </td>
                         <td data-type="select">
                           <select disabled>
-                            <option value="México" selected>México</option>
-                            <option value="Argentina">Argentina</option>
-                            <option value="Colombia">Colombia</option>
-                          </select>
+                            <option value="" disabled selected>-- Selecciona --</option>                                                                                                                                                                                    
+                            <option value="Diario">Diario</option>
+                            <option value="Semanal">Semanal</option>
+                            <option value="Quincenal">Quincenal</option>                              
+                            <option value="Mensual">Mensual</option>
+                            <option value="Bimestral">Bimestral</option>            
+                            <option value="Trimestral">Trimestral</option>  
+                            <option value="Semestral">Semestral</option>
+                            <option value="Anual">Anual</option>
+                            <option value="No aplica">No aplica</option>
+                          </select>                           
                         </td>
-                        <td data-type="textarea">
-                          <textarea rows="1" disabled>Usuario regular</textarea>
+                        <td data-type="select">
+                          <select disabled>
+                            <option value="" disabled selected>-- Selecciona --</option>
+                            <option value="Consecuencias graves">Consecuencias graves</option>
+                            <option value="Consecuencias muy graves">Consecuencias muy graves</option>
+                            <option value="Consecuencias considerables">Consecuencias considerables</option>
+                            <option value="Consecuencias menores">Consecuencias menores</option>
+                            <option value="Consecuencias mínimas">Consecuencias mínimas</option>
+                            <option value="No aplica">No aplica</option>
+                          </select> 
                         </td>
+                        <td data-type="select">
+                          <select disabled>
+                            <option value="" disabled selected>-- Selecciona --</option>
+                            <option value="Baja">Baja</option>
+                            <option value="Media">Media</option>            
+                            <option value="Alta">Alta</option>      
+                            <option value="No aplica">No aplica</option>              
+                          </select> 
+                        </td>                                                                        
+                        <td data-type="input">
+                          <input type="text" value="0%" disabled>
+                        </td>                        
                       </tr>
                     </tbody>
                   </table>
@@ -298,8 +338,8 @@
 
                 <div class="buttons">
                   <button id="btnEditar">Editar</button>
-                  <button id="btnGuardar" style="display:none;">Guardar</button>
                   <button id="btnCancelar" style="display:none;">Cancelar</button>
+                  <button id="btnGuardar" style="display:none;">Guardar</button>
                 </div>
 
               </div>
