@@ -138,7 +138,7 @@
                               <i class="fa-solid fa-circle-question"></i>
                             </span>
                             <label for="select-position">Puesto <span>*</span></label>
-                            <select id="select-position" name="select-position" class="form-control" required disabled>
+                            <select id="select-position" name="select-position" class="form-control" required>
                               <option value="" disabled selected>-- Selecciona el puesto --</option>
                               <option value="Nombre de puesto 1">Nombre de puesto 1</option>
                               <option value="Nombre de puesto 2">Nombre de puesto 2</option>
@@ -150,7 +150,7 @@
                           <!-- Grid item -->
                           <div>
                             <label for="select-code">Código de puesto <span>*</span></label>
-                            <select id="select-code" class="form-control" required disabled>
+                            <select id="select-code" class="form-control" required>
                               <option value="" disabled selected>-- Selecciona el código de puesto --</option>
                               <option value="Código 1">Código 1</option>
                               <option value="Código 1">Código 2</option>
@@ -162,7 +162,7 @@
                           <!-- Grid item -->
                           <div>
                             <label for="area">Área <span>*</span></label>
-                            <select id="area" class="form-control" required disabled>
+                            <select id="area" class="form-control" required>
                               <option value="" disabled selected>-- Selecciona el área --</option>
                               <option value="Nombre de área 1">Nombre de área 1</option>
                               <option value="Nombre de área 1">Nombre de área 2</option>
@@ -185,7 +185,7 @@
                           <button type="button" class="btn btn-dark-inverse cancelBtn">
                             Cancelar
                           </button>
-                          <button type="button" class="btn btn-dark saveBtn">
+                          <button type="button" class="btn btn-dark saveBtn save-and-next">
                             Guardar y continuar
                           </button>
                         </div>
@@ -198,7 +198,7 @@
                         <!-- Text area -->
                         <div>
                           <label for="select-boss">Selecciona el jefe inmediato<span>*</span></label>
-                          <select id="select-boss" class="form-control" required disabled>
+                          <select id="select-boss" class="form-control" required>
                             <option value="" disabled selected>-- Selecciona --</option>
                             <option value="Jefe 1">Jefe 1</option>
                             <option value="Jefe 1">Jefe 2</option>
@@ -242,7 +242,7 @@
                             Cancelar
                           </button>
                           <button type="button" class="btn btn-dark saveBtn">
-                            Guardar y continuar
+                            Guardar
                           </button>
                         </div>                                                                                                     
                       </form>         
@@ -298,7 +298,7 @@
                           </td>
                           <td data-type="select">
                             <select class="form-control" disabled required>
-                              <option value="" disabled selected>-- Selecciona --</option>                                                                                                                                                                                    
+                              <option value="" selected>-- Selecciona --</option>                                                                                                                                                                                    
                               <option value="Diario">Diario</option>
                               <option value="Semanal">Semanal</option>
                               <option value="Quincenal">Quincenal</option>                              
@@ -312,7 +312,7 @@
                           </td>
                           <td data-type="select">
                             <select class="form-control" disabled required>
-                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value="" selected>-- Selecciona --</option>
                               <option value="Consecuencias graves">Consecuencias graves</option>
                               <option value="Consecuencias muy graves">Consecuencias muy graves</option>
                               <option value="Consecuencias considerables">Consecuencias considerables</option>
@@ -323,7 +323,7 @@
                           </td>
                           <td data-type="select">
                             <select class="form-control" disabled required>
-                              <option value="" disabled selected>-- Selecciona --</option>
+                              <option value=""selected>-- Selecciona --</option>
                               <option value="Baja">Baja</option>
                               <option value="Media">Media</option>            
                               <option value="Alta">Alta</option>      
@@ -1196,6 +1196,7 @@ SCRIPTS
 <script src="../assets/js/modal.js"></script>	
 <script src="../assets/js/button_active.js"></script>	
 <script src="../assets/js/tabla-editable.js"></script>	
+<script src="../assets/js/btn_save.js"></script>	
 
 </body>
 </html>
