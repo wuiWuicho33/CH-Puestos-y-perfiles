@@ -1,57 +1,59 @@
 /* # Tabla editable
 ---------------------------------------------- */
 
-const table_editbtn = document.getElementById("table_editbtn");
-const table_savebtn = document.getElementById("table_savebtn");
-const table_cancelbtn = document.getElementById("table_cancelbtn");
+document.querySelectorAll(".tabla-editable").forEach((contenedor) => {
+  const tabla = contenedor.querySelector(".tablaEditable");
+  const fila = tabla.querySelector("tbody tr"); // puedes expandir esto a múltiples filas si necesitas
 
-const fila = document.querySelector("#tablaEditable tbody tr");
-let valoresOriginales = [];
+  const btnEditar = contenedor.querySelector(".edit-btn");
+  const btnCancelar = contenedor.querySelector(".cancel-btn");
+  const btnGuardar = contenedor.querySelector(".save-btn");
 
-table_editbtn.addEventListener("click", () => {
-  valoresOriginales = [];
+  let valoresOriginales = [];
 
-  [...fila.cells].forEach((celda) => {
-    const input = celda.querySelector("input, select, textarea");
-    if (input) {
-      valoresOriginales.push(input.value);
-      input.disabled = false;
+  btnEditar.addEventListener("click", () => {
+    valoresOriginales = [];
 
-      // Asegurar que los textarea muestren el inicio del contenido
-      if (input.tagName.toLowerCase() === "textarea") {
-        input.scrollTop = 0;
+    [...fila.cells].forEach((celda) => {
+      const input = celda.querySelector("input, select, textarea");
+      if (input) {
+        valoresOriginales.push(input.value);
+        input.disabled = false;
+        if (input.tagName.toLowerCase() === "textarea") {
+          input.scrollTop = 0;
+        }
       }
-    }
+    });
+
+    btnEditar.style.display = "none";
+    btnGuardar.style.display = "inline-block";
+    btnCancelar.style.display = "inline-block";
   });
 
-  table_editbtn.style.display = "none";
-  table_savebtn.style.display = "inline-block";
-  table_cancelbtn.style.display = "inline-block";
-});
+  btnCancelar.addEventListener("click", () => {
+    [...fila.cells].forEach((celda, i) => {
+      const input = celda.querySelector("input, select, textarea");
+      if (input) {
+        input.value = valoresOriginales[i];
+        input.disabled = true;
+      }
+    });
 
-table_cancelbtn.addEventListener("click", () => {
-  [...fila.cells].forEach((celda, i) => {
-    const input = celda.querySelector("input, select, textarea");
-    if (input) {
-      input.value = valoresOriginales[i];
-      input.disabled = true;
-    }
+    btnEditar.style.display = "inline-block";
+    btnGuardar.style.display = "none";
+    btnCancelar.style.display = "none";
   });
 
-  table_editbtn.style.display = "inline-block";
-  table_savebtn.style.display = "none";
-  table_cancelbtn.style.display = "none";
-});
+  btnGuardar.addEventListener("click", () => {
+    [...fila.cells].forEach((celda) => {
+      const input = celda.querySelector("input, select, textarea");
+      if (input) {
+        input.disabled = true;
+      }
+    });
 
-table_savebtn.addEventListener("click", () => {
-  [...fila.cells].forEach((celda) => {
-    const input = celda.querySelector("input, select, textarea");
-    if (input) {
-      input.disabled = true;
-    }
+    btnEditar.style.display = "inline-block";
+    btnGuardar.style.display = "none";
+    btnCancelar.style.display = "none";
   });
-
-  table_editbtn.style.display = "inline-block";
-  table_savebtn.style.display = "none";
-  table_cancelbtn.style.display = "none";
 });

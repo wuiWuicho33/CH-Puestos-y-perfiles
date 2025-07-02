@@ -4471,27 +4471,27 @@ Cambiar la clase de los component-container por ID
 }
 
 /*Estilos de tabla editable*/
-#tablaEditable {
+.tablaEditable {
   margin-bottom: 1rem;
 }
 
-#tablaEditable thead tr th {
+.tablaEditable thead tr th {
   font-weight: bold;
 }
 
-#tablaEditable td {
+.tablaEditable td {
   padding: 5px;
 }
 
-#tablaEditable input,
-#tablaEditable select,
-#tablaEditable textarea {
+.tablaEditable input,
+.tablaEditable select,
+.tablaEditable textarea {
   margin-top: 0;
 }
 
-#tablaEditable td input[disabled],
-#tablaEditable td select[disabled],
-#tablaEditable td textarea[disabled] {
+.tablaEditable td input[disabled],
+.tablaEditable td select[disabled],
+.tablaEditable td textarea[disabled] {
   border: none;
   background: transparent;
   font: inherit;
@@ -4502,8 +4502,8 @@ Cambiar la clase de los component-container por ID
   padding: 0;
 }
 
-#table_cancelbtn,
-#table_savebtn {
+.botones-tabla .cancel-btn,
+.botones-tabla .save-btn {
   display: none;
 }
 
