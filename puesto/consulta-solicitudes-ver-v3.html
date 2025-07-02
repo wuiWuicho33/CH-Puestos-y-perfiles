@@ -267,7 +267,7 @@
               <!-- ------ Acordeon-body ------ -->
               <div class="acordeon-body">  
                 
-                <!-- ====== Table ====== -->  
+                <!-- Table -->
                 <div class="table-responsive">
                   <table id="tablaEditable">
                     <thead>
@@ -384,7 +384,88 @@
                   <div class="tab-content">
                     <!-- Tab-pane-03 -->
                     <div class="tab-pane active" id="tab-03" role="tabpanel">
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates nihil sit esse excepturi accusamus odit perspiciatis doloribus iure minus error eius eveniet at facere, neque amet animi numquam? Iusto, qui!</p>                         
+
+                      <!-- Table -->
+                      <div class="table-responsive">
+                        <table id="tablaEditable">
+                          <thead>
+                            <tr>
+                              <th>Área</th>
+                              <th>Envío de información</th>
+                              <th>Frecuencia</th>
+                              <th>Tipo de comunicación</th>
+                              <th>Impacto de fallos</th>
+                              <th>% de priorización</th>                        
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td data-type="textarea">
+                                <textarea class="form-control" rows="1" placeholder="Redacta una función" disabled></textarea>
+                              </td>                        
+                              <td data-type="select">
+                                <select class="form-control" disabled required>
+                                  <option value="" selected>-- Selecciona --</option>
+                                  <option value="Entrega resultados para el área">Entrega resultados para el área</option>
+                                  <option value="Trabaja en el logro de los objetivos a corto plazo">Trabaja en el logro de los objetivos a corto plazo</option>
+                                  <option value="Establece y desarrolla procesos y planes a mediano plazo">Establece y desarrolla procesos y planes a mediano plazo</option>  
+                                  <option value="Establece e implementa estrategias de negocios y objetivos a largo plazo">Establece e implementa estrategias de negocios y objetivos a largo plazo</option>            
+                                  <option value="No aplica">No aplica</option>
+                                </select>                           
+                              </td>
+                              <td data-type="select">
+                                <select class="form-control" disabled required>
+                                  <option value="" disabled selected>-- Selecciona --</option>                                                                                                                                                                                    
+                                  <option value="Diario">Diario</option>
+                                  <option value="Semanal">Semanal</option>
+                                  <option value="Quincenal">Quincenal</option>                              
+                                  <option value="Mensual">Mensual</option>
+                                  <option value="Bimestral">Bimestral</option>            
+                                  <option value="Trimestral">Trimestral</option>  
+                                  <option value="Semestral">Semestral</option>
+                                  <option value="Anual">Anual</option>
+                                  <option value="No aplica">No aplica</option>
+                                </select>                           
+                              </td>
+                              <td data-type="select">
+                                <select class="form-control" disabled required>
+                                  <option value="" disabled selected>-- Selecciona --</option>
+                                  <option value="Consecuencias graves">Consecuencias graves</option>
+                                  <option value="Consecuencias muy graves">Consecuencias muy graves</option>
+                                  <option value="Consecuencias considerables">Consecuencias considerables</option>
+                                  <option value="Consecuencias menores">Consecuencias menores</option>
+                                  <option value="Consecuencias mínimas">Consecuencias mínimas</option>
+                                  <option value="No aplica">No aplica</option>
+                                </select> 
+                              </td>
+                              <td data-type="select">
+                                <select class="form-control" disabled required>
+                                  <option value="" disabled selected>-- Selecciona --</option>
+                                  <option value="Baja">Baja</option>
+                                  <option value="Media">Media</option>            
+                                  <option value="Alta">Alta</option>      
+                                  <option value="No aplica">No aplica</option>              
+                                </select> 
+                              </td>                                                                        
+                              <td data-type="input">
+                                <input class="form-control" type="text" value="0%" disabled>
+                              </td>                        
+                            </tr>
+                            <tr>
+                              <td colspan="5"><b>Total de porcentaje de priorización:</b></td>
+                              <td>100%</td>
+                            </tr>                      
+                          </tbody>
+                        </table>
+                      </div>   
+                                
+                      <!-- Buttons -->
+                      <div class="flex flex-col sm:flex-row sm:justify-end gap-2">
+                        <button type="button" class="btn btn-dark" id="table_editbtn">Editar</button>
+                        <button type="button" class="btn btn-dark-inverse" id="table_cancelbtn">Cancelar</button>
+                        <button type="button" class="btn btn-dark" id="table_savebtn">Guardar</button>
+                      </div>
+
                     </div>
                     <!-- Tab-pane-04 -->
                     <div class="tab-pane" id="tab-04" role="tabpanel">
