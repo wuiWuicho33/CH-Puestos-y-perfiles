@@ -4502,6 +4502,14 @@ Cambiar la clase de los component-container por ID
   padding: 0;
 }
 
+.tablaEditable textarea {
+  overflow: hidden;
+  resize: none;
+  min-height: 2em;
+  line-height: 1.2;
+  width: 100%;
+}
+
 .botones-tabla .cancel-btn,
 .botones-tabla .save-btn {
   display: none;

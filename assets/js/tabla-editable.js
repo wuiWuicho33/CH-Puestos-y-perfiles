@@ -1,6 +1,11 @@
 /* # Tabla editable
 ---------------------------------------------- */
 
+function autoResizeTextarea(textarea) {
+  textarea.style.height = 'auto';
+  textarea.style.height = textarea.scrollHeight + 'px';
+}
+
 document.querySelectorAll(".tabla-editable").forEach((contenedor) => {
   const tabla = contenedor.querySelector(".tablaEditable");
   const fila = tabla.querySelector("tbody tr"); // puedes expandir esto a múltiples filas si necesitas
@@ -19,8 +24,10 @@ document.querySelectorAll(".tabla-editable").forEach((contenedor) => {
       if (input) {
         valoresOriginales.push(input.value);
         input.disabled = false;
+
         if (input.tagName.toLowerCase() === "textarea") {
-          input.scrollTop = 0;
+          autoResizeTextarea(input);
+          input.addEventListener("input", () => autoResizeTextarea(input));
         }
       }
     });
@@ -36,6 +43,10 @@ document.querySelectorAll(".tabla-editable").forEach((contenedor) => {
       if (input) {
         input.value = valoresOriginales[i];
         input.disabled = true;
+
+        if (input.tagName.toLowerCase() === "textarea") {
+          autoResizeTextarea(input);
+        }
       }
     });
 
@@ -55,5 +66,10 @@ document.querySelectorAll(".tabla-editable").forEach((contenedor) => {
     btnEditar.style.display = "inline-block";
     btnGuardar.style.display = "none";
     btnCancelar.style.display = "none";
+  });
+
+  // Ajuste inicial de altura para textarea (modo lectura)
+  fila.querySelectorAll("textarea").forEach((textarea) => {
+    autoResizeTextarea(textarea);
   });
 });
