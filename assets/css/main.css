@@ -4477,6 +4477,7 @@ Cambiar la clase de los component-container por ID
 
 .tablaEditable thead tr th {
   font-weight: bold;
+  vertical-align: top;
 }
 
 .tablaEditable td {
