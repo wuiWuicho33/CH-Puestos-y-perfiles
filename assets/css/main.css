@@ -3712,11 +3712,15 @@ Cambiar la clase de los component-container por ID
 }
 
 .tab-button.active {
-  background: #ebf5f8;
+  background: rgba(26, 106, 180, 0.9);
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .tab-button:hover, .tab-button:focus {
-  background: #cedaf8;
+  background: #1A6AB4;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 /* # Tab-content

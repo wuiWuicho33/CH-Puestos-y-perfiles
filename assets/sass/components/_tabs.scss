@@ -33,11 +33,15 @@
     border-right: 1px solid $tertiary-color;
 }
 .tab-button.active {
-    background: $secondary-color;
+    background: rgba($seventy-color, 0.9);
+    color:$primary-color;
+    font-weight: 700;
     //border-bottom: 2px solid $highlight-color;
 }
 .tab-button:hover, .tab-button:focus {
-    background: $tertiary-color;
+    background: $seventy-color;
+    color:$primary-color;
+    font-weight: 700;
     //border-bottom: 2px solid $highlight-color;
 }
 
