@@ -4180,9 +4180,11 @@ html {
   padding: 15px;
   display: none;
   border: 1px solid #A3B9F1;
-}
-.acordeon .acordeon-item .acordeon-body p {
-  margin: 0;
+  /*
+  p {
+    margin: 0;
+  }
+  */
 }
 
 /*====================
