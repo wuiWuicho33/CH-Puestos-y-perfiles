@@ -2791,10 +2791,11 @@ thead {
 }
 
 /*Para evitar que el table head se vaya a segundas líneas*/
+/*
 thead th {
   white-space: nowrap;
 }
-
+*/
 /*Para que aparezcan puntos suspensivos si el texto es muy largo*/
 /*
 thead th {
@@ -2810,6 +2811,10 @@ tbody tr:nth-child(even) {
 }
 tbody tr:hover {
   background-color: #cedaf8;
+}
+
+th {
+  vertical-align: top;
 }
 
 td, th {

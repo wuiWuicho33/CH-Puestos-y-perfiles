@@ -13,9 +13,11 @@ thead {
   color: $white-color;
 }
 /*Para evitar que el table head se vaya a segundas líneas*/
+/*
 thead th {
   white-space: nowrap;
 }
+*/
 
 /*Para que aparezcan puntos suspensivos si el texto es muy largo*/
 /*
@@ -35,6 +37,10 @@ tbody tr{
   &:hover {
     background-color: $tertiary-color; 
   }  
+}
+
+th{
+  vertical-align:top;
 }
 
 td, th {
