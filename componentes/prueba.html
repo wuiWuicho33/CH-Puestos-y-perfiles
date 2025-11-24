@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
-	<title>Puesto - Consuta de solicitudes</title>
+	<title>Componente - Tabla</title>
 	<link href="../assets/css/main.css" rel="stylesheet">
 </head>
 <body> 
@@ -80,8 +80,46 @@
     <!-- Content
     ========================================== -->      
     <section class="content">
-      <!-- ====== Lorem ====== -->
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia ipsa delectus, necessitatibus facilis, aperiam repellendus molestias aliquam cupiditate doloremque accusantium consectetur enim autem quod, est eligendi magnam quas similique quisquam?</p>
+
+      <!-- ====== Table ====== -->     
+      <h2>DataTables</h2>                     
+      <div class="table-responsive">
+        <table id="miTabla" class="display">
+          <!-- ------ Table head ------ -->
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Edad</th>
+              <th>Ciudad</th>
+            </tr>
+          </thead>
+          <!-- ------ Table body ------ -->
+          <!-- Comentar lo siguiente para traer los datos dinámicos-->               
+          <tbody>
+            <tr>
+              <td>Luis</td>
+              <td>28</td>
+              <td>Ciudad de México</td>
+            </tr>
+            <tr>
+              <td>Ana</td>
+              <td>34</td>
+              <td>Guadalajara</td>
+            </tr>
+            <tr>
+              <td>Carlos</td>
+              <td>22</td>
+              <td>Monterrey</td>
+            </tr>
+            <tr>
+              <td>María</td>
+              <td>45</td>
+              <td>Puebla</td>
+            </tr>
+          </tbody>
+        </table>
+      </div> 
+      
       <!-- ===== Footer ===== -->
       <footer>
         <p>Grupo Fórmula Todos los derechos reservados</p>
@@ -133,6 +171,14 @@ SCRIPTS
 <script src="../assets/js/mi_form.js"></script>	
 <script src="../assets/js/modal.js"></script>
 <script src="../assets/js/button_active.js"></script>	
+
+<!-- Librería de DataTables -->
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('#miTabla').DataTable(); // Inicializa DataTables
+  });
+</script>   
 
 </body>
 </html>
