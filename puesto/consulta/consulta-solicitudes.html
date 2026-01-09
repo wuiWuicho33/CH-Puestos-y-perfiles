@@ -171,6 +171,59 @@
               <td>Nombre de puesto</td>
               <td>Capital humano</td>
               <td>
+                <!-- Status-circle-box -->
+                <div class="status-circle-box">
+                  <span class="tooltip-top" data-tooltip="Revisión Jefe">
+                    <div class="status-circle boss">
+                      <i class="fa-regular fa-user"></i>
+                    </div>                    
+                  </span>
+                  <div class="hr"></div>
+                  <span class="tooltip-top" data-tooltip="Autorización director">
+                    <div class="status-circle director ">
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                  </span>
+                  <div class="hr"></div>
+                  <span class="tooltip-top" data-tooltip="Liberación CH">
+                    <div class="status-circle ch active">
+                      <i class="fa-solid fa-check"></i>
+                    </div>                                                    
+                  </span>                                
+                </div>                
+              </td>
+              <td>
+                <!-- Botones de aceptar y rechazar -->                
+                <div class="flex gap-2 justify-end align-center">            
+                  <label class="radio-label">
+                    <input type="radio" id="reject" name="terms-01" value="reject">
+                    Rechazado
+                  </label>        
+
+                  <label class="radio-label">
+                    <input type="radio" id="accept" name="terms-01" value="accept" checked>
+                    Aceptado
+                  </label>                  
+                </div>                                                  
+              </td>
+              <td>
+                <a class="btn-circle mr-1">
+                  <i class="fa-solid fa-eye"></i>
+                </a> 
+                <a class="btn-circle" data-modal="modal-01">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </a>                                                   
+              </td>              
+            </tr>            
+            <tr>
+              <td>
+                <label class="checkbox-label">
+                  <input type="checkbox" id="checkbox1"> Opción 2
+                </label>                
+              </td>
+              <td>Nombre de puesto</td>
+              <td>Capital humano</td>
+              <td>
                 <div class="label label-success">
                   <i class="fa-solid fa-check"></i> Autorizado
                 </div>                
@@ -201,7 +254,7 @@
             <tr>
               <td>
                 <label class="checkbox-label">
-                  <input type="checkbox" id="checkbox2"> Opción 2
+                  <input type="checkbox" id="checkbox2"> Opción 3
                 </label>                
               </td>
               <td>Nombre de puesto</td>
@@ -237,7 +290,7 @@
             <tr>
               <td>
                 <label class="checkbox-label">
-                  <input type="checkbox" id="checkbox3"> Opción 3
+                  <input type="checkbox" id="checkbox3"> Opción 4
                 </label>                
               </td>
               <td>Nombre de puesto</td>
@@ -273,7 +326,7 @@
             <tr>
               <td>
                 <label class="checkbox-label">
-                  <input type="checkbox" id="checkbox4"> Opción 4
+                  <input type="checkbox" id="checkbox4"> Opción 5
                 </label>                
               </td>
               <td>Nombre de puesto</td>

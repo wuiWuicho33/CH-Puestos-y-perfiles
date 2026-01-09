@@ -1,0 +1,31 @@
+/* ==============================================
+# STATUS CIRCLE BOX
+============================================== */
+.status-circle-box{
+  display: flex;
+  justify-content: center;  
+  
+  .hr{
+    height: 2px;
+    background-color: $fourth-color;
+    margin: auto 0;
+    width: 15px;
+  }    
+}
+
+.status-circle {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-color: $fourth-color;
+  border-radius: 50%;
+  font-size: 1rem;
+  line-height: 2rem;
+  text-align: center;
+  cursor: pointer;
+  i{color:$primary-color;}
+
+  &.boss.active{background-color: $warning-color;}
+  &.director.active{background-color: $highlight-color;}
+  &.ch.active{background-color: $success-color;}
+}
