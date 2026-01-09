@@ -174,7 +174,7 @@
                 <!-- Status-circle-box -->
                 <div class="status-circle-box">
                   <span class="tooltip-top" data-tooltip="Revisión Jefe">
-                    <div class="status-circle boss">
+                    <div class="status-circle boss" data-modal="boss">
                       <i class="fa-regular fa-user"></i>
                     </div>                    
                   </span>
@@ -210,7 +210,7 @@
                 <a class="btn-circle mr-1">
                   <i class="fa-solid fa-eye"></i>
                 </a> 
-                <a class="btn-circle" data-modal="modal-01">
+                <a class="btn-circle" data-modal="edit">
                   <i class="fa-solid fa-pen-to-square"></i>
                 </a>                                                   
               </td>              
@@ -246,7 +246,7 @@
                 <a class="btn-circle mr-1">
                   <i class="fa-solid fa-eye"></i>
                 </a> 
-                <a class="btn-circle" data-modal="modal-01">
+                <a class="btn-circle" data-modal="edit">
                   <i class="fa-solid fa-pen-to-square"></i>
                 </a>                                                   
               </td>              
@@ -282,7 +282,7 @@
                 <a class="btn-circle mr-1">
                   <i class="fa-solid fa-eye"></i>
                 </a> 
-                <a class="btn-circle" data-modal="modal-01">
+                <a class="btn-circle" data-modal="edit">
                   <i class="fa-solid fa-pen-to-square"></i>
                 </a>                                                   
               </td>                                     
@@ -318,7 +318,7 @@
                 <a class="btn-circle mr-1">
                   <i class="fa-solid fa-eye"></i>
                 </a> 
-                <a class="btn-circle" data-modal="modal-01">
+                <a class="btn-circle" data-modal="edit">
                   <i class="fa-solid fa-pen-to-square"></i>
                 </a>                                                   
               </td>                                     
@@ -354,7 +354,7 @@
                 <a class="btn-circle mr-1">
                   <i class="fa-solid fa-eye"></i>
                 </a> 
-                <a class="btn-circle" data-modal="modal-01">
+                <a class="btn-circle" data-modal="edit">
                   <i class="fa-solid fa-pen-to-square"></i>
                 </a>                                                   
               </td>                                     
@@ -370,8 +370,8 @@
 
     <!-- Modales
     ========================================== -->    
-    <!-- ====== Modal-01 ====== -->
-    <div id="modal-01" class="modal">
+    <!-- ====== Modal-Edición ====== -->
+    <div id="edit" class="modal">
       <div class="modal-content">
         <!-- == Modal-header == -->
         <div class="modal-header">
@@ -443,7 +443,7 @@
       </div>
     </div>      
 
-    <!-- ====== Modal-02 ====== -->
+    <!-- ====== Modal-Rechazo ====== -->
     <div id="modal-02" class="modal">
       <div class="modal-content">
         <!-- == Modal-header == -->
@@ -471,6 +471,37 @@
       </div>
     </div>   
 
+    <!-- ====== Modal-Boss ====== -->
+    <div id="boss" class="modal">
+      <div class="modal-content">
+        <!-- == Modal-header == -->
+        <div class="modal-header">
+          <h2>Revisión Jefe</h2>
+          <span class="btn-close" data-dismiss="modal">
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </div>
+        <!-- == Modal-body == -->
+        <div class="modal-body">
+          <label class="checkbox-label">
+            <input type="checkbox" id="checkbox1"> Jefe 01
+          </label>            
+          <label class="checkbox-label">
+            <input type="checkbox" id="checkbox1"> Jefe 02
+          </label>            
+          <label class="checkbox-label">
+            <input type="checkbox" id="checkbox1"> Jefe 03
+          </label>                      
+        </div>
+        <!-- == Modal-footer == -->
+        <div class="modal-footer flex justify-end gap-5">
+          <button type="reset" class="btn btn-dark-inverse" data-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-dark">Aceptar</button>          
+        </div>
+      </div>
+    </div>
+
+
 
   </main>  
 
@@ -482,7 +513,8 @@ SCRIPTS
 <!-- Jquery last version -->
 <script src="../../assets/js/jquery.min.js"></script>
 <!-- Main JS -->
-<script src="../../assets/js/sidebar.js"></script>	
+<script src="../../assets/js/sidebar.js"></script>
+<script src="../../assets/js/modal.js"></script>
 
 </body>
 </html>
