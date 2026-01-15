@@ -25,7 +25,6 @@
   cursor: pointer;
   i{color:$primary-color;}
 
-  &.boss.active{background-color: $warning-color;}
-  &.director.active{background-color: $highlight-color;}
-  &.ch.active{background-color: $success-color;}
+  &.in_progress{background-color: $warning-color;}
+  &.finalized{background-color: $success-color;}
 }

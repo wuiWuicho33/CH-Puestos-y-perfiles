@@ -4414,13 +4414,10 @@ table.dataTable thead th.sorting_desc:after {
 .status-circle i {
   color: #ffffff;
 }
-.status-circle.boss.active {
+.status-circle.in_progress {
   background-color: #db9a17;
 }
-.status-circle.director.active {
-  background-color: #0F4C95;
-}
-.status-circle.ch.active {
+.status-circle.finalized {
   background-color: #35a038;
 }
 
